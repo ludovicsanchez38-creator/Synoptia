@@ -1,0 +1,21 @@
+{
+  "title": "MessageBird node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.messagebird",
+  "content": "---\ntitle: MessageBird node documentation\ndescription: Learn how to use the MessageBird node in n8n. Follow technical documentation to integrate MessageBird node into your workflows.\ncontentType: [integration, reference]\n---\n\n MessageBird node\n\nUse the MessageBird node to automate work in MessageBird, and integrate MessageBird with other applications. n8n has built-in support for a wide range of MessageBird features, including sending messages, and getting balances. \n\nOn this page, you'll find a list of operations the MessageBird node supports and links to more resources.\n\n/// note | Credentials\nRefer to MessageBird credentials for guidance on setting up authentication. \n///\n\n Operations\n\n SMS\n     Send text messages (SMS)\n Balance\n     Get the balance\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'messagebird') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.messagebird.md",
+  "keywords": [
+    "messagebird",
+    "node",
+    "title",
+    "documentation",
+    "integrate",
+    "messages",
+    "page",
+    "operations",
+    "credentials",
+    "balance"
+  ],
+  "fetchedAt": "2025-10-07T16:14:40.207Z",
+  "hash": "4af764036edea550dde6482ec97de43e"
+}

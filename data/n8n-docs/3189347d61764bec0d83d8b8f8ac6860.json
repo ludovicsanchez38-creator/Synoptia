@@ -1,0 +1,21 @@
+{
+  "title": "Code node",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/index",
+  "content": "---\ntitle: Code node documentation\ndescription: Documentation for the Code node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: critical\ntags:\n  - code node\n  - code\nhide:\n  - tags\nsearch:\n  boost: 1.5\n---\n\n Code node\n\n--8<-- \"snippets/integrations/builtin/core-nodes/code-node.md\"\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common Issues.",
+  "category": "core-nodes",
+  "nodeType": "code",
+  "keywords": [
+    "code",
+    "node",
+    "common",
+    "issues",
+    "documentation",
+    "tags",
+    "title",
+    "description",
+    "workflow",
+    "automation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:02.934Z",
+  "hash": "3189347d61764bec0d83d8b8f8ac6860"
+}

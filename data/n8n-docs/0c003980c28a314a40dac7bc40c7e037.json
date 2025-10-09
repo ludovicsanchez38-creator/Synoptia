@@ -1,0 +1,21 @@
+{
+  "title": "Iterable node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.iterable",
+  "content": "---\ntitle: Iterable node documentation\ndescription: Learn how to use the Iterable node in n8n. Follow technical documentation to integrate Iterable node into your workflows.\ncontentType: [integration, reference]\n---\n\n Iterable node\n\nUse the Iterable node to automate work in Iterable, and integrate Iterable with other applications. n8n has built-in support for a wide range of Iterable features, including creating users, recording the actions performed by the users, and adding and removing users from the list. \n\nOn this page, you'll find a list of operations the Iterable node supports and links to more resources.\n\n/// note | Credentials\nRefer to Iterable credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Event\n     Record the actions a user perform\n User\n     Create/Update a user\n     Delete a user\n     Get a user\n User List\n     Add user to list\n     Remove a user from a list\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'iterable') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.iterable.md",
+  "keywords": [
+    "iterable",
+    "node",
+    "user",
+    "list",
+    "users",
+    "title",
+    "documentation",
+    "integrate",
+    "actions",
+    "from"
+  ],
+  "fetchedAt": "2025-10-07T16:14:36.365Z",
+  "hash": "0c003980c28a314a40dac7bc40c7e037"
+}

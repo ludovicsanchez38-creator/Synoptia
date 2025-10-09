@@ -1,0 +1,22 @@
+{
+  "id": "fb_1759223669833_rryzqt66q",
+  "sessionId": "session_004",
+  "workflowId": null,
+  "rating": 2,
+  "successful": false,
+  "comment": "Syntax errors in generated JSON",
+  "issues": [
+    "syntax_errors",
+    "missing_parameters"
+  ],
+  "request": "Build API integration workflow",
+  "workflow": null,
+  "metadata": {
+    "intent": "create",
+    "model": "gpt-4o-mini",
+    "ragUsed": true,
+    "documentsUsed": 5
+  },
+  "timestamp": 1759223669833,
+  "analyzed": false
+}

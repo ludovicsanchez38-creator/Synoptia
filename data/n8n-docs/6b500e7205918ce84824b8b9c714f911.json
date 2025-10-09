@@ -1,0 +1,21 @@
+{
+  "title": "Keap Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.keaptrigger",
+  "content": "---\ntitle: Keap Trigger node documentation\ndescription: Learn how to use the Keap Trigger node in n8n. Follow technical documentation to integrate Keap Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Keap Trigger node\n\nKeap is an e-mail marketing and sales platform for small businesses, including products to manage and optimize the customer lifecycle, customer relationship management, marketing automation, lead capture, and e-commerce.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Keap Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.keaptrigger.md",
+  "keywords": [
+    "keap",
+    "trigger",
+    "node",
+    "documentation",
+    "marketing",
+    "customer",
+    "note",
+    "examples",
+    "templates",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:15:14.397Z",
+  "hash": "6b500e7205918ce84824b8b9c714f911"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Clockify Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.clockifytrigger",
+  "content": "---\ntitle: Clockify Trigger node documentation\ndescription: Learn how to use the Clockify Trigger node in n8n. Follow technical documentation to integrate Clockify Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Clockify Trigger node\n\nClockify is a free time tracker and timesheet app for tracking work hours across projects.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Clockify Trigger integrations page.\n///\n\nThis node uses the workflow timezone setting to specify the range of time entries starting time. Configure the timezone in your Workflow Settings if you want this trigger node to retrieve the right time entries.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.clockifytrigger.md",
+  "keywords": [
+    "clockify",
+    "trigger",
+    "node",
+    "time",
+    "this",
+    "documentation",
+    "your",
+    "note",
+    "examples",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:15:07.125Z",
+  "hash": "2bbdd461f0f221a49d6137e19463149e"
+}

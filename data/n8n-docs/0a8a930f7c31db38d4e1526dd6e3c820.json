@@ -1,0 +1,22 @@
+{
+  "title": "MSG91 node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.msg91",
+  "content": "---\ntitle: MSG91 node documentation\ndescription: Learn how to use the MSG91 node in n8n. Follow technical documentation to integrate MSG91 node into your workflows.\ncontentType: [integration, reference]\n---\n\n MSG91 node\n\nUse the MSG91 node to automate work in MSG91, and integrate MSG91 with other applications. n8n supports sending SMS with MSG91.\n\nOn this page, you'll find a list of operations the MSG91 node supports and links to more resources.\n\n/// note | Credentials\nRefer to MSG91 credentials for guidance on setting up authentication. \n///\n\n Operations\n\n SMS\n     Send SMS\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'msg91') ]]\n\n Find your Sender ID\n\n1. Log in to your MSG91 dashboard.\n2. Select Sender Id in the left panel.\n3. If you don't already have one, select Add Sender Id +, fill in the details, and select Save Sender Id.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.msg91.md",
+  "keywords": [
+    "msg91",
+    "node",
+    "sender",
+    "your",
+    "select",
+    "title",
+    "documentation",
+    "integrate",
+    "with",
+    "supports",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:43.186Z",
+  "hash": "0a8a930f7c31db38d4e1526dd6e3c820"
+}

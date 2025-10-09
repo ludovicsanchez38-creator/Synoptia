@@ -1,0 +1,21 @@
+{
+  "title": "RSS Read",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.rssfeedread",
+  "content": "---\ntitle: RSS Read\ndescription: Documentation for the RSS Read node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: medium\n---\n\n RSS Read\n\nUse the RSS Read node to read data from RSS feeds published on the internet.\n\n Node parameters\n\n- URL: Enter the URL for the RSS publication you want to read.\n\n Node options\n\n Ignore SSL Issues: Choose whether n8n should ignore SSL/TLS verification (turned on) or not (turned off).\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'rss-read') ]]\n\n Related resources\n\nn8n provides a trigger node for RSS Read. You can find the trigger node docs here.",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.rssfeedread.md",
+  "keywords": [
+    "read",
+    "node",
+    "title",
+    "examples",
+    "ignore",
+    "turned",
+    "templates",
+    "trigger",
+    "description",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:10.267Z",
+  "hash": "2106e442825478d52e042a0d08eb6ca1"
+}

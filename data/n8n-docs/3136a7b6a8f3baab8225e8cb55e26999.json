@@ -1,0 +1,21 @@
+{
+  "title": "Embeddings Google PaLM node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.embeddingsgooglepalm",
+  "content": "---\ntitle: Embeddings Google PaLM node documentation\ndescription: Learn how to use the Embeddings Google PaLM node in n8n. Follow technical documentation to integrate Embeddings Google PaLM node into your workflows.\ncontentType: [integration, reference]\n---\n\n Embeddings Google PaLM node\n\nUse the Embeddings Google PaLM node to generate embeddings for a given text.\n\nOn this page, you'll find the node parameters for the Embeddings Google PaLM node, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Model: Select the model to use to generate the embedding.\n\nn8n dynamically loads models from the Google PaLM API and you'll only see the models available to your account.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'embeddings-google-palm') ]]\n\n Related resources\n\nRefer to Langchain's Google PaLM embeddings documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.embeddingsgooglepalm.md",
+  "keywords": [
+    "embeddings",
+    "google",
+    "palm",
+    "node",
+    "documentation",
+    "integrations",
+    "title",
+    "your",
+    "generate",
+    "this"
+  ],
+  "fetchedAt": "2025-10-07T16:15:28.873Z",
+  "hash": "3136a7b6a8f3baab8225e8cb55e26999"
+}

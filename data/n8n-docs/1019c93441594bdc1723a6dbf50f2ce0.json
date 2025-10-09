@@ -1,0 +1,22 @@
+{
+  "title": "crowd.dev node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.crowddev",
+  "content": "---\ntitle: crowd.dev node documentation\ndescription: Learn how to use the crowd.dev node in n8n. Follow technical documentation to integrate crowd.dev node into your workflows.\ncontentType: [integration, reference]\n---\n\n crowd.dev node\n\nUse the crowd.dev node to automate work in crowd.dev and integrate crowd.dev with other applications. n8n has built-in support for a wide range of crowd.dev features, which includes creating, updating, and deleting members, notes, organizations, and tasks.\n\nOn this page, you'll find a list of operations the crowd.dev node supports, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n Activity\n\t Create or Update with a Member\n\t Create\n Automation\n\t Create\n\t Destroy\n\t Find\n\t List\n\t Update\n Member\n\t Create or Update\n\t Delete\n\t Find\n\t Update\n Note\n\t Create\n\t Delete\n\t Find\n\t Update\n Organization\n\t Create\n\t Delete\n\t Find\n\t Update\n Task\n\t Create\n\t Delete\n\t Find\n\t Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'crowddev') ]]\n\n Related resources\n\nn8n provides a trigger node for crowd.dev. You can find the trigger node docs here.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.crowddev.md",
+  "keywords": [
+    "crowd.dev",
+    "node",
+    "crowd",
+    "find",
+    "create",
+    "update",
+    "delete",
+    "title",
+    "documentation",
+    "integrate",
+    "with"
+  ],
+  "fetchedAt": "2025-10-07T16:14:23.741Z",
+  "hash": "1019c93441594bdc1723a6dbf50f2ce0"
+}

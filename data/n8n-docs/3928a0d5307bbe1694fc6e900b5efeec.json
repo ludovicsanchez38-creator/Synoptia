@@ -1,0 +1,22 @@
+{
+  "title": "`vars`",
+  "url": "https://docs.n8n.io/code/cookbook/builtin/vars",
+  "content": "---\ndescription: Access your environment's custom variables.\ncontentType: reference\n---\n\n vars\n\n/// info | Feature availability\n Available on Self-hosted Enterprise and Pro and Enterprise Cloud plans.\n You need access to the n8n instance owner account to create variables.\n///\t\n\nvars contains all Variables for the active environment. It's read-only: you can access variables using vars, but must set them using the UI.\n\n=== \"JavaScript\"\n\t\n=== \"Python\"\n\t\n\n/// note | vars and env\nvars gives access to user-created variables. It's part of the Environments feature. env gives access to the configuration environment variables for your n8n instance. \n///",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "`vars`",
+    "variables",
+    "access",
+    "vars",
+    "environment",
+    "your",
+    "feature",
+    "enterprise",
+    "instance",
+    "using",
+    "gives"
+  ],
+  "fetchedAt": "2025-10-07T16:15:48.685Z",
+  "hash": "3928a0d5307bbe1694fc6e900b5efeec"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Enable Prometheus metrics ",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/prometheus",
+  "content": "---\ntitle: Enable Prometheus metrics \ndescription: Enable Prometheus metrics endpoint.\ncontentType: howto\n---\n\n Enable Prometheus metrics \n\nTo collect and expose metrics, n8n uses the prom-client library.\n\nThe /metrics endpoint is disabled by default, but it's possible to enable it using the N8NMETRICS environment variable.\n\nRefer to the respective Environment Variables (N8NMETRICSINCLUDE) for configuring which metrics and labels should get exposed.\n\nBoth main and worker instances are able to expose metrics.\n\n Queue metrics\n\nTo enable queue metrics, set the N8NMETRICSINCLUDEQUEUEMETRICS env var to true. You can adjust the refresh rate with N8NMETRICSQUEUEMETRICSINTERVAL.\n\nn8n gathers these metrics from Bull and exposes them on the main instances. On multi-main setups, when aggregating queries, you can identify the leader using the instanceroleleader gauge, set to 1 for the leader main and 0 otherwise.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "enable",
+    "prometheus",
+    "metrics",
+    "main",
+    "endpoint",
+    "expose",
+    "using",
+    "environment",
+    "instances",
+    "queue"
+  ],
+  "fetchedAt": "2025-10-07T16:15:54.928Z",
+  "hash": "e1b71ccd23d15106483396500d46e705"
+}

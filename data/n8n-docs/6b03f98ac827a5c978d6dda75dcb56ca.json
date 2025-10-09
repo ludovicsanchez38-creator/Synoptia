@@ -1,0 +1,21 @@
+{
+  "title": "Venafi TLS Protect Cloud Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.venafitlsprotectcloudtrigger",
+  "content": "---\ntitle: Venafi TLS Protect Cloud Trigger node documentation\ndescription: Learn how to use the Venafi TLS Protect Cloud Trigger node in n8n. Follow technical documentation to integrate Venafi TLS Protect Cloud Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Venafi TLS Protect Cloud Trigger node\n\nVenafi is a cybersecurity company providing services for machine identity management. They offer solutions to manage and protect identities for a wide range of machine types, delivering global visibility, lifecycle automation, and actionable intelligence.\n\nUse the n8n Venafi TLS Protect Cloud Trigger node to start a workflow in n8n in response to events in the cloud-based Venafi TLS Protect service.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Venafi TLS Protect Cloud Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.venafitlsprotectcloudtrigger.md",
+  "keywords": [
+    "venafi",
+    "protect",
+    "cloud",
+    "trigger",
+    "node",
+    "documentation",
+    "machine",
+    "note",
+    "examples",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:15:20.507Z",
+  "hash": "6b03f98ac827a5c978d6dda75dcb56ca"
+}

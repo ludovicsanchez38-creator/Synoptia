@@ -1,0 +1,21 @@
+{
+  "title": "Google Calendar node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlecalendar/index",
+  "content": "---\ntitle: Google Calendar node documentation\ndescription: Learn how to use the Google Calendar node in n8n. Follow technical documentation to integrate Google Calendar node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Google Calendar node\n\nUse the Google Calendar node to automate work in Google Calendar, and integrate Google Calendar with other applications. n8n has built-in support for a wide range of Google Calendar features, including adding, retrieving, deleting and updating calendar events.\n\nOn this page, you'll find a list of operations the Google Calendar node supports and links to more resources.\n\n/// note | Credentials\nRefer to Google Calendar credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Calendar\n     Availability: If a time-slot is available in a calendar\n Event\n     Create: Add an event to calendar\n     Delete: Delete an event\n     Get: Retrieve an event\n     Get Many: Retrieve all events from a calendar\n     Update: Update an event\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-calendar') ]]\n\n Related resources\n\nn8n provides a trigger node for Google Calendar. You can find the trigger node docs here.\n\nRefer to Google Calendar's documentation for more information about the service.\n\nView example workflows and related content on n8n's website.",
+  "category": "app-nodes",
+  "nodeType": "google",
+  "keywords": [
+    "google",
+    "calendar",
+    "node",
+    "event",
+    "documentation",
+    "title",
+    "integrate",
+    "workflows",
+    "events",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:30.329Z",
+  "hash": "b3e763fbf3f5e2e63a4fa19a5884c5c6"
+}

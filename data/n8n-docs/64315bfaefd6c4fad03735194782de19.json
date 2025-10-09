@@ -1,0 +1,21 @@
+{
+  "title": "Harvest node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.harvest",
+  "content": "---\ntitle: Harvest node documentation\ndescription: Learn how to use the Harvest node in n8n. Follow technical documentation to integrate Harvest node into your workflows.\ncontentType: [integration, reference]\n---\n\n Harvest node\n\nUse the Harvest node to automate work in Harvest, and integrate Harvest with other applications. n8n has built-in support for a wide range of Harvest features, including creating, updating, deleting, and getting clients, contacts, invoices, tasks, expenses, users, and projects. \n\nOn this page, you'll find a list of operations the Harvest node supports and links to more resources.\n\n/// note | Credentials\nRefer to Harvest credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Client\n     Create a client\n     Delete a client\n     Get data of a client\n     Get data of all clients\n     Update a client\n Company\n     Retrieves the company for the currently authenticated user\n Contact\n     Create a contact\n     Delete a contact\n     Get data of a contact\n     Get data of all contacts\n     Update a contact\n Estimate\n     Create an estimate\n     Delete an estimate\n     Get data of an estimate\n     Get data of all estimates\n     Update an estimate\n Expense\n     Get data of an expense\n     Get data of all expenses\n     Create an expense\n     Update an expense\n     Delete an expense\n Invoice\n     Get data of an invoice\n     Get data of all invoices\n     Create an invoice\n     Update an invoice\n     Delete an invoice\n Project\n     Create a project\n     Delete a project\n     Get data of a project\n     Get data of all projects\n     Update a project\n Task\n     Create a task\n     Delete a task\n     Get data of a task\n     Get data of all tasks\n     Update a task\n Time Entries\n     Create a time entry using duration\n     Create a time entry using start and end time\n     Delete a time entry\n     Delete a time entry's external reference.\n     Get data of a time entry\n     Get data of all time entries\n     Restart a time entry\n     Stop a time entry\n     Update a time entry\n User\n     Create a user\n     Delete a user\n     Get data of a user\n     Get data of all users\n     Get data of authenticated user\n     Update a user\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'harvest') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.harvest.md",
+  "keywords": [
+    "harvest",
+    "node",
+    "data",
+    "time",
+    "create",
+    "delete",
+    "update",
+    "entry",
+    "user",
+    "client"
+  ],
+  "fetchedAt": "2025-10-07T16:14:35.033Z",
+  "hash": "64315bfaefd6c4fad03735194782de19"
+}

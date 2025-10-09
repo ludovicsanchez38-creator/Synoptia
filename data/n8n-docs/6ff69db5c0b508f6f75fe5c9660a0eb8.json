@@ -1,0 +1,21 @@
+{
+  "title": "Bitly node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.bitly",
+  "content": "---\ntitle: Bitly node documentation\ndescription: Learn how to use the Bitly node in n8n. Follow technical documentation to integrate Bitly node into your workflows.\ncontentType: [integration, reference]\n---\n\n Bitly node\n\nUse the Bitly node to automate work in Bitly, and integrate Bitly with other applications. n8n has built-in support for a wide range of Bitly features, including creating, getting, and updating links.\n\nOn this page, you'll find a list of operations the Bitly node supports and links to more resources.\n\n/// note | Credentials\nRefer to Bitly credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Link\n     Create a link\n     Get a link\n     Update a link\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'bitly') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.bitly.md",
+  "keywords": [
+    "bitly",
+    "node",
+    "link",
+    "title",
+    "documentation",
+    "integrate",
+    "links",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:20.792Z",
+  "hash": "6ff69db5c0b508f6f75fe5c9660a0eb8"
+}

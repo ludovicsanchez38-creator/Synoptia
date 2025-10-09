@@ -1,0 +1,22 @@
+{
+  "title": "Crypto",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.crypto",
+  "content": "---\ntitle: Crypto\ndescription: Documentation for the Crypto node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Crypto\n\nUse the Crypto node to encrypt data in workflows.\n\n Actions\n\n Generate a random string\n Hash a text or file in a specified format\n Hmac a text or file in a specified format\n Sign a string using a private key\n\n Node parameters\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\nNode parameters depend on the action you select.\n\n Generate parameters\n\n Property Name: Enter the name of the property to write the random string to.\n Type: Select the encoding type to use to generate the string. Choose from:\n\t ASCII\n\t BASE64\n\t HEX\n\t UUID\n\n Hash parameters\n\n Type: Select the hash type to use. Choose from:\n\t MD5\n\t SHA256\n\t SHA3-256\n\t SHA3-384\n\t SHA3-512\n\t SHA385\n\t SHA512\n Binary File: Turn this parameter on if the data you want to hash is from a binary file.\n\t Value: If you turn off Binary File, enter the value you want to hash.\n\t Binary Property Name: If you turn on Binary File, enter the name of the binary property that contains the data you want to hash.\n Property Name: Enter the name of the property you want to write the hash to.\n Encoding: Select the encoding type to use. Choose from:\n\t BASE64\n\t HEX\n\n Hmac parameters\n\n Binary File: Turn this parameter on if the data you want to encrypt is from a binary file.\n\t Value: If you turn off Binary File, enter the value you want to encrypt.\n\t Binary Property Name: If you turn on Binary File, enter the name of the binary property that contains the data you want to encrypt.\n Type: Select the encryption type to use. Choose from:\n\t MD5\n\t SHA256\n\t SHA3-256\n\t SHA3-384\n\t SHA3-512\n\t SHA385\n\t SHA512\n Property Name: Enter the name of the property you want to write the hash to.\n Secret: Enter the secret or secret key used for decoding.\n Encoding: Select the encoding type to use. Choose from:\n\t BASE64\n\t HEX\n\n Sign parameters\n\n Value: Enter the value you want to sign.\n Property Name: Enter the name of the property you want to write the signed value to.\n Algorithm Name or ID: Choose an algorithm name from the list or specify an ID using an expression.\n Encoding: Select the encoding type to use. Choose from:\n\t BASE64\n\t HEX\n Private Key: Enter a private key to use when signing the string.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'crypto') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.crypto.md",
+  "keywords": [
+    "crypto",
+    "name",
+    "property",
+    "binary",
+    "enter",
+    "file",
+    "want",
+    "type",
+    "from",
+    "hash",
+    "select"
+  ],
+  "fetchedAt": "2025-10-07T16:14:03.697Z",
+  "hash": "8863972f7dfc25bca171ea39ec5f3069"
+}

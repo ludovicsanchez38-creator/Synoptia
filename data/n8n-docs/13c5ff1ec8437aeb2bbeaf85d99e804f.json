@@ -1,0 +1,21 @@
+{
+  "title": "Code in n8n",
+  "url": "https://docs.n8n.io/code/index",
+  "content": "---\ntitle: Code in n8n Documentation and Guides\ndescription: Access documentation and guides on using code and expressions in n8n and other developer resources.\ncontentType: overview\nhide:\n  - feedback\n  - kapaButton\n---\n\n Code in n8n\n\nn8n is a low-code tool. This means you can do a lot without code, then add code when needed.\n\n Code in your workflows\n\nThere are two places in your workflows where you can use code:\n\n<div class=\"grid-cards-vertical cards\" markdown>\n\n- Expressions\n\n\tUse expressions to transform data in your nodes. You can use JavaScript in expressions, as well as n8n's Built-in methods and variables and Data transformation functions.\n\n\t:octicons-arrow-right-24: Expressions\n\n- Code node\n\n\tUse the Code node to add JavaScript or Python to your workflow.\n\n\t:octicons-arrow-right-24: Code node\n\n</div>\n\n Other technical resources\n\nThese are features that are relevant to technical users.\n\n Technical nodes\n\nn8n provides core nodes, which simplify adding key functionality such as API requests, webhooks, scheduling, and file handling.\n\n<div class=\"grid-cards-vertical cards\" markdown>\n\n- Write a backend\n\n\tThe HTTP Request, Webhook, and Code nodes help you make API calls, respond to webhooks, and write any JavaScript in your workflow.\n\n\tUse this do things like Create an API endpoint.\n\n\t:octicons-arrow-right-24: Core nodes\n\n- Represent complex logic\n\n\tYou can build complex flows, using nodes like If, Switch, and Merge nodes. \n\n\t:octicons-arrow-right-24: Flow logic\n\n</div>\n\n Other developer resources\n\n<div class=\"grid-cards-vertical cards\" markdown>\n\n- The n8n API\n\n\tn8n provides an API, where you can programmatically perform many of the same tasks as you can in the GUI. There's an n8n API node to access the API in your workflows.\n\n\t:octicons-arrow-right-24: API\n\n- Self-host\n\n\tYou can self-host n8n. This keeps your data on your own infrastructure.\n\n\t:octicons-arrow-right-24: Hosting\n\n- Build your own nodes\n\n\tYou can build custom nodes, install them on your n8n instance, and publish them to npm.\n\n\t:octicons-arrow-right-24: Creating nodes\n\n</div>",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "code",
+    "your",
+    "nodes",
+    "octicons",
+    "arrow",
+    "right",
+    "cards",
+    "expressions",
+    "node",
+    "other"
+  ],
+  "fetchedAt": "2025-10-07T16:15:51.134Z",
+  "hash": "13c5ff1ec8437aeb2bbeaf85d99e804f"
+}

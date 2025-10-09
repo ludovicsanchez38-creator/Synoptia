@@ -1,0 +1,21 @@
+{
+  "title": "Chat Memory Manager node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorymanager",
+  "content": "---\ntitle: Chat Memory Manager node documentation\ndescription: Learn how to use the Chat Memory Manager node in n8n. Follow technical documentation to integrate Chat Memory Manager node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Chat Memory Manager node\n\nThe Chat Memory Manager node manages chat message memories within your workflows. Use this node to load, insert, and delete chat messages in an in-memory vector store.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-sub-nodes/chat-memory-manager-purpose.md\"\n\nOn this page, you'll find a list of operations that the Chat Memory Manager node supports, along with links to more resources.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Operation Mode: Choose between Get Many Messages, Insert Messages, and Delete Messages operations.\n Insert Mode: Available in Insert Messages mode. Choose from:\n     Insert Messages: Insert messages alongside existing messages.\n     Override All Messages: Replace current memory.\n Delete Mode: available in Delete Messages mode. Choose from:\n     Last N: Delete the last N messages.\n     All Messages: Delete messages from memory.\n Chat Messages: available in Insert Messages mode. Define the chat messages to insert into the memory, including:\n\t Type Name or ID: Set the message type. Select one of:\n\t\t AI: Use this for messages from the AI.\n\t\t System: Add a message containing instructions for the AI.\n\t\t User: Use this for messages from the user. This message type is sometimes called the 'human' message in other AI tools and guides.\n\t Message: Enter the message contents.\n\t Hide Message in Chat: Select whether n8n should display the message to the user in the chat UI (turned off) or not (turned on).\n Messages Count: Available in Delete Messages mode when you select Last N. Enter the number of latest messages to delete.\n Simplify Output: Available in Get Many Messages mode. Turn on to simplify the output to include only the sender (AI, user, or system) and the text.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'chat-memory-manager') ]]\n\n Related resources\n\nRefer to LangChain's Memory documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.memorymanager.md",
+  "keywords": [
+    "chat",
+    "memory",
+    "manager",
+    "node",
+    "messages",
+    "message",
+    "insert",
+    "delete",
+    "mode",
+    "this"
+  ],
+  "fetchedAt": "2025-10-07T16:15:33.834Z",
+  "hash": "15979742e1636234dc9bc422fb3fe391"
+}

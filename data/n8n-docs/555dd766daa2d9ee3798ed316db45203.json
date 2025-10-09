@@ -1,0 +1,21 @@
+{
+  "title": "Humantic AI node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.humanticai",
+  "content": "---\ntitle: Humantic AI node documentation\ndescription: Learn how to use the Humantic AI node in n8n. Follow technical documentation to integrate Humantic AI node into your workflows.\ncontentType: [integration, reference]\n---\n\n Humantic AI node\n\nUse the Humantic AI node to automate work in Humantic AI, and integrate Humantic AI with other applications. n8n has built-in support for a wide range of Humantic AI features, including creating, retrieving, and updating profiles. \n\nOn this page, you'll find a list of operations the Humantic AI node supports and links to more resources.\n\n/// note | Credentials\nRefer to Humantic AI credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Profile\n     Create a profile\n     Retrieve a profile\n     Update a profile\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'humantic-ai') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.humanticai.md",
+  "keywords": [
+    "humantic",
+    "node",
+    "profile",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:14:35.760Z",
+  "hash": "555dd766daa2d9ee3798ed316db45203"
+}

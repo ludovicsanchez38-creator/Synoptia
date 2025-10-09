@@ -1,0 +1,21 @@
+{
+  "title": "Chargebee Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.chargebeetrigger",
+  "content": "---\ntitle: Chargebee Trigger node documentation\ndescription: Learn how to use the Chargebee Trigger node in n8n. Follow technical documentation to integrate Chargebee Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Chargebee Trigger node\n\nChargebee is a billing platform for subscription based SaaS and eCommerce businesses. Chargebee integrates with payment gateways to let you automate recurring payment collection along with invoicing, taxes, accounting, email notifications, SaaS Metrics and customer management.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Chargebee Trigger integrations page.\n///\n\n Add webhook URL in Chargebee\n\nTo add a Webhook URL in Chargebee:\n\n1. Open your Chargebee dashboard.\n2. Go to Settings > Configure Chargebee.\n4. Scroll down and select Webhooks.\n5. Select the Add Webhook button.\n6. Enter the Webhook Name and the Webhook URL.\n7. Select Create.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.chargebeetrigger.md",
+  "keywords": [
+    "chargebee",
+    "trigger",
+    "node",
+    "webhook",
+    "select",
+    "documentation",
+    "your",
+    "saas",
+    "with",
+    "payment"
+  ],
+  "fetchedAt": "2025-10-07T16:15:06.657Z",
+  "hash": "8ca50fb1aad7e82e1f43cace57679f03"
+}

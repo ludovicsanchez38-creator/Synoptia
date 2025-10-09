@@ -1,0 +1,22 @@
+{
+  "title": "Configure n8n webhooks with reverse proxy",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/webhook-url",
+  "content": "---\ntitle: Configure webhook URLs with reverse proxy\ndescription: Customize n8n webhook URLs for compatibility with reverse proxy setups.\ncontentType: howto\n---\n\n Configure n8n webhooks with reverse proxy\n\nn8n creates the webhook URL by combining N8NPROTOCOL, N8NHOST and N8NPORT. If n8n runs behind a reverse proxy, that won't work. That's because n8n runs internally on port 5678 but the reverse proxy exposes it to the web on port 443.\n\nWhen running n8n behind a reverse proxy, it's important to do the following:\n\n set the webhook URL manually with the WEBHOOKURL environment variable so that n8n can  display it in the editor UI and register the correct webhook URLs with external services.\n Set the N8NPROXYHOPS environment variable to 1.\n On the last proxy on the request path, set the following headers to pass on information about the initial request:\n     X-Forwarded-For\n     X-Forwarded-Host\n     X-Forwarded-Proto\n\nRefer to Environment variables reference for more information on this variable.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "configure",
+    "webhooks",
+    "with",
+    "reverse",
+    "proxy",
+    "webhook",
+    "urls",
+    "that",
+    "environment",
+    "variable",
+    "forwarded"
+  ],
+  "fetchedAt": "2025-10-07T16:15:55.369Z",
+  "hash": "f996cf13175c49318cbe1117f6008dbf"
+}

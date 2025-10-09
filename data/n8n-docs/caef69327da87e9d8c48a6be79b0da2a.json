@@ -1,0 +1,21 @@
+{
+  "title": "Microsoft SharePoint node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.microsoftsharepoint",
+  "content": "---\ntitle: Microsoft SharePoint node documentation\ndescription: Learn how to use the Microsoft SharePoint node in n8n. Follow technical documentation to integrate Microsoft SharePoint node into your workflows.\ncontentType: [integration, reference]\n---\n\n Microsoft SharePoint node\n\nUse the Microsoft SharePoint node to automate work in Microsoft SharePoint and integrate Microsoft SharePoint with other applications. n8n has built-in support for a wide range of Microsoft SharePoint features, which includes downloading, uploading, and updating files, managing items in a list, and getting lists and list items.\n\nOn this page, you'll find a list of operations the Microsoft SharePoint node supports, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n<!-- To avoid warning about \"many\" -->\n<!-- vale from-write-good.Weasel = NO -->\n File:\n\t Download: Download a file.\n\t Update: Update a file.\n\t Upload: Upload an existing file.\n Item:\n\t Create: Create an item in an existing list.\n\t Create or Update: Create a new item, or update the current one if it already exists (upsert).\n\t Delete: Delete an item from a list.\n\t Get: Retrieve an item from a list.\n\t Get Many: Get specific items in a list or list many items.\n\t Update: Update an item in an existing list.\n List:\n\t Get: Retrieve details of a single list.\n\t Get Many: Retrieve a list of lists.\n<!-- vale from-write-good.Weasel = YES -->\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'microsoft-sharepoint') ]]\n\n Related resources\n\n<!-- add a link to the service's documentation. This should usually go direct to the API docs -->\nRefer to Microsoft's SharePoint documentation for more information about the service.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.microsoftsharepoint.md",
+  "keywords": [
+    "microsoft",
+    "sharepoint",
+    "node",
+    "list",
+    "update",
+    "item",
+    "documentation",
+    "items",
+    "many",
+    "from"
+  ],
+  "fetchedAt": "2025-10-07T16:14:41.440Z",
+  "hash": "caef69327da87e9d8c48a6be79b0da2a"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "xAI Grok Chat Model node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatxaigrok",
+  "content": "---\ntitle: xAI Grok Chat Model node documentation\ndescription: Learn how to use the xAI Grok Chat Model node in n8n. Follow technical documentation to integrate xAI Grok Chat Model node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n xAI Grok Chat Model node\n\nUse the xAI Grok Chat Model node to access xAI Grok's large language models for conversational AI and text generation tasks.\n\nOn this page, you'll find the node parameters for the xAI Grok Chat Model node, and links to more resources.\n\n/// note | Credentials \nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Model: Select the model which will generate the completion. n8n dynamically loads available models from the xAI Grok API. Learn more in the xAI Grok model documentation.\n\n Node options\n\n Frequency Penalty: Use this option to control the chances of the model repeating itself. Higher values reduce the chance of the model repeating itself.\n Maximum Number of Tokens: Enter the maximum number of tokens used, which sets the completion length. Most models have a context length of 2048 tokens with the newest models supporting up to 32,768 tokens. \n Response Format: Choose Text or JSON. JSON ensures the model returns valid JSON.\n Presence Penalty: Use this option to control the chances of the model talking about new topics. Higher values increase the chance of the model talking about new topics.\n Sampling Temperature: Use this option to control the randomness of the sampling process. A higher temperature creates more diverse sampling, but increases the risk of hallucinations.\n Timeout: Enter the maximum request time in milliseconds.\n Max Retries: Enter the maximum number of times to retry a request.\n Top P: Use this option to set the probability the completion should use. Use a lower value to ignore less probable options. \n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'xai-grok-chat-model') ]]\n\n Related resources\n\nRefer to xAI Grok's API documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.lmchatxaigrok.md",
+  "keywords": [
+    "grok",
+    "chat",
+    "model",
+    "node",
+    "this",
+    "documentation",
+    "models",
+    "more",
+    "option",
+    "maximum"
+  ],
+  "fetchedAt": "2025-10-07T16:15:32.444Z",
+  "hash": "abc436d49155df75affd4dac06a29596"
+}

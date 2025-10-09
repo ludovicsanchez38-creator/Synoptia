@@ -1,0 +1,21 @@
+{
+  "title": "Recursive Character Text Splitter node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.textsplitterrecursivecharactertextsplitter",
+  "content": "---\ntitle: Recursive Character Text Splitter node documentation\ndescription: Learn how to use the Recursive Character Text Splitter node in n8n. Follow technical documentation to integrate Recursive Character Text Splitter node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Recursive Character Text Splitter node\n\nThe Recursive Character Text Splitter node splits document data recursively to keep all paragraphs, sentences then words together as long as possible.\n\nOn this page, you'll find the node parameters for the Recursive Character Text Splitter node, and links to more resources.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Chunk Size: Enter the number of characters in each chunk.\n Chunk Overlap: Enter how much overlap to have between chunks.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'recursive-character-text-splitter') ]]\n\n Related resources\n\nRefer to LangChain's text splitter documentation and LangChain's recursively split by character documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.textsplitterrecursivecharactertextsplitter.md",
+  "keywords": [
+    "recursive",
+    "character",
+    "text",
+    "splitter",
+    "node",
+    "documentation",
+    "integrations",
+    "chunk",
+    "langchain",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:15:36.751Z",
+  "hash": "11b21c2f19d6ae32b1af7e5cc43c7010"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Mailchimp Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.mailchimptrigger",
+  "content": "---\ntitle: Mailchimp Trigger node documentation\ndescription: Learn how to use the Mailchimp Trigger node in n8n. Follow technical documentation to integrate Mailchimp Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Mailchimp Trigger node\n\nMailchimp is an integrated marketing platform that allows business owners to automate their email campaigns and track user engagement.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Mailchimp Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.mailchimptrigger.md",
+  "keywords": [
+    "mailchimp",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:15.115Z",
+  "hash": "1c6337e933ad8c96af91946f7c873cdb"
+}

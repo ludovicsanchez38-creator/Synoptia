@@ -1,0 +1,21 @@
+{
+  "title": "Mailjet Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.mailjettrigger",
+  "content": "---\ntitle: Mailjet Trigger node documentation\ndescription: Learn how to use the Mailjet Trigger node in n8n. Follow technical documentation to integrate Mailjet Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Mailjet Trigger node\n\nMailjet is a cloud-based email sending and tracking system. The platform allows professionals to send both marketing emails and transactional emails. It includes tools for designing emails, sending massive volumes and tracking these messages.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Mailjet Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.mailjettrigger.md",
+  "keywords": [
+    "mailjet",
+    "trigger",
+    "node",
+    "emails",
+    "documentation",
+    "sending",
+    "tracking",
+    "note",
+    "examples",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:15:15.408Z",
+  "hash": "16ec7d9ec04279a0ca5415fb12eced1e"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Current node input",
+  "url": "https://docs.n8n.io/code/builtin/current-node-input",
+  "content": "---\ndescription: Methods for working with the input of the current node.\ncontentType: reference\nhide:\n  - toc\n---\n\n Current node input\n\nMethods for working with the input of the current node. Some methods and variables aren't available in the Code node.\n\n/// note | Python support\nYou can use Python in the Code node. It isn't available in expressions.\n///\n=== \"JavaScript\"\n\t| Method | Description | Available in Code node? |\n\t| ------ | ----------- | :-------------------------: |\n\t| $binary | Shorthand for $input.item.binary. Incoming binary data from a node | :x: |\n\t| $input.item | The input item of the current node that's being processed. Refer to Item linking for more information on paired items and item linking. | :whitecheckmark: |\n\t| $input.all() | All input items in current node. | :whitecheckmark: |\n\t| $input.first() | First input item in current node. | :whitecheckmark: |\n\t| $input.last() | Last input item in current node. | :whitecheckmark: |\n\t| $input.params | Object containing the query settings of the previous node. This includes data such as the operation it ran, result limits, and so on.  | :whitecheckmark: |\n\t| $json | Shorthand for $input.item.json. Incoming JSON data from a node. Refer to Data structure for information on item structure. | :whitecheckmark: (when running once for each item) |\n\t| $input.context.noItemsLeft | Boolean. Only available when working with the Loop Over Items node. Provides information about what's happening in the node. Use this to determine whether the node is still processing items. | :whitecheckmark: |\n=== \"Python\"\n\t| Method | Description | \n\t| ------ | ----------- | \n\t| input.item | The input item of the current node that's being processed. Refer to Item linking for more information on paired items and item linking. | \n\t| input.all() | All input items in current node. | \n\t| input.first() | First input item in current node. | \n\t| input.last() | Last input item in current node. | \n\t| input.params | Object containing the query settings of the previous node. This includes data such as the operation it ran, result limits, and so on.  | \n\t| json | Shorthand for input.item.json. Incoming JSON data from a node. Refer to Data structure for information on item structure. Available when you set Mode to Run Once for Each Item. | \n\t| input.context.noItemsLeft | Boolean. Only available when working with the Loop Over Items node. Provides information about what's happening in the node. Use this to determine whether the node is still processing items. |",
+  "category": "code",
+  "nodeType": "current",
+  "keywords": [
+    "current",
+    "node",
+    "input",
+    "item",
+    "items",
+    "data",
+    "whitecheckmark",
+    "available",
+    "information",
+    "json"
+  ],
+  "fetchedAt": "2025-10-07T16:15:45.092Z",
+  "hash": "73378ed3767c5f6fa01c4833d2b510e8"
+}

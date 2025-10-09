@@ -1,0 +1,21 @@
+{
+  "title": "Microsoft OneDrive Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.microsoftonedrivetrigger",
+  "content": "---\ntitle: Microsoft OneDrive Trigger node documentation\ndescription: Learn how to use the Microsoft OneDrive Trigger node in n8n. Follow technical documentation to integrate Microsoft OneDrive Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Microsoft OneDrive Trigger node\n\nUse the Microsoft OneDrive Trigger node to respond to events in Microsoft OneDrive and integrate Microsoft OneDrive with other applications. n8n has built-in support for file and folder events in OneDrive.\n\nOn this page, you'll find a list of events the Microsoft OneDrive Trigger node can respond to and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Microsoft OneDrive integrations page.\n///\n\n Events\n\n On File Created\n On File Updated\n On Folder Created\n On Folder Updates\n\n Related resources\n\nn8n provides an app node for Microsoft OneDrive. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to Microsoft's OneDrive API documentation for more information about the service.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.microsoftonedrivetrigger.md",
+  "keywords": [
+    "microsoft",
+    "onedrive",
+    "trigger",
+    "node",
+    "events",
+    "documentation",
+    "file",
+    "folder",
+    "find",
+    "integrate"
+  ],
+  "fetchedAt": "2025-10-07T16:15:15.706Z",
+  "hash": "8a6988ea9ade166051cfe0a081e79d46"
+}

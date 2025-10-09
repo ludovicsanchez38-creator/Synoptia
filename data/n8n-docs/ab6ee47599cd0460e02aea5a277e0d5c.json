@@ -1,0 +1,21 @@
+{
+  "title": "Booleans",
+  "url": "https://docs.n8n.io/code/builtin/data-transformation-functions/booleans",
+  "content": "---\ntitle: Data transformation functions for booleans\ndescription: A reference document listing built-in convenience functions to support data transformation in expressions for booleans.\ncontentType: reference\n---\n\n Booleans\n\nA reference document listing built-in convenience functions to support data transformation in expressions for arrays.\n\n/// note | JavaScript in expressions\nYou can use any JavaScript in expressions. Refer to Expressions for more information.\n///\n[[% import \"macros/data-functions.html\" as dataFunctions %]]\n\n[[% for func in dfboolean %]]\n[[ dataFunctions.dataFunctions(\"boolean\", func.funcName, func.returns, func.description, func.args, func.examples ) ]]\n[[% endfor %]]",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "booleans",
+    "func",
+    "expressions",
+    "data",
+    "functions",
+    "transformation",
+    "reference",
+    "datafunctions",
+    "description",
+    "document"
+  ],
+  "fetchedAt": "2025-10-07T16:15:45.572Z",
+  "hash": "ab6ee47599cd0460e02aea5a277e0d5c"
+}

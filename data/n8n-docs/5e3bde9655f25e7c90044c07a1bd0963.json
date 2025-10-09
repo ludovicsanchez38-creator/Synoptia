@@ -1,0 +1,22 @@
+{
+  "title": "Discord node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.discord/common-issues",
+  "content": "---\ntitle: Discord node common issues \ndescription: Documentation for common issues and questions in the Discord node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: high\n---\n\n Discord node common issues\n\nHere are some common errors and issues with the Discord node and steps to resolve or troubleshoot them.\n\n Add extra fields to embeds\n\nDiscord messages can optionally include embeds, a rich preview component that can include a title, description, image, link, and more.\n\nThe Discord node supports embeds when using the Send operation on the Message resource. Select Add Embeds to set extra fields including Description, Author, Title, URL, and URL Image.\n\nTo add fields that aren't included by default, set Input Method to Raw JSON. From here, add a JSON object to the Value parameter defining the field names and values you want to include.\n\nFor example, to include footer and fields, neither of which are available using the Enter Fields Input Method, you could use a JSON object like this:\n\nYou can learn more about embeds in Using Webhooks and Embeds | Discord.\n\nIf you experience issues when working with embeds with the Discord node, you can use the HTTP Request with your existing Discord credentials to POST to the following URL:\n\nIn the body, include your embed information in the message content like this:\n\n Mention users and channels\n\nTo mention users and channels in Discord messages, you need to format your message according to Discord's message formatting guidelines.\n\nTo mention a user, you need to know the Discord user's user ID. Keep in mind that the user ID is different from the user's display name. Similarly, you need a channel ID to link to a specific channel.\n\nYou can learn how to enable developer mode and copy the user or channel IDs in Discord's documentation on finding User/Server/Message IDs.\n\nOnce you have the user or channel ID, you can format your message with the following syntax:\n\n User: <@USERID>\n Channel: <CHANNELID>\n Role: <@&ROLEID>",
+  "category": "app-nodes",
+  "nodeType": "discord",
+  "keywords": [
+    "discord",
+    "node",
+    "common",
+    "issues",
+    "user",
+    "embeds",
+    "message",
+    "with",
+    "fields",
+    "include",
+    "channel"
+  ],
+  "fetchedAt": "2025-10-07T16:14:24.692Z",
+  "hash": "5e3bde9655f25e7c90044c07a1bd0963"
+}

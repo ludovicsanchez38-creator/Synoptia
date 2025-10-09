@@ -1,0 +1,21 @@
+{
+  "title": "Freshdesk node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.freshdesk",
+  "content": "---\ntitle: Freshdesk node documentation\ndescription: Learn how to use the Freshdesk node in n8n. Follow technical documentation to integrate Freshdesk node into your workflows.\ncontentType: [integration, reference]\n---\n\n Freshdesk node\n\nUse the Freshdesk node to automate work in Freshdesk and integrate Freshdesk with other applications. n8n has built-in support for a wide range of Freshdesk features, including creating, updating, deleting, and getting contacts and tickets.\n\nOn this page, you'll find a list of operations the Freshdesk node supports and links to more resources.\n\n/// note | Credentials\nRefer to Freshdesk credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Contact\n     Create a new contact\n     Delete a contact\n     Get a contact\n     Get all contacts\n     Update a contact\n Ticket\n     Create a new ticket\n     Delete a ticket\n     Get a ticket\n     Get all tickets\n     Update a ticket\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'freshdesk') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.freshdesk.md",
+  "keywords": [
+    "freshdesk",
+    "node",
+    "contact",
+    "ticket",
+    "title",
+    "documentation",
+    "integrate",
+    "contacts",
+    "tickets",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:26.872Z",
+  "hash": "fea71b30021618e6a75ff25d4771f4c6"
+}

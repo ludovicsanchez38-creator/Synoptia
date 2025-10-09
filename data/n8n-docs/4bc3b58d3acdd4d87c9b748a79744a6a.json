@@ -1,0 +1,21 @@
+{
+  "title": "Execute Command node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.executecommand/common-issues",
+  "content": "---\ntitle: Execute Command node common issues \ndescription: Documentation for common issues and questions in the Execute Command node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: high\n---\n\n Execute Command node common issues\n\nHere are some common errors and issues with the Execute Command node and steps to resolve or troubleshoot them.\n\n<!-- vale off -->\n Command failed: &lt;command&gt; /bin/sh: &lt;command&gt;: not found\n<!-- vale on -->\n\nThis error occurs when the shell environment can't find one of the commands in the Command parameter.\n\nTo fix this error, review the following:\n\n Check that the command and its arguments don't have typos in the Command parameter.\n Check that the command is in the PATH of the user running n8n. \n If you are running n8n with Docker, check if the command is available within the container by trying to run it manually. If your command isn't included in the container, you might have to extend the official n8n image with a custom image that includes your command.\n\t If n8n is already running:\n\t\t\n\t If n8n isn't running:\n\t\t\n\n<!-- vale off -->\n Error: stdout maxBuffer length exceeded\n<!-- vale on -->\n\nThis error happens when your command returns more output than the Execute Command node is able to process at one time.\n\nTo avoid this error, reduce output your command produces. Check your command's manual page or documentation to see if there are flags to limit or filter output. If not, you may need to pipe the output to another command to remove unneeded info.",
+  "category": "core-nodes",
+  "nodeType": "execute",
+  "keywords": [
+    "execute",
+    "command",
+    "node",
+    "common",
+    "issues",
+    "error",
+    "your",
+    "vale",
+    "this",
+    "check"
+  ],
+  "fetchedAt": "2025-10-07T16:14:05.387Z",
+  "hash": "4bc3b58d3acdd4d87c9b748a79744a6a"
+}

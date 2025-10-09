@@ -1,0 +1,23 @@
+{
+  "title": "Convenience methods",
+  "url": "https://docs.n8n.io/code/builtin/convenience",
+  "content": "---\ndescription: n8n provides these methods to make it easier to perform common tasks in expressions.\ncontentType: reference\nhide:\n  - toc\n---\n\n Convenience methods\n\nn8n provides these methods to make it easier to perform common tasks in expressions.\n\n/// note | Python support\nYou can use Python in the Code node. It isn't available in expressions.\n///\n\n=== \"JavaScript\"\n\t| Method | Description | Available in Code node? |\n\t| ------ | ----------- | :---------------------: |\n\t| $evaluateExpression(expression: string, itemIndex?: number) | Evaluates a string as an expression. If you don't provide itemIndex, n8n uses the data from item 0 in the Code node. | :whitecheckmark: |\n\t| $ifEmpty(value, defaultValue) | The $ifEmpty() function takes two parameters, tests the first to check if it's empty, then returns either the parameter (if not empty) or the second parameter (if the first is empty). The first parameter is empty if it's:<ul><li>undefined</li><li>null</li><li>An empty string ''</li><li>An array where value.length returns false</li><li>An object where Object.keys(value).length returns false</li></ul> | :whitecheckmark: |\n\t| $if() | The $if() function takes three parameters: a condition, the value to return if true, and the value to return if false. | :x: | \n\t| $max() | Returns the highest of the provided numbers. | :x: |\n\t| $min() | Returns the lowest of the provided numbers. | :x: |\n=== \"Python\"\n\t| Method | Description |\n\t| ------ | ----------- | \n\t| evaluateExpression(expression: string, itemIndex?: number) | Evaluates a string as an expression. If you don't provide itemIndex, n8n uses the data from item 0 in the Code node. |\n\t| ifEmpty(value, defaultValue) | The ifEmpty() function takes two parameters, tests the first to check if it's empty, then returns either the parameter (if not empty) or the second parameter (if the first is empty). The first parameter is empty if it's:<ul><li>undefined</li><li>null</li><li>An empty string ''</li><li>An array where value.length returns false</li><li>An object where Object.keys(value).length returns false</li></ul> | :whitecheckmark: |",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "convenience",
+    "methods",
+    "empty",
+    "value",
+    "returns",
+    "string",
+    "first",
+    "parameter",
+    "false",
+    "code",
+    "node",
+    "expression"
+  ],
+  "fetchedAt": "2025-10-07T16:15:44.959Z",
+  "hash": "8d405943aaffd978816b8b6cdeca156a"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Limit",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.limit",
+  "content": "---\ntitle: Limit\ndescription: Documentation for the Limit node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: high\n---\n\n Limit\n\nUse the Limit node to remove items beyond a defined maximum number. You can choose whether n8n takes the items from the beginning or end of the input data.\n\n Node parameters\n\nConfigure this node using the following parameters.\n\n Max Items\n\nEnter the maximum number of items that n8n should keep. If the input data contains more than this value, n8n removes the items.\n\n Keep\n\nIf the node has to remove items, select where it keeps the input items from:\n\n First Items: Keeps the Max Items number of items from the beginning of the input data.\n Last Items: Keeps the Max Items number of items from the end of the input data.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'limit') ]]\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/core-nodes/data-transformation-actions/data-section-link.md\"",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.limit.md",
+  "keywords": [
+    "limit",
+    "items",
+    "data",
+    "node",
+    "input",
+    "number",
+    "from",
+    "keeps",
+    "title",
+    "examples"
+  ],
+  "fetchedAt": "2025-10-07T16:14:08.277Z",
+  "hash": "e2965d62d0a38969d823ae04f8d81146"
+}

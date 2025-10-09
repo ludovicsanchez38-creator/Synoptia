@@ -1,0 +1,21 @@
+{
+  "title": "ActiveCampaign Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.activecampaigntrigger",
+  "content": "---\ntitle: ActiveCampaign Trigger node documentation\ndescription: Learn how to use the ActiveCampaign Trigger node in n8n. Follow technical documentation to integrate ActiveCampaign Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n ActiveCampaign Trigger node\n\nActiveCampaign is a cloud software platform for small-to-mid-sized business. The company offers software for customer experience automation, which combines the email marketing, marketing automation, sales automation, and CRM categories.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's ActiveCampaign Trigger integrations page.\n///\n\n Events\n\n New ActiveCampaign event\n\n Related resources\n\nn8n provides an app node for ActiveCampaign. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to ActiveCampaign's documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.activecampaigntrigger.md",
+  "keywords": [
+    "activecampaign",
+    "trigger",
+    "node",
+    "documentation",
+    "automation",
+    "workflows",
+    "software",
+    "marketing",
+    "note",
+    "find"
+  ],
+  "fetchedAt": "2025-10-07T16:15:04.732Z",
+  "hash": "5f276503680efd9eb3f61591a5be7e6c"
+}

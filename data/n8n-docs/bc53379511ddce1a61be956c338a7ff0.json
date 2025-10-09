@@ -1,0 +1,21 @@
+{
+  "title": "Enable modules in Code node",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/modules-in-code-node",
+  "content": "---\ntitle: Enable modules in Code node\ndescription: Allow the use of both built-in and external modules within the Code node.\ncontentType: howto\n---\n\n Enable modules in Code node\n\nFor security reasons, the Code node restricts importing modules. It's possible to lift that restriction for built-in and external modules by setting the following environment variables:\n\n- NODEFUNCTIONALLOWBUILTIN: For built-in modules\n- NODEFUNCTIONALLOWEXTERNAL: For external modules sourced from n8n/nodemodules directory. External module support is disabled when an environment variable isn't set.\n\n/// note | If using Task Runners\nIf n8n instance is setup with Task Runners, add the environment variables to the Task Runners instead to the main n8n node.\n///\n\nRefer to Environment variables reference for more information on these variables.",
+  "category": "hosting",
+  "nodeType": "enable",
+  "keywords": [
+    "enable",
+    "modules",
+    "code",
+    "node",
+    "external",
+    "environment",
+    "variables",
+    "built",
+    "task",
+    "runners"
+  ],
+  "fetchedAt": "2025-10-07T16:15:54.767Z",
+  "hash": "bc53379511ddce1a61be956c338a7ff0"
+}

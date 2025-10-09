@@ -1,0 +1,21 @@
+{
+  "title": "Pushover node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.pushover",
+  "content": "---\ntitle: Pushover node documentation\ndescription: Learn how to use the Pushover node in n8n. Follow technical documentation to integrate Pushover node into your workflows.\ncontentType: [integration, reference]\n---\n\n Pushover node\n\nUse the Pushover node to automate work in Pushover, and integrate Pushover with other applications. n8n supports sending push notifications with Pushover.\n\nOn this page, you'll find a list of operations the Pushover node supports and links to more resources.\n\n/// note | Credentials\nRefer to Pushover credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Message\n     Push\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'pushover') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.pushover.md",
+  "keywords": [
+    "pushover",
+    "node",
+    "integrations",
+    "title",
+    "documentation",
+    "integrate",
+    "with",
+    "supports",
+    "push",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:49.141Z",
+  "hash": "f1a4162990d77a4c944cfbf2242d5ab0"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Taiga Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.taigatrigger",
+  "content": "---\ntitle: Taiga Trigger node documentation\ndescription: Learn how to use the Taiga Trigger node in n8n. Follow technical documentation to integrate Taiga Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Taiga Trigger node\n\nTaiga is a free and open-source project management platform for startups, agile developers, and designers.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Taiga Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.taigatrigger.md",
+  "keywords": [
+    "taiga",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:18.890Z",
+  "hash": "1146c882bd713dbd1e81883756d42385"
+}

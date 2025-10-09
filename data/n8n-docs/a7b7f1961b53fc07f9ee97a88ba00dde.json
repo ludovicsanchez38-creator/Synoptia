@@ -1,0 +1,21 @@
+{
+  "title": "Mindee node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mindee",
+  "content": "---\ntitle: Mindee node documentation\ndescription: Learn how to use the Mindee node in n8n. Follow technical documentation to integrate Mindee node into your workflows.\ncontentType: [integration, reference]\n---\n\n Mindee node\n\nUse the Mindee node to automate work in Mindee, and integrate Mindee with other applications. n8n has built-in support for a wide range of Mindee features, including predicting invoices. \n\nOn this page, you'll find a list of operations the Mindee node supports and links to more resources.\n\n/// note | Credentials\nRefer to Mindee credentials for guidance on setting up authentication. \n///\n\n Operations\n\n- Invoice\n    - Predict\n- Receipt\n    - Predict\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'mindee') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.mindee.md",
+  "keywords": [
+    "mindee",
+    "node",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "predict",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:14:42.022Z",
+  "hash": "a7b7f1961b53fc07f9ee97a88ba00dde"
+}

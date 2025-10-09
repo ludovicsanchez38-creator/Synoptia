@@ -1,0 +1,25 @@
+{
+  "title": "Built-in date and time methods",
+  "url": "https://docs.n8n.io/code/builtin/date-time",
+  "content": "---\ndescription: Methods for working with date and time.\ncontentType: reference\nhide:\n  - toc\n---\n\n Built-in date and time methods\n\nMethods for working with date and time. \n\n/// note | Python support\nYou can use Python in the Code node. It isn't available in expressions.\n///\n=== \"JavaScript\"\n\t| Method | Description | Available in Code node? |\n\t| ------ | ----------- | :-------------------------: |\n\t| $now | A Luxon object containing the current timestamp. Equivalent to DateTime.now(). | :whitecheckmark: |\n\t| $today | A Luxon object containing the current timestamp, rounded down to the day. Equivalent to DateTime.now().set({ hour: 0, minute: 0, second: 0, millisecond: 0 }). | :whitecheckmark: |\n=== \"Python\"\n\t| Method | Description | \n\t| ------ | ----------- | \n\t| now | A Luxon object containing the current timestamp. Equivalent to DateTime.now(). | \n\t| today | A Luxon object containing the current timestamp, rounded down to the day. Equivalent to DateTime.now().set({ hour: 0, minute: 0, second: 0, millisecond: 0 }). | \n\n/// warning | Don't mix native JavaScript and Luxon dates\nWhile you can use both native JavaScript dates and Luxon dates in n8n, they aren't directly interoperable. It's best to convert JavaScript dates to Luxon to avoid problems.\n///\n\nn8n provides built-in convenience functions to support data transformation in expressions for dates. Refer to Data transformation functions | Dates for more information.",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "built-in",
+    "date",
+    "time",
+    "methods",
+    "luxon",
+    "dates",
+    "javascript",
+    "object",
+    "containing",
+    "current",
+    "timestamp",
+    "equivalent",
+    "datetime",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:15:46.429Z",
+  "hash": "bfc71fc0525a281e16fb2942016c009b"
+}

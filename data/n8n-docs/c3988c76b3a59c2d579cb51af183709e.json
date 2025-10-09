@@ -1,0 +1,22 @@
+{
+  "title": "HTTP Request node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/common-issues",
+  "content": "---\ntitle: HTTP Request node common issues \ndescription: Documentation for common issues and questions in the HTTP Request node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: critical\n---\n\n HTTP Request node common issues\n\nHere are some common errors and issues with the HTTP Request node and steps to resolve or troubleshoot them.\n\n Bad request - please check your parameters\n\nThis error displays when the node receives a 400 error indicating a bad request. This error most often occurs because:\n\n You're using an invalid name or value in a Query Parameter.\n You're passing array values in a Query Parameter but the array isn't formatted correctly. Try using the Array Format in Query Parameters option.\n\nReview the API documentation for your service to format your query parameters.\n\n<!-- vale off -->\n The resource you are requesting could not be found\n<!-- vale on -->\n\nThis error displays when the endpoint URL you entered is invalid.\n\nThis may be due to a typo in the URL or a deprecated API. Refer to your service's API documentation to verify you have a valid endpoint.\n\n JSON parameter need to be an valid JSON\n\nThis error displays when you've passed a parameter as JSON and it's not formatted as valid JSON.\n\nTo resolve, review the JSON you've entered for these issues:\n\n Test your JSON in a JSON checker or syntax parser to find errors like missing quotation marks, extra or missing commas, incorrectly formatted arrays, extra or missing square brackets or curly brackets, and so on.\n If you've used an Expression in the node, be sure you've wrapped the entire JSON in double curly brackets, for example:\n    \n\n Forbidden - perhaps check your credentials\n\nThis error displays when the node receives a 403 error indicating authentication failed.\n\nTo resolve, review the selected credentials and make sure you can authenticate with them. You may need to:\n\n Update permissions or scopes so that your API key or account can perform the operation you've selected.\n Format your generic credential in a different way.\n Generate a new API key or token with the appropriate permissions or scopes.\n\n 429 - The service is receiving too many requests from you\n\nThis error displays when the node receives a 429 error from the service that you're calling. This often means that you have hit the rate limits of that service. You can find out more on the Handling API rate limits page.\n\nTo resolve the error, you can use one of the built-in options of the HTTP request node:\n\n Batching\n\nUse this option to send requests in batches and introduce a delay between them.\n\n1. In the HTTP Request node, select Add Option > Batching.\n1. Set Items per Batch to the number of input items to include in each request.\n1. Set Batch Interval (ms) to introduce a delay between requests in milliseconds. For example, to send one request to an API per second, set Batch Interval (ms) to 1000.\n\n Retry on Fail\n\nUse this option to retry the node after a failed attempt.\n\n1. In the HTTP Request node, go to Settings and enable Retry on Fail.\n1. Set Max Tries to the maximum number of times n8n should retry the node.\n1. Set Wait Between Tries (ms) to the desired delay in milliseconds between retries. For example, to wait one second before retrying the request again, set Wait Between Tries (ms) to 1000.",
+  "category": "core-nodes",
+  "nodeType": "http",
+  "keywords": [
+    "http",
+    "request",
+    "node",
+    "common",
+    "issues",
+    "this",
+    "error",
+    "your",
+    "json",
+    "displays",
+    "when"
+  ],
+  "fetchedAt": "2025-10-07T16:14:07.542Z",
+  "hash": "c3988c76b3a59c2d579cb51af183709e"
+}

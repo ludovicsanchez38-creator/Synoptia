@@ -1,0 +1,21 @@
+{
+  "title": "Isolate n8n",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/isolation",
+  "content": "---\ntitle: Isolate n8n\ndescription: Prevent your n8n instance from connecting with n8n's servers. \ncontentType: howto\n---\n\n Isolate n8n\n\nBy default, a self-hosted n8n instance sends data to n8n's servers. It notifies users about available updates, workflow templates, and diagnostics. \n\nTo prevent your n8n instance from connecting to n8n's servers, set these environment variables to false: \n\nUnset n8n's diagnostics configuration:\n\nRefer to Environment variables reference for more information on these variables.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "isolate",
+    "instance",
+    "servers",
+    "variables",
+    "prevent",
+    "your",
+    "from",
+    "connecting",
+    "diagnostics",
+    "these"
+  ],
+  "fetchedAt": "2025-10-07T16:15:54.621Z",
+  "hash": "7110d205870b85a934a3975b5d777fbe"
+}

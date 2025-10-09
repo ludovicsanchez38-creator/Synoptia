@@ -1,0 +1,21 @@
+{
+  "title": "Simple Memory node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorybufferwindow/index",
+  "content": "---\ntitle: Simple Memory node documentation\ndescription: Learn how to use the Simple Memory node in n8n. Follow technical documentation to integrate Simple Memory node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Simple Memory node\n\nUse the Simple Memory node to persist chat history in your workflow.\n\nOn this page, you'll find a list of operations the Simple Memory node supports, and links to more resources.\n\n/// warning | Don't use this node if running n8n in queue mode\nIf your n8n instance uses queue mode, this node doesn't work in an active production workflow. This is because n8n can't guarantee that every call to Simple Memory will go to the same worker.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\nConfigure these parameters to configure the node:\n\n Session Key: Enter the key to use to store the memory in the workflow data.\n Context Window Length: Enter the number of previous interactions to consider for context.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'window-buffer-memory') ]]\n\n Related resources\n\nRefer to LangChain's Buffer Window Memory documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common issues.",
+  "category": "cluster-nodes",
+  "nodeType": "simple",
+  "keywords": [
+    "simple",
+    "memory",
+    "node",
+    "this",
+    "documentation",
+    "your",
+    "workflow",
+    "integrations",
+    "window",
+    "common"
+  ],
+  "fetchedAt": "2025-10-07T16:15:33.696Z",
+  "hash": "c4227b6903390ea0ca810521166ed444"
+}

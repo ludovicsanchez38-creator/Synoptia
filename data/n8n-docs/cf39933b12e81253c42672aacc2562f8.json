@@ -1,0 +1,21 @@
+{
+  "title": "Structured Output Parser node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.outputparserstructured/common-issues",
+  "content": "---\ntitle: Structured Output Parser node common issues\ndescription: Documentation for common issues and questions in the Structured Output Parser node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: high\n---\n\n Structured Output Parser node common issues\n\nHere are some common errors and issues with the Structured Output Parser node and steps to resolve or troubleshoot them.\n\n Processing parameters\n\nThe Structured Output Parser node is a sub-node. Sub-nodes behave differently than other nodes when processing multiple items using expressions.\n\nMost nodes, including root nodes, take any number of items as input, process these items, and output the results. You can use expressions to refer to input items, and the node resolves the expression for each item in turn. For example, given an input of five name values, the expression {{ $json.name }} resolves to each name in turn.\n\nIn sub-nodes, the expression always resolves to the first item. For example, given an input of five name values, the expression {{ $json.name }} always resolves to the first name.\n\n Adding the structured output parser node to AI nodes\n\nYou can attach output parser nodes to select AI root nodes.\n\nTo add the Structured Output Parser to a node, enable the Require Specific Output Format option in the AI root node you wish to format. Once the option is enabled, a new output parser attachment point is displayed. Click the output parser attachment point to add the Structured Output Parser node to the node.\n\n Using the structured output parser to format intermediary steps\n\nThe Structured Output Parser node structures the final output from AI agents. It's not intended to structure intermediary output to pass to other AI tools or stages.\n\nTo request a specific format for intermediary output, include the response structure in the System Message for the AI Agent. The message can include either a schema or example response for the agent to use as a template for its results.\n\n Structuring output from agents\n\nStructured output parsing is often not reliable when working with agents.\n\nIf your workflow uses agents, n8n recommends using a separate LLM-chain to receive the data from the agent and parse it. This leads to better, more consistent results than parsing directly in the agent workflow.",
+  "category": "cluster-nodes",
+  "nodeType": "structured",
+  "keywords": [
+    "structured",
+    "output",
+    "parser",
+    "node",
+    "common",
+    "issues",
+    "nodes",
+    "name",
+    "items",
+    "input"
+  ],
+  "fetchedAt": "2025-10-07T16:15:35.533Z",
+  "hash": "cf39933b12e81253c42672aacc2562f8"
+}

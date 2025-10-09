@@ -1,0 +1,21 @@
+{
+  "title": "Respond to Chat node",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.respondtochat",
+  "content": "---\ntitle: Respond to Chat node documentation\ndescription: Learn how to use the Respond to Chat node in n8n. Follow technical documentation to integrate the Respond to Chat node into your workflows.\npriority: critical\n---\n\n Respond to Chat node\n\nUse the Respond to Chat node in correspondence with the Chat Trigger node to send a response into the chat and optionally wait for a response from the user. This allows you to have multiple chat interactions within a single execution and enables human-in-the-loop use cases in the chat.\n\n/// note | Chat Trigger node\nThe Respond to Chat node requires a Chat Trigger node to be present in the workflow, with the Response Mode set to 'Using Response Nodes'.\n///\n\n Node parameters\n\n Message\n\nThe message to send to the chat.\n\n Wait for User Reply\n\nSet whether the workflow execution should wait for a response from the user (enabled) or continue immediately after sending the message (disabled).\n\n Node options\n\n Add Memory Input Connection\n\nChoose whether you want to commit the messages from the Respond to Chat node to a connected memory. Using a shared memory between an agent or chain root node and the Respond to Chat node attaches the same session key to these messages and lets you capture the full message history.\n\n Limit Wait Time\n\nWhen you enable Wait for User Reply, this option decides whether the workflow automatically resumes execution after a specific limit (enabled) or not (disabled).\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common Issues.",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-langchain.respondtochat.md",
+  "keywords": [
+    "respond",
+    "chat",
+    "node",
+    "response",
+    "wait",
+    "user",
+    "message",
+    "trigger",
+    "from",
+    "execution"
+  ],
+  "fetchedAt": "2025-10-07T16:14:14.437Z",
+  "hash": "b078dc4ea37024b26acad074fb79e522"
+}

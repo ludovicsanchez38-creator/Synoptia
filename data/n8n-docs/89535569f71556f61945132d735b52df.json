@@ -1,0 +1,21 @@
+{
+  "title": "Data transformation functions",
+  "url": "https://docs.n8n.io/code/builtin/data-transformation-functions/index",
+  "content": "---\ntitle: Data transformation functions\ndescription: Introduction to data transformation functions for expressions.\ncontentType: overview\n---\n\n Data transformation functions\n\nData transformation functions are helper functions to make data transformation easier in expressions.\n\n/// note | JavaScript in expressions\nYou can use any JavaScript in expressions. Refer to Expressions for more information.\n///\nFor a list of available functions, refer to the page for your data type:\n\n Arrays\n Dates\n Numbers\n Objects\n Strings\n\n Usage\n\nData transformation functions are available in the expressions editor.\n\nThe syntax is:\n\nFor example, to check if a string is an email:",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "data",
+    "transformation",
+    "functions",
+    "expressions",
+    "javascript",
+    "refer",
+    "available",
+    "title",
+    "description",
+    "introduction"
+  ],
+  "fetchedAt": "2025-10-07T16:15:45.867Z",
+  "hash": "89535569f71556f61945132d735b52df"
+}

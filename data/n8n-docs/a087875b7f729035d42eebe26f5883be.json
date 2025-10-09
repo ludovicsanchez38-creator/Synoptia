@@ -1,0 +1,21 @@
+{
+  "title": "Discourse node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.discourse",
+  "content": "---\ntitle: Discourse node documentation\ndescription: Learn how to use the Discourse node in n8n. Follow technical documentation to integrate Discourse node into your workflows.\ncontentType: [integration, reference]\n---\n\n Discourse node\n\nUse the Discourse node to automate work in Discourse, and integrate Discourse with other applications. n8n has built-in support for a wide range of Discourse features, including creating, getting, updating, and removing categories, groups, posts, and users.\n\nOn this page, you'll find a list of operations the Discourse node supports and links to more resources.\n\n/// note | Credentials\nRefer to Discourse credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Category\n     Create a category\n     Get all categories\n     Update a category\n Group\n     Create a group\n     Get a group\n     Get all groups\n     Update a group\n Post\n     Create a post\n     Get a post\n     Get all posts\n     Update a post\n User\n     Create a user\n     Get a user\n     Get all users\n User Group\n     Create a user to group\n     Remove user from group\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'discourse') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.discourse.md",
+  "keywords": [
+    "discourse",
+    "node",
+    "group",
+    "user",
+    "create",
+    "post",
+    "category",
+    "update",
+    "title",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:24.974Z",
+  "hash": "a087875b7f729035d42eebe26f5883be"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "MultiQuery Retriever node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.retrievermultiquery",
+  "content": "---\ntitle: MultiQuery Retriever node documentation\ndescription: Learn how to use the MultiQuery Retriever node in n8n. Follow technical documentation to integrate MultiQuery Retriever node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n MultiQuery Retriever node\n\nThe MultiQuery Retriever node automates the process of prompt tuning by using an LLM to generate multiple queries from different perspectives for a given user input query.\n\nOn this page, you'll find the node parameters for the MultiQuery Retriever node, and links to more resources.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node options\n\n Query Count: Enter how many different versions of the query to generate.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'multiquery-retriever') ]]\n\n Related resources\n\nRefer to LangChain's retriever conceptual documentation and LangChain's multiquery retriever API documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.retrievermultiquery.md",
+  "keywords": [
+    "multiquery",
+    "retriever",
+    "node",
+    "documentation",
+    "query",
+    "integrations",
+    "langchain",
+    "title",
+    "generate",
+    "different"
+  ],
+  "fetchedAt": "2025-10-07T16:15:36.140Z",
+  "hash": "ad8fe620d00b551a431c5a3c16c78bac"
+}

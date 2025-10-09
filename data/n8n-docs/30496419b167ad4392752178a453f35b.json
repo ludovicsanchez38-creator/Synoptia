@@ -1,0 +1,21 @@
+{
+  "title": "Executions environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/executions",
+  "content": "---\ntitle: Executions environment variables\ndescription: Environment variables to configure settings related to workflow executions. \ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Executions environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nThis page lists environment variables to configure workflow execution settings.\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| EXECUTIONSMODE | Enum string: regular, queue | regular | Whether executions should run directly or using queue.<br><br>Refer to Queue mode for more details. |\n| EXECUTIONSTIMEOUT | Number | -1 | Sets a default timeout (in seconds) to all workflows after which n8n stops their execution. Users can override this for individual workflows up to the duration set in EXECUTIONSTIMEOUTMAX. Set EXECUTIONSTIMEOUT to -1 to disable. |\n| EXECUTIONSTIMEOUTMAX | Number | 3600 | The maximum execution time (in seconds) that users can set for an individual workflow. |\n| EXECUTIONSDATASAVEONERROR | Enum string: all, none | all | Whether n8n saves execution data on error. |\n| EXECUTIONSDATASAVEONSUCCESS | Enum string: all, none | all | Whether n8n saves execution data on success. |\n| EXECUTIONSDATASAVEONPROGRESS | Boolean | false | Whether to save progress for each node executed (true) or not (false). |\n| EXECUTIONSDATASAVEMANUALEXECUTIONS | Boolean | true | Whether to save data of executions when started manually. |\n| EXECUTIONSDATAPRUNE | Boolean | true | Whether to delete data of past executions on a rolling basis. |\n| EXECUTIONSDATAMAXAGE | Number | 336 | The execution age (in hours) before it's deleted. |\n| EXECUTIONSDATAPRUNEMAXCOUNT | Number | 10000 | Maximum number of executions to keep in the database. 0 = no limit |\n| EXECUTIONSDATAHARDDELETEBUFFER | Number | 1 | How old (hours) the finished execution data has to be to get hard-deleted. By default, this buffer excludes recent executions as the user may need them while building a workflow. |\n| EXECUTIONSDATAPRUNEHARDDELETEINTERVAL | Number | 15 | How often (minutes) execution data should be hard-deleted. |\n| EXECUTIONSDATAPRUNESOFTDELETEINTERVAL | Number | 60 | How often (minutes) execution data should be soft-deleted. |\n| N8NCONCURRENCYPRODUCTIONLIMIT | Number | -1 | Max production executions allowed to run concurrently, in both regular and scaling modes. -1 to disable in regular mode. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "executions",
+    "environment",
+    "variables",
+    "execution",
+    "number",
+    "data",
+    "whether",
+    "workflow",
+    "regular",
+    "deleted"
+  ],
+  "fetchedAt": "2025-10-07T16:15:56.519Z",
+  "hash": "30496419b167ad4392752178a453f35b"
+}

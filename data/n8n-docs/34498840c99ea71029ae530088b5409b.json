@@ -1,0 +1,21 @@
+{
+  "title": "Security audit",
+  "url": "https://docs.n8n.io/hosting/securing/security-audit",
+  "content": "---\ntitle: Security audit\ndescription: \"Run a security audit on your n8n instance.\"\ncontentType: howto\n---\n\n Security audit\n\nYou can run a security audit on your n8n instance, to detect common security issues.\n\n Run an audit\n\nYou can run an audit using the CLI, the public API, or the n8n node.\n\n CLI\n\nRun n8n audit.\n\n API\n\nMake a POST call to the /audit endpoint. You must authenticate as the instance owner.\n\n n8n node\n\nAdd the n8n node to your workflow. Select Resource > Audit and Operation > Generate.\n\n Report contents\n\nThe audit generates five risk reports:\n\n Credentials\n\nThis report shows:\n\n Credentials not used in a workflow.\n Credentials not used in an active workflow.\n Credentials not use in a recently active workflow.\n\n Database\n\nThis report shows:\n\n Expressions used in Execute Query fields in SQL nodes.\n Expressions used in Query Parameters fields in SQL nodes.\n Unused Query Parameters fields in SQL nodes.\n\n File system\n\nThis report lists nodes that interact with the file system.\n\n Nodes\n\nThis report shows:\n\n Official risky nodes. These are n8n built in nodes. You can use them to fetch and run any code on the host system, which exposes the instance to exploits. You can view the list in n8n code | Audit constants, under OFFICIALRISKYNODETYPES.\n Community nodes.\n Custom nodes.\n\n Instance\n\nThis report shows:\n\n Unprotected webhooks in the instance.\n Missing security settings\n If your instance is outdated.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "security",
+    "audit",
+    "nodes",
+    "instance",
+    "report",
+    "this",
+    "your",
+    "workflow",
+    "credentials",
+    "shows"
+  ],
+  "fetchedAt": "2025-10-07T16:16:03.906Z",
+  "hash": "34498840c99ea71029ae530088b5409b"
+}

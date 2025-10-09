@@ -1,0 +1,21 @@
+{
+  "title": "Strings",
+  "url": "https://docs.n8n.io/code/builtin/data-transformation-functions/strings",
+  "content": "---\ntitle: Data transformation functions for strings\ndescription: A reference document listing built-in convenience functions to support data transformation in expressions for strings.\ncontentType: reference\n---\n\n Strings\n\nA reference document listing built-in convenience functions to support data transformation in expressions for strings.\n\n/// note | JavaScript in expressions\nYou can use any JavaScript in expressions. Refer to Expressions for more information.\n///\n[[% import \"macros/data-functions.html\" as dataFunctions %]]\n\n[[% for func in dfstring %]]\n[[ dataFunctions.dataFunctions(\"string\", func.funcName, func.returns, func.description, func.args, func.examples ) ]]\n[[% endfor %]]",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "strings",
+    "func",
+    "expressions",
+    "data",
+    "functions",
+    "transformation",
+    "reference",
+    "datafunctions",
+    "description",
+    "document"
+  ],
+  "fetchedAt": "2025-10-07T16:15:46.284Z",
+  "hash": "a56f0b7ac27802379a28972321061e96"
+}

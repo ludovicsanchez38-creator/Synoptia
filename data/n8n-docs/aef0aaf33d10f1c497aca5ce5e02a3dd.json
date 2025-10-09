@@ -1,0 +1,21 @@
+{
+  "title": "Google Calendar Calendar operations",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlecalendar/calendar-operations",
+  "content": "---\ntitle: Google Calendar Calendar operations\ndescription: Documentation for the Calendar operations in Google Calendar node in n8n, a workflow automation platform. Includes details of operations and configuration, and links to examples and credentials information.\ncontentType: [integration, reference]\npriority: high\n---\n\n<!-- vale Vale.Repetition = NO -->\n<!-- vale from-write-good.Illusions = NO -->\n Google Calendar Calendar operations\n<!-- vale from-write-good.Illusions = YES -->\n<!-- vale Vale.Repetition = YES -->\n\nUse this operation to check availability in a calendar in Google Calendar. Refer to Google Calendar for more information on the Google Calendar node itself.\n\n Availability\n\nUse this operation to check if a time-slot is available in a calendar.\n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing Google Calendar credentials.\n- Resource: Select Calendar.\n- Operation: Select Availability.\n- Calendar: Choose a calendar you want to check against. Select From list to choose the title from the dropdown list or By ID to enter a calendar ID.\n- Start Time: The start time for the time-slot you want to check. By default, uses an expression evaluating to the current time ({{ $now }}).\n- End Time: The end time for the time-slot you want to check. By default, uses an expression evaluating to an hour from now ({{ $now.plus(1, 'hour') }}).\n\n Options\n\n- Output Format: Select the format for the availability information:\n\t- Availability: Returns if there are already events overlapping with the given time slot or not.\n\t- Booked Slots: Returns the booked slots.\n\t- RAW: Returns the RAW data from the API.\n- Timezone: The timezone used in the response. By default, uses the n8n timezone.\n\nRefer to the Freebusy: query | Google Calendar API documentation for more information.",
+  "category": "app-nodes",
+  "nodeType": null,
+  "keywords": [
+    "google",
+    "calendar",
+    "operations",
+    "time",
+    "vale",
+    "from",
+    "check",
+    "availability",
+    "select",
+    "information"
+  ],
+  "fetchedAt": "2025-10-07T16:14:30.051Z",
+  "hash": "aef0aaf33d10f1c497aca5ce5e02a3dd"
+}

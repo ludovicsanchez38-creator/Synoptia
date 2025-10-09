@@ -1,0 +1,21 @@
+{
+  "title": "npm",
+  "url": "https://docs.n8n.io/hosting/installation/npm",
+  "content": "---\ncontentType: tutorial\n---\n\n npm\n\nnpm is a quick way to get started with n8n on your local machine. You must have Node.js installed. n8n requires a Node.js version between 20.19 and 24.x, inclusive.\n\n--8<-- \"snippets/self-hosting/installation/latest-next-version.md\"\n\n Try n8n with npx\n\nYou can try n8n without installing it using npx.\n\nFrom the terminal, run:\n\nThis command will download everything that's needed to start n8n. You can then access n8n and start building workflows by opening http://localhost:5678.\n\n Install globally with npm\n\nTo install n8n globally, use npm:\n\nTo install or update to a specific version of n8n use the @ syntax to specify the version. For example:\n\nTo install next:\n\nAfter the installation, start n8n by running:\n\n Next steps\n\nTry out n8n using the Quickstarts.\n\n Updating\n\nTo update your n8n instance to the latest version, run:\n\nTo install the next version:\n\n--8<-- \"snippets/self-hosting/installation/tunnel.md\"\n\nStart n8n with --tunnel by running:\n\n Reverting an upgrade\n\nInstall the older version that you want to go back to.\n\nIf the upgrade involved a database migration:\n\n1. Check the feature documentation and release notes to see if there are any manual changes you need to make.\n1. Run n8n db:revert on your current version to roll back the database. If you want to revert more than one database migration, you need to repeat this process.\n\n Windows troubleshooting\n\nIf you are experiencing issues running n8n on Windows, make sure your Node.js environment is correctly set up. Follow Microsoft's guide to Install NodeJS on Windows.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "version",
+    "install",
+    "with",
+    "your",
+    "next",
+    "start",
+    "node",
+    "installation",
+    "running",
+    "database"
+  ],
+  "fetchedAt": "2025-10-07T16:15:59.726Z",
+  "hash": "bcc3d38d4a74b3260206dea06abc1929"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Microsoft Excel 365 node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.microsoftexcel",
+  "content": "---\ntitle: Microsoft Excel 365 node documentation\ndescription: Learn how to use the Microsoft Excel node in n8n. Follow technical documentation to integrate Microsoft Excel node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Microsoft Excel 365 node\n\nUse the Microsoft Excel node to automate work in Microsoft Excel, and integrate Microsoft Excel with other applications. n8n has built-in support for a wide range of Microsoft Excel features, including adding and retrieving lists of table data, and workbooks, as well as getting worksheets. \n\nOn this page, you'll find a list of operations the Microsoft Excel node supports and links to more resources.\n\n/// note | Credentials\nRefer to Microsoft credentials for guidance on setting up authentication.\n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Table\n     Adds rows to the end of the table\n     Retrieve a list of table columns\n     Retrieve a list of table rows\n     Looks for a specific column value and then returns the matching row\n Workbook\n     Adds a new worksheet to the workbook.\n     Get data of all workbooks\n Worksheet\n     Get all worksheets\n     Get worksheet content\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'microsoft-excel') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.microsoftexcel.md",
+  "keywords": [
+    "microsoft",
+    "excel",
+    "node",
+    "table",
+    "list",
+    "integrations",
+    "worksheet",
+    "title",
+    "documentation",
+    "integrate"
+  ],
+  "fetchedAt": "2025-10-07T16:14:40.803Z",
+  "hash": "12619a8f548142a1c955e59e33b16841"
+}

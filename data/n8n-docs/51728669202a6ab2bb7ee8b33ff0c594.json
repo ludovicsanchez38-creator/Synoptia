@@ -1,0 +1,21 @@
+{
+  "title": "Securing n8n",
+  "url": "https://docs.n8n.io/hosting/securing/overview",
+  "content": "---\ntitle: Securing n8n\ncontentType: overview\n---\n\n Securing n8n\n\nSecuring your n8n instance can take several forms.\n\nAt a high level, you can:\n\n Conduct a security audit to identify security risks.\n Set up SSL to enforce secure connections.\n Set up Single Sign-On for user account management.\n Use two-factor authentication (2FA) for your users.\n\nMore granularly, consider blocking or opting out of features or data collection you don't want:\n\n Disable the public API if you aren't using it.\n Opt out of data collection of the anonymous data n8n collects automatically.\n Block certain nodes from being available to your users.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "securing",
+    "your",
+    "data",
+    "security",
+    "users",
+    "collection",
+    "title",
+    "contenttype",
+    "overview",
+    "instance"
+  ],
+  "fetchedAt": "2025-10-07T16:16:03.770Z",
+  "hash": "51728669202a6ab2bb7ee8b33ff0c594"
+}

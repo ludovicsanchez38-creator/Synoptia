@@ -1,0 +1,21 @@
+{
+  "title": "Expressions cookbook",
+  "url": "https://docs.n8n.io/code/cookbook/expressions/index",
+  "content": "---\ndescription: Code examples you can use in expressions.\ncontentType: overview\n---\n\n Expressions cookbook\n\nThis section contains examples and recipes for tasks you can do with expressions.\n\n/// note | Python support\nYou can use Python in the Code node. It isn't available in expressions.\n///\n[[% import \"macros/section-toc.html\" as sectionToc %]]\n\n[[ sectionToc.sectionToc(page) ]]\n\n Related resources\n\n Built-in methods and variables reference\n Expressions",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "expressions",
+    "cookbook",
+    "sectiontoc",
+    "code",
+    "examples",
+    "section",
+    "python",
+    "description",
+    "contenttype",
+    "overview"
+  ],
+  "fetchedAt": "2025-10-07T16:15:50.098Z",
+  "hash": "db36a540f9033c91a5eafba5e669b752"
+}

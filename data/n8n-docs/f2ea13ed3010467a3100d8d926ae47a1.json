@@ -1,0 +1,21 @@
+{
+  "title": "Anthropic node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.anthropic",
+  "content": "---\ntitle: Anthropic node documentation\ndescription: Learn how to use the Anthropic node in n8n. Follow technical documentation to integrate Anthropic node into your workflows.\ncontentType: [integration, reference]\n---\n\n Anthropic node\n\nUse the Anthropic node to automate work in Anthropic and integrate Anthropic with other applications. n8n has built-in support for a wide range of Anthropic features, including analyzing, uploading, getting, and deleting documents, files, and images,  and generating, improving, or templatizing prompts.\n\nOn this page, you'll find a list of operations the Anthropic node supports, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n Document:\n\t Analyze Document: Take in documents and answer questions about them.\n File:\n\t Upload File: Upload a file to the Anthropic API for later user.\n\t Get File Metadata: Get metadata for a file from the Anthropic API.\n\t List Files: List files from the Anthropic API.\n\t Delete File: Delete a file from the Anthropic API.\n Image:\n\t Analyze Image: Take in images and answer questions about them.\n Prompt:\n\t Generate Prompt: Generate a prompt for a model.\n\t Improve Prompt: Improve a prompt for a model.\n\t Templatize Prompt: Templatize a prompt for a model.\n Text:\n\t Message a Model: Create a completion with an Anthropic model.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'anthropic') ]]\n\n Related resources\n\n<!-- add a link to the service's documentation. This should usually go direct to the API docs -->\nRefer to Anthropic's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-langchain.anthropic.md",
+  "keywords": [
+    "anthropic",
+    "node",
+    "file",
+    "prompt",
+    "model",
+    "documentation",
+    "files",
+    "this",
+    "list",
+    "about"
+  ],
+  "fetchedAt": "2025-10-07T16:15:01.568Z",
+  "hash": "f2ea13ed3010467a3100d8d926ae47a1"
+}

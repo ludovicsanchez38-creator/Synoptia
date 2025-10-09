@@ -1,0 +1,21 @@
+{
+  "title": "Execution Data",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.executiondata",
+  "content": "---\ntitle: Execution Data\ndescription: Documentation for the Execution Data node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: high\n---\n\n Execution Data\n\nUse this node to save metadata for workflow executions. You can then search by this data in the Executions list.\n\nYou can retrieve custom execution data during workflow execution using the Code node. Refer to Custom executions data for more information.\n\n--8<-- \"snippets/workflows/executions/custom-execution-data-availability.md\"\n\n Operations\n\n Save Execution Data for Search\n\n Data to Save\n\nAdd a Saved Field for each key/value pair of metadata you'd like to save.\n\n Limitations\n\nThe Execution Data node has the following restrictions when storing execution metadata:\n\n key: limited to 50 characters\n value: limited to 512 characters\n\nIf either the key or value exceed the above limitations, n8n truncates to their maximum length and outputs a log entry.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'execution-data') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.executiondata.md",
+  "keywords": [
+    "execution",
+    "data",
+    "node",
+    "save",
+    "executions",
+    "workflow",
+    "metadata",
+    "custom",
+    "value",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:05.961Z",
+  "hash": "1c35e33d2a5541612d931b6b1580726a"
+}

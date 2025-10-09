@@ -1,0 +1,21 @@
+{
+  "title": "Google Ads node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googleads",
+  "content": "---\ntitle: Google Ads node documentation\ndescription: Learn how to use the Google Ads node in n8n. Follow technical documentation to integrate Google Ads node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Google Ads node\n\nUse the Google Ads node to automate work in Google Ads, and integrate Google Ads with other applications. n8n has built-in support for a wide range of Google Ads features, including getting campaigns. \n\nOn this page, you'll find a list of operations the Google Ads node supports and links to more resources.\n\n/// note | Credentials\nRefer to Google Ads credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Campaign\n   Get all campaigns\n   Get a campaign\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-ads') ]]\n\n Related resources\n\nRefer to Google Ads' documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.googleads.md",
+  "keywords": [
+    "google",
+    "node",
+    "documentation",
+    "title",
+    "integrate",
+    "campaigns",
+    "page",
+    "operations",
+    "more",
+    "resources"
+  ],
+  "fetchedAt": "2025-10-07T16:14:29.081Z",
+  "hash": "5dda0d85340362809c70717e4d61b280"
+}

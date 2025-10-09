@@ -1,0 +1,21 @@
+{
+  "title": "Taiga node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.taiga",
+  "content": "---\ntitle: Taiga node documentation\ndescription: Learn how to use the Taiga node in n8n. Follow technical documentation to integrate Taiga node into your workflows.\ncontentType: [integration, reference]\n---\n\n Taiga node\n\nUse the Taiga node to automate work in Taiga, and integrate Taiga with other applications. n8n has built-in support for a wide range of Taiga features, including creating, updating, deleting, and getting issues. \n\nOn this page, you'll find a list of operations the Taiga node supports and links to more resources.\n\n/// note | Credentials\nRefer to Taiga credentials for guidance on setting up authentication. \n///\n\n Operations\n\n- Issue\n    - Create an issue\n    - Delete an issue\n    - Get an issue\n    - Get all issues\n    - Update an issue\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'taiga') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.taiga.md",
+  "keywords": [
+    "taiga",
+    "node",
+    "issue",
+    "title",
+    "documentation",
+    "integrate",
+    "issues",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:54.814Z",
+  "hash": "149971cb55bd71b2bb996458e5d801ce"
+}

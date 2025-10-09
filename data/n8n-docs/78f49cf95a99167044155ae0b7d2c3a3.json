@@ -1,0 +1,21 @@
+{
+  "title": "OpenRouter Chat Model node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenrouter",
+  "content": "---\ntitle: OpenRouter Chat Model node documentation\ndescription: Learn how to use the OpenRouter Chat Model node in n8n. Follow technical documentation to integrate OpenRouter Chat Model node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n OpenRouter Chat Model node\n\nUse the OpenRouter Chat Model node to use OpenRouter's chat models with conversational agents.\n\nOn this page, you'll find the node parameters for the OpenRouter Chat Model node and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Model\n\nSelect the model to use to generate the completion.\n\nn8n dynamically loads models from OpenRouter and you'll only see the models available to your account.\n\n Node options\n\nUse these options to further refine the node's behavior.\n\n Frequency Penalty\n\nUse this option to control the chances of the model repeating itself. Higher values reduce the chance of the model repeating itself.\n\n Maximum Number of Tokens\n\nEnter the maximum number of tokens used, which sets the completion length.\n\n Response Format\n\nChoose Text or JSON. JSON ensures the model returns valid JSON.\n\n Presence Penalty\n\nUse this option to control the chances of the model talking about new topics. Higher values increase the chance of the model talking about new topics.\n\n Sampling Temperature\n\nUse this option to control the randomness of the sampling process. A higher temperature creates more diverse sampling, but increases the risk of hallucinations.\n\n Timeout\n\nEnter the maximum request time in milliseconds.\n\n Max Retries\n\nEnter the maximum number of times to retry a request.\n\n Top P\n\nUse this option to set the probability the completion should use. Use a lower value to ignore less probable options. \n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'openrouter-chat-model') ]]\n\n Related resources\n\nAs OpenRouter is API-compatible with OpenAI, you can refer to LangChains's OpenAI documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.lmchatopenrouter.md",
+  "keywords": [
+    "openrouter",
+    "chat",
+    "model",
+    "node",
+    "this",
+    "option",
+    "maximum",
+    "documentation",
+    "models",
+    "more"
+  ],
+  "fetchedAt": "2025-10-07T16:15:32.156Z",
+  "hash": "78f49cf95a99167044155ae0b7d2c3a3"
+}

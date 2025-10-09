@@ -1,0 +1,21 @@
+{
+  "title": "Salesmate node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.salesmate",
+  "content": "---\ntitle: Salesmate node documentation\ndescription: Learn how to use the Salesmate node in n8n. Follow technical documentation to integrate Salesmate node into your workflows.\ncontentType: [integration, reference]\n---\n\n Salesmate node\n\nUse the Salesmate node to automate work in Salesmate, and integrate Salesmate with other applications. n8n has built-in support for a wide range of Salesmate features, including creating, updating, deleting, and getting activities, companies, and deals. \n\nOn this page, you'll find a list of operations the Salesmate node supports and links to more resources.\n\n/// note | Credentials\nRefer to Salesmate credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Activity\n     Create an activity\n     Delete an activity\n     Get an activity\n     Get all companies\n     Update an activity\n Company\n     Create a company\n     Delete a company\n     Get a company\n     Get all companies\n     Update a company\n Deal\n     Create a deal\n     Delete a deal\n     Get a deal\n     Get all deals\n     Update a deal\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'salesmate') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.salesmate.md",
+  "keywords": [
+    "salesmate",
+    "node",
+    "activity",
+    "company",
+    "deal",
+    "companies",
+    "create",
+    "delete",
+    "update",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:51.071Z",
+  "hash": "62a7f0ecd70c00a3a972022b2179e090"
+}

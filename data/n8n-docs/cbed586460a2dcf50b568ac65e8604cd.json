@@ -1,0 +1,22 @@
+{
+  "title": "`getWorkflowStaticData(type)`",
+  "url": "https://docs.n8n.io/code/cookbook/builtin/get-workflow-static-data",
+  "content": "---\ntags:\n  - \"static data\"\n  - \"global variables\"\nhide:\n  - tags\ncontentType: reference\n---\n\n getWorkflowStaticData(type)\n\nThis gives access to the static workflow data.\n\n/// note | Experimental feature\n- Static data isn't available when testing workflows. The workflow must be active and called by a trigger or webhook to save static data.\n- This feature may behave unreliably under high-frequency workflow executions.\n///\nYou can save data directly in the workflow. This data should be small.\n\nAs an example: you can save a timestamp of the last item processed from\nan RSS feed or database. It will always return an object. Properties can then read, delete or\nset on that object. When the workflow execution succeeds, n8n checks automatically if the data\nhas changed and saves it, if necessary.\n\nThere are two types of static data, global and node. Global static data is the\nsame in the whole workflow. Every node in the workflow can access it. The node static data is unique to the node. Only the node that set it can retrieve it again.\n\nExample with global data:\n\n=== \"JavaScript\"\n\t\n=== \"Python\"\n\t\n\nExample with node data:\n\n=== \"JavaScript\"\n\t\n=== \"Python\"\n\t\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ workflowDemo(\"https://api.n8n.io/workflows/templates/2538\") ]]",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "`getworkflowstaticdata(type)`",
+    "data",
+    "static",
+    "workflow",
+    "node",
+    "global",
+    "this",
+    "save",
+    "example",
+    "templates",
+    "tags"
+  ],
+  "fetchedAt": "2025-10-07T16:15:48.265Z",
+  "hash": "cbed586460a2dcf50b568ac65e8604cd"
+}

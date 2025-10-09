@@ -1,0 +1,21 @@
+{
+  "title": "Home Assistant node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.homeassistant",
+  "content": "---\ntitle: Home Assistant node documentation\ndescription: Learn how to use the Home Assistant node in n8n. Follow technical documentation to integrate Home Assistant node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Home Assistant node\n\nUse the Home Assistant node to automate work in Home Assistant, and integrate Home Assistant with other applications. n8n has built-in support for a wide range of Home Assistant features, including getting, creating, and checking camera proxies, configurations, logs, services, and templates. \n\nOn this page, you'll find a list of operations the Home Assistant node supports and links to more resources.\n\n/// note | Credentials\nRefer to Home Assistant credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Camera Proxy\n     Get the camera screenshot\n Config\n     Get the configuration\n     Check the configuration\n Event\n     Create an event\n     Get all events\n Log\n     Get a log for a specific entity\n     Get all logs\n Service\n     Call a service within a specific domain\n     Get all services\n State\n     Create a new record, or update the current one if it already exists (upsert)\n     Get a state for a specific entity\n     Get all states\n Template\n     Create a template\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'home-assistant') ]]\n\n Related resources\n\nRefer to Home Assistant's documentation for more information about the service.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.homeassistant.md",
+  "keywords": [
+    "home",
+    "assistant",
+    "node",
+    "documentation",
+    "camera",
+    "templates",
+    "create",
+    "specific",
+    "service",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:35.480Z",
+  "hash": "ef03935e0d1b4e382139959163c28fe5"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Endpoints environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/endpoints",
+  "content": "---\ntitle: Endpoints environment variables\ndescription: Customize the application's API and webhook endpoints with environment variables for your self-hosted n8n instance. \ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Endpoints environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nThis page lists environment variables for customizing endpoints in n8n.\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| N8NPAYLOADSIZEMAX | Number | 16 | The maximum payload size in MiB. |\n| N8NFORMDATAFILESIZEMAX | Number | 200 | Max payload size for files in form-data webhook payloads in MiB. |\n| N8NMETRICS | Boolean | false | Whether to enable the /metrics endpoint. |\n| N8NMETRICSPREFIX | String | n8n | Optional prefix for n8n specific metrics names. |\n| N8NMETRICSINCLUDEDEFAULTMETRICS | Boolean | true | Whether to expose default system and node.js metrics. |\n| N8NMETRICSINCLUDECACHEMETRICS | Boolean | false | Whether to include metrics (true) for cache hits and misses, or not include them (false). |\n| N8NMETRICSINCLUDEMESSAGEEVENTBUSMETRICS | Boolean | false | Whether to include metrics (true) for events, or not include them (false). |\n| N8NMETRICSINCLUDEWORKFLOWIDLABEL | Boolean | false | Whether to include a label for the workflow ID on workflow metrics. |\n| N8NMETRICSINCLUDENODETYPELABEL | Boolean | false | Whether to include a label for the node type on node metrics. |\n| N8NMETRICSINCLUDECREDENTIALTYPELABEL | Boolean | false | Whether to include a label for the credential type on credential metrics. |\n| N8NMETRICSINCLUDEAPIENDPOINTS | Boolean | false | Whether to expose metrics for API endpoints. |\n| N8NMETRICSINCLUDEAPIPATHLABEL | Boolean | false | Whether to include a label for the path of API invocations. |\n| N8NMETRICSINCLUDEAPIMETHODLABEL | Boolean | false | Whether to include a label for the HTTP method (GET, POST, ...) of API invocations. |\n| N8NMETRICSINCLUDEAPISTATUSCODELABEL | Boolean | false | Whether to include a label for the HTTP status code (200, 404, ...) of API invocations. |\n| N8NMETRICSINCLUDEQUEUEMETRICS | Boolean | false | Whether to include metrics for jobs in scaling mode. Not supported in multi-main setup. |\n| N8NMETRICSQUEUEMETRICSINTERVAL | Integer | 20 | How often (in seconds) to update queue metrics. |\n| N8NENDPOINTREST | String | rest | The path used for REST endpoint. |\n| N8NENDPOINTWEBHOOK | String | webhook | The path used for webhook endpoint. |\n| N8NENDPOINTWEBHOOKTEST | String | webhook-test | The path used for test-webhook endpoint. |\n| N8NENDPOINTWEBHOOKWAIT | String | webhook-waiting | The path used for waiting-webhook endpoint. |\n| WEBHOOKURL | String | - | Used to manually provide the Webhook URL when running n8n behind a reverse proxy. See here for more details. |\n| N8NDISABLEPRODUCTIONMAINPROCESS | Boolean | false | Disable production webhooks from main process. This helps ensure no HTTP traffic load to main process when using webhook-specific processes. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "endpoints",
+    "environment",
+    "variables",
+    "false",
+    "boolean",
+    "whether",
+    "metrics",
+    "include",
+    "webhook",
+    "string",
+    "label"
+  ],
+  "fetchedAt": "2025-10-07T16:15:56.383Z",
+  "hash": "9a32ad98540e54519e5f9fbb8ba56a22"
+}

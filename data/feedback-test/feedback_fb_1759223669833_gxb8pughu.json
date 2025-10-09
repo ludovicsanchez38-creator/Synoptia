@@ -1,0 +1,22 @@
+{
+  "id": "fb_1759223669833_gxb8pughu",
+  "sessionId": "session_003",
+  "workflowId": null,
+  "rating": 1,
+  "successful": false,
+  "comment": "Wrong node types used",
+  "issues": [
+    "wrong_node_types",
+    "missing_credentials"
+  ],
+  "request": "Setup database sync workflow",
+  "workflow": null,
+  "metadata": {
+    "intent": "create",
+    "model": "gpt-4o",
+    "ragUsed": true,
+    "documentsUsed": 3
+  },
+  "timestamp": 1759223669833,
+  "analyzed": false
+}

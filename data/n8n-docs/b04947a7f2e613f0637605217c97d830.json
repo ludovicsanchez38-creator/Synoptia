@@ -1,0 +1,22 @@
+{
+  "title": "Auto-fixing Output Parser node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.outputparserautofixing",
+  "content": "---\ntitle: Auto-fixing Output Parser node documentation\ndescription: Learn how to use the Auto-fixing Output Parser node in n8n. Follow technical documentation to integrate Auto-fixing Output Parser node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Auto-fixing Output Parser node\n\nThe Auto-fixing Output Parser node wraps another output parser. If the first one fails, it calls out to another LLM to fix any errors.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'auto-fixing-output-parser') ]]\n\n Related resources\n\nRefer to LangChain's output parser documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.outputparserautofixing.md",
+  "keywords": [
+    "auto-fixing",
+    "output",
+    "parser",
+    "node",
+    "auto",
+    "fixing",
+    "documentation",
+    "integrations",
+    "title",
+    "another",
+    "snippets"
+  ],
+  "fetchedAt": "2025-10-07T16:15:35.017Z",
+  "hash": "b04947a7f2e613f0637605217c97d830"
+}

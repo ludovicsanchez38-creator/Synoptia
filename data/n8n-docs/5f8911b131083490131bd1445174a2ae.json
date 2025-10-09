@@ -1,0 +1,21 @@
+{
+  "title": "External hooks environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/external-hooks",
+  "content": "---\ntitle: External hooks environment variables\ndescription: Environment variables to integrate external hooks into your self-hosted n8n instance. \ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n External hooks environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nYou can define external hooks that n8n executes whenever a specific operation runs. Refer to Backend hooks for examples of available hooks and Hook files for information on file formatting. \n\n| Variable | Type  | Description |\n| :------- | :---- | :---------- |\n| EXTERNALHOOKFILES | String | Files containing backend external hooks. Provide multiple files as a colon-separated list (\":\"). |\n| EXTERNALFRONTENDHOOKSURLS | String | URLs to files containing frontend external hooks. Provide multiple URLs as a colon-separated list (\":\"). |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "external",
+    "hooks",
+    "environment",
+    "variables",
+    "files",
+    "description",
+    "self",
+    "tags",
+    "file",
+    "backend"
+  ],
+  "fetchedAt": "2025-10-07T16:15:56.805Z",
+  "hash": "5f8911b131083490131bd1445174a2ae"
+}

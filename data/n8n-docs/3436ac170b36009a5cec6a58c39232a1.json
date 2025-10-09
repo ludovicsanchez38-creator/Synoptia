@@ -1,0 +1,21 @@
+{
+  "title": "Lemlist Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.lemlisttrigger",
+  "content": "---\ntitle: Lemlist Trigger node documentation\ndescription: Learn how to use the Lemlist Trigger node in n8n. Follow technical documentation to integrate Lemlist Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Lemlist Trigger node\n\nLemlist is an email outreach platform that allows you to automatically generate personalized images and videos and send personalized cold emails.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Lemlist Trigger integrations page.\n///\n\n Events\n\n<!-- vale Vale.Spelling = NO -->\n- \n- Aircall Created\n- Aircall Done\n- Aircall Ended\n- Aircall Interested\n- Aircall Not Interested\n- Api Done\n- Api Failed\n- Api Interested\n- Api Not Interested\n- Attracted\n- Connection Issue\n- Contacted\n- Custom Domain Errors\n- Emails Bounced\n- Emails Clicked\n- Emails Failed\n- Emails Interested\n- Emails Not Interested\n- Emails Opened\n- Emails Replied\n- Emails Send Failed\n- Emails Sent\n- Emails Unsubscribed\n- Hooked\n- Interested\n- Lemwarm Paused\n- LinkedIn Interested\n- LinkedIn Invite Accepted\n- LinkedIn Invite Done\n- LinkedIn Invite Failed\n- LinkedIn Not Interested\n- LinkedIn Replied\n- LinkedIn Send Failed\n- LinkedIn Sent\n- LinkedIn Visit Done\n- LinkedIn Visit Failed\n- LinkedIn Voice Note Done\n- LinkedIn Voice Note Failed\n- Manual Interested\n- Manual Not Interested\n- Not Interested\n- Opportunities Done\n- Paused\n- Resumed\n- Send Limit Reached\n- Skipped\n- Warmed\n<!-- vale Vale.Spelling = YES -->",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.lemlisttrigger.md",
+  "keywords": [
+    "lemlist",
+    "trigger",
+    "node",
+    "interested",
+    "linkedin",
+    "emails",
+    "failed",
+    "done",
+    "aircall",
+    "send"
+  ],
+  "fetchedAt": "2025-10-07T16:15:14.696Z",
+  "hash": "3436ac170b36009a5cec6a58c39232a1"
+}

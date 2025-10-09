@@ -1,0 +1,21 @@
+{
+  "title": "AWS SNS node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.awssns",
+  "content": "---\ntitle: AWS SNS node documentation\ndescription: Learn how to use the AWS SNS node in n8n. Follow technical documentation to integrate AWS SNS node into your workflows.\ncontentType: [integration, reference]\n---\n\n AWS SNS node\n\nUse the AWS SNS node to automate work in AWS SNS, and integrate AWS SNS with other applications. n8n has built-in support for a wide range of AWS SNS features, including publishing messages.\n\nOn this page, you'll find a list of operations the AWS SNS node supports and links to more resources.\n\n/// note | Credentials\nRefer to AWS SNS credentials for guidance on setting up authentication.\n///\n\n Operations\n\n Publish a message to a topic\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'aws-sns') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.awssns.md",
+  "keywords": [
+    "node",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "templates",
+    "integrations",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:14:19.370Z",
+  "hash": "0c708e9309d760e03ea75b560f1bff1d"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Line node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.line",
+  "content": "---\ntitle: Line node documentation\ndescription: Learn how to use the Line node in n8n. Follow technical documentation to integrate Line node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Line node\n\n<!-- vale off -->\n/// warning | Deprecated: End of service\nLINE Notify is discontinuing service as of April 1st 2025 and this node will no longer work after that date. View LINE Notify's end of service announement for more information.\n///\n<!-- vale on -->\n\nUse the Line node to automate work in Line, and integrate Line with other applications. n8n has built-in support for a wide range of Line features, including sending notifications. \n\nOn this page, you'll find a list of operations the Line node supports and links to more resources.\n\n/// note | Credentials\nRefer to Line credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Notification\n     Sends notifications to users or groups\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'line') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.line.md",
+  "keywords": [
+    "line",
+    "node",
+    "service",
+    "integrations",
+    "title",
+    "documentation",
+    "integrate",
+    "vale",
+    "notify",
+    "this"
+  ],
+  "fetchedAt": "2025-10-07T16:14:37.664Z",
+  "hash": "a7f9d3a59291f45d6a60f47fcb0b9603"
+}

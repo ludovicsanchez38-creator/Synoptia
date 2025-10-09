@@ -1,0 +1,21 @@
+{
+  "title": "Bubble node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.bubble",
+  "content": "---\ntitle: Bubble node documentation\ndescription: Learn how to use the Bubble node in n8n. Follow technical documentation to integrate Bubble node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Bubble node\n\nUse the Bubble node to automate work in Bubble, and integrate Bubble with other applications. n8n has built-in support for a wide range of Bubble features, including creating, deleting, getting, and updating objects.\n\nOn this page, you'll find a list of operations the Bubble node supports and links to more resources.\n\n/// note | Credentials\nRefer to Bubble credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Object\n     Create\n     Delete\n     Get\n     Get All\n     Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'bubble') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.bubble.md",
+  "keywords": [
+    "bubble",
+    "node",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "integrations",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:14:21.502Z",
+  "hash": "8f33f241f75c8258e0eb3cac22d1dec3"
+}

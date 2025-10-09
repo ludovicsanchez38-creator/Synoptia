@@ -1,0 +1,21 @@
+{
+  "title": "Zep node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memoryzep",
+  "content": "---\ntitle: Zep node documentation\ndescription: Learn how to use the Zep node in n8n. Follow technical documentation to integrate Zep node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Zep node\n\n/// warning | Deprecated\nThis node is deprecated, and will be removed in a future version. \n///\n\nUse the Zep node to use Zep as a memory server.\n\nOn this page, you'll find a list of operations the Zep node supports, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Session ID: Enter the ID to use to store the memory in the workflow data.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'zep') ]]\n\n Related resources\n\nRefer to LangChain's Zep documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"\n\n Single memory instance\n\n[[% include \"includes/integrations/cluster-nodes/memory-shared.html\" %]]",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.memoryzep.md",
+  "keywords": [
+    "node",
+    "memory",
+    "integrations",
+    "documentation",
+    "this",
+    "cluster",
+    "nodes",
+    "title",
+    "deprecated",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:15:34.745Z",
+  "hash": "6506e30fe744919c5b1280542690cbe7"
+}

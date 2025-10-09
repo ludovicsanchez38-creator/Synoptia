@@ -1,0 +1,22 @@
+{
+  "title": "Database structure",
+  "url": "https://docs.n8n.io/hosting/architecture/database-structure",
+  "content": "---\ndescription: Understand the n8n database structure\ncontentType: explanation\n---\n\n Database structure\n\nThis page describes the purpose of each table in the n8n database.\n\n Database and query technology\n\nBy default, n8n uses SQLite as the database. If you are using another database the structure will be similar, but the data-types may be different depending on the database.\n\nn8n uses TypeORM for queries and migrations.\n\nTo inspect the n8n database, you can use DBeaver, which is an open-source universal database tool.\n\n Tables\n\nThese are the tables n8n creates during setup.\n<!-- vale off -->\n authidentity\n\nStores details of external authentication providers when using SAML.\n\n authprovidersynchistory\n\nStores the history of a SAML connection.\n\n credentialsentity\n\nStores the credentials used to authenticate with integrations.\n\n eventdestinations\n\nContains the destination configurations for Log streaming.\n\n executiondata\n\nContains the workflow at time of running, and the execution data.\n\n executionentity\n\nStores all saved workflow executions. Workflow settings can affect which executions n8n saves.\n\n executionmetadata\n\nStores Custom executions data.\n\n installednodes\n\nLists the community nodes installed in your n8n instance.\n\n installedpackages\n\nDetails of npm community nodes packages installed in your n8n instance. installednodes lists each individual node. installedpackages lists npm packages, which may contain more than one node.\n\n migrations\n\nA log of all database migrations. Read more about Migrations in TypeORM's documentation.\n\n project\n\nLists the projects in your instance.\n\n projectrelation\n\nDescribes the relationship between a user and a project, including the user's role type.\n\n role\n\nNot currently used. For use in future work on custom roles. \n\n settings\n\nRecords custom instance settings. These are settings that you can't control using environment variables. They include:\n\n Whether the instance owner is set up\n Whether the user chose to skip owner and user management setup\n Whether certain types of authentication, including SAML and LDAP, are on\n License key\n\n sharedcredentials\n\nMaps credentials to users.\n\n sharedworkflow\n\nMaps workflows to users.\n\n tagentity\n\nAll workflow tags created in the n8n instance. This table lists the tags. workflowstags records which workflows have which tags.\n\n user\n\nContains user data.\n\n variables\n\nStore variables.\n\n webhookentity\n\nRecords the active webhooks in your n8n instance's workflows. This isn't just webhooks uses in the Webhook node. It includes all active webhooks used by any trigger node.\n\n workflowentity\n\nYour n8n instance's saved workflows.\n\n workflowhistory\n\nStore previous versions of workflows.\n\n workflowstatistics\n\nCounts workflow IDs and their status.\n\n workflowstags\n\nMaps tags to workflows. tagentity contains tag details.\n\n Entity Relationship Diagram (ERD)\n\n!\"n8n ERD\"\n\n<!-- vale on -->",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "database",
+    "structure",
+    "instance",
+    "user",
+    "workflows",
+    "which",
+    "stores",
+    "workflow",
+    "lists",
+    "your",
+    "data"
+  ],
+  "fetchedAt": "2025-10-07T16:15:52.808Z",
+  "hash": "a868703e50448d3f2f198f57ef297e82"
+}

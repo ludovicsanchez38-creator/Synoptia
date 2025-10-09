@@ -1,0 +1,21 @@
+{
+  "title": "Error Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.errortrigger",
+  "content": "---\ntitle: Error Trigger node documentation\ndescription: Learn how to use the Error Trigger node in n8n. Follow technical documentation to integrate Error Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Error Trigger node\n\nYou can use the Error Trigger node to create error workflows. When another linked workflow fails, this node gets details about the failed workflow and the errors, and runs the error workflow.\n\n Usage\n\n--8<-- \"snippets/flow-logic/create-set-error-workflow.md\"\n\nNote the following:\n\n If a workflow uses the Error Trigger node, you don't have to activate the workflow.\n If a workflow contains the Error Trigger node, by default, the workflow uses itself as the error workflow.\n You can't test error workflows when running workflows manually. The Error Trigger only runs when an automatic workflow errors.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'error-trigger') ]]\n\n Related resources\n\nYou can use the Stop And Error node to send custom messages to the Error Trigger.\n\nRead more about Error workflows in n8n workflows. \n\n Error data\n\n--8<-- \"snippets/integrations/builtin/core-nodes/error-trigger/error-data.md\"",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.errortrigger.md",
+  "keywords": [
+    "error",
+    "trigger",
+    "node",
+    "workflow",
+    "workflows",
+    "when",
+    "title",
+    "documentation",
+    "create",
+    "about"
+  ],
+  "fetchedAt": "2025-10-07T16:14:04.780Z",
+  "hash": "092f77e0e99a0ca5d49d3c37fa57f825"
+}

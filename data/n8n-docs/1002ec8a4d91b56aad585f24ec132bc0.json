@@ -1,0 +1,21 @@
+{
+  "title": "FTP",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.ftp",
+  "content": "---\ntitle: FTP\ndescription: Documentation for the FTP node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: medium\n---\n\n FTP\n\nThe FTP node is useful to access and upload files to an FTP or SFTP server.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\nTo connect to an SFTP server, use an SFTP credential. Refer to FTP credentials for more information.\n\n Operations\n\n- Delete a file or folder\n- Download a file\n- List folder content\n- Rename or move a file or folder\n- Upload a file\n\n/// note | Uploading files\nTo attach a file for upload, you'll need to use an extra node such as the Read/Write Files from Disk node or the HTTP Request node to pass the file as a data property.\n///\n\n Delete\n\nThis operation includes one parameter: Path. Enter the remote path that you would like to connect to.\n\n Delete options\n\nThe delete operation adds one new option: Folder. If you turn this option on, the node can delete both folders and files. This configuration also displays one more option:\n\n- Recursive: If you turn this option on and you delete a folder or directory, the node will delete all files and directories within the target directory.\n\n Download\n\nConfigure this operation with these parameters:\n\n Path: Enter the remote path that you would like to connect to.\n Put Output File in Field: Enter the name of the output binary field to put the file in.\n\n/// Note | Concurrent Reads with SFTP\nWhen using SFTP, you can enable concurrent reads. This improves download speeds but may not be supported by all SFTP servers.\n///\n\n List\n\nConfigure this operation with these parameters:\n\n Path: Enter the remote path that you would like to connect to.\n Recursive: Select whether to return an object representing all directories / objects recursively found within the FTP/SFTP server (turned on) or not (turned off).\n\n Rename\n\nConfigure this operation with these parameters:\n\n- Old Path: Enter the existing path of the file you'd like to rename in this field.\n- New Path: Enter the new path for the renamed file in this field.\n\n Rename options\n\nThis operation adds one new option: Create Directories. If you turn this option on, the node will recursively create the destination directory when renaming an existing file or folder.\n\n Upload\n\nConfigure this operation with these parameters:\n\n Path: Enter the remote path that you would like to connect to.\n Binary File: Select whether you'll upload a binary file (turned on) or enter text content to be uploaded (turned off). Other parameters depend on your selection in this field.\n     Input Binary Field: Displayed if you turn on Binary File. Enter the name of the input binary field that contains the file you'll upload in this field.\n     File Content: Displayed if you turn off Binary File Enter the text content of the file you'll upload in this field.\n\n/// note | Uploading files\nTo attach a file for upload, you'll need to use an extra node such as the Read/Write Files from Disk node or the HTTP Request node to pass the file as a data property.\n///\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'ftp') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.ftp.md",
+  "keywords": [
+    "file",
+    "this",
+    "node",
+    "path",
+    "enter",
+    "field",
+    "upload",
+    "files",
+    "sftp",
+    "delete"
+  ],
+  "fetchedAt": "2025-10-07T16:14:06.719Z",
+  "hash": "1002ec8a4d91b56aad585f24ec132bc0"
+}

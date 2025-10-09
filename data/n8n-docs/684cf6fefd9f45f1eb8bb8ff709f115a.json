@@ -1,0 +1,21 @@
+{
+  "title": "CoinGecko node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.coingecko",
+  "content": "---\ntitle: CoinGecko node documentation\ndescription: Learn how to use the CoinGecko node in n8n. Follow technical documentation to integrate CoinGecko node into your workflows.\ncontentType: [integration, reference]\n---\n\n CoinGecko node\n\nUse the CoinGecko node to automate work in CoinGecko, and integrate CoinGecko with other applications. n8n has built-in support for a wide range of CoinGecko features, including getting coins and events.\n\nOn this page, you'll find a list of operations the CoinGecko node supports and links to more resources.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Coin\n     Get a candlestick open-high-low-close chart for the selected currency\n     Get current data for a coin\n     Get all coins\n     Get historical data (name, price, market, stats) at a given date for a coin\n     Get prices and market related data for all trading pairs that match the selected currency\n     Get historical market data include price, market cap, and 24h volume (granularity auto)\n     Get the current price of any cryptocurrencies in any other supported currencies that you need\n     Get coin tickers\n Event\n     Get all events\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'coingecko') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.coingecko.md",
+  "keywords": [
+    "coingecko",
+    "node",
+    "coin",
+    "data",
+    "market",
+    "price",
+    "title",
+    "documentation",
+    "integrate",
+    "other"
+  ],
+  "fetchedAt": "2025-10-07T16:14:22.890Z",
+  "hash": "684cf6fefd9f45f1eb8bb8ff709f115a"
+}

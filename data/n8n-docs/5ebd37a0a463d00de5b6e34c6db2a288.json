@@ -1,0 +1,21 @@
+{
+  "title": "Calculator node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolcalculator",
+  "content": "---\ntitle: Calculator node documentation\ndescription: Learn how to use the Calculator node in n8n. Follow technical documentation to integrate Calculator node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Calculator node\n\nThe Calculator node is a tool that allows an agent to run mathematical calculations.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'calculator') ]]\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/tools-link.md\"\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.toolcalculator.md",
+  "keywords": [
+    "calculator",
+    "node",
+    "integrations",
+    "snippets",
+    "builtin",
+    "cluster",
+    "nodes",
+    "title",
+    "documentation",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:15:37.199Z",
+  "hash": "5ebd37a0a463d00de5b6e34c6db2a288"
+}

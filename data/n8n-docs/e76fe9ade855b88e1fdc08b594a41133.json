@@ -1,0 +1,21 @@
+{
+  "title": "Webflow Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.webflowtrigger",
+  "content": "---\ntitle: Webflow Trigger node documentation\ndescription: Learn how to use the Webflow Trigger node in n8n. Follow technical documentation to integrate Webflow Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Webflow Trigger node\n\nWebflow is an application that allows you to build responsive websites with browser-based visual editing software.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Webflow Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.webflowtrigger.md",
+  "keywords": [
+    "webflow",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:20.660Z",
+  "hash": "e76fe9ade855b88e1fdc08b594a41133"
+}

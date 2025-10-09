@@ -1,0 +1,21 @@
+{
+  "title": "OpenAI File operations",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.openai/file-operations",
+  "content": "---\ntitle: OpenAI File operations \ndescription: Documentation for the File operations in OpenAI node in n8n, a workflow automation platform. Includes details of operations and configuration, and links to examples and credentials information.\ncontentType: [integration, reference]\npriority: critical\n---\n\n OpenAI File operations\n\nUse this operation to create, delete, list, message, or update a file in OpenAI. Refer to OpenAI for more information on the OpenAI node itself.\n\n Delete a File\n\nUse this operation to delete a file from the server.\n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing OpenAI credential.\n- Resource: Select File.\n- Operation: Select Delete a File.\n- File: Enter the ID of the file to use for this operation or select the file name from the dropdown.\n\nRefer to Delete file | OpenAI documentation for more information.\n\n List Files\n\nUse this operation to list files that belong to the user's organization. \n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing OpenAI credential.\n- Resource: Select File.\n- Operation: Select List Files.\n\n Options\n\n- Purpose: Use this to only return files with the given purpose. Use Assistants to return only files related to Assistants and Message operations. Use Fine-Tune for files related to Fine-tuning.\n\nRefer to List files | OpenAI documentation for more information.\n\n Upload a File\n\nUse this operation to upload a file. This can be used across various operations. \n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing OpenAI credential.\n- Resource: Select File.\n- Operation: Select Upload a File.\n- Input Data Field Name: Defaults to data. Enter the name of the binary property which contains the file. The size of individual files can be a maximum of 512 MB or 2 million tokens for Assistants.\n\n Options\n\n- Purpose: Enter the intended purpose of the uploaded file. Use Assistants for files associated with Assistants and Message operations. Use Fine-Tune for Fine-tuning.\n\nRefer to Upload file | OpenAI documentation for more information.\n\n Common issues\n\nFor common errors or issues and suggested resolution steps, refer to Common Issues.",
+  "category": "app-nodes",
+  "nodeType": null,
+  "keywords": [
+    "openai",
+    "file",
+    "operations",
+    "select",
+    "files",
+    "operation",
+    "this",
+    "enter",
+    "credential",
+    "information"
+  ],
+  "fetchedAt": "2025-10-07T16:15:02.536Z",
+  "hash": "3eba4ec8ba3ade3f20e326b260f07827"
+}

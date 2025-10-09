@@ -1,0 +1,21 @@
+{
+  "title": "Facebook Lead Ads Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.facebookleadadstrigger",
+  "content": "---\ntitle: Facebook Lead Ads Trigger node documentation\ndescription: Learn how to use the Facebook Lead Ads Trigger node in n8n. Follow technical documentation to integrate Facebook Lead Ads Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Facebook Lead Ads Trigger node\n\nUse the Facebook Lead Ads Trigger node to respond to events in Facebook Lead Ads and integrate Facebook Lead Ads with other applications. n8n has built-in support for responding to new leads.\n\nOn this page, you'll find a list of events the Facebook Lead Ads Trigger node can respond to, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n/// note | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Facebook Lead Ads Trigger integrations page.\n///\n\n Events\n\n New lead\n\n Related resources\n\nView example workflows and related content on n8n's website.\n\nRefer to Facebook Lead Ads' documentation for details about their API.\n\n Common issues\n\nHere are some common errors and issues with the Facebook Lead Ads Trigger node and steps to resolve or troubleshoot them.\n\n Workflow only works in testing or production\n\nFacebook Lead Ads only allows you to register a single webhook per app. This means that every time you switch from using the testing URL to the production URL (and vice versa), Facebook Lead Ads overwrites the registered webhook URL. \n\nYou may have trouble with this if you try to test a workflow that's also active in production. Facebook Lead Ads will only send events to one of the two webhook URLs, so the other will never receive event notifications.\n\nTo work around this, you can disable your workflow when testing:\n\n/// warning | Halts production traffic\nThis workaround temporarily disables your production workflow for testing. Your workflow will no longer receive production traffic while it's deactivated.\n///\n\n1. Go to your workflow page.\n2. Toggle the Active switch in the top panel to disable the workflow temporarily.\n3. Test your workflow using the test webhook URL.\n4. When you finish testing, toggle the Inactive toggle to enable the workflow again. The production webhook URL should resume working.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.facebookleadadstrigger.md",
+  "keywords": [
+    "facebook",
+    "lead",
+    "trigger",
+    "node",
+    "workflow",
+    "production",
+    "your",
+    "this",
+    "testing",
+    "webhook"
+  ],
+  "fetchedAt": "2025-10-07T16:15:08.156Z",
+  "hash": "57086c30592be7bdf635b01f0c914ef2"
+}

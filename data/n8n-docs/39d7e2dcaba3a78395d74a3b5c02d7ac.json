@@ -1,0 +1,21 @@
+{
+  "title": "Embeddings Ollama node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.embeddingsollama",
+  "content": "---\ntitle: Embeddings Ollama node documentation\ndescription: Learn how to use the Embeddings Ollama node in n8n. Follow technical documentation to integrate Embeddings Ollama node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Embeddings Ollama node\n\nUse the Embeddings Ollama node to generate embeddings for a given text.\n\nOn this page, you'll find the node parameters for the Embeddings Ollama node, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Model: Select the model to use to generate the embedding. Choose from:\n     all-minilm (384 Dimensions)\n     nomic-embed-text (768 Dimensions)\n\nLearn more about available models in Ollama's models documentation.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'embeddings-ollama') ]]\n\n Related resources\n\nRefer to Langchain's Ollama embeddings documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.embeddingsollama.md",
+  "keywords": [
+    "embeddings",
+    "ollama",
+    "node",
+    "documentation",
+    "more",
+    "integrations",
+    "title",
+    "learn",
+    "generate",
+    "text"
+  ],
+  "fetchedAt": "2025-10-07T16:15:29.519Z",
+  "hash": "39d7e2dcaba3a78395d74a3b5c02d7ac"
+}

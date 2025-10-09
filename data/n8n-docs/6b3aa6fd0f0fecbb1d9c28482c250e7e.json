@@ -1,0 +1,21 @@
+{
+  "title": "Structured Output Parser node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.outputparserstructured/index",
+  "content": "---\ntitle: Structured Output Parser node documentation\ndescription: Learn how to use the Structured Output Parser node in n8n. Follow technical documentation to integrate Structured Output Parser node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Structured Output Parser node\n\nUse the Structured Output Parser node to return fields based on a JSON Schema.\n\nOn this page, you'll find the node parameters for the Structured Output Parser node, and links to more resources.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Schema Type: Define the output structure and validation. You have two options to provide the schema:\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-sub-nodes/schema-type-structuring.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'structured-output-parser') ]]\n\n Related resources\n\nRefer to LangChain's output parser documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common issues.",
+  "category": "cluster-nodes",
+  "nodeType": "structured",
+  "keywords": [
+    "structured",
+    "output",
+    "parser",
+    "node",
+    "schema",
+    "integrations",
+    "nodes",
+    "documentation",
+    "snippets",
+    "builtin"
+  ],
+  "fetchedAt": "2025-10-07T16:15:35.684Z",
+  "hash": "6b3aa6fd0f0fecbb1d9c28482c250e7e"
+}

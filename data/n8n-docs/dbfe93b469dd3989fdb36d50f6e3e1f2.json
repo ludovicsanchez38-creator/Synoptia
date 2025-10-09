@@ -1,0 +1,22 @@
+{
+  "title": "No Operation, do nothing",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.noop",
+  "content": "---\ntitle: No Operation, do nothing\ndescription: Documentation for the No Operation, do nothing node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: high\n---\n\n No Operation, do nothing\n\nUse the No Operation, do nothing node when you don't want to perform any operations. The purpose of this node is to make the workflow easier to read and understand where the flow of data stops. This can help others visually get a better understanding of the workflow.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'no-operation-do-nothing') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.noop.md",
+  "keywords": [
+    "operation,",
+    "nothing",
+    "operation",
+    "node",
+    "workflow",
+    "title",
+    "examples",
+    "this",
+    "templates",
+    "description",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:09.243Z",
+  "hash": "dbfe93b469dd3989fdb36d50f6e3e1f2"
+}

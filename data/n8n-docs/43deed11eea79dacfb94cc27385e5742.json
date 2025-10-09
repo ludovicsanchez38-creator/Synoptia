@@ -1,0 +1,21 @@
+{
+  "title": "Tapfiliate node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.tapfiliate",
+  "content": "---\ntitle: Tapfiliate node documentation\ndescription: Learn how to use the Tapfiliate node in n8n. Follow technical documentation to integrate Tapfiliate node into your workflows.\ncontentType: [integration, reference]\n---\n\n Tapfiliate node\n\nUse the Tapfiliate node to automate work in Tapfiliate, and integrate Tapfiliate with other applications. n8n has built-in support for a wide range of Tapfiliate features, including creating and deleting affiliates, and adding affiliate metadata. \n\nOn this page, you'll find a list of operations the Tapfiliate node supports and links to more resources.\n\n/// note | Credentials\nRefer to Tapfiliate credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Affiliate\n     Create an affiliate\n     Delete an affiliate\n     Get an affiliate by ID\n     Get all affiliates\n Affiliate Metadata\n     Add metadata to affiliate\n     Remove metadata from affiliate\n     Update affiliate's metadata\n Program Affiliate\n     Add affiliate to program\n     Approve an affiliate for a program\n     Disapprove an affiliate\n     Get an affiliate in a program\n     Get all affiliates in program\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'tapfiliate') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.tapfiliate.md",
+  "keywords": [
+    "tapfiliate",
+    "node",
+    "affiliate",
+    "metadata",
+    "program",
+    "affiliates",
+    "title",
+    "documentation",
+    "integrate",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:54.952Z",
+  "hash": "43deed11eea79dacfb94cc27385e5742"
+}

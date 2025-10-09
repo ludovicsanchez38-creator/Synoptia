@@ -1,0 +1,21 @@
+{
+  "title": "Action Network node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.actionnetwork",
+  "content": "---\ntitle: Action Network node documentation\ndescription: Learn how to use the Action Network node in n8n. Follow technical documentation to integrate Action Network node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Action Network node\n\nUse the Action Network node to automate work in Action Network, and integrate Action Network with other applications. n8n has built-in support for a wide range of Action Network features, including creating, updating, and deleting events, people, tags, and signatures. \n\nOn this page, you'll find a list of operations the Action Network node supports, and links to more resources.\n\n/// note | Credentials\nRefer to Action Network credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Attendance\n     Create\n     Get\n     Get All\n Event\n     Create\n     Get\n     Get All\n Person\n     Create\n     Get\n     Get All\n     Update\n Person Tag\n     Add\n     Remove\n Petition\n     Create\n     Get\n     Get All\n     Update\n Signature\n     Create\n     Get\n     Get All\n     Update\n Tag\n     Create\n     Get\n     Get All\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'action-network') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.actionnetwork.md",
+  "keywords": [
+    "action",
+    "network",
+    "node",
+    "create",
+    "integrations",
+    "update",
+    "title",
+    "documentation",
+    "integrate",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:16.030Z",
+  "hash": "96d5bf05f6ee98b6caf9e3fa5fbe220c"
+}

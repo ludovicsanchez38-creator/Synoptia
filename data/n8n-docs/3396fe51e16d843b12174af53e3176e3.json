@@ -1,0 +1,21 @@
+{
+  "title": "Invoice Ninja node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.invoiceninja",
+  "content": "---\ntitle: Invoice Ninja node documentation\ndescription: Learn how to use the Invoice Ninja node in n8n. Follow technical documentation to integrate Invoice Ninja node into your workflows.\ncontentType: [integration, reference]\n---\n\n Invoice Ninja node\n\nUse the Invoice Ninja node to automate work in Invoice Ninja, and integrate Invoice Ninja with other applications. n8n has built-in support for a wide range of Invoice Ninja features, including creating, updating, deleting, and getting clients, expense, invoice, payments and quotes. \n\nOn this page, you'll find a list of operations the Invoice Ninja node supports and links to more resources.\n\n/// note | Credentials\nRefer to Invoice Ninja credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Client\n     Create a new client\n     Delete a client\n     Get data of a client\n     Get data of all clients\n Expense\n     Create a new expense\n     Delete an expense\n     Get data of an expense\n     Get data of all expenses\n Invoice\n     Create a new invoice\n     Delete a invoice\n     Email an invoice\n     Get data of a invoice\n     Get data of all invoices\n Payment\n     Create a new payment\n     Delete a payment\n     Get data of a payment\n     Get data of all payments\n Quote\n     Create a new quote\n     Delete a quote\n     Email an quote\n     Get data of a quote\n     Get data of all quotes\n Task\n     Create a new task\n     Delete a task\n     Get data of a task\n     Get data of all tasks\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'invoice-ninja') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.invoiceninja.md",
+  "keywords": [
+    "invoice",
+    "ninja",
+    "node",
+    "data",
+    "create",
+    "delete",
+    "expense",
+    "quote",
+    "client",
+    "payment"
+  ],
+  "fetchedAt": "2025-10-07T16:14:36.203Z",
+  "hash": "3396fe51e16d843b12174af53e3176e3"
+}

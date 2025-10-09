@@ -1,0 +1,21 @@
+{
+  "title": "Item List Output Parser node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.outputparseritemlist",
+  "content": "---\ntitle: Item List Output Parser node documentation\ndescription: Learn how to use the Item List Output Parser node in n8n. Follow technical documentation to integrate Item List Output Parser node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Item List Output Parser node\n\nUse the Item List Output Parser node to return a list of items with a specific length and separator.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node options\n\n Number of Items: Enter the maximum items to return. Set to -1 for unlimited items.\n Separator: Select the separator used to split the results into separate items. Defaults to a new line.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'item-list-output-parser') ]]\n\n Related resources\n\nRefer to LangChain's output parser documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.outputparseritemlist.md",
+  "keywords": [
+    "item",
+    "list",
+    "output",
+    "parser",
+    "node",
+    "items",
+    "documentation",
+    "separator",
+    "integrations",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:15:35.168Z",
+  "hash": "e222a459a97ddc3b2562bcdbbed114c8"
+}

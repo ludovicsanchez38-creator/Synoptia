@@ -1,0 +1,21 @@
+{
+  "title": "Cohere Model node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmcohere",
+  "content": "---\ntitle: Cohere Model node documentation\ndescription: Learn how to use the Cohere Model node in n8n. Follow technical documentation to integrate Cohere Model node into your workflows.\ncontentType: [integration, reference]\n---\n\n Cohere Model node\n\nUse the Cohere Model node to use Cohere's models.\n\nOn this page, you'll find the node parameters for the Cohere Model node, and links to more resources.\n\nThis node lacks tools support, so it won't work with the AI Agent node. Instead, connect it with the Basic LLM Chain node.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node Options\n\n Maximum Number of Tokens: Enter the maximum number of tokens used, which sets the completion length.\n Sampling Temperature: Use this option to control the randomness of the sampling process. A higher temperature creates more diverse sampling, but increases the risk of hallucinations.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'cohere-model') ]]\n\n Related resources\n\nRefer to LangChains's Cohere documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.lmcohere.md",
+  "keywords": [
+    "cohere",
+    "model",
+    "node",
+    "this",
+    "documentation",
+    "more",
+    "integrations",
+    "sampling",
+    "title",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:15:32.586Z",
+  "hash": "4c7380b90befed14bfebf9007bf22021"
+}

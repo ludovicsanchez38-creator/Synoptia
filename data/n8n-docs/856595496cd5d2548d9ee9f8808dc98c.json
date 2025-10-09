@@ -1,0 +1,21 @@
+{
+  "title": "Credentials environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/credentials",
+  "content": "---\ntitle: Credentials environment variables\ndescription: Manage default credentials and override them through environment variables your self-hosted n8n instance.\ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Credentials environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nEnable credential overwrites using the following environment variables. Refer to Credential overwrites for details.\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| CREDENTIALSOVERWRITEDATA<br>/FILE |  | - | Overwrites for credentials. |\n| CREDENTIALSOVERWRITEENDPOINT | String | - | The API endpoint to fetch credentials. |\n| CREDENTIALSDEFAULTNAME | String | My credentials | The default name for credentials. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "credentials",
+    "environment",
+    "variables",
+    "default",
+    "overwrites",
+    "description",
+    "self",
+    "tags",
+    "file",
+    "credential"
+  ],
+  "fetchedAt": "2025-10-07T16:15:55.972Z",
+  "hash": "856595496cd5d2548d9ee9f8808dc98c"
+}

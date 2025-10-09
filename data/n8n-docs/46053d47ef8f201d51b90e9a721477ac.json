@@ -1,0 +1,21 @@
+{
+  "title": "Grist node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.grist",
+  "content": "---\ntitle: Grist node documentation\ndescription: Learn how to use the Grist node in n8n. Follow technical documentation to integrate Grist node into your workflows.\ncontentType: [integration, reference]\n---\n\n Grist node\n\nUse the Grist node to automate work in Grist, and integrate Grist with other applications. n8n has built-in support for a wide range of Grist features, including creating, updating, deleting, and reading rows in a table. \n\nOn this page, you'll find a list of operations the Grist node supports and links to more resources.\n\n/// note | Credentials\nRefer to Grist credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Create rows in a table\n Delete rows from a table\n Read rows from a table\n Update rows in a table\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'grist') ]]\n\n Get the Row ID\n\nTo update or delete a particular record, you need the Row ID. There are two ways to get the Row ID:\n\nCreate a Row ID column in Grist\n\nCreate a new column in your Grist table with the formula $id.\n\nUse the Get All operation\n\nThe Get All operation returns the Row ID of each record along with the fields.\n \nYou can get it with the expression {{$node[\"GristNodeName\"].json[\"id\"]}}.\n\n Filter records when using the Get All operation\n\n- Select Add Option and select Filter from the dropdown list.\n- You can add filters for any number of columns. The result will only include records which match all the columns.\n- For each column, you can enter any number of values separated by commas. The result will include records which match any of the values for that column.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.grist.md",
+  "keywords": [
+    "grist",
+    "node",
+    "table",
+    "rows",
+    "with",
+    "column",
+    "create",
+    "from",
+    "operation",
+    "records"
+  ],
+  "fetchedAt": "2025-10-07T16:14:34.403Z",
+  "hash": "46053d47ef8f201d51b90e9a721477ac"
+}

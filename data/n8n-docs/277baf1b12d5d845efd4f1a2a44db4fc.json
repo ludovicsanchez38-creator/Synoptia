@@ -1,0 +1,21 @@
+{
+  "title": "Jira Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.jiratrigger",
+  "content": "---\ntitle: Jira Trigger node documentation\ndescription: Learn how to use the Jira Trigger node in n8n. Follow technical documentation to integrate Jira Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Jira Trigger node\n\nJira is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Jira trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.jiratrigger.md",
+  "keywords": [
+    "jira",
+    "trigger",
+    "node",
+    "documentation",
+    "tracking",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:15:13.945Z",
+  "hash": "277baf1b12d5d845efd4f1a2a44db4fc"
+}

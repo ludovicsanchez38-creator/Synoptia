@@ -1,0 +1,21 @@
+{
+  "title": "Specify user folder path",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/user-folder",
+  "content": "---\ntitle: Specify user folder path\ndescription: Specify location of the folder that stores user-specific data. \ncontentType: howto\n---\n\n Specify user folder path\n\nn8n saves user-specific data like the encryption key, SQLite database file, and\nthe ID of the tunnel (if used) in the subfolder .n8n of the user who started n8n. It's possible to overwrite the user-folder using an environment variable.\n\nRefer to Environment variables reference for more information on this variable.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "specify",
+    "user",
+    "folder",
+    "path",
+    "specific",
+    "data",
+    "environment",
+    "variable",
+    "title",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:15:55.222Z",
+  "hash": "be83b4dcd783231d465f97841b829b1b"
+}

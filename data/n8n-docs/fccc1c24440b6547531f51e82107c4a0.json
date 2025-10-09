@@ -1,0 +1,21 @@
+{
+  "title": "Okta node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.okta",
+  "content": "---\ntitle: Okta node documentation\ndescription: Learn how to use the Okta node in n8n. Follow technical documentation to integrate Okta node into your workflows.\ncontentType: [integration, reference]\n---\n\n Okta node\n\nUse the Okta node to automate work in Okta and integrate Okta with other applications. n8n has built-in support for a wide range of Okta features, which includes creating, updating, and deleting users.\n\nOn this page, you'll find a list of operations the Okta node supports, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n- User\n    - Create a new user\n    - Delete an existing user\n    - Get details of a user\n    - Get many users\n    - Update an existing user\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, okta) ]]\n\n Related resources\n\n<!-- add a link to the service's documentation. This should usually go direct to the API docs -->\nRefer to Okta's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.okta.md",
+  "keywords": [
+    "okta",
+    "node",
+    "user",
+    "documentation",
+    "this",
+    "title",
+    "integrate",
+    "users",
+    "page",
+    "find"
+  ],
+  "fetchedAt": "2025-10-07T16:14:45.782Z",
+  "hash": "fccc1c24440b6547531f51e82107c4a0"
+}

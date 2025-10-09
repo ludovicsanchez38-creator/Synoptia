@@ -1,0 +1,21 @@
+{
+  "title": "Emelia Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.emeliatrigger",
+  "content": "---\ntitle: Emelia Trigger node documentation\ndescription: Learn how to use the Emelia Trigger node in n8n. Follow technical documentation to integrate Emelia Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Emelia Trigger node\n\nEmelia is a cold-mailing tool.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Emelia Trigger integrations page.\n///\n\n Events\n\n- Email Bounced\n- Email Opened\n- Email Replied\n- Email Sent\n- Link Clicked\n- Unsubscribed Contact",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.emeliatrigger.md",
+  "keywords": [
+    "emelia",
+    "trigger",
+    "node",
+    "email",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:15:07.876Z",
+  "hash": "b219287f09b7835ae56daecf2e2e83e4"
+}

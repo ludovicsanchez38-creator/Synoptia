@@ -1,0 +1,21 @@
+{
+  "title": "Raindrop node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.raindrop",
+  "content": "---\ntitle: Raindrop node documentation\ndescription: Learn how to use the Raindrop node in n8n. Follow technical documentation to integrate Raindrop node into your workflows.\ncontentType: [integration, reference]\n---\n\n Raindrop node\n\nUse the Raindrop node to automate work in Raindrop, and integrate Raindrop with other applications. n8n has built-in support for a wide range of Raindrop features, including getting users, deleting tags, and creating, updating, deleting and getting collections and bookmarks. \n\nOn this page, you'll find a list of operations the Raindrop node supports and links to more resources.\n\n/// note | Credentials\nRefer to Raindrop credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Bookmark\n     Create\n     Delete\n     Get\n     Get All\n     Update\n Collection\n     Create\n     Delete\n     Get\n     Get All\n     Update\n Tag\n     Delete\n     Get All\n User\n     Get\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'raindrop') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.raindrop.md",
+  "keywords": [
+    "raindrop",
+    "node",
+    "delete",
+    "title",
+    "documentation",
+    "integrate",
+    "getting",
+    "deleting",
+    "page",
+    "operations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:50.019Z",
+  "hash": "36d35abc65d82ea28e79fff2f245fb93"
+}

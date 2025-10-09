@@ -1,0 +1,21 @@
+{
+  "title": "Google Business Profile node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlebusinessprofile",
+  "content": "---\ntitle: Google Business Profile node documentation\ndescription: Learn how to use the Google Business Profile node in n8n. Follow technical documentation to integrate Google Business Profile node into your workflows.\ncontentType: [integration, reference]\n---\n\n Google Business Profile node\n\nUse the Google Business Profile node to automate work in Google Business Profile and integrate Google Business Profile with other applications. n8n has built-in support for a wide range of Google Business Profile features, which includes creating, updating, and deleting posts and reviews.\n\nOn this page, you'll find a list of operations the Google Business Profile node supports, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n Post\n\t Create\n\t Delete\n\t Get\n\t Get Many\n\t Update\n Review\n\t Delete Reply\n\t Get\n\t Get Many\n\t Reply\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-business-profile') ]]\n\n Related resources\n\nn8n provides a trigger node for Google Business Profile. You can find the trigger node docs here.\n\nRefer to Google Business Profile's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.googlebusinessprofile.md",
+  "keywords": [
+    "google",
+    "business",
+    "profile",
+    "node",
+    "documentation",
+    "find",
+    "title",
+    "integrate",
+    "this",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:29.683Z",
+  "hash": "7dfc38ca5ea8198bc13953ab7413208f"
+}

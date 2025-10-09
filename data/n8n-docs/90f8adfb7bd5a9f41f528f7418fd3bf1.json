@@ -1,0 +1,21 @@
+{
+  "title": "Export and import workflows",
+  "url": "https://docs.n8n.io/workflows/export-import",
+  "content": "---\ntitle: Export and import workflows\ndescription: Different ways to export and import workflows in n8n.\ncontentType: howto\n---\n\n Export and import workflows\n\nn8n saves workflows in JSON format. You can export your workflows as JSON files or import JSON files into your n8n library. \nYou can export and import workflows in several ways. \n\n--8<-- \"snippets/workflows/sharing-credentials.md\"\n\n Copy-Paste\n\nYou can copy and paste a workflow or parts of it by selecting the nodes you want to copy to the clipboard (Ctrl + c or cmd +c) and pasting it (Ctrl + v or cmd + v) into the Editor UI.\n\nTo select all nodes or a group of nodes, click and drag:\n  !Select a group of nodes\n\n From the Editor UI menu\n\nFrom the top navigation bar, select the three dots in the upper right <img alt=\"Workflow menu icon\" class=\"off-glb\" src=\"/images/common-icons/three-dots-horizontal.png\"> to see the following options: \n\n<figure><img src=\"/images/courses/level-one/chapter-six/l1-c6-import-export-menu.png\" alt=\"Import/Export menu\" style=\"width:100%\"><figcaption align = \"center\"><i>Import & Export workflows menu</i></figcaption></figure>\n\n Download: Downloads your current workflow as a JSON file to your computer.\n Import from URL: Imports workflow JSON from a URL, for example, this workflow JSON file on GitHub. \n Import from File: Imports a workflow as a JSON file from your computer.\n\n From the command line\n\n Export: See the full list of commands  for exporting workflows or credentials.\n Import: See the full list of commands  for importing workflows or credentials.",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "export",
+    "import",
+    "workflows",
+    "json",
+    "from",
+    "workflow",
+    "your",
+    "menu",
+    "nodes",
+    "file"
+  ],
+  "fetchedAt": "2025-10-07T16:15:42.047Z",
+  "hash": "90f8adfb7bd5a9f41f528f7418fd3bf1"
+}

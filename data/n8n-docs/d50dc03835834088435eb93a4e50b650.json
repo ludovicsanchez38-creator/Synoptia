@@ -1,0 +1,21 @@
+{
+  "title": "Set up SSL",
+  "url": "https://docs.n8n.io/hosting/securing/set-up-ssl",
+  "content": "---\ntitle: Set up SSL\ndescription: \"Set up SSL for your self-hosted n8n instance.\"\ncontentType: howto\n---\n\n Set up SSL\n\nThere are two methods to support TLS/SSL in n8n.\n\n Use a reverse proxy (recommended)\n\nUse a reverse proxy like Traefik or a Network Load Balancer (NLB) in front of the n8n instance. This should also take care of certificate renewals.\n\nRefer to Security | Data encryption for more information.\n\n Pass certificates into n8n directly\n\nYou can also choose to pass certificates into n8n directly. To do so, set the N8NSSLCERT and N8NSSLKEY environment variables to point to your generated certificate and key file.\n\nYou'll need to make sure the certificate stays renewed and up to date.\n\nRefer to Deployment environment variables for more information on these variables and Configuration for more information on setting environment variables.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "variables",
+    "certificate",
+    "more",
+    "information",
+    "environment",
+    "your",
+    "instance",
+    "reverse",
+    "proxy",
+    "also"
+  ],
+  "fetchedAt": "2025-10-07T16:16:04.045Z",
+  "hash": "d50dc03835834088435eb93a4e50b650"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Insights environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/insights",
+  "content": "---\ntitle: Insights environment variables\ndescription: Configure insights metrics collection with environment variables for your self-hosted n8n instance. \ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Insights environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nInsights gives instance owners and admins visibility into how workflows perform over time. Refer to Insights for details.\n\n | Variable                                                 | Type   | Default | Description                                                                             |\n |:---------------------------------------------------------|:-------|:--------|:----------------------------------------------------------------------------------------|\n | N8NDISABLEDMODULES                                   | String | -       | Set to insights to disable the feature and metrics collection for an instance.        |\n | N8NINSIGHTSCOMPACTIONBATCHSIZE                     | Number | 500     | The number of raw insights data to compact in a single batch.                           |\n | N8NINSIGHTSCOMPACTIONDAILYTOWEEKLYTHRESHOLDDAYS | Number | 180     | The maximum age (in days) of daily insights data to compact.                            |\n | N8NINSIGHTSCOMPACTIONHOURLYTODAILYTHRESHOLDDAYS | Number | 90      | The maximum age (in days) of hourly insights data to compact.                           |\n | N8NINSIGHTSCOMPACTIONINTERVALMINUTES               | Number | 60      | Interval (in minutes) at which compaction should run.                                   |\n | N8NINSIGHTSFLUSHBATCHSIZE                          | Number | 1000    | The maximum number of insights data to keep in the buffer before flushing.              |\n | N8NINSIGHTSFLUSHINTERVALSECONDS                    | Number | 30      | The interval (in seconds) at which the insights data should be flushed to the database. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "insights",
+    "environment",
+    "variables",
+    "number",
+    "data",
+    "instance",
+    "compact",
+    "maximum",
+    "description",
+    "metrics"
+  ],
+  "fetchedAt": "2025-10-07T16:15:57.243Z",
+  "hash": "edbefdb4a287df6698bac96e4c44e088"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Contextual Compression Retriever node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.retrievercontextualcompression",
+  "content": "---\ntitle: Contextual Compression Retriever node documentation\ndescription: Learn how to use the Contextual Compression Retriever node in n8n. Follow technical documentation to integrate Contextual Compression Retriever node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Contextual Compression Retriever node\n\nThe Contextual Compression Retriever node improves the answers returned from vector store document similarity searches by taking into account the context from the query.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'contextual-compression-retriever') ]]\n\n Related resources\n\nRefer to LangChain's contextual compression retriever documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.retrievercontextualcompression.md",
+  "keywords": [
+    "contextual",
+    "compression",
+    "retriever",
+    "node",
+    "documentation",
+    "integrations",
+    "title",
+    "into",
+    "from",
+    "snippets"
+  ],
+  "fetchedAt": "2025-10-07T16:15:35.978Z",
+  "hash": "5e5633ca52f94196016535d799284661"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "If",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.if",
+  "content": "---\ntitle: If\ndescription: Documentation for the If node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: critical\ntags:\n  - if\n  - if node\n  - If\n  - If node\nhide:\n  - tags\n---\n\n If\n\nUse the If node to split a workflow conditionally based on comparison operations.\n\n Add conditions\n\nCreate comparison Conditions for your If node.\n\n- Use the data type dropdown to select the data type and comparison operation type for your condition. For example, to filter for dates after a particular date, select Date & Time > is after.\n- The fields and values to enter into the condition change based on the data type and comparison you select. Refer to Available data type comparisons for a full list of all comparisons by data type.\n\nSelect Add condition to create more conditions.\n\n Combining conditions\n\nYou can choose to keep data:\n\n When it meets all conditions: Create two or more conditions and select AND in the dropdown between them.\n When it meets any of the conditions: Create two or more conditions and select OR in the dropdown between them.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'if') ]]\n\n Branch execution with If and Merge nodes\n\n--8<-- \"snippets/integrations/builtin/core-nodes/merge/if-merge-branch-execution.md\"\n\n Related resources\n\nRefer to Splitting with conditionals for more information on using conditionals to create complex logic in n8n.\n\nIf you need more than two conditional outputs, use the Switch node.\n\n--8<-- \"snippets/integrations/builtin/core-nodes/data-types.md\"",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.if.md",
+  "keywords": [
+    "conditions",
+    "data",
+    "node",
+    "type",
+    "select",
+    "create",
+    "more",
+    "comparison",
+    "dropdown",
+    "condition"
+  ],
+  "fetchedAt": "2025-10-07T16:14:07.847Z",
+  "hash": "32ccc265b0a595114865b94d4645d861"
+}

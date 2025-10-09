@@ -1,0 +1,21 @@
+{
+  "title": "Rename Keys",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.renamekeys",
+  "content": "---\ntitle: Rename Keys\ndescription: Documentation for the Rename Keys node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Rename Keys\n\nUse the Rename Keys node to rename the keys of a key-value pair in n8n.\n\n Node parameters\n\nYou can rename one or multiple keys using the Rename Keys node. Select the Add new key button to rename a key.\n\nFor each key, enter the:\n\n- Current Key Name: The current name of the key you want to rename.\n- New Key Name: The new name you want to assign to the key.\n\n Node options\n\nChoose whether to use a Regex regular expression to identify keys to rename. To use this option, you must also enter:\n\n The Regular Expression you'd like to use.\n Replace With: Enter the new name you want to assign to the key(s) that match the Regular Expression.\n You can also choose these Regex-specific options:\n     Case Insensitive: Set whether the regular expression should match case (turned off) or be case insensitive (turned on).\n     Max Depth: Enter the maximum depth to replace keys, using -1 for unlimited and 0 for top-level only.\n\n/// warning | Regex impacts\nUsing a regular expression can affect any keys that match the expression, including keys you've already renamed.\n///\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'rename-keys') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.renamekeys.md",
+  "keywords": [
+    "rename",
+    "keys",
+    "expression",
+    "node",
+    "name",
+    "regular",
+    "enter",
+    "using",
+    "want",
+    "regex"
+  ],
+  "fetchedAt": "2025-10-07T16:14:09.983Z",
+  "hash": "8ad8a86f67f89a1ed43286b7d9d8ebcc"
+}

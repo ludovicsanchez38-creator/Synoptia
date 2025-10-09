@@ -1,0 +1,21 @@
+{
+  "title": "Wekan node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.wekan",
+  "content": "---\ntitle: Wekan node documentation\ndescription: Learn how to use the Wekan node in n8n. Follow technical documentation to integrate Wekan node into your workflows.\ncontentType: [integration, reference]\n---\n\n Wekan node\n\nUse the Wekan node to automate work in Wekan, and integrate Wekan with other applications. n8n has built-in support for a wide range of Wekan features, including creating, updating, deleting, and getting boards and cards. \n\nOn this page, you'll find a list of operations the Wekan node supports and links to more resources.\n\n/// note | Credentials\nRefer to Wekan credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Board\n     Create a new board\n     Delete a board\n     Get the data of a board\n     Get all user boards\n Card\n     Create a new card\n     Delete a card\n     Get a card\n     Get all cards\n     Update a card\n Card Comment\n     Create a comment on a card\n     Delete a comment from a card\n     Get a card comment\n     Get all card comments\n Checklist\n     Create a new checklist\n     Delete a checklist\n     Get the data of a checklist\n     Returns all checklists for the card\n Checklist Item\n     Delete a checklist item\n     Get a checklist item\n     Update a checklist item\n List\n     Create a new list\n     Delete a list\n     Get the data of a list\n     Get all board lists\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'wekan') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Load all the parameters for the node\n\nTo load all the parameters, for example, Author ID, you need to give admin permissions to the user. Refer to the Wekan documentation to learn how to change permissions.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.wekan.md",
+  "keywords": [
+    "wekan",
+    "node",
+    "card",
+    "checklist",
+    "delete",
+    "list",
+    "board",
+    "create",
+    "comment",
+    "item"
+  ],
+  "fetchedAt": "2025-10-07T16:14:59.292Z",
+  "hash": "efea94962847cc62454a19114430c9d9"
+}

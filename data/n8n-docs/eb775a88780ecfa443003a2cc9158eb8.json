@@ -1,0 +1,21 @@
+{
+  "title": "Configuration",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-methods",
+  "content": "---\ntitle: Configuration methods\ndescription: How to set environment variables for n8n.\ncontentType: howto\n---\n\n Configuration\n\nYou can change n8n's settings using environment variables. For a full list of available configurations see Environment Variables.\n\n Set environment variables by command line\n\n npm\n\nFor npm, set your desired environment variables in terminal. The command depends on your command line.\n\nBash CLIs:\n\nIn cmd.exe:\n\nIn PowerShell:\n\n Docker\n\nIn Docker you can use the -e flag from the command line:\n\n Docker Compose file\n\nIn Docker, you can set your environment variables in the n8n: environment: element of your docker-compose.yaml file.\n\nFor example:\n\n Keeping sensitive data in separate files\n\nYou can append FILE to individual environment variables to provide their configuration in a separate file, enabling you to avoid passing sensitive details using environment variables. n8n loads the data from the file with the given name, making it possible to load data from Docker-Secrets and Kubernetes-Secrets. \n\nRefer to Environment variables for details on each variable.\n\nWhile most environment variables can use the FILE suffix, it's more beneficial for sensitive data such as credentials and database configuration. Here are some examples:",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "configuration",
+    "environment",
+    "variables",
+    "docker",
+    "file",
+    "command",
+    "your",
+    "data",
+    "line",
+    "from"
+  ],
+  "fetchedAt": "2025-10-07T16:15:55.502Z",
+  "hash": "eb775a88780ecfa443003a2cc9158eb8"
+}

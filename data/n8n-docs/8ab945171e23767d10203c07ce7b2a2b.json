@@ -1,0 +1,21 @@
+{
+  "title": "JMESPath method",
+  "url": "https://docs.n8n.io/code/builtin/jmespath",
+  "content": "---\ndescription: A method for working with the JMESPath library in n8n.\ncontentType: reference\nhide:\n  - toc\n---\n\n JMESPath method\n\nThis is an n8n-provided method for working with the JMESPath library.\n\n/// note | Python support\nYou can use Python in the Code node. It isn't available in expressions.\n///\n=== \"JavaScript\"\n\t| Method | Description | Available in Code node? |\n\t| ------ | ----------- | :-------------------------: |\n\t| $jmespath() | Perform a search on a JSON object using JMESPath. | :whitecheckmark: |\n=== \"Python\"\n\t| Method | Description | \n\t| ------ | ----------- | \n\t| jmespath() | Perform a search on a JSON object using JMESPath. |",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "jmespath",
+    "method",
+    "description",
+    "python",
+    "working",
+    "with",
+    "library",
+    "code",
+    "node",
+    "available"
+  ],
+  "fetchedAt": "2025-10-07T16:15:46.731Z",
+  "hash": "8ab945171e23767d10203c07ce7b2a2b"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Redis Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.redistrigger",
+  "content": "---\ntitle: Redis Trigger node documentation\ndescription: Learn how to use the Redis Trigger node in n8n. Follow technical documentation to integrate Redis Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Redis Trigger node\n\nRedis is an open-source, in-memory data structure store, used as a database, cache and message broker.\n\nUse the Redis Trigger node to subscribe to a Redis channel. The workflow starts whenever the channel receives a new message.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Redis Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.redistrigger.md",
+  "keywords": [
+    "redis",
+    "trigger",
+    "node",
+    "documentation",
+    "message",
+    "channel",
+    "note",
+    "examples",
+    "templates",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:15:17.667Z",
+  "hash": "1478c38431a88136a6f7b01a06b101e1"
+}

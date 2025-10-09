@@ -1,0 +1,19 @@
+{
+  "id": "fb_1759223669834_65kut0ndu",
+  "sessionId": "s005",
+  "workflowId": null,
+  "rating": 4,
+  "successful": true,
+  "comment": "",
+  "issues": [],
+  "request": "Test workflow request",
+  "workflow": null,
+  "metadata": {
+    "intent": "modify",
+    "model": "gpt-4o",
+    "ragUsed": true,
+    "documentsUsed": 8
+  },
+  "timestamp": 1759223669834,
+  "analyzed": false
+}

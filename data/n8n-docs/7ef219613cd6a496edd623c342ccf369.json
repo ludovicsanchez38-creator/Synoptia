@@ -1,0 +1,21 @@
+{
+  "title": "Architecture",
+  "url": "https://docs.n8n.io/hosting/architecture/overview",
+  "content": "---\ndescription: Understand n8n's architecture\ncontentType: overview\n---\n\n Architecture\n\nUnderstanding n8n's underlying architecture is helpful if you need to:\n\n Embed n8n\n Customize n8n's default databases\n\nThis section is a work in progress. If you have questions, please try the forum and let n8n know which architecture documents would be useful for you.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "architecture",
+    "description",
+    "understand",
+    "contenttype",
+    "overview",
+    "understanding",
+    "underlying",
+    "helpful",
+    "need",
+    "embed"
+  ],
+  "fetchedAt": "2025-10-07T16:15:52.953Z",
+  "hash": "7ef219613cd6a496edd623c342ccf369"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Netscaler ADC node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.netscaleradc",
+  "content": "---\ntitle: Netscaler ADC node documentation\ndescription: Learn how to use the Netscaler ADC node in n8n. Follow technical documentation to integrate Netscaler ADC node into your workflows.\ncontentType: [integration, reference]\n---\n\n Netscaler ADC node\n\nUse the Netscaler ADC node to automate work in Netscaler ADC, and integrate Netscaler ADC with other applications. n8n has built-in support for a wide range of Netscaler ADC features, including creating and installing certificates and files.\n\nOn this page, you'll find a list of operations the Netscaler ADC node supports and links to more resources.\n\n/// note | Credentials\nRefer to Netscaler ADC credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Certificate\n\t Create\n\t Install\n File\n\t Delete\n\t Download\n\t Upload\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'netscaler-adc') ]]\n\n Related resources\n\nRefer to Netscaler ADC's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.netscaleradc.md",
+  "keywords": [
+    "netscaler",
+    "node",
+    "documentation",
+    "title",
+    "integrate",
+    "page",
+    "operations",
+    "more",
+    "resources",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:44.518Z",
+  "hash": "bea49121bb313bf2b16df0d725995679"
+}

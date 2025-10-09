@@ -1,0 +1,21 @@
+{
+  "title": "MCP Client Tool node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolmcp",
+  "content": "---\ntitle: MCP Client Tool node documentation\ndescription: Learn how to use the MCP Client Tool node in n8n. Follow technical documentation to integrate MCP Client Tool node into your workflows.\ncontentType: [integration, reference]\n---\n\n MCP Client Tool node\n\nThe MCP Client Tool node is a Model Context Protocol (MCP) client, allowing you to use the tools exposed by an external MCP server. You can connect the MCP Client Tool node to your models to call external tools with n8n agents.\n\n///  note  | Credentials\nThe MCP Client Tool node supports both Bearer and generic header authentication methods.\n///\n\n Node parameters\n\nConfigure the node with the following parameters.\n\n SSE Endpoint: The SSE endpoint for the MCP server you want to connect to.\n Authentication: The authentication method for authentication to your MCP server. The MCP tool supports bearer and generic header authentication. Select None to attempt to connect without authentication.\n Tools to Include: Choose which tools you want to expose to the AI Agent:\n\t All: Expose all the tools given by the MCP server.\n\t Selected: Activates a Tools to Include parameter where you can select the tools you want to expose to the AI Agent.\n\t All Except: Activates a Tools to Exclude parameter where you can select the tools you want to avoid sharing with the AI Agent. The AI Agent will have access to all MCP server's tools that aren't selected.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'mcp-client-tool') ]]\n\n Related resources\n\nn8n also has an MCP Server Trigger node that allows you to expose n8n tools to external AI Agents.\n\nRefer to the MCP documentation and MCP specification for more details about the protocol, servers, and clients.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/tools-link.md\"\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.toolmcp.md",
+  "keywords": [
+    "client",
+    "tool",
+    "node",
+    "tools",
+    "server",
+    "authentication",
+    "want",
+    "expose",
+    "agent",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:15:37.672Z",
+  "hash": "41c666e2b358b3cd75e508cb47269e2c"
+}

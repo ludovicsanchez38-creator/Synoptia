@@ -1,0 +1,21 @@
+{
+  "title": "Google Cloud Realtime Database node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlecloudrealtimedatabase",
+  "content": "---\ntitle: Google Cloud Realtime Database node documentation\ndescription: Learn how to use the Google Cloud Realtime Database node in n8n. Follow technical documentation to integrate Google Cloud Realtime Database node into your workflows.\ncontentType: [integration, reference]\n---\n\n Google Cloud Realtime Database node\n\nUse the Google Cloud Realtime Database node to automate work in Google Cloud Realtime Database, and integrate Google Cloud Realtime Database with other applications. n8n has built-in support for a wide range of Google Cloud Realtime Database features, including writing, deleting, getting, and appending databases.\n\nOn this page, you'll find a list of operations the Google Cloud Realtime Database node supports and links to more resources.\n\n/// note | Credentials\nRefer to Google Cloud Realtime Database credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Write data to a database\n Delete data from a database\n Get a record from a database\n Append to a list of data\n Update item on a database\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-cloud-realtime-database') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.googlecloudrealtimedatabase.md",
+  "keywords": [
+    "google",
+    "cloud",
+    "realtime",
+    "database",
+    "node",
+    "data",
+    "title",
+    "documentation",
+    "integrate",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:30.898Z",
+  "hash": "7c4387d9a53b9e8af0eeed67b8f55712"
+}

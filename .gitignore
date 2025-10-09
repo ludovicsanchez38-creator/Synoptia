@@ -1,0 +1,66 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# Credentials (sécurité)
+credentials.json
+config/credentials.json
+
+# Data (éviter de push les données)
+data/*.json
+!data/.gitkeep
+storage/*.db
+storage/*.sqlite
+
+# Qdrant data
+qdrant_storage/
+
+# N8N workflows backup
+workflows/*.json
+!workflows/examples/
+
+# Docker
+docker-compose.override.yml

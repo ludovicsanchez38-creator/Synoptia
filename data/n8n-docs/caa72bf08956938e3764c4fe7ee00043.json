@@ -1,0 +1,21 @@
+{
+  "title": "Mailjet node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mailjet",
+  "content": "---\ntitle: Mailjet node documentation\ndescription: Learn how to use the Mailjet node in n8n. Follow technical documentation to integrate Mailjet node into your workflows.\ncontentType: [integration, reference]\n---\n\n Mailjet node\n\nUse the Mailjet node to automate work in Mailjet, and integrate Mailjet with other applications. n8n has built-in support for a wide range of Mailjet features, including sending emails, and SMS. \n\nOn this page, you'll find a list of operations the Mailjet node supports and links to more resources.\n\n/// note | Credentials\nRefer to Mailjet credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Email\n     Send an email\n     Send an email template\n SMS\n     Send an SMS\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'mailjet') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.mailjet.md",
+  "keywords": [
+    "mailjet",
+    "node",
+    "email",
+    "send",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:39.147Z",
+  "hash": "caa72bf08956938e3764c4fe7ee00043"
+}

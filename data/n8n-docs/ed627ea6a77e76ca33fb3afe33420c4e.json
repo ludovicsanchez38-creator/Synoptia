@@ -1,0 +1,21 @@
+{
+  "title": "QuickChart node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.quickchart",
+  "content": "---\ntitle: QuickChart node documentation\ndescription: Learn how to use the QuickChart node in n8n. Follow technical documentation to integrate QuickChart node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n QuickChart node\n\nUse the QuickChart node to automate work in QuickChart, and integrate QuickChart with other applications. n8n has built-in support for a wide range of QuickChart chart types, including bar, doughnut, line, pie, and polar charts.\n\nOn this page, you'll find a list of operations the QuickChart node supports and links to more resources.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\nCreate a chart by selecting the chart type:\n\n Chart Type\n\t Bar Chart\n\t Doughnut Chart\n\t Line Chart\n\t Pie Chart\n\t Polar Chart\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'quickchart') ]]\n\n Related resources\n\nRefer to QuickChart's API documentation for more information about the service.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.quickchart.md",
+  "keywords": [
+    "quickchart",
+    "node",
+    "chart",
+    "documentation",
+    "title",
+    "integrate",
+    "doughnut",
+    "line",
+    "polar",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:49.739Z",
+  "hash": "ed627ea6a77e76ca33fb3afe33420c4e"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Workflow templates",
+  "url": "https://docs.n8n.io/workflows/templates",
+  "content": "---\ndescription: Use workflow templates\ncontentType: howto\n---\n\n Workflow templates\n\nWhen creating a new workflow, you can choose whether to start with an empty workflow, or use an existing template.\n\nTemplates provide:\n\n Help getting started: n8n might already have a template that does what you need.\n Examples of what you can build\n Best practices for creating your own workflows\n\n Access templates\n\nSelect <span class=\"n8n-inline-image\">!View templates icon{.off-glb}</span> Templates to view the templates library.\n\nIf you use n8n's template library, this takes you to browse Workflows on the n8n website. If you use a custom library provided by your organization, you'll be able to search and browse the templates within the app.\n\n Add your workflow to the n8n library\n\n--8<-- \"snippets/workflows/templates/submit-templates.md\"\n\n Self-hosted n8n: Use your own library\n\n--8<-- \"snippets/workflows/templates/custom-templates-library.md\"",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "workflow",
+    "templates",
+    "library",
+    "your",
+    "workflows",
+    "template",
+    "creating",
+    "what",
+    "span",
+    "view"
+  ],
+  "fetchedAt": "2025-10-07T16:15:43.152Z",
+  "hash": "4e391a6785218c94b8194d608895e025"
+}

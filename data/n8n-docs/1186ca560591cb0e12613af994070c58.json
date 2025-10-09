@@ -1,0 +1,21 @@
+{
+  "title": "WhatsApp Business Cloud node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.whatsapp/index",
+  "content": "---\ntitle: WhatsApp Business Cloud node documentation\ndescription: Learn how to use the WhatsApp Business Cloud node in n8n. Follow technical documentation to integrate WhatsApp Business Cloud node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n WhatsApp Business Cloud node\n\nUse the WhatsApp Business Cloud node to automate work in WhatsApp Business, and integrate WhatsApp Business with other applications. n8n has built-in support for a wide range of WhatsApp Business features, including sending messages, and uploading, downloading, and deleting media. \n\nOn this page, you'll find a list of operations the WhatsApp Business Cloud node supports and links to more resources.\n\n/// note | Credentials\nRefer to WhatsApp Business Cloud credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Message\n\t Send\n\t Send and Wait for Response\n\t Send Template\n Media\n\t Upload\n\t Download\n\t Delete\n\n--8<-- \"snippets/integrations/builtin/send-and-wait-operation.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'whatsapp-business-cloud') ]]\n\n Related resources\n\nRefer to WhatsApp Business Platform's Cloud API documentation for details about the operations.\n\n Common issues\n\nFor common errors or issues and suggested resolution steps, refer to Common Issues.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "whatsapp",
+  "keywords": [
+    "whatsapp",
+    "business",
+    "cloud",
+    "node",
+    "send",
+    "documentation",
+    "operations",
+    "refer",
+    "integrations",
+    "common"
+  ],
+  "fetchedAt": "2025-10-07T16:14:59.797Z",
+  "hash": "1186ca560591cb0e12613af994070c58"
+}

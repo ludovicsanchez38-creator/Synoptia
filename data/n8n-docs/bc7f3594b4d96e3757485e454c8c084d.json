@@ -1,0 +1,21 @@
+{
+  "title": "LingvaNex node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.lingvanex",
+  "content": "---\ntitle: LingvaNex node documentation\ndescription: Learn how to use the LingvaNex node in n8n. Follow technical documentation to integrate LingvaNex node into your workflows.\ncontentType: [integration, reference]\n---\n\n LingvaNex node\n\nUse the LingvaNex node to automate work in LingvaNex, and integrate LingvaNex with other applications. n8n has built-in support for translating data with LingvaNex.\n\nOn this page, you'll find a list of operations the LingvaNex node supports and links to more resources.\n\n/// note | Credentials\nRefer to LingvaNex credentials for guidance on setting up authentication. \n///\n\n Operations\n\n- Translate data\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'lingvanex') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.lingvanex.md",
+  "keywords": [
+    "lingvanex",
+    "node",
+    "title",
+    "documentation",
+    "integrate",
+    "with",
+    "data",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:37.987Z",
+  "hash": "bc7f3594b4d96e3757485e454c8c084d"
+}

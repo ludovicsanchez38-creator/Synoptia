@@ -1,0 +1,23 @@
+{
+  "title": "Retrieve linked items from earlier in the workflow",
+  "url": "https://docs.n8n.io/code/cookbook/builtin/itemmatching",
+  "content": "---\ndescription: How to use (\"<node-name>\").itemMatching(currentNodeinputIndex)\ncontentType: howto\n---\n\n Retrieve linked items from earlier in the workflow\n\nEvery item in a node's input data links back to the items used in previous nodes to generate it. This is useful if you need to retrieve linked items from further back than the immediate previous node.\n\nTo access the linked items from earlier in the workflow, use (\"<node-name>\").itemMatching(currentNodeinputIndex).\n\nFor example, consider a workflow that does the following:\n\n1. The Customer Datastore node generates example data:\n\t\n2. The Edit Fields node simplifies this data:\n\t\n3. The Code node restore the email address to the correct person:\n\t\n\nThe Code node does this using the following code:\n\n=== \"JavaScript\"\n\t\n=== \"Python\"\n\t\n\nYou can view and download the example workflow from n8n website | itemMatchin usage example .",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "retrieve",
+    "linked",
+    "items",
+    "from",
+    "earlier",
+    "workflow",
+    "node",
+    "example",
+    "data",
+    "this",
+    "code",
+    "name"
+  ],
+  "fetchedAt": "2025-10-07T16:15:48.549Z",
+  "hash": "cc939068daedae4a365783d78d4a5039"
+}

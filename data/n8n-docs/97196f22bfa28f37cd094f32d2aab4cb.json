@@ -1,0 +1,21 @@
+{
+  "title": "Embeddings Cohere node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.embeddingscohere",
+  "content": "---\ntitle: Embeddings Cohere node documentation\ndescription: Learn how to use the Embeddings Cohere node in n8n. Follow technical documentation to integrate Embeddings Cohere node into your workflows.\ncontentType: [integration, reference]\n---\n\n Embeddings Cohere node\n\nUse the Embeddings Cohere node to generate embeddings for a given text.\n\nOn this page, you'll find the node parameters for the Embeddings Cohere node, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Model: Select the model to use to generate the embedding. Choose from:\n     Embed-English-v2.0(4096 Dimensions)\n\t Embed-English-Light-v2.0(1024 Dimensions)\n\t Embed-Multilingual-v2.0(768 Dimensions)\n\nLearn more about available models in Cohere's models documentation.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'embeddings-cohere') ]]\n\n Related resources\n\nRefer to Langchain's Cohere embeddings documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.embeddingscohere.md",
+  "keywords": [
+    "embeddings",
+    "cohere",
+    "node",
+    "documentation",
+    "more",
+    "integrations",
+    "embed",
+    "dimensions",
+    "title",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:28.576Z",
+  "hash": "97196f22bfa28f37cd094f32d2aab4cb"
+}

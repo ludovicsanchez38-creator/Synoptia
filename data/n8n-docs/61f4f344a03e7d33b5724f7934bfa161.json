@@ -1,0 +1,21 @@
+{
+  "title": "Webflow node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.webflow",
+  "content": "---\ntitle: Webflow node documentation\ndescription: Learn how to use the Webflow node in n8n. Follow technical documentation to integrate Webflow node into your workflows.\ncontentType: [integration, reference]\n---\n\n Webflow node\n\nUse the Webflow node to automate work in Webflow, and integrate Webflow with other applications. n8n has built-in support for a wide range of Webflow features, including creating, updating, deleting, and getting items. \n\nOn this page, you'll find a list of operations the Webflow node supports and links to more resources.\n\n/// note | Credentials\nRefer to Webflow credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Item\n     Create\n     Delete\n     Get\n     Get All\n     Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'webflow') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.webflow.md",
+  "keywords": [
+    "webflow",
+    "node",
+    "integrations",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "snippets"
+  ],
+  "fetchedAt": "2025-10-07T16:14:59.122Z",
+  "hash": "61f4f344a03e7d33b5724f7934bfa161"
+}

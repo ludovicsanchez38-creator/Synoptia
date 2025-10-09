@@ -1,0 +1,21 @@
+{
+  "title": "Security environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/security",
+  "content": "---\ntitle: Security environment variables\ndescription: Configure authentication and environment variable access in self-hosted n8n instance.\ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Security environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| N8NBLOCKENVACCESSINNODE | Boolean | false | Whether to allow users to access environment variables in expressions and the Code node (false) or not (true). |\n| N8NBLOCKFILEACCESSTON8NFILES | Boolean | true | Set to true to block access to all files in the .n8n directory and user defined configuration files. |\n| N8NENFORCESETTINGSFILEPERMISSIONS | Boolean | false | Set to true to try to set 0600 permissions for the settings file, giving only the owner read and write access. |\n| N8NRESTRICTFILEACCESSTO | String |  | Limits access to files in these directories. Provide multiple files as a colon-separated list (\":\"). |\n| N8NSECURITYAUDITDAYSABANDONEDWORKFLOW | Number | 90 | Number of days to consider a workflow abandoned if it's not executed. |\n| N8NSECURECOOKIE | Boolean | true | Ensures that cookies are only sent over HTTPS, enhancing security.|\n| N8NSAMESITECOOKIE | Enum string: strict, lax, none | lax | Controls cross-site cookie behavior (learn more):<ul><li>strict: Sent only for first-party requests.</li><li>lax (default): Sent with top-level navigation requests.</li><li>none: Sent in all contexts (requires HTTPS).</li></ul> |\n| N8NGITNODEDISABLEBAREREPOS | Boolean | false | Set to true to prevent the Git node from working with bare repositories, enhancing security. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "security",
+    "environment",
+    "variables",
+    "true",
+    "access",
+    "boolean",
+    "false",
+    "files",
+    "sent",
+    "only"
+  ],
+  "fetchedAt": "2025-10-07T16:15:57.949Z",
+  "hash": "7c599313fee9f985f51c53347982c75a"
+}

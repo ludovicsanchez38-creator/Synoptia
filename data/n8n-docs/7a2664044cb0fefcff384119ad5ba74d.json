@@ -1,0 +1,21 @@
+{
+  "title": "Compression",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.compression",
+  "content": "---\ntitle: Compression\ndescription: Documentation for the Compression node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Compression\n\nUse the Compression node to compress and decompress files. Supports Zip and Gzip formats.\n\n Node parameters\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\nThe node parameters depend on which Operation you select. Choose to:\n\n Compress: Create a compressed file from your input data.\n Decompress: Decompress an existing compressed file.\n\nRefer to the sections below for parameters specific to each Operation.\n\n Compress\n\n- Input Binary Field(s): Enter the name of the fields in the input data that contain the binary files you want to compress. To compress more than one file, use a comma-separated list.\n- Output Format: Choose whether to format the compressed output as Zip or Gzip.\n- File Name: Enter the name of the zip file the node creates.\n- Put Output File in Field: Enter the name of the field in the output data to contain the file.\n\n Decompress\n\n- Put Output File in Field: Enter the name of the fields in the input data that contain the binary files you want to decompress. To decompress more than one file, use a comma-separated list.\n- Output Prefix: Enter a prefix to add to the output file name.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'compression') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.compression.md",
+  "keywords": [
+    "compression",
+    "file",
+    "output",
+    "decompress",
+    "name",
+    "node",
+    "compress",
+    "enter",
+    "input",
+    "data"
+  ],
+  "fetchedAt": "2025-10-07T16:14:03.408Z",
+  "hash": "7a2664044cb0fefcff384119ad5ba74d"
+}

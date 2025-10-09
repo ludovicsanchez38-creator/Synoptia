@@ -1,0 +1,21 @@
+{
+  "title": "Custom executions data",
+  "url": "https://docs.n8n.io/workflows/executions/custom-executions-data",
+  "content": "---\ndescription: Add custom data to your workflow executions using the Code node. You can then filter executions by this data.\ncontentType: howto\n---\n\n Custom executions data\n\nYou can set custom data on your workflow using the Code node or the Execution Data node. n8n records this with each execution. You can then use this data when filtering the executions list, or fetch it in your workflows using the Code node.\n\n--8<-- \"snippets/workflows/executions/custom-execution-data-availability.md\"\n\n Set and access custom data using the Code node\n\nThis section describes how to set and access data using the Code node. Refer to Execution Data node for information on using the Execution Data node to set data. You can't retrieve custom data using the Execution Data node.\n\n Set custom executions data\n\nSet a single piece of extra data:\n\n=== \"JavaScript\"\n\t\n=== \"Python\"\n\t\n\nSet all extra data. This overwrites the whole custom data object for this execution:\n\n=== \"JavaScript\"\n\t\n=== \"Python\"\n\t\n\nThere are limitations:\n\n They must be strings\n key has a maximum length of 50 characters\n value has a maximum length of 255 characters\n n8n supports a maximum of 10 items of custom data\n\n Access the custom data object during execution\n\nYou can retrieve the custom data object, or a specific value in it, during an execution:\n\n<!-- vale off -->\n=== \"JavaScript\"\n\t\n=== \"Python\"\n\t\n<!-- vale on -->",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "custom",
+    "executions",
+    "data",
+    "node",
+    "execution",
+    "using",
+    "this",
+    "code",
+    "your",
+    "access"
+  ],
+  "fetchedAt": "2025-10-07T16:15:41.201Z",
+  "hash": "0988fda3bb0ea22a4f48e2bfea05ebd1"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Odoo node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.odoo",
+  "content": "---\ntitle: Odoo node documentation\ndescription: Learn how to use the Odoo node in n8n. Follow technical documentation to integrate Odoo node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Odoo node\n\nUse the Odoo node to automate work in Odoo, and integrate Odoo with other applications. n8n has built-in support for a wide range of Odoo features, including creating, updating, deleting, and getting contracts, resources, and opportunities. \n\nOn this page, you'll find a list of operations the Odoo node supports and links to more resources.\n\n/// note | Credentials\nRefer to Odoo credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Contact\n     Create a new contact\n     Delete a contact\n     Get a contact\n     Get all contacts\n     Update a contact\n Custom Resource\n     Create a new item\n     Delete an item\n     Get an item\n     Get all items\n     Update an item\n Note\n     Create a new note\n     Delete a note\n     Get a note\n     Get all notes\n     Update a note\n Opportunity\n     Create a new opportunity\n     Delete an opportunity\n     Get an opportunity\n     Get all opportunities\n     Update an opportunity\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'odoo') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.odoo.md",
+  "keywords": [
+    "odoo",
+    "node",
+    "note",
+    "contact",
+    "opportunity",
+    "create",
+    "delete",
+    "update",
+    "item",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:45.593Z",
+  "hash": "fb1934245a87ed750bfe649cb5db6e5e"
+}

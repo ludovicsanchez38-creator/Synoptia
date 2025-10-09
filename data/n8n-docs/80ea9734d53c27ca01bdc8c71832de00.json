@@ -1,0 +1,21 @@
+{
+  "title": "NocoDB node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nocodb",
+  "content": "---\ntitle: NocoDB node documentation\ndescription: Learn how to use the NocoDB node in n8n. Follow technical documentation to integrate NocoDB node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n NocoDB node\n\nUse the NocoDB node to automate work in NocoDB, and integrate NocoDB with other applications. n8n has built-in support for a wide range of NocoDB features, including creating, updating, deleting, and retrieving rows. \n\nOn this page, you'll find a list of operations the NocoDB node supports and links to more resources.\n\n/// note | Credentials\nRefer to NocoDB credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Row\n     Create\n     Delete\n     Get\n     Get Many\n     Update a row\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'nocodb') ]]\n\n Relates resources\n\nRefer to NocoDB's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.nocodb.md",
+  "keywords": [
+    "nocodb",
+    "node",
+    "documentation",
+    "integrations",
+    "title",
+    "integrate",
+    "page",
+    "operations",
+    "more",
+    "resources"
+  ],
+  "fetchedAt": "2025-10-07T16:14:44.808Z",
+  "hash": "80ea9734d53c27ca01bdc8c71832de00"
+}

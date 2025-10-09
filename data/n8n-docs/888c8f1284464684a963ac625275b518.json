@@ -1,0 +1,21 @@
+{
+  "title": "SyncroMSP node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.syncromsp",
+  "content": "---\ntitle: SyncroMSP node documentation\ndescription: Learn how to use the SyncroMSP node in n8n. Follow technical documentation to integrate SyncroMSP node into your workflows.\ncontentType: [integration, reference]\n---\n\n SyncroMSP node\n\nUse the SyncroMSP node to automate work in SyncroMSP, and integrate SyncroMSP with other applications. n8n has built-in support for a wide range of SyncroMSP features, including creating and deleting new customers, tickets, and contacts. \n\nOn this page, you'll find a list of operations the SyncroMSP node supports and links to more resources.\n\n/// note | Credentials\nRefer to SyncroMSP credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Contact\n     Create new contact\n     Delete contact\n     Retrieve contact\n     Retrieve all contacts\n     Update contact\n Customer\n     Create new customer\n     Delete customer\n     Retrieve customer\n     Retrieve all customers\n     Update customer\n RMM\n     Create new RMM Alert\n     Delete RMM Alert\n     Retrieve RMM Alert\n     Retrieve all RMM Alerts\n     Mute RMM Alert\n Ticket\n     Create new ticket\n     Delete ticket\n     Retrieve ticket\n     Retrieve all tickets\n     Update ticket\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'syncromsp') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.syncromsp.md",
+  "keywords": [
+    "syncromsp",
+    "node",
+    "retrieve",
+    "contact",
+    "customer",
+    "ticket",
+    "create",
+    "delete",
+    "alert",
+    "update"
+  ],
+  "fetchedAt": "2025-10-07T16:14:54.676Z",
+  "hash": "888c8f1284464684a963ac625275b518"
+}

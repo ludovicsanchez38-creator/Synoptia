@@ -1,0 +1,21 @@
+{
+  "title": "Timezone and localization environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/timezone-localization",
+  "content": "---\ntitle: Timezone and localization environment variables\ndescription: Set the timezone and default language locale for self-hosted n8n instance.\ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Timezone and localization environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| GENERICTIMEZONE |  | America/NewYork |The n8n instance timezone. Important for schedule nodes (such as Cron). |\n| N8NDEFAULTLOCALE | String | en | A locale identifier, compatible with the Accept-Language header. n8n doesn't support regional identifiers, such as de-AT. When running in a locale other than the default, n8n displays UI strings in the selected locale, and falls back to en for any untranslated strings. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "timezone",
+    "localization",
+    "environment",
+    "variables",
+    "locale",
+    "default",
+    "description",
+    "language",
+    "self",
+    "instance"
+  ],
+  "fetchedAt": "2025-10-07T16:15:58.393Z",
+  "hash": "4bdb2497902745e9eee7f06c84335c90"
+}

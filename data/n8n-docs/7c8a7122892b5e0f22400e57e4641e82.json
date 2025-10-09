@@ -1,0 +1,21 @@
+{
+  "title": "RSS Feed Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.rssfeedreadtrigger",
+  "content": "---\ntitle: RSS Feed Trigger node documentation\ndescription: Learn how to use the RSS Feed Trigger node in n8n. Follow technical documentation to integrate RSS Feed Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n RSS Feed Trigger node\n\nThe RSS Feed Trigger node allows you to start an n8n workflow when a new RSS feed item has been published.\n\nOn this page, you'll find a list of operations the RSS Feed Trigger node supports, and links to more resources.\n\n Node parameters\n\n Poll Times: Select a poll Mode to set how often to trigger the poll. Your Mode selection will add or remove relevant fields. Refer to the sections below to configure the parameters for each mode type.\n Feed URL: Enter the URL of the RSS feed to poll.\n\n--8<-- \"snippets/integrations/builtin/poll-modes.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'rss-feed-trigger') ]]\n\n Related resources\n\nn8n provides an app node for RSS Feeds. You can find the node docs here.",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.rssfeedreadtrigger.md",
+  "keywords": [
+    "feed",
+    "trigger",
+    "node",
+    "poll",
+    "mode",
+    "title",
+    "documentation",
+    "your",
+    "page",
+    "find"
+  ],
+  "fetchedAt": "2025-10-07T16:14:10.432Z",
+  "hash": "7c8a7122892b5e0f22400e57e4641e82"
+}

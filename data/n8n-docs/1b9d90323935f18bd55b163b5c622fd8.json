@@ -1,0 +1,21 @@
+{
+  "title": "Embeddings Google Vertex node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.embeddingsgooglevertex",
+  "content": "---\ntitle: Embeddings Google Vertex node documentation\ndescription: Learn how to use the Embeddings Google Vertex node in n8n. Follow technical documentation to integrate Embeddings Google Gemini node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Embeddings Google Vertex node\n\nUse the Embeddings Google Vertex node to generate embeddings for a given text.\n\nOn this page, you'll find the node parameters for the Embeddings Google Vertex node, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n- Model: Select the model to use to generate the embedding.\n\nLearn more about available embedding models in Google VertexAI embeddings API documentation.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n\n[[templatesWidget(page.title, 'embeddings-google-vertex')]]\n\n Related resources\n\nRefer to LangChain's Google Generative AI embeddings documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.embeddingsgooglevertex.md",
+  "keywords": [
+    "embeddings",
+    "google",
+    "vertex",
+    "node",
+    "documentation",
+    "more",
+    "integrations",
+    "title",
+    "learn",
+    "generate"
+  ],
+  "fetchedAt": "2025-10-07T16:15:29.062Z",
+  "hash": "1b9d90323935f18bd55b163b5c622fd8"
+}

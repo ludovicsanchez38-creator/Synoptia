@@ -1,0 +1,21 @@
+{
+  "title": "Zendesk Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.zendesktrigger",
+  "content": "---\ntitle: Zendesk Trigger node documentation\ndescription: Learn how to use the Zendesk Trigger node in n8n. Follow technical documentation to integrate Zendesk Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Zendesk Trigger node\n\nZendesk is a support ticketing system, designed to help track, prioritize, and solve customer support interactions. More than just a help desk, Zendesk Support helps nurture customer relationships with personalized, responsive support across any channel.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Zendesk Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.zendesktrigger.md",
+  "keywords": [
+    "zendesk",
+    "trigger",
+    "node",
+    "support",
+    "help",
+    "documentation",
+    "customer",
+    "note",
+    "examples",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:15:21.569Z",
+  "hash": "8f3e49a090a5489d07c056af166eeabb"
+}

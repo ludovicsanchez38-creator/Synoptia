@@ -1,0 +1,111 @@
+{
+  "timestamp": 1759223669838,
+  "totalFeedback": 10,
+  "averageRating": 3.3,
+  "successRate": 0.5,
+  "commonIssues": [
+    {
+      "issue": "missing_parameters",
+      "count": 2,
+      "percentage": "20.0"
+    },
+    {
+      "issue": "invalid_connections",
+      "count": 1,
+      "percentage": "10.0"
+    },
+    {
+      "issue": "wrong_node_types",
+      "count": 1,
+      "percentage": "10.0"
+    },
+    {
+      "issue": "missing_credentials",
+      "count": 1,
+      "percentage": "10.0"
+    },
+    {
+      "issue": "syntax_errors",
+      "count": 1,
+      "percentage": "10.0"
+    },
+    {
+      "issue": "poor_node_naming",
+      "count": 1,
+      "percentage": "10.0"
+    },
+    {
+      "issue": "missing_trigger",
+      "count": 1,
+      "percentage": "10.0"
+    }
+  ],
+  "intentPerformance": [
+    {
+      "intent": "create",
+      "count": 8,
+      "averageRating": "3.13",
+      "successRate": "50.0%"
+    },
+    {
+      "intent": "modify",
+      "count": 1,
+      "averageRating": "4.00",
+      "successRate": "100.0%"
+    },
+    {
+      "intent": "explain",
+      "count": 1,
+      "averageRating": "4.00",
+      "successRate": "100.0%"
+    }
+  ],
+  "modelPerformance": [
+    {
+      "model": "gpt-4o",
+      "count": 8,
+      "averageRating": "3.38",
+      "averageTime": "750ms"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "count": 2,
+      "averageRating": "3.00",
+      "averageTime": "0ms"
+    }
+  ],
+  "ragEffectiveness": {
+    "withRAG": {
+      "count": 7,
+      "averageRating": "3.57",
+      "averageDocuments": 7
+    },
+    "withoutRAG": {
+      "count": 3,
+      "averageRating": "2.67"
+    },
+    "improvement": "18.1%"
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "category": "success_rate",
+      "message": "Success rate is low (50.0%). Consider improving validation and error handling.",
+      "actions": [
+        "Review failed workflows for common patterns",
+        "Enhance validation rules",
+        "Improve RAG context retrieval"
+      ]
+    },
+    {
+      "priority": "critical",
+      "category": "rating",
+      "message": "Average rating is low (3.3/5). Immediate attention needed.",
+      "actions": [
+        "Review recent negative feedback",
+        "Identify breaking changes or regressions",
+        "Consider prompt version rollback"
+      ]
+    }
+  ]
+}

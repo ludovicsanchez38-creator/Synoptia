@@ -1,0 +1,21 @@
+{
+  "title": "Mistral AI node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mistralai",
+  "content": "---\ntitle: MistralAI node documentation\ndescription: Learn how to use the Mistral AI node in n8n. Follow technical documentation to integrate Mistral AI node into your workflows.\ncontentType: [integration, reference]\n---\n\n Mistral AI node\n\nUse the Mistral AI node to automate work in Mistral AI and integrate Mistral AI with other applications. n8n has built-in support for extracting text with various models, file types, and input methods.\n\nOn this page, you'll find a list of operations the Mistral AI node supports, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Node parameters\n\n Resource: The resource that Mistral AI should operate on. The current implementation supports the \"Document\" resource.\n Operation: The operation to perform:\n\t Extract Text: Extracts text from a document or image using optical character recognition (OCR).\n Model: The model to use for the given operation. The current version requires the mistral-ocr-latest model.\n Document Type: The document format to process. Can be \"Document\" or \"Image\".\n Input Type: How to input the document:\n\t Binary Data: Pass the document to this node as a binary field.\n\t URL: Fetch the document from a given URL.\n Input Binary Field: When using the \"Binary Data\" input type, defines the name of the input binary field containing the file.\n URL: When using the \"URL\" input type, the URL of the document or image to process.\n\n Node options\n\n Enable Batch Processing: Whether to process multiple documents in the same API call. This may reduce your costs by bundling requests.\n Batch Size: When using \"Enable Batch Processing\", sets the maximum number of documents to process per batch.\n Delete Files After Processing: When using \"Enable Batch Processing\", whether to delete the files from Mistral Cloud after processing.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'mistral-ai') ]]\n\n Related resources\n\n<!-- add a link to the service's documentation. This should usually go direct to the API docs -->\nRefer to Mistral AI's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.mistralai.md",
+  "keywords": [
+    "mistral",
+    "node",
+    "document",
+    "input",
+    "this",
+    "using",
+    "binary",
+    "batch",
+    "processing",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:42.317Z",
+  "hash": "297d3ddb525bac553152d69d87de3b53"
+}

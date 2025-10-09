@@ -1,0 +1,21 @@
+{
+  "title": "Motorhead node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorymotorhead",
+  "content": "---\ntitle: Motorhead node documentation\ndescription: Learn how to use the Motorhead node in n8n. Follow technical documentation to integrate Motorhead node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Motorhead node\n\nUse the Motorhead node to use Motorhead as a memory server.\n\nOn this page, you'll find a list of operations the Motorhead node supports, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n Node parameters\n\n Session ID: Enter the ID to use to store the memory in the workflow data.\n\n Node reference\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'motorhead') ]]\n\n Related resources\n\nRefer to LangChain's Motorhead documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"\n\n Single memory instance\n\n[[% include \"includes/integrations/cluster-nodes/memory-shared.html\" %]]",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.memorymotorhead.md",
+  "keywords": [
+    "motorhead",
+    "node",
+    "memory",
+    "integrations",
+    "documentation",
+    "cluster",
+    "nodes",
+    "title",
+    "reference",
+    "this"
+  ],
+  "fetchedAt": "2025-10-07T16:15:34.147Z",
+  "hash": "22daa44934d0f9408872ee5c6d3ff25d"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Mandrill node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mandrill",
+  "content": "---\ntitle: Mandrill node documentation\ndescription: Learn how to use the Mandrill node in n8n. Follow technical documentation to integrate Mandrill node into your workflows.\ncontentType: [integration, reference]\n---\n\n Mandrill node\n\nUse the Mandrill node to automate work in Mandrill, and integrate Mandrill with other applications. n8n supports sending messages based on templates or HTML with Mandrill.\n\nOn this page, you'll find a list of operations the Mandrill node supports and links to more resources.\n\n/// note | Credentials\nRefer to Mandrill credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Message\n     Send message based on template.\n     Send message based on HTML.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'mandrill') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.mandrill.md",
+  "keywords": [
+    "mandrill",
+    "node",
+    "based",
+    "templates",
+    "message",
+    "title",
+    "documentation",
+    "integrate",
+    "with",
+    "supports"
+  ],
+  "fetchedAt": "2025-10-07T16:14:39.315Z",
+  "hash": "8c828b7c2a28f9aef5506044c7ae4738"
+}

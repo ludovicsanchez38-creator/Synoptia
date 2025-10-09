@@ -1,0 +1,21 @@
+{
+  "title": "Intercom node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.intercom",
+  "content": "---\ntitle: Intercom node documentation\ndescription: Learn how to use the Intercom node in n8n. Follow technical documentation to integrate Intercom node into your workflows.\ncontentType: [integration, reference]\n---\n\n Intercom node\n\nUse the Intercom node to automate work in Intercom, and integrate Intercom with other applications. n8n has built-in support for a wide range of Intercom features, including creating, updating, deleting, and getting companies, leads, and users. \n\nOn this page, you'll find a list of operations the Intercom node supports and links to more resources.\n\n/// note | Credentials\nRefer to Intercom credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Company\n     Create a new company\n     Get data of a company\n     Get data of all companies\n     Update a company\n     List company's users\n Lead\n     Create a new lead\n     Delete a lead\n     Get data of a lead\n     Get data of all leads\n     Update new lead\n User\n     Create a new user\n     Delete a user\n     Get data of a user\n     Get data of all users\n     Update a user\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'intercom') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.intercom.md",
+  "keywords": [
+    "intercom",
+    "node",
+    "data",
+    "company",
+    "lead",
+    "user",
+    "users",
+    "create",
+    "update",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:36.037Z",
+  "hash": "528087ec8f8f707e41ef3bb67e2ab05e"
+}

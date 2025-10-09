@@ -1,0 +1,21 @@
+{
+  "title": "Expressions common issues",
+  "url": "https://docs.n8n.io/code/cookbook/expressions/common-issues",
+  "content": "---\ntitle: Expressions common issues\ndescription: Documentation for common issues and questions related to expressions in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: howto\n---\n\n Expressions common issues\n\nHere are some common errors and issues related to expressions and steps to resolve or troubleshoot them.\n\n The 'JSON Output' in item 0 contains invalid JSON\n\nThis error occurs when you use JSON mode but don't provide a valid JSON object. Depending on the problem with the JSON object, the error sometimes display as The 'JSON Output' in item 0 does not contain a valid JSON object.\n\nTo resolve this, make sure that the code you provide is valid JSON:\n\n- Check the JSON with a JSON validator.\n- Check that your JSON object doesn't reference undefined input data. This may occur if the incoming data doesn't always include the same fields.\n\n Can't get data for expression\n\nThis error occurs when n8n can't retrieve the data referenced by an expression. Often, this happens when the preceding node hasn't been run yet.\n\nAnother variation of this may appear as Referenced node is unexecuted.  In that case, the full text of this error will tell you the exact node that isn't executing in this format:\n\n> An expression references the node '&lt;node-name&gt;', but it hasn’t been executed yet. Either change the expression, or re-wire your workflow to make sure that node executes first.\n> \n\nTo begin troubleshooting, test the workflow up to the named node.\n\nFor nodes that use JavaScript or other custom code, you can check if a previous node has executed before trying to use its value by checking the following:\n\nAs an example, this JSON references the parameters of the input data. This error will display if you test this step without connecting it to another node:\n\n Invalid syntax\n\nThis error occurs when you use an expression that has a syntax error.\n\nFor example, the expression in this JSON includes a trailing period, which results in an invalid syntax error:\n\nTo resolve this error, check your expression syntax to make sure they follow the expected format.",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "expressions",
+    "common",
+    "issues",
+    "this",
+    "json",
+    "error",
+    "node",
+    "that",
+    "expression",
+    "data"
+  ],
+  "fetchedAt": "2025-10-07T16:15:49.954Z",
+  "hash": "b4bc0abf3e560e61856c545c4a0ed2d2"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Manual Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.manualworkflowtrigger",
+  "content": "---\ntitle: Manual Trigger node documentation\ndescription: Learn how to use the Manual Trigger node in n8n. Follow technical documentation to integrate Manual Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: critical\n---\n\n Manual Trigger node\n\nUse this node if you want to start a workflow by selecting Execute Workflow and don't want any option for the workflow to run automatically.\n\nWorkflows always need a trigger, or start point. Most workflows start with a trigger node firing in response to an external event or the Schedule Trigger firing on a set schedule.\n\nThe Manual Trigger node serves as the workflow trigger for workflows that don't have an automatic trigger.\n\nUse this trigger:\n\n To test your workflow before you add an automatic trigger of some kind.\n When you don't want the workflow to run automatically.\n\n Common issues\n\nHere are some common errors and issues with the Manual Trigger node and steps to resolve or troubleshoot them.\n\n<!-- vale off -->\n Only one 'Manual Trigger' node is allowed in a workflow\n<!-- vale on -->\n\nThis error displays if you try to add a Manual Trigger node to a workflow which already includes a Manual Trigger node.\n\nRemove your existing Manual Trigger or edit your workflow to connect that trigger to a different node.",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.manualworkflowtrigger.md",
+  "keywords": [
+    "manual",
+    "trigger",
+    "node",
+    "workflow",
+    "your",
+    "workflows",
+    "this",
+    "want",
+    "start",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:08.547Z",
+  "hash": "e1b1b9a0b3ac7e5ad9f6435da598b558"
+}

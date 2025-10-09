@@ -1,0 +1,437 @@
+{
+  "timestamp": "2025-10-06T06:32:57.207966",
+  "metrics": {
+    "total_tests": 10,
+    "successful": 8,
+    "success_rate": 80.0,
+    "workflows_generated": 8,
+    "valid_json": 8,
+    "avg_duration": 18.31845166683197,
+    "min_duration": 6.18894624710083,
+    "max_duration": 47.307252168655396,
+    "avg_score": 0,
+    "min_score": 0,
+    "max_score": 0,
+    "grade_distribution": {
+      "F": 10
+    },
+    "total_duration": 193.188496
+  },
+  "results": [
+    {
+      "id": 1,
+      "category": "Email",
+      "prompt": "Crée un workflow qui envoie un email tous les lundis matin à 9h",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 7.299062013626099,
+      "node_count": 2,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "Node \"Cron Trigger\": type \"n8n-nodes-base.cron\" inconnu (pas de schéma de validation)",
+          "Aucun trigger détecté - workflow devra être lancé manuellement"
+        ],
+        "suggestions": [
+          {
+            "node": "Send Email",
+            "type": "optional_params",
+            "message": "Paramètres optionnels disponibles: message, filters"
+          },
+          {
+            "type": "missing_trigger",
+            "message": "Ajoutez un trigger (Webhook, Cron, etc.) pour automatiser l'exécution"
+          },
+          {
+            "node": "Send Email",
+            "type": "no_output",
+            "message": "Node sans connexions sortantes - est-ce voulu?"
+          }
+        ],
+        "metadata": {
+          "nodeCount": 2,
+          "connectionCount": 1,
+          "hasErrors": false,
+          "hasWarnings": true,
+          "hasSuggestions": true
+        }
+      },
+      "score": 0,
+      "grade": "F",
+      "errors": [],
+      "warnings": [
+        "Node \"Cron Trigger\": type \"n8n-nodes-base.cron\" inconnu (pas de schéma de validation)",
+        "Aucun trigger détecté - workflow devra être lancé manuellement"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "RSS & Automation",
+      "prompt": "Automatise la veille : récupère un flux RSS, résume avec IA et envoie vers Notion",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 10.342554807662964,
+      "node_count": 3,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "Node \"Récupérer Flux RSS\": type \"n8n-nodes-base.rssFeedRead\" inconnu (pas de schéma de validation)",
+          "Node \"Résumé IA\": type \"n8n-nodes-base.function\" inconnu (pas de schéma de validation)",
+          "Aucun trigger détecté - workflow devra être lancé manuellement"
+        ],
+        "suggestions": [
+          {
+            "node": "Envoyer vers Notion",
+            "type": "optional_params",
+            "message": "Paramètres optionnels disponibles: databaseId, pageId"
+          },
+          {
+            "type": "missing_trigger",
+            "message": "Ajoutez un trigger (Webhook, Cron, etc.) pour automatiser l'exécution"
+          },
+          {
+            "node": "Envoyer vers Notion",
+            "type": "no_output",
+            "message": "Node sans connexions sortantes - est-ce voulu?"
+          }
+        ],
+        "metadata": {
+          "nodeCount": 3,
+          "connectionCount": 2,
+          "hasErrors": false,
+          "hasWarnings": true,
+          "hasSuggestions": true
+        }
+      },
+      "score": 0,
+      "grade": "F",
+      "errors": [],
+      "warnings": [
+        "Node \"Récupérer Flux RSS\": type \"n8n-nodes-base.rssFeedRead\" inconnu (pas de schéma de validation)",
+        "Node \"Résumé IA\": type \"n8n-nodes-base.function\" inconnu (pas de schéma de validation)",
+        "Aucun trigger détecté - workflow devra être lancé manuellement"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Scraping",
+      "prompt": "Scrape ce site web et stocke les données dans Google Sheets",
+      "success": false,
+      "error": "HTTP 500",
+      "duration": 9.250756025314331
+    },
+    {
+      "id": 4,
+      "category": "Chatbot",
+      "prompt": "Chatbot support client avec base de connaissances",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 27.380115509033203,
+      "node_count": 2,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "Node \"Generate Response\": type \"n8n-nodes-base.openai\" inconnu (pas de schéma de validation)",
+          "Node \"AI Agent\": type \"n8n-nodes-base.aiAgent\" inconnu (pas de schéma de validation)",
+          "Aucun trigger détecté - workflow devra être lancé manuellement"
+        ],
+        "suggestions": [
+          {
+            "type": "missing_trigger",
+            "message": "Ajoutez un trigger (Webhook, Cron, etc.) pour automatiser l'exécution"
+          },
+          {
+            "node": "Generate Response",
+            "type": "no_output",
+            "message": "Node sans connexions sortantes - est-ce voulu?"
+          }
+        ],
+        "metadata": {
+          "nodeCount": 2,
+          "connectionCount": 1,
+          "hasErrors": false,
+          "hasWarnings": true,
+          "hasSuggestions": true
+        }
+      },
+      "score": 0,
+      "grade": "F",
+      "errors": [],
+      "warnings": [
+        "Node \"Generate Response\": type \"n8n-nodes-base.openai\" inconnu (pas de schéma de validation)",
+        "Node \"AI Agent\": type \"n8n-nodes-base.aiAgent\" inconnu (pas de schéma de validation)",
+        "Aucun trigger détecté - workflow devra être lancé manuellement"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "Backup",
+      "prompt": "Backup automatique MongoDB vers S3 tous les jours",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 28.529576539993286,
+      "node_count": 3,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "Node \"Daily Trigger\": type \"n8n-nodes-base.cron\" inconnu (pas de schéma de validation)",
+          "Node \"MongoDB Backup\": credentials probablement nécessaires (types: mongoDb)",
+          "Node \"Upload to S3\": type \"n8n-nodes-base.s3\" inconnu (pas de schéma de validation)",
+          "Aucun trigger détecté - workflow devra être lancé manuellement"
+        ],
+        "suggestions": [
+          {
+            "node": "MongoDB Backup",
+            "type": "optional_params",
+            "message": "Paramètres optionnels disponibles: query, fields, limit"
+          },
+          {
+            "type": "missing_trigger",
+            "message": "Ajoutez un trigger (Webhook, Cron, etc.) pour automatiser l'exécution"
+          },
+          {
+            "node": "Upload to S3",
+            "type": "no_output",
+            "message": "Node sans connexions sortantes - est-ce voulu?"
+          }
+        ],
+        "metadata": {
+          "nodeCount": 3,
+          "connectionCount": 2,
+          "hasErrors": false,
+          "hasWarnings": true,
+          "hasSuggestions": true
+        }
+      },
+      "score": 0,
+      "grade": "F",
+      "errors": [],
+      "warnings": [
+        "Node \"Daily Trigger\": type \"n8n-nodes-base.cron\" inconnu (pas de schéma de validation)",
+        "Node \"MongoDB Backup\": credentials probablement nécessaires (types: mongoDb)",
+        "Node \"Upload to S3\": type \"n8n-nodes-base.s3\" inconnu (pas de schéma de validation)",
+        "Aucun trigger détecté - workflow devra être lancé manuellement"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "Notification",
+      "prompt": "Notification Slack quand nouvel email important arrive dans Gmail",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 6.18894624710083,
+      "node_count": 2,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "Node \"Vérifier Nouveaux Emails Importants\": credentials probablement nécessaires (types: gmailOAuth2)",
+          "Node \"Envoyer Notification Slack\": credentials probablement nécessaires (types: slackApi, slackOAuth2Api)",
+          "Aucun trigger détecté - workflow devra être lancé manuellement"
+        ],
+        "suggestions": [
+          {
+            "node": "Envoyer Notification Slack",
+            "type": "optional_params",
+            "message": "Paramètres optionnels disponibles: attachments"
+          },
+          {
+            "type": "missing_trigger",
+            "message": "Ajoutez un trigger (Webhook, Cron, etc.) pour automatiser l'exécution"
+          },
+          {
+            "node": "Envoyer Notification Slack",
+            "type": "no_output",
+            "message": "Node sans connexions sortantes - est-ce voulu?"
+          }
+        ],
+        "metadata": {
+          "nodeCount": 2,
+          "connectionCount": 1,
+          "hasErrors": false,
+          "hasWarnings": true,
+          "hasSuggestions": true
+        }
+      },
+      "score": 0,
+      "grade": "F",
+      "errors": [],
+      "warnings": [
+        "Node \"Vérifier Nouveaux Emails Importants\": credentials probablement nécessaires (types: gmailOAuth2)",
+        "Node \"Envoyer Notification Slack\": credentials probablement nécessaires (types: slackApi, slackOAuth2Api)",
+        "Aucun trigger détecté - workflow devra être lancé manuellement"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "AI Image",
+      "prompt": "Génère des images avec DALL-E et stocke sur Google Drive",
+      "success": false,
+      "error": "HTTP 500",
+      "duration": 47.307252168655396
+    },
+    {
+      "id": 8,
+      "category": "ETL",
+      "prompt": "Pipeline ETL : récupère données API, transforme avec IA, stocke dans PostgreSQL",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 8.93257212638855,
+      "node_count": 3,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "Node \"Fetch API Data\": credentials probablement nécessaires (types: httpHeaderAuth, httpBasicAuth, httpDigestAuth, oAuth2Api)",
+          "Node \"Transform Data with AI\": type \"n8n-nodes-base.function\" inconnu (pas de schéma de validation)",
+          "Node \"Store in PostgreSQL\": credentials probablement nécessaires (types: postgres)",
+          "Aucun trigger détecté - workflow devra être lancé manuellement"
+        ],
+        "suggestions": [
+          {
+            "node": "Store in PostgreSQL",
+            "type": "optional_params",
+            "message": "Paramètres optionnels disponibles: query"
+          },
+          {
+            "type": "missing_trigger",
+            "message": "Ajoutez un trigger (Webhook, Cron, etc.) pour automatiser l'exécution"
+          },
+          {
+            "node": "Store in PostgreSQL",
+            "type": "no_output",
+            "message": "Node sans connexions sortantes - est-ce voulu?"
+          }
+        ],
+        "metadata": {
+          "nodeCount": 3,
+          "connectionCount": 2,
+          "hasErrors": false,
+          "hasWarnings": true,
+          "hasSuggestions": true
+        }
+      },
+      "score": 0,
+      "grade": "F",
+      "errors": [],
+      "warnings": [
+        "Node \"Fetch API Data\": credentials probablement nécessaires (types: httpHeaderAuth, httpBasicAuth, httpDigestAuth, oAuth2Api)",
+        "Node \"Transform Data with AI\": type \"n8n-nodes-base.function\" inconnu (pas de schéma de validation)",
+        "Node \"Store in PostgreSQL\": credentials probablement nécessaires (types: postgres)",
+        "Aucun trigger détecté - workflow devra être lancé manuellement"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "Sentiment Analysis",
+      "prompt": "Analyse le sentiment des commentaires réseaux sociaux et alerte si négatif",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 31.367821216583252,
+      "node_count": 3,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "Node \"Récupérer Commentaires\": type \"n8n-nodes-base.socialMedia\" inconnu (pas de schéma de validation)",
+          "Node \"Analyser Sentiment\": type \"n8n-nodes-base.aiAgent\" inconnu (pas de schéma de validation)",
+          "Node \"Envoyer Alerte Email\": type \"n8n-nodes-base.email\" inconnu (pas de schéma de validation)",
+          "Aucun trigger détecté - workflow devra être lancé manuellement"
+        ],
+        "suggestions": [
+          {
+            "type": "missing_trigger",
+            "message": "Ajoutez un trigger (Webhook, Cron, etc.) pour automatiser l'exécution"
+          },
+          {
+            "node": "Envoyer Alerte Email",
+            "type": "no_output",
+            "message": "Node sans connexions sortantes - est-ce voulu?"
+          }
+        ],
+        "metadata": {
+          "nodeCount": 3,
+          "connectionCount": 2,
+          "hasErrors": false,
+          "hasWarnings": true,
+          "hasSuggestions": true
+        }
+      },
+      "score": 0,
+      "grade": "F",
+      "errors": [],
+      "warnings": [
+        "Node \"Récupérer Commentaires\": type \"n8n-nodes-base.socialMedia\" inconnu (pas de schéma de validation)",
+        "Node \"Analyser Sentiment\": type \"n8n-nodes-base.aiAgent\" inconnu (pas de schéma de validation)",
+        "Node \"Envoyer Alerte Email\": type \"n8n-nodes-base.email\" inconnu (pas de schéma de validation)",
+        "Aucun trigger détecté - workflow devra être lancé manuellement"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "Onboarding",
+      "prompt": "Workflow d'onboarding client automatique avec emails et création de comptes",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 6.585860013961792,
+      "node_count": 2,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "Node \"Send Welcome Email\": credentials probablement nécessaires (types: gmailOAuth2)",
+          "Node \"Notify Admin\": credentials probablement nécessaires (types: gmailOAuth2)",
+          "Aucun trigger détecté - workflow devra être lancé manuellement"
+        ],
+        "suggestions": [
+          {
+            "node": "Send Welcome Email",
+            "type": "optional_params",
+            "message": "Paramètres optionnels disponibles: message, filters"
+          },
+          {
+            "node": "Notify Admin",
+            "type": "optional_params",
+            "message": "Paramètres optionnels disponibles: message, filters"
+          },
+          {
+            "type": "missing_trigger",
+            "message": "Ajoutez un trigger (Webhook, Cron, etc.) pour automatiser l'exécution"
+          },
+          {
+            "node": "Notify Admin",
+            "type": "no_output",
+            "message": "Node sans connexions sortantes - est-ce voulu?"
+          }
+        ],
+        "metadata": {
+          "nodeCount": 2,
+          "connectionCount": 1,
+          "hasErrors": false,
+          "hasWarnings": true,
+          "hasSuggestions": true
+        }
+      },
+      "score": 0,
+      "grade": "F",
+      "errors": [],
+      "warnings": [
+        "Node \"Send Welcome Email\": credentials probablement nécessaires (types: gmailOAuth2)",
+        "Node \"Notify Admin\": credentials probablement nécessaires (types: gmailOAuth2)",
+        "Aucun trigger détecté - workflow devra être lancé manuellement"
+      ]
+    }
+  ]
+}

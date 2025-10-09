@@ -1,0 +1,22 @@
+{
+  "title": "`execution`",
+  "url": "https://docs.n8n.io/code/cookbook/builtin/execution",
+  "content": "---\ncontentType: reference\n---\n\n execution\n\n execution.id\n\nContains the unique ID of the current workflow execution.\n\n=== \"JavaScript\"\n\t\n=== \"Python\"\n\t\n\n execution.resumeUrl\n\nThe webhook URL to call to resume a waiting workflow.\n\nSee the Wait > On webhook call documentation to learn more.\n\nexecution.resumeUrl is available in workflows containing a Wait node, along with a node that waits for a webhook response.\n\n execution.customData\n\nThis is only available in the Code node.\n\n=== \"JavaScript\"\n\t\n=== \"Python\"\n\t\n\nRefer to Custom executions data for more information.\n\n---",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "`execution`",
+    "execution",
+    "webhook",
+    "node",
+    "workflow",
+    "javascript",
+    "python",
+    "resumeurl",
+    "call",
+    "wait",
+    "more"
+  ],
+  "fetchedAt": "2025-10-07T16:15:48.105Z",
+  "hash": "d38b693353c0592bc4905bd63d2e90ff"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "WhatsApp Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.whatsapptrigger",
+  "content": "---\ntitle: WhatsApp Trigger node documentation\ndescription: Learn how to use the WhatsApp Trigger node in n8n. Follow technical documentation to integrate WhatsApp Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n WhatsApp Trigger node\n\nUse the WhatsApp Trigger node to respond to events in WhatsApp and integrate WhatsApp with other applications. n8n has built-in support for a wide range of WhatsApp events, including account, message, and phone number events.\n\nOn this page, you'll find a list of events the WhatsApp Trigger node can respond to, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's WhatsApp integrations page.\n///\n\n Events\n\n Account Review Update\n Account Update\n Business Capability Update\n Message Template Quality Update\n Message Template Status Update\n Messages\n Phone Number Name Update\n Phone Number Quality Update\n Security\n Template Category Update\n\n Related resources\n\nn8n provides an app node for WhatsApp. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to WhatsApp's documentation for details about their API.\n\n Common issues\n\nHere are some common errors and issues with the WhatsApp Trigger node and steps to resolve or troubleshoot them.\n\n Workflow only works in testing or production\n\nWhatsApp only allows you to register a single webhook per app. This means that every time you switch from using the testing URL to the production URL (and vice versa), WhatsApp overwrites the registered webhook URL. \n\nYou may have trouble with this if you try to test a workflow that's also active in production. WhatsApp will only send events to one of the two webhook URLs, so the other will never receive event notifications.\n\nTo work around this, you can disable your workflow when testing:\n\n/// warning | Halts production traffic\nThis workaround temporarily disables your production workflow for testing. Your workflow will no longer receive production traffic while it's deactivated.\n///\n\n1. Go to your workflow page.\n2. Toggle the Active switch in the top panel to disable the workflow temporarily.\n3. Test your workflow using the test webhook URL.\n4. When you finish testing, toggle the Inactive toggle to enable the workflow again. The production webhook URL should resume working.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.whatsapptrigger.md",
+  "keywords": [
+    "whatsapp",
+    "trigger",
+    "node",
+    "workflow",
+    "update",
+    "production",
+    "your",
+    "events",
+    "this",
+    "testing"
+  ],
+  "fetchedAt": "2025-10-07T16:15:20.814Z",
+  "hash": "7dfbc7ecd2d362386a55b36143d83ebb"
+}

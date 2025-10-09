@@ -1,0 +1,21 @@
+{
+  "title": "Help Scout Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.helpscouttrigger",
+  "content": "---\ntitle: Help Scout Trigger node documentation\ndescription: Learn how to use the Help Scout Trigger node in n8n. Follow technical documentation to integrate Help Scout Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Help Scout Trigger node\n\nHelp Scout is a help desk software that provides an email-based customer support platform, knowledge base tool, and an embeddable search/contact widget for customer service professionals.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Help Scout Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.helpscouttrigger.md",
+  "keywords": [
+    "help",
+    "scout",
+    "trigger",
+    "node",
+    "documentation",
+    "customer",
+    "note",
+    "examples",
+    "templates",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:15:13.515Z",
+  "hash": "08e034f693fb8b25cd7b0e28e7e64732"
+}

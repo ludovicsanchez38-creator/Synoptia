@@ -1,0 +1,21 @@
+{
+  "title": "Workflows environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/workflows",
+  "content": "---\ntitle: Workflows environment variables\ndescription: Environment variables to configure workflows in n8n, including default naming, onboarding flow preferences, tag management, and caller policy settings.\ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Workflows environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| N8NONBOARDINGFLOWDISABLED | Boolean | false | Whether to disable onboarding tips when creating a new workflow (true) or not (false). |\n| N8NWORKFLOWACTIVATIONBATCHSIZE | Number | 1 | How many workflows to activate simultaneously during startup. \n| N8NWORKFLOWCALLERPOLICYDEFAULTOPTION | String | workflowsFromSameOwner | Which workflows can call a workflow. Options are: any, none, workflowsFromAList, workflowsFromSameOwner. This feature requires Workflow sharing. |\n| N8NWORKFLOWTAGSDISABLED | Boolean | false | Whether to disable workflow tags (true) or enable tags (false). |\n| WORKFLOWSDEFAULTNAME | String | My workflow | The default name used for new workflows. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "workflows",
+    "environment",
+    "variables",
+    "workflow",
+    "tags",
+    "false",
+    "default",
+    "description",
+    "onboarding",
+    "boolean"
+  ],
+  "fetchedAt": "2025-10-07T16:15:58.691Z",
+  "hash": "0e39dcee1a8c2636cdb371e55c45a567"
+}

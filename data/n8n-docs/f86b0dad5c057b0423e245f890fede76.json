@@ -1,0 +1,21 @@
+{
+  "title": "AMQP Sender node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.amqp",
+  "content": "---\ntitle: AMQP Sender node documentation\ndescription: Learn how to use the AMQP Sender node in n8n. Follow technical documentation to integrate AMQP Sender node into your workflows.\ncontentType: [integration, reference]\n---\n\n AMQP Sender node\n\nUse the AMQP Sender node to automate work in AMQP Sender, and integrate AMQP Sender with other applications. n8n has built-in support for a wide range of AMQP Sender features, including sending messages.\n\nOn this page, you'll find a list of operations the AMQP Sender node supports and links to more resources.\n\n/// note | Credentials\nRefer to AMQP Sender credentials for guidance on setting up authentication. \n///\n\n Operations\n\n- Send message\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'amqp-sender') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.amqp.md",
+  "keywords": [
+    "amqp",
+    "sender",
+    "node",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:14:17.355Z",
+  "hash": "f86b0dad5c057b0423e245f890fede76"
+}

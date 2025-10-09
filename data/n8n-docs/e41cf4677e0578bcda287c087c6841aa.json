@@ -1,0 +1,21 @@
+{
+  "title": "Lemlist node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.lemlist",
+  "content": "---\ntitle: Lemlist node documentation\ndescription: Learn how to use the Lemlist node in n8n. Follow technical documentation to integrate Lemlist node into your workflows.\ncontentType: [integration, reference]\n---\n\n Lemlist node\n\nUse the Lemlist node to automate work in Lemlist, and integrate Lemlist with other applications. n8n has built-in support for a wide range of Lemlist features, including getting activities, teams and campaigns, as well as creating, updating, and deleting leads. \n\nOn this page, you'll find a list of operations the Lemlist node supports and links to more resources.\n\n/// note | Credentials\nRefer to Lemlist credentials for guidance on setting up authentication. \n///\n\n Operations\n\n<!-- vale from-write-good.Weasel = NO -->\n<!-- vale from-write-good.TooWordy = NO -->\n Activity\n     Get Many: Get many activities\n Campaign\n     Get Many: Get many campaigns\n     Get Stats: Get campaign stats\n Enrichment\n\t Get: Fetches a previously completed enrichment\n\t Enrich Lead: Enrich a lead using an email or LinkedIn URL\n\t Enrich Person: Enrich a person using an email or LinkedIn URL\n Lead\n     Create: Create a new lead\n     Delete: Delete an existing lead\n     Get: Get an existing lead\n     Unsubscribe: Unsubscribe an existing lead\n Team\n     Get: Get an existing team\n\t Get Credits: Get an existing team's credits\n Unsubscribe\n     Add: Add an email to an unsubscribe list\n     Delete: Delete an email from an unsubscribe list\n     Get Many: Get many unsubscribed emails\n<!-- vale from-write-good.TooWordy = YES -->\n<!-- vale from-write-good.Weasel = YES -->\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'lemlist') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.lemlist.md",
+  "keywords": [
+    "lemlist",
+    "node",
+    "lead",
+    "many",
+    "from",
+    "existing",
+    "unsubscribe",
+    "vale",
+    "write",
+    "good"
+  ],
+  "fetchedAt": "2025-10-07T16:14:37.512Z",
+  "hash": "e41cf4677e0578bcda287c087c6841aa"
+}

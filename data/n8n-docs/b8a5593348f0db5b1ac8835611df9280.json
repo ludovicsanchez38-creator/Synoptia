@@ -1,0 +1,21 @@
+{
+  "title": "Netlify Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.netlifytrigger",
+  "content": "---\ntitle: Netlify Trigger node documentation\ndescription: Learn how to use the Netlify Trigger node in n8n. Follow technical documentation to integrate Netlify Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Netlify Trigger node\n\nNetlify offers hosting and serverless backend services for web applications and static websites.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Netlify Trigger integrations page.\n///\n\n Related resources\n\nn8n provides an app node for Netlify. You can find the node docs here.\n\nView example workflows and related content on n8n's website.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.netlifytrigger.md",
+  "keywords": [
+    "netlify",
+    "trigger",
+    "node",
+    "documentation",
+    "workflows",
+    "note",
+    "find",
+    "here",
+    "examples",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:15:16.288Z",
+  "hash": "b8a5593348f0db5b1ac8835611df9280"
+}

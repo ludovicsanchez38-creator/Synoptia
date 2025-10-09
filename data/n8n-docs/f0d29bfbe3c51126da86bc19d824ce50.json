@@ -1,0 +1,21 @@
+{
+  "title": "Box node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.box",
+  "content": "---\ntitle: Box node documentation\ndescription: Learn how to use the Box node in n8n. Follow technical documentation to integrate Box node into your workflows.\ncontentType: [integration, reference]\n---\n\n Box node\n\nUse the Box node to automate work in Box, and integrate Box with other applications. n8n has built-in support for a wide range of Box features, including creating, copying, deleting, searching, uploading, and downloading files and folders.\n\nOn this page, you'll find a list of operations the Box node supports and links to more resources.\n\n/// note | Credentials\nRefer to Box credentials for guidance on setting up authentication. \n///\n \n\n Operations\n\n File\n     Copy a file\n     Delete a file\n     Download a file\n     Get a file\n     Search files\n     Share a file\n     Upload a file\n Folder\n     Create a folder\n     Get a folder\n     Delete a folder\n     Search files\n     Share a folder\n     Update folder\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'box') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.box.md",
+  "keywords": [
+    "node",
+    "file",
+    "folder",
+    "files",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:21.094Z",
+  "hash": "f0d29bfbe3c51126da86bc19d824ce50"
+}

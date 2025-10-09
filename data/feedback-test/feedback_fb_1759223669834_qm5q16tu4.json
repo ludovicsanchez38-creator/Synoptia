@@ -1,0 +1,21 @@
+{
+  "id": "fb_1759223669834_qm5q16tu4",
+  "sessionId": "s006",
+  "workflowId": null,
+  "rating": 3,
+  "successful": true,
+  "comment": "",
+  "issues": [
+    "poor_node_naming"
+  ],
+  "request": "Test workflow request",
+  "workflow": null,
+  "metadata": {
+    "intent": "create",
+    "model": "gpt-4o",
+    "ragUsed": true,
+    "documentsUsed": 6
+  },
+  "timestamp": 1759223669834,
+  "analyzed": false
+}

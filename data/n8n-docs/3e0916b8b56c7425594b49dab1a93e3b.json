@@ -1,0 +1,21 @@
+{
+  "title": "Linear node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.linear",
+  "content": "---\ntitle: Linear node documentation\ndescription: Learn how to use the Linear node in n8n. Follow technical documentation to integrate Linear node into your workflows.\ncontentType: [integration, reference]\n---\n\n Linear node\n\nUse the Linear node to automate work in Linear, and integrate Linear with other applications. n8n has built-in support for a wide range of Linear features, including creating, updating, deleting, and getting issues. \n\nOn this page, you'll find a list of operations the Linear node supports and links to more resources.\n\n/// note | Credentials\nRefer to Linear credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Comment\n\t Add Comment\n Issue\n\t Add Link\n     Create\n     Delete\n     Get\n     Get Many\n     Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'linear') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.linear.md",
+  "keywords": [
+    "linear",
+    "node",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "comment",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:14:37.823Z",
+  "hash": "3e0916b8b56c7425594b49dab1a93e3b"
+}

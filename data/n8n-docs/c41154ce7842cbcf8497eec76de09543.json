@@ -1,0 +1,21 @@
+{
+  "title": "Data table",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.datatable/index",
+  "content": "---\ntitle: Data table\ndescription: Documentation for the data table node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: critical\ntags:\n  - data table node\n  - data\nhide:\n  - tags\nsearch:\n  boost: 1.5\nstatus: beta\n---\n\n Data table\n\nUse the Data Table node to permanently save data across workflow executions in a table format. It provides functionality to perform various data operations on stored data. See Data tables.\n\n Node parameters\n\n Resource\n\nSelect the resource on which you want to operate.\n\n- Rows\n\n Operations\n\nSelect the operation you want to run on the resource:\n\n Delete: Delete one or more rows.\n   Dry Run: Simulate a deletion before finalizing it. If you switch on this option, n8n returns the rows that will be deleted by the operation. Default state is off.\n Get: Get one or more rows from your table based on defined filters.\n   Limit: The number of rows you want to return, specified as a number. Default value is 50.\n   Return all: Switch on to return all data. Default value is off.\n If Row Exists: Specify a set of conditions to match input items that exist in the data table.\n If Row Does Not Exist: Specify a set of conditions to match input items that don't exist in the data table.\n Insert: Insert rows into an existing table.\n   Optimize Bulk: Optimize the speed of insertions when working with many rows. If you switch on this option, n8n won't return the data that was inserted. Default state is off.\n Update: Update one or more rows.\n Upsert: Upsert one or more rows. If the row exists, it's updated; otherwise, a new row is created.\n\n Related resources\n\nData tables explains how to create and manage data tables.",
+  "category": "core-nodes",
+  "nodeType": null,
+  "keywords": [
+    "data",
+    "table",
+    "rows",
+    "node",
+    "more",
+    "that",
+    "default",
+    "return",
+    "tables",
+    "resource"
+  ],
+  "fetchedAt": "2025-10-07T16:14:04.041Z",
+  "hash": "c41154ce7842cbcf8497eec76de09543"
+}

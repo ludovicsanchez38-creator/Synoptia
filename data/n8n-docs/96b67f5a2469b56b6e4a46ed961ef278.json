@@ -1,0 +1,21 @@
+{
+  "title": "Discord node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.discord/index",
+  "content": "---\ntitle: Discord node documentation\ndescription: Learn how to use the Discord node in n8n. Follow technical documentation to integrate Discord node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Discord node\n\nUse the Discord node to automate work in Discord, and integrate Discord with other applications. n8n has built-in support for a wide range of Discord features, including sending messages in a Discord channel and managing channels.\n\nOn this page, you'll find a list of operations the Discord node supports and links to more resources.\n\n/// note | Credentials\nRefer to Discord credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n<!-- vale off -->\n<!-- \"Many\" triggers warnings -->\n\n- Channel\n\t- Create\n\t- Delete\n\t- Get\n\t- Get Many\n\t- Update\n- Message\n\t- Delete\n\t- Get\n\t- Get Many\n\t- React with Emoji\n\t- Send\n\t Send and Wait for Response\n- Member\n\t- Get Many\n\t- Role Add\n\t- Role Remove\n\n--8<-- \"snippets/integrations/builtin/send-and-wait-operation.md\"\n\n<!-- vale on -->\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'discord') ]]\n\n Related resources\n\nRefer to Discord's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Common issues\n\nFor common errors or issues and suggested resolution steps, refer to Common Issues.",
+  "category": "app-nodes",
+  "nodeType": "discord",
+  "keywords": [
+    "discord",
+    "node",
+    "integrations",
+    "many",
+    "documentation",
+    "refer",
+    "snippets",
+    "builtin",
+    "send",
+    "common"
+  ],
+  "fetchedAt": "2025-10-07T16:14:24.831Z",
+  "hash": "96b67f5a2469b56b6e4a46ed961ef278"
+}

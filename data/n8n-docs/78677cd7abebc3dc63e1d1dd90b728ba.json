@@ -1,0 +1,21 @@
+{
+  "title": "AWS Lambda node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.awslambda",
+  "content": "---\ntitle: AWS Lambda node documentation\ndescription: Learn how to use the AWS Lambda node in n8n. Follow technical documentation to integrate AWS Lambda node into your workflows.\ncontentType: [integration, reference]\n---\n\n AWS Lambda node\n\nUse the AWS Lambda node to automate work in AWS Lambda, and integrate AWS Lambda with other applications. n8n has built-in support for a wide range of AWS Lambda features, including invoking functions.\n\nOn this page, you'll find a list of operations the AWS Lambda node supports and links to more resources.\n\n/// note | Credentials\nRefer to AWS Lambda credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Invoke a function\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'aws-lambda') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.awslambda.md",
+  "keywords": [
+    "lambda",
+    "node",
+    "integrations",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "snippets"
+  ],
+  "fetchedAt": "2025-10-07T16:14:18.792Z",
+  "hash": "78677cd7abebc3dc63e1d1dd90b728ba"
+}

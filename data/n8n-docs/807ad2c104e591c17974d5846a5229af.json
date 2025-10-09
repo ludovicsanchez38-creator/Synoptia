@@ -1,0 +1,21 @@
+{
+  "title": "Database environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/database",
+  "content": "---\ntitle: Database environment variables\ndescription: Set up and configure databases with environment variables for your self-hosted n8n instance.\ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Database environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nBy default, n8n uses SQLite. n8n also supports PostgreSQL. n8n deprecated support for MySQL and MariaDB in v1.0.\n\nThis page outlines environment variables to configure your chosen database for your self-hosted n8n instance.\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| DBTYPE<br>/FILE | Enum string:<br> sqlite, postgresdb | sqlite | The database to use. |\n| DBTABLEPREFIX |  | - | Prefix to use for table names. |\n| DBPINGINTERVALSECONDS | Number | 2 | The interval, in seconds, between pings to the database to check if the connection is still alive. |\n\n PostgreSQL\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| DBPOSTGRESDBDATABASE<br>/FILE | String | n8n | The name of the PostgreSQL database. |\n| DBPOSTGRESDBHOST<br>/FILE | String | localhost | The PostgreSQL host. |\n| DBPOSTGRESDBPORT<br>/FILE | Number | 5432 | The PostgreSQL port. |\n| DBPOSTGRESDBUSER<br>/FILE | String | postgres | The PostgreSQL user. |\n| DBPOSTGRESDBPASSWORD<br>/FILE | String | - | The PostgreSQL password. |\n| DBPOSTGRESDBPOOLSIZE<br>/FILE | Number | 2 | Control how many parallel open Postgres connections n8n should have. Increasing it may help with resource utilization, but too many connections may degrade performance. |\n| DBPOSTGRESDBCONNECTIONTIMEOUT<br>/FILE | Number | 20000 | Postgres connection timeout (ms).\n| DBPOSTGRESDBIDLECONNECTIONTIMEOUT<br>/FILE | Number | 30000 | Amount of time before an idle connection is eligible for eviction for being idle.\n| DBPOSTGRESDBSCHEMA<br>/FILE | String | public | The PostgreSQL schema. |\n| DBPOSTGRESDBSSLENABLED<br>/FILE | Boolean | false | Whether to enable SSL. Automatically enabled if DBPOSTGRESDBSSLCA, DBPOSTGRESDBSSLCERT or DBPOSTGRESDBSSLKEY is defined. |\n| DBPOSTGRESDBSSLCA<br>/FILE | String | - | The PostgreSQL SSL certificate authority. |\n| DBPOSTGRESDBSSLCERT<br>/FILE | String | - | The PostgreSQL SSL certificate. |\n| DBPOSTGRESDBSSLKEY<br>/FILE | String | - | The PostgreSQL SSL key. |\n| DBPOSTGRESDBSSLREJECTUNAUTHORIZED<br>/FILE | Boolean | true | If n8n should reject unauthorized SSL connections (true) or not (false). |\n\n SQLite\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| DBSQLITEPOOLSIZE | Number | 0 | Controls whether to open the SQLite file in WAL mode or rollback journal mode. Uses rollback journal mode when set to zero. When greater than zero, uses WAL mode with the value determining the number of parallel SQL read connections to configure. WAL mode is much more performant and reliable than the rollback journal mode. |\n| DBSQLITEVACUUMONSTARTUP | Boolean | false | Runs VACUUM operation on startup to rebuild the database. Reduces file size and optimizes indexes. This is a long running blocking operation and increases start-up time. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "database",
+    "environment",
+    "variables",
+    "file",
+    "postgresql",
+    "string",
+    "number",
+    "mode",
+    "sqlite",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:15:56.119Z",
+  "hash": "807ad2c104e591c17974d5846a5229af"
+}

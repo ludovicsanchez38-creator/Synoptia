@@ -1,0 +1,21 @@
+{
+  "title": "Gumroad Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.gumroadtrigger",
+  "content": "---\ntitle: Gumroad Trigger node documentation\ndescription: Learn how to use the Gumroad Trigger node in n8n. Follow technical documentation to integrate Gumroad Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Gumroad Trigger node\n\nGumroad is an online platform that enables creators to sell products directly to consumers.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Gumroad Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.gumroadtrigger.md",
+  "keywords": [
+    "gumroad",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:13.381Z",
+  "hash": "c725b447dfdd07039fc3ce0d7e3a1693"
+}

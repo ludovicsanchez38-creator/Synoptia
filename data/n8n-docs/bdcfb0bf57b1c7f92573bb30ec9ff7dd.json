@@ -1,0 +1,21 @@
+{
+  "title": "Vector Store Retriever node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.retrievervectorstore",
+  "content": "---\ntitle: Vector Store Retriever node documentation\ndescription: Learn how to use the Vector Store Retriever node in n8n. Follow technical documentation to integrate Vector Store Retriever node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Vector Store Retriever node\n\nUse the Vector Store Retriever node to retrieve documents from a vector store.\n\nOn this page, you'll find the node parameters for the Vector Store Retriever node, and links to more resources.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Limit: Enter the maximum number of results to return.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'vector-store-retriever') ]]\n\n Related resources\n\nRefer to LangChain's vector store retriever documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.retrievervectorstore.md",
+  "keywords": [
+    "vector",
+    "store",
+    "retriever",
+    "node",
+    "documentation",
+    "integrations",
+    "title",
+    "page",
+    "parameters",
+    "more"
+  ],
+  "fetchedAt": "2025-10-07T16:15:36.289Z",
+  "hash": "bdcfb0bf57b1c7f92573bb30ec9ff7dd"
+}

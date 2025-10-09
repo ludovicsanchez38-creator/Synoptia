@@ -1,0 +1,21 @@
+{
+  "title": "Using the Code node",
+  "url": "https://docs.n8n.io/code/code-node",
+  "content": "---\ncontentType: [integration, reference]\ntags:\n  - code node\n  - code\nhide:\n  - tags\n---\n\n Using the Code node\n\n--8<-- \"snippets/integrations/builtin/core-nodes/code-node.md\"",
+  "category": "code",
+  "nodeType": "using",
+  "keywords": [
+    "using",
+    "code",
+    "node",
+    "tags",
+    "contenttype",
+    "integration",
+    "reference",
+    "hide",
+    "snippets",
+    "integrations"
+  ],
+  "fetchedAt": "2025-10-07T16:15:47.441Z",
+  "hash": "34aebfac78bee326aa972368ded64f37"
+}

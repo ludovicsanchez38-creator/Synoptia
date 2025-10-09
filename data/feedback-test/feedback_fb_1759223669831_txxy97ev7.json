@@ -1,0 +1,30 @@
+{
+  "id": "fb_1759223669831_txxy97ev7",
+  "sessionId": "session_001",
+  "workflowId": "workflow_001",
+  "rating": 5,
+  "successful": true,
+  "comment": "Perfect workflow! Exactly what I needed.",
+  "issues": [],
+  "request": "Create a webhook that sends Slack notifications",
+  "workflow": {
+    "name": "Webhook to Slack",
+    "nodeCount": 2,
+    "nodeTypes": [
+      "n8n-nodes-base.webhook",
+      "n8n-nodes-base.slack"
+    ]
+  },
+  "metadata": {
+    "intent": "create",
+    "model": "gpt-4o",
+    "ragUsed": true,
+    "documentsUsed": 7,
+    "generationTime": 3200,
+    "validationResult": {
+      "valid": true
+    }
+  },
+  "timestamp": 1759223669831,
+  "analyzed": false
+}

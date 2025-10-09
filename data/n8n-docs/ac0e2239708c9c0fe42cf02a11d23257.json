@@ -1,0 +1,21 @@
+{
+  "title": "Ollama Chat Model node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatollama/index",
+  "content": "---\ntitle: Ollama Chat Model node documentation\ndescription: Learn how to use the Ollama Chat Model node in n8n. Follow technical documentation to integrate Ollama Chat Model node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Ollama Chat Model node\n\nThe Ollama Chat Model node allows you use local Llama 2 models with conversational agents.\n\nOn this page, you'll find the node parameters for the Ollama Chat Model node, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Model: Select the model that generates the completion. Choose from:\n\t Llama2\n\t Llama2 13B\n\t Llama2 70B\n\t Llama2 Uncensored\n\nRefer to the Ollama Models Library documentation for more information about available models.\n\n Node options\n\n Sampling Temperature: Use this option to control the randomness of the sampling process. A higher temperature creates more diverse sampling, but increases the risk of hallucinations.\n Top K: Enter the number of token choices the model uses to generate the next token.\n Top P: Use this option to set the probability the completion should use. Use a lower value to ignore less probable options. \n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'ollama-chat-model') ]]\n\n Related resources\n\nRefer to LangChains's Ollama Chat Model documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common issues.\n\n--8<-- \"snippets/self-hosting/starter-kits/self-hosted-ai-starter-kit.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "ollama",
+  "keywords": [
+    "ollama",
+    "chat",
+    "model",
+    "node",
+    "documentation",
+    "this",
+    "more",
+    "models",
+    "information",
+    "snippets"
+  ],
+  "fetchedAt": "2025-10-07T16:15:31.509Z",
+  "hash": "ac0e2239708c9c0fe42cf02a11d23257"
+}

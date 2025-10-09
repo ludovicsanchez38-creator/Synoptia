@@ -1,0 +1,21 @@
+{
+  "title": "DHL node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.dhl",
+  "content": "---\ntitle: DHL node documentation\ndescription: Learn how to use the DHL node in n8n. Follow technical documentation to integrate DHL node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n DHL node\n\nUse the DHL node to automate work in DHL, and integrate DHL with other applications. n8n has built-in support for a wide range of DHL features, including tracking shipment. \n\nOn this page, you'll find a list of operations the DHL node supports and links to more resources.\n\n/// note | Credentials\nRefer to DHL credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Shipment\n     Get Tracking Details\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'dhl') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.dhl.md",
+  "keywords": [
+    "node",
+    "title",
+    "documentation",
+    "integrate",
+    "tracking",
+    "shipment",
+    "page",
+    "operations",
+    "credentials",
+    "integrations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:24.319Z",
+  "hash": "7d43795477db62148ef369fe3a3caaab"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Calendly Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.calendlytrigger",
+  "content": "---\ntitle: Calendly Trigger node documentation\ndescription: Learn how to use the Calendly Trigger node in n8n. Follow technical documentation to integrate Calendly Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Calendly Trigger node\n\nCalendly is an automated scheduling software that's designed to help find meeting times.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Calendly Trigger integrations page.\n///\n\n Events\n\n Event created\n Event canceled",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.calendlytrigger.md",
+  "keywords": [
+    "calendly",
+    "trigger",
+    "node",
+    "documentation",
+    "help",
+    "find",
+    "note",
+    "examples",
+    "templates",
+    "event"
+  ],
+  "fetchedAt": "2025-10-07T16:15:06.383Z",
+  "hash": "bfa62ac5cf79439a97908a193f12a4b4"
+}

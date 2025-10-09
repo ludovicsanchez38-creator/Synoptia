@@ -1,0 +1,21 @@
+{
+  "title": "Trello node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.trello",
+  "content": "---\ntitle: Trello node documentation\ndescription: Learn how to use the Trello node in n8n. Follow technical documentation to integrate Trello node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Trello node\n\nUse the Trello node to automate work in Trello, and integrate Trello with other applications. n8n has built-in support for a wide range of Trello features, including creating and updating cards, and adding and removing members. \n\nOn this page, you'll find a list of operations the Trello node supports and links to more resources.\n\n/// note | Credentials\nRefer to Trello credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Attachment\n     Create a new attachment for a card\n     Delete an attachment\n     Get the data of an attachment\n     Returns all attachments for the card\n Board\n     Create a new board\n     Delete a board\n     Get the data of a board\n     Update a board\n Board Member\n     Add\n     Get All\n     Invite\n     Remove\n Card\n     Create a new card\n     Delete a card\n     Get the data of a card\n     Update a card\n Card Comment\n     Create a comment on a card\n     Delete a comment from a card\n     Update a comment on a card\n Checklist\n     Create a checklist item\n     Create a new checklist\n     Delete a checklist\n     Delete a checklist item\n     Get the data of a checklist\n     Returns all checklists for the card\n     Get a specific checklist on a card\n     Get the completed checklist items on a card\n     Update an item in a checklist on a card\n Label\n     Add a label to a card.\n     Create a new label\n     Delete a label\n     Get the data of a label\n     Returns all labels for the board\n     Remove a label from a card.\n     Update a label.\n List\n     Archive/Unarchive a list\n     Create a new list\n     Get the data of a list\n     Get all the lists\n     Get all the cards in a list\n     Update a list\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'trello') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Find the List ID\n\n1. Open the Trello board that contains the list.\n2. If the list doesn't have any cards, add a card to the list.\n3. Open the card, add .json at the end of the URL, and press enter.\n4. In the JSON file, you will see a field called idList.\n5. Copy the contents of the idListfield and paste it in the List ID field in n8n.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.trello.md",
+  "keywords": [
+    "trello",
+    "node",
+    "card",
+    "list",
+    "checklist",
+    "create",
+    "board",
+    "delete",
+    "label",
+    "data"
+  ],
+  "fetchedAt": "2025-10-07T16:14:56.982Z",
+  "hash": "03a7866546cc3effd5772af9ee59ed8e"
+}

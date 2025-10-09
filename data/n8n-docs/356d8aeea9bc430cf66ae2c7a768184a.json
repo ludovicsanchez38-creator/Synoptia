@@ -1,0 +1,21 @@
+{
+  "title": "Netlify node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.netlify",
+  "content": "---\ntitle: Netlify node documentation\ndescription: Learn how to use the Netlify node in n8n. Follow technical documentation to integrate Netlify node into your workflows.\ncontentType: [integration, reference]\n---\n\n Netlify node\n\nUse the Netlify node to automate work in Netlify, and integrate Netlify with other applications. n8n has built-in support for a wide range of Netlify features, including getting and cancelling deployments, as well as deleting, and getting sites. \n\nOn this page, you'll find a list of operations the Netlify node supports and links to more resources.\n\n/// note | Credentials\nRefer to Netlify credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Deploy\n     Cancel a deployment\n     Create a new deployment\n     Get a deployment\n     Get all deployments\n Site\n     Delete a site\n     Get a site\n     Returns all sites\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'netlify') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.netlify.md",
+  "keywords": [
+    "netlify",
+    "node",
+    "deployment",
+    "site",
+    "title",
+    "documentation",
+    "integrate",
+    "getting",
+    "deployments",
+    "sites"
+  ],
+  "fetchedAt": "2025-10-07T16:14:44.375Z",
+  "hash": "356d8aeea9bc430cf66ae2c7a768184a"
+}

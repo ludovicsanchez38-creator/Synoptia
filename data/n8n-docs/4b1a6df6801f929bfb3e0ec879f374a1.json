@@ -1,0 +1,21 @@
+{
+  "title": "Help Scout node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.helpscout",
+  "content": "---\ntitle: Help Scout node documentation\ndescription: Learn how to use the Help Scout node in n8n. Follow technical documentation to integrate Help Scout node into your workflows.\ncontentType: [integration, reference]\n---\n\n Help Scout node\n\nUse the Help Scout node to automate work in Help Scout, and integrate Help Scout with other applications. n8n has built-in support for a wide range of Help Scout features, including creating, updating, deleting, and getting conversations, and customers.\n\nOn this page, you'll find a list of operations the Help Scout node supports and links to more resources.\n\n/// note | Credentials\nRefer to Help Scout credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Conversation\n     Create a new conversation\n     Delete a conversation\n     Get a conversation\n     Get all conversations\n Customer\n     Create a new customer\n     Get a customer\n     Get all customers\n     Get customer property definitions\n     Update a customer\n Mailbox\n     Get data of a mailbox\n     Get all mailboxes\n Thread\n     Create a new chat thread\n     Get all chat threads\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'helpscout') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.helpscout.md",
+  "keywords": [
+    "help",
+    "scout",
+    "node",
+    "customer",
+    "conversation",
+    "create",
+    "title",
+    "documentation",
+    "integrate",
+    "conversations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:35.164Z",
+  "hash": "4b1a6df6801f929bfb3e0ec879f374a1"
+}

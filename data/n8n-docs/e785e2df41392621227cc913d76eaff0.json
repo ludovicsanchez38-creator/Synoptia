@@ -1,0 +1,22 @@
+{
+  "title": "Wolfram|Alpha tool node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolwolframalpha",
+  "content": "---\ntitle: Wolfram|Alpha tool node documentation\ndescription: Learn how to use the Wolfram|Alpha tool node in n8n. Follow technical documentation to integrate Wolfram|Alpha tool node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Wolfram|Alpha tool node\n\nUse the Wolfram|Alpha tool node to connect your agents and chains to Wolfram|Alpha's computational intelligence engine.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'wolframoralpha') ]]\n\n Related resources\n\nRefer to Wolfram|Alpha's documentation for more information about the service. You can also view LangChain's documentation on their WolframAlpha Tool.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.toolwolframalpha.md",
+  "keywords": [
+    "wolfram|alpha",
+    "tool",
+    "node",
+    "wolfram",
+    "alpha",
+    "documentation",
+    "integrations",
+    "title",
+    "your",
+    "information",
+    "snippets"
+  ],
+  "fetchedAt": "2025-10-07T16:15:38.516Z",
+  "hash": "e785e2df41392621227cc913d76eaff0"
+}

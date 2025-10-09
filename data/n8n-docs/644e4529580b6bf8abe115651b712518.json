@@ -1,0 +1,21 @@
+{
+  "title": "Gmail Trigger node Poll Mode options",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.gmailtrigger/poll-mode-options",
+  "content": "---\ntitle: Gmail Trigger node poll mode options documentation\ndescription: Learn about the poll mode options available to the Gmail Trigger node in n8n and how to configure them.\ncontentType: howto\npriority: high\n---\n\n Gmail Trigger node Poll Mode options\n\nUse the Gmail Trigger node's Poll Time parameter to set how often to trigger the poll. Your Mode selection will add or remove relevant fields.\n\n Poll mode options\n\nRefer to the sections below for details on using each Mode.\n\n--8<-- \"snippets/integrations/builtin/poll-modes.md\"",
+  "category": "trigger-nodes",
+  "nodeType": "gmail",
+  "keywords": [
+    "gmail",
+    "trigger",
+    "node",
+    "poll",
+    "mode",
+    "options",
+    "title",
+    "documentation",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:11.882Z",
+  "hash": "644e4529580b6bf8abe115651b712518"
+}

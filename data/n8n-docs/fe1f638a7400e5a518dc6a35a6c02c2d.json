@@ -1,0 +1,21 @@
+{
+  "title": "Spotify node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.spotify",
+  "content": "---\ntitle: Spotify node documentation\ndescription: Learn how to use the Spotify node in n8n. Follow technical documentation to integrate Spotify node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Spotify node\n\nUse the Spotify node to automate work in Spotify, and integrate Spotify with other applications. n8n has built-in support for a wide range of Spotify features, including getting album and artist information. \n\nOn this page, you'll find a list of operations the Spotify node supports and links to more resources.\n\n/// note | Credentials\nRefer to Spotify credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Album\n     Get an album by URI or ID.\n     Get a list of new album releases.\n     Get an album's tracks by URI or ID.\n     Search albums by keyword.\n Artist\n     Get an artist by URI or ID.\n     Get an artist's albums by URI or ID.\n     Get an artist's related artists by URI or ID.\n     Get an artist's top tracks by URI or ID.\n     Search artists by keyword.\n Library\n     Get the user's liked tracks.\n My Data\n     Get your followed artists.\n Player\n     Add a song to your queue.\n     Get your currently playing track.\n     Skip to your next track.\n     Pause your music.\n     Skip to your previous song.\n     Get your recently played tracks.\n     Resume playback on the current active device.\n     Set volume on the current active device.\n     Start playing a playlist, artist, or album.\n Playlist\n     Add tracks from a playlist by track and playlist URI or ID.\n     Create a new playlist.\n     Get a playlist by URI or ID.\n     Get a playlist's tracks by URI or ID.\n     Get a user's playlists.\n     Remove tracks from a playlist by track and playlist URI or ID.\n     Search playlists by keyword.\n Track\n     Get a track by its URI or ID.\n     Get audio features for a track by URI or ID.\n     Search tracks by keyword\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'spotify') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.spotify.md",
+  "keywords": [
+    "spotify",
+    "node",
+    "playlist",
+    "your",
+    "tracks",
+    "artist",
+    "track",
+    "album",
+    "search",
+    "keyword"
+  ],
+  "fetchedAt": "2025-10-07T16:14:53.253Z",
+  "hash": "fe1f638a7400e5a518dc6a35a6c02c2d"
+}

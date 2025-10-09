@@ -1,0 +1,22 @@
+{
+  "title": "Customer.io node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.customerio",
+  "content": "---\ntitle: Customer.io node documentation\ndescription: Learn how to use the Customer.io node in n8n. Follow technical documentation to integrate Customer.io node into your workflows.\ncontentType: [integration, reference]\n---\n\n Customer.io node\n\nUse the Customer.io node to automate work in Customer.io, and integrate Customer.io with other applications. n8n has built-in support for a wide range of Customer.io features, including creating and updating customers, tracking events, and getting campaigns.\n\nOn this page, you'll find a list of operations the Customer.io node supports and links to more resources.\n\n/// note | Credentials\nRefer to Customer.io credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Customer\n     Create/Update a customer.\n     Delete a customer.\n Event\n     Track a customer event.\n     Track an anonymous event.\n Campaign\n     Get\n     Get All\n     Get Metrics\n Segment\n     Add Customer\n     Remove Customer\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'customerio') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.customerio.md",
+  "keywords": [
+    "customer.io",
+    "node",
+    "customer",
+    "event",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "track"
+  ],
+  "fetchedAt": "2025-10-07T16:14:23.889Z",
+  "hash": "e216a29f9a30fa816bc0cf4a2b428081"
+}

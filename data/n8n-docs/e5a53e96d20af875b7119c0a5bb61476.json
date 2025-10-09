@@ -1,0 +1,21 @@
+{
+  "title": "Wise Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.wisetrigger",
+  "content": "---\ntitle: Wise Trigger node documentation\ndescription: Learn how to use the Wise Trigger node in n8n. Follow technical documentation to integrate Wise Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Wise Trigger node\n\nWise allows you to transfer money abroad with low-cost money transfers, receive money with international account details, and track transactions on your phone.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n/// note | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Wise Trigger integrations page.\n///\n\n Events\n\n- Triggered every time a balance account is credited\n- Triggered every time a balance account is credited or debited\n- Triggered every time a transfer's list of active cases is updated\n- Triggered every time a transfer's status is updated",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.wisetrigger.md",
+  "keywords": [
+    "wise",
+    "trigger",
+    "node",
+    "triggered",
+    "every",
+    "time",
+    "transfer",
+    "money",
+    "account",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:15:20.959Z",
+  "hash": "e5a53e96d20af875b7119c0a5bb61476"
+}

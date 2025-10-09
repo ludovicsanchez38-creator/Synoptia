@@ -1,0 +1,21 @@
+{
+  "title": "SSE Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.ssetrigger",
+  "content": "---\ntitle: SSE Trigger node documentation\ndescription: Learn how to use the SSE Trigger node in n8n. Follow technical documentation to integrate SSE Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n SSE Trigger node\n\nServer-Sent Events (SSE) is a server push technology enabling a client to receive automatic updates from a server using HTTP connection. The SSE Trigger node is used to receive server-sent events.\n\n Node parameters\n\nThe SSE Trigger node has one parameter, the URL. Enter the URL from which to receive the server-sent events (SSE).\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'sse-trigger') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.ssetrigger.md",
+  "keywords": [
+    "trigger",
+    "node",
+    "server",
+    "sent",
+    "events",
+    "receive",
+    "title",
+    "documentation",
+    "from",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:14:11.832Z",
+  "hash": "5d3cf9a1a74065f086bb59bec32c248c"
+}

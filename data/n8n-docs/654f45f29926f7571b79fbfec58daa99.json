@@ -1,0 +1,21 @@
+{
+  "title": "CrateDB node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.cratedb",
+  "content": "---\ntitle: CrateDB node documentation\ndescription: Learn how to use the CrateDB node in n8n. Follow technical documentation to integrate CrateDB node into your workflows.\ncontentType: [integration, reference]\n---\n\n CrateDB node\n\nUse the CrateDB node to automate work in CrateDB, and integrate CrateDB with other applications. n8n has built-in support for a wide range of CrateDB features, including executing, inserting, and updating rows in the database.\n\nOn this page, you'll find a list of operations the CrateDB node supports and links to more resources.\n\n/// note | Credentials\nRefer to CrateDB credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Execute an SQL query\n Insert rows in database\n Update rows in database\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'cratedb') ]]\n\n Node reference\n\n Specify a column's data type\n\nTo specify a column's data type, append the column name with :type, where type is the data type you want for the column. For example, if you want to specify the type int for the column id and type text for the column name, you can use the following snippet in the Columns field: id:int,name:text.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.cratedb.md",
+  "keywords": [
+    "cratedb",
+    "node",
+    "type",
+    "column",
+    "rows",
+    "database",
+    "specify",
+    "data",
+    "name",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:23.601Z",
+  "hash": "654f45f29926f7571b79fbfec58daa99"
+}

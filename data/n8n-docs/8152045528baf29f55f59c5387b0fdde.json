@@ -1,0 +1,21 @@
+{
+  "title": "Text Classifier node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.text-classifier",
+  "content": "---\ntitle: Text Classifier node documentation\ndescription: Learn how to use the Text Classifier node in n8n. Follow technical documentation to integrate Text Classifier node into your workflows.\ncontentType: [integration, reference]\n---\n\n Text Classifier node\n\nUse the Text Classifier node to classify (categorize) incoming data. Using the categories provided in the parameters (see below), each item is passed to the model to determine its category.\n\nOn this page, you'll find the node parameters for the Text Classifier node, and links to more resources.\n\n Node parameters\n\n Input Prompt defines the input to classify. This is usually an expression that references a field from the input items. For example, this could be {{ $json.chatInput }} if the input is a chat trigger. By default it references the text field.\n Categories: Add the categories that you want to classify your input as. Categories have a name and a description. Use the description to tell the model what the category means. This is important if the meaning isn't obvious. You can add as many categories as you like.\n\n Node options\n\n Allow Multiple Classes To Be True: You can configure the classifier to always output a single class per item (turned off), or allow the model to select multiple classes (turned on).\n When No Clear Match: Define what happens if the model can't find a good match for an item. There are two options:\n\t- Discard Item (the default): If the node doesn't detect any of the categories, it drops the item.\n\t- Output on Extra, 'Other' Branch: Creates a separate output branch called Other. When the node doesn't detect any of the categories, it outputs items in this branch.\n System Prompt Template: Use this option to change the system prompt that's used for the classification. It uses the {categories} placeholder for the categories.\n\n Enable Auto-Fixing: When enabled, the node automatically fixes model outputs to ensure they match the expected format. Do this by sending the schema parsing error to the LLM and asking it to fix it.\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.text-classifier.md",
+  "keywords": [
+    "text",
+    "classifier",
+    "node",
+    "categories",
+    "this",
+    "item",
+    "model",
+    "input",
+    "description",
+    "classify"
+  ],
+  "fetchedAt": "2025-10-07T16:15:26.117Z",
+  "hash": "8152045528baf29f55f59c5387b0fdde"
+}

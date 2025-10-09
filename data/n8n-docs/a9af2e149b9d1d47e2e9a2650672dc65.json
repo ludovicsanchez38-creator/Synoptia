@@ -1,0 +1,21 @@
+{
+  "title": "Vector Store Question Answer Tool node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolvectorstore",
+  "content": "---\ntitle: Vector Store Question Answer Tool node documentation\ndescription: Learn how to use the Vector Store Question Answer Tool node in n8n. Follow technical documentation to integrate Vector Store Question Answer Tool node into your workflows.\ncontentType: [integration, reference]\n---\n\n Vector Store Question Answer Tool node\n\nThe Vector Store Question Answer node is a tool that allows an agent to summarize results and answer questions based on chunks from a vector store. \n\nOn this page, you'll find the node parameters for the Vector Store Question Answer node, and links to more resources.\n\n/// note | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Vector Store Question Answer Tool integrations page.\n///\t\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Description of Data\n\nEnter a description of the data in the vector store.\n\n Limit\n\nThe maximum number of results to return.\n\n How n8n populates the tool description\n\nn8n uses the node name (select the name to edit) and Description of Data parameter to populate the tool description for AI agents using the following format:\n\n> Useful for when you need to answer questions about [node name]. Whenever you need information about [Description of Data], you should ALWAYS use this. Input should be a fully formed question.\n\nSpaces in the node name are converted to underscores in the tool description.\n\n/// warning | Avoid special characters in node names\nUsing special characters in the node name will cause errors when the agent runs:\n\n!model errors from special characters\n\nUse only alphanumeric characters, spaces, dashes, and underscores in node names.\n///\n\n Related resources\n\nView example workflows and related content on n8n's website.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/tools-link.md\"\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.toolvectorstore.md",
+  "keywords": [
+    "vector",
+    "store",
+    "question",
+    "answer",
+    "tool",
+    "node",
+    "description",
+    "name",
+    "integrations",
+    "data"
+  ],
+  "fetchedAt": "2025-10-07T16:15:38.233Z",
+  "hash": "a9af2e149b9d1d47e2e9a2650672dc65"
+}

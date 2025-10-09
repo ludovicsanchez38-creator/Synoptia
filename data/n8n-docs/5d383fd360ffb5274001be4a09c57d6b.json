@@ -1,0 +1,22 @@
+{
+  "title": "Google Sheets Document operations",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlesheets/document-operations",
+  "content": "---\ntitle: Google Sheets Document operations\ndescription: Documentation for the Document operations in Google Sheets node in n8n, a workflow automation platform. Includes details of operations and configuration, and links to examples and credentials information.\ncontentType: [integration, reference]\npriority: critical\n---\n\n Google Sheets Document operations\n\nUse this operation to create or delete a Google spreadsheet from Google Sheets. Refer to Google Sheets for more information on the Google Sheets node itself.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Create a spreadsheet\n\nUse this operation to create a new spreadsheet.\n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing Google Sheets credentials.\n- Resource: Select Document.\n- Operation: Select Create.\n- Title: Enter the title of the new spreadsheet you want to create.\n- Sheets: Add the Title(s) of the sheet(s) you want to create within the spreadsheet. \n<!-- vale off -->\n\n Options\n\n- Locale: Enter the locale of the spreadsheet. This affects formatting details such as functions, dates, and currency. Use one of the following formats:\n    - en (639-1)\n    - fil (639-2 if no 639-1 format exists)\n    - enUS (combination of ISO language and country).\n    - Refer to List of ISO 639 language codes and List of ISO 3166 country codes for language and country codes. Note that Google doesn't support all locales/languages.\n- Recalculation Interval: Enter the desired recalculation interval for the spreadsheet functions. This affects how often NOW, TODAY, RAND, and RANDBETWEEN are updated. Select On Change for recalculating whenever there is a change in the spreadsheet, Minute for recalculating every minute, or Hour for recalculating every hour. Refer to Set a spreadsheet’s location & calculation settings for more information about these options. \n\nRefer to the Method: spreadsheets.create | Google Sheets API documentation for more information.\n\n Delete a spreadsheet\n\nUse this operation to delete an existing spreadsheet.\n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing Google Sheets credentials.\n- Resource: Select Document.\n- Operation: Select Delete.\n- Document: Choose a spreadsheet you want to delete. \n    - Select From list to choose the title from the dropdown list, By URL to enter the url of the spreadsheet, or By ID to enter the spreadsheetId. \n    - You can find the spreadsheetId in a Google Sheets URL: https://docs.google.com/spreadsheets/d/spreadsheetId/editgid=0.\n\nRefer to the Method: files.delete | Google Drive API documentation for more information.",
+  "category": "app-nodes",
+  "nodeType": null,
+  "keywords": [
+    "google",
+    "sheets",
+    "document",
+    "operations",
+    "spreadsheet",
+    "create",
+    "select",
+    "enter",
+    "delete",
+    "title",
+    "information"
+  ],
+  "fetchedAt": "2025-10-07T16:14:33.084Z",
+  "hash": "5d383fd360ffb5274001be4a09c57d6b"
+}

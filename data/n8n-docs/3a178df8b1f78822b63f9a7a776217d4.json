@@ -1,0 +1,21 @@
+{
+  "title": "Hacker News node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.hackernews",
+  "content": "---\ntitle: Hacker News node documentation\ndescription: Learn how to use the Hacker News node in n8n. Follow technical documentation to integrate Hacker News node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Hacker News node\n\nUse the Hacker News node to automate work in Hacker News, and integrate Hacker News with other applications. n8n has built-in support for a wide range of Hacker News features, including getting articles, and users. \n\nOn this page, you'll find a list of operations the Hacker News node supports and links to more resources.\n\n/// note | Credentials\nThis node doesn't require authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n All\n     Get all items\n Article\n     Get a Hacker News article\n User\n     Get a Hacker News user\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'hacker-news') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.hackernews.md",
+  "keywords": [
+    "hacker",
+    "news",
+    "node",
+    "title",
+    "documentation",
+    "integrate",
+    "this",
+    "page",
+    "operations",
+    "integrations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:34.699Z",
+  "hash": "3a178df8b1f78822b63f9a7a776217d4"
+}

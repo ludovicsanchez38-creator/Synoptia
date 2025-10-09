@@ -1,0 +1,21 @@
+{
+  "title": "Venafi TLS Protect Datacenter node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.venafitlsprotectdatacenter",
+  "content": "---\ntitle: Venafi TLS Protect Datacenter node documentation\ndescription: Learn how to use the Venafi TLS Protect Datacenter node in n8n. Follow technical documentation to integrate Venafi TLS Protect Datacenter node into your workflows.\ncontentType: [integration, reference]\n---\n<!-- vale off -->\n<!-- disabled vale because of \"Datacenter\" Don't want to general approve it, but it's the brand name -->\n Venafi TLS Protect Datacenter node\n\nUse the Venafi TLS Protect Datacenter node to automate work in Venafi TLS Protect Datacenter, and integrate Venafi TLS Protect Datacenter with other applications. n8n has built-in support for a wide range of Venafi TLS Protect Datacenter features, including creating, deleting, and getting certificates. \n\nOn this page, you'll find a list of operations the Venafi TLS Protect Datacenter node supports and links to more resources.\n\n/// note | Credentials\nRefer to Venafi TLS Protect Datacenter credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Certificate\n\t Create\n\t Delete\n\t Download\n\t Get\n\t Get Many\n\t Renew\n Policy\n\t Get\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'venafi-tls-protect-datacenter') ]]\n\n Related resources\n\nn8n also provides:\n\n A node and trigger node for Venafi TLS Protect Cloud.\n\n<!-- vale on -->\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.venafitlsprotectdatacenter.md",
+  "keywords": [
+    "venafi",
+    "protect",
+    "datacenter",
+    "node",
+    "vale",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:58.693Z",
+  "hash": "a4cfc9f10819737f21f2ab0cf62e626c"
+}

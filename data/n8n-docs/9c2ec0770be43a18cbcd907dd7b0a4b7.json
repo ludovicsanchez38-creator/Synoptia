@@ -1,0 +1,22 @@
+{
+  "title": "Scaling n8n",
+  "url": "https://docs.n8n.io/hosting/scaling/overview",
+  "content": "---\ncontentType: overview\n---\n\n Scaling n8n\n\nWhen running n8n at scale, with a large number of users, workflows, or executions, you need to change your n8n configuration to ensure good performance.\n\nn8n can run in different modes depending on your needs. The queue mode provides the best scalability. Refer to Queue mode for configuration details.\n\nYou can configure data saving and pruning to improve database performance. Refer to Execution data for details.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "scaling",
+    "your",
+    "configuration",
+    "performance",
+    "queue",
+    "mode",
+    "refer",
+    "details",
+    "data",
+    "contenttype",
+    "overview"
+  ],
+  "fetchedAt": "2025-10-07T16:16:02.743Z",
+  "hash": "9c2ec0770be43a18cbcd907dd7b0a4b7"
+}

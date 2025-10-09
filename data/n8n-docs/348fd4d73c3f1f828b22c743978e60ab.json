@@ -1,0 +1,21 @@
+{
+  "title": "Microsoft Outlook node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.microsoftoutlook",
+  "content": "---\ntitle: Microsoft Outlook node documentation\ndescription: Learn how to use the Microsoft Outlook node in n8n. Follow technical documentation to integrate Microsoft Outlook node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Microsoft Outlook node\n\nUse the Microsoft Outlook node to automate work in Microsoft Outlook, and integrate Microsoft Outlook with other applications. n8n has built-in support for a wide range of Microsoft Outlook features, including creating, updating, deleting, and getting folders, messages, and drafts. \n\nOn this page, you'll find a list of operations the Microsoft Outlook node supports and links to more resources.\n\n/// note | Credentials\nRefer to Microsoft credentials for guidance on setting up authentication.\n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Calendar\n\t Create\n\t Delete\n\t Get\n\t Get Many\n\t Update\n Contact\n\t Create\n\t Delete\n\t Get\n\t Get Many\n\t Update\n Draft\n\t Create\n\t Delete\n\t Get\n\t Send\n\t Update\n Event\n\t Create\n\t Delete\n\t Get\n\t Get Many\n\t Update\n Folder\n\t Create\n\t Delete\n\t Get\n\t Get Many\n\t Update\n Folder Message\n     Get Many\n Message\n\t Delete\n\t Get\n\t Get Many\n\t Move\n\t Reply\n\t Send\n\t Send and Wait for Response\n\t Update\n Message Attachment\n\t Add\n\t Download\n\t Get\n\t Get Many\n\n--8<-- \"snippets/integrations/builtin/send-and-wait-operation.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'microsoft-outlook') ]]\n\n Related resources\n\nRefer to Outlook's API documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.microsoftoutlook.md",
+  "keywords": [
+    "microsoft",
+    "outlook",
+    "node",
+    "many",
+    "delete",
+    "update",
+    "create",
+    "integrations",
+    "send",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:41.303Z",
+  "hash": "348fd4d73c3f1f828b22c743978e60ab"
+}

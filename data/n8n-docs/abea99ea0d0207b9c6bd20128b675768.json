@@ -1,0 +1,21 @@
+{
+  "title": "Facebook Trigger Application object",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.facebooktrigger/application",
+  "content": "---\ntitle: Facebook Trigger Application object documentation\ndescription: Learn how to use the Application object of the Facebook Trigger node in n8n. Follow technical documentation to integrate the Facebook Trigger node's Application object into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Facebook Trigger Application object\n\nUse this object to receive updates sent to a specific app. Refer to Facebook Trigger for more information on the trigger itself.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Facebook Trigger integrations page.\n///\n\n Trigger configuration\n\nTo configure the trigger with this Object:\n\n1. Select the Credential to connect with. Select an existing or create a new Facebook App credential.\n1. Enter the APP ID of the app connected to your credential. Refer to the Facebook App credential documentation for more information.\n1. Select Application as the Object.\n1. Field Names or IDs: By default, the node will trigger on all the available events using the  wildcard filter. If you'd like to limit the events, use the X to remove the star and use the dropdown or an expression to select the updates you're interested in. Options include:\n     Add Account\n     Ads Rules Engine\n     Async Requests\n     Async Sessions    \n     Group Install\n     Oe Reseller Onboarding Request Created\n     Plugin Comment\n     Plugin Comment Reply\n1. In Options, turn on the toggle to Include Values. This Object type fails without the option enabled.\n\n Related resources\n\nRefer to Meta's Application Graph API reference for more information.",
+  "category": "trigger-nodes",
+  "nodeType": null,
+  "keywords": [
+    "facebook",
+    "trigger",
+    "application",
+    "object",
+    "node",
+    "this",
+    "refer",
+    "information",
+    "select",
+    "credential"
+  ],
+  "fetchedAt": "2025-10-07T16:15:08.605Z",
+  "hash": "abea99ea0d0207b9c6bd20128b675768"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Facebook Trigger Ad Account object",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.facebooktrigger/ad-account",
+  "content": "---\ntitle: Facebook Trigger Ad Account object documentation\ndescription: Learn how to use the Ad Account object of the Facebook Trigger node in n8n. Follow technical documentation to integrate the Facebook Trigger node's Ad Account object into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Facebook Trigger Ad Account object\n\nUse this object to receive updates on certain ads changes in an Ad Account. Refer to Facebook Trigger for more information on the trigger itself.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Facebook Trigger integrations page.\n///\n\n Trigger configuration\n\nTo configure the trigger with this Object:\n\n1. Select the Credential to connect with. Select an existing or create a new Facebook App credential.\n1. Enter the APP ID of the app connected to your credential. Refer to the Facebook App credential documentation for more information.\n1. Select Ad Account as the Object.\n1. Field Names or IDs: By default, the node will trigger on all the available Ad Account events using the  wildcard filter. If you'd like to limit the events, use the X to remove the star and use the dropdown or an expression to select the updates you're interested in. Options include:\n     In Process Ad Objects: Notifies you when a campaign, ad set, or ad exits the INPROCESS status. Refer to Meta's Post-processing for Ad Creation and Edits for more information.\n     With Issues Ad Objects: Notifies you when a campaign, ad set, or ad under the ad account receives the WITHISSUES status.\n1. In Options, turn on the toggle to Include Values. This Object type fails without the option enabled.\n\n Related resources\n\nRefer to Webhooks for Ad Accounts and Meta's Ad Account Graph API reference for more information.",
+  "category": "trigger-nodes",
+  "nodeType": null,
+  "keywords": [
+    "facebook",
+    "trigger",
+    "account",
+    "object",
+    "refer",
+    "information",
+    "node",
+    "this",
+    "more",
+    "select"
+  ],
+  "fetchedAt": "2025-10-07T16:15:08.475Z",
+  "hash": "2127cdcbe88135d1d23d1afd7ca5c084"
+}

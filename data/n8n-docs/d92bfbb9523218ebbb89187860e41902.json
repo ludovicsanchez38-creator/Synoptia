@@ -1,0 +1,21 @@
+{
+  "title": "Linear Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.lineartrigger",
+  "content": "---\ntitle: Linear Trigger node documentation\ndescription: Learn how to use the Linear Trigger node in n8n. Follow technical documentation to integrate Linear Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Linear Trigger node\n\nLinear is a SaaS issue tracking tool.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Linear Trigger integrations page.\n///\n\n Events\n\n- Comment Reaction\n- Cycle\n- Issue\n- Issue Comment\n- Issue Label\n- Project",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.lineartrigger.md",
+  "keywords": [
+    "linear",
+    "trigger",
+    "node",
+    "issue",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "comment",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:15:14.838Z",
+  "hash": "d92bfbb9523218ebbb89187860e41902"
+}

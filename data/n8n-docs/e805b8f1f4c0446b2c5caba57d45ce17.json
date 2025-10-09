@@ -1,0 +1,21 @@
+{
+  "title": "Debug Helper",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.debughelper",
+  "content": "---\ntitle: Debug Helper\ndescription: Documentation for the Debug Helper node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Debug Helper\n\nUse the Debug Helper node to trigger different error types or generate random datasets to help test n8n workflows.\n\n Operations\n\nDefine the operation by selecting the Category:\n\n Do Nothing: Don't do anything.\n Throw Error: Throw an error with the specified type and message.\n Out Of Memory: Generate a specific memory size to simulate being out of memory.\n Generate Random Data: Generate some random data in a selected format.\n\n Node parameters\n\nThe node parameters depend on the Category selected. The Do Nothing Category has no other parameters.\n\n Throw Error\n\n Error Type: Select the type of error to throw. Choose from:\n\t NodeApiError\n\t NodeOperationError\n\t Error\n Error Message: Enter the error message to throw.\n\n Out Of Memory\n\nThe Out of Memory Category adds one parameter, the Memory Size to Generate. Enter the approximate amount of memory to generate.\n\n Generate Random Data\n\n Data Type: Choose the type of random data you'd like to generate. Options include:\n\t Address\n\t Coordinates\n\t Credit Card\n\t Email\n\t IPv4\n\t IPv6\n\t MAC\n\t Nanoids: If you select this data type, you'll also need to enter:\n\t\t Nanoid Alphabet: The alphabet the generator will use to generate the nanoids.\n\t\t Nanoid Length: The length of each nanoid.\n\t URL\n\t User Data\n\t UUID\n\t Version\n Seed: If you'd like to generate the data using a specific seed, enter it here. This ensures the data gets generated consistently. If you'd rather use random data generation, leave this field empty.\n Number of Items to Generate: Enter the number of random items you'd like to generate.\n Output as Single Array: Whether to generate the data as a single array (turned on) or multiple items (turned off).\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'debughelper') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.debughelper.md",
+  "keywords": [
+    "debug",
+    "helper",
+    "generate",
+    "data",
+    "error",
+    "random",
+    "memory",
+    "type",
+    "throw",
+    "enter"
+  ],
+  "fetchedAt": "2025-10-07T16:14:04.337Z",
+  "hash": "e805b8f1f4c0446b2c5caba57d45ce17"
+}

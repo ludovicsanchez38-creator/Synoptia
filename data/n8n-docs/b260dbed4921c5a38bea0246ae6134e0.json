@@ -1,0 +1,21 @@
+{
+  "title": "Autopilot Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.autopilottrigger",
+  "content": "---\ntitle: Autopilot Trigger node documentation\ndescription: Learn how to use the Autopilot Trigger node in n8n. Follow technical documentation to integrate Autopilot Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Autopilot Trigger node\n\nAutopilot is a visual marketing software that allows you to automate and personalize your marketing across the entire customer journey.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Autopilot Trigger integrations page.\n///\n\n Events\n\n- Contact added\n- Contact added to a list\n- Contact entered to a segment\n- Contact left a segment\n- Contact removed from a list\n- Contact unsubscribed\n- Contact updated",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.autopilottrigger.md",
+  "keywords": [
+    "autopilot",
+    "trigger",
+    "node",
+    "contact",
+    "documentation",
+    "your",
+    "marketing",
+    "note",
+    "examples",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:15:05.629Z",
+  "hash": "b260dbed4921c5a38bea0246ae6134e0"
+}

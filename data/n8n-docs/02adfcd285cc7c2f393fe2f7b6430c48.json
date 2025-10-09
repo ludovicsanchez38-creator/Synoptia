@@ -1,0 +1,21 @@
+{
+  "title": "Dropbox node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.dropbox",
+  "content": "---\ntitle: Dropbox node documentation\ndescription: Learn how to use the Dropbox node in n8n. Follow technical documentation to integrate Dropbox node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Dropbox node\n\nUse the Dropbox node to automate work in Dropbox, and integrate Dropbox with other applications. n8n has built-in support for a wide range of Dropbox features, including creating, downloading, moving, and copying files and folders.\n\nOn this page, you'll find a list of operations the Dropbox node supports and links to more resources.\n\n/// note | Credentials\nRefer to Dropbox credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n File\n     Copy a file\n     Delete a file\n     Download a file\n     Move a file\n     Upload a file\n Folder\n     Copy a folder\n     Create a folder\n     Delete a folder\n     Return the files and folders in a given folder\n     Move a folder\n Search\n     Query\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'dropbox') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.dropbox.md",
+  "keywords": [
+    "dropbox",
+    "node",
+    "file",
+    "folder",
+    "integrations",
+    "title",
+    "documentation",
+    "integrate",
+    "files",
+    "folders"
+  ],
+  "fetchedAt": "2025-10-07T16:14:25.396Z",
+  "hash": "02adfcd285cc7c2f393fe2f7b6430c48"
+}

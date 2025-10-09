@@ -1,0 +1,21 @@
+{
+  "title": "Root nodes",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/index",
+  "content": "---\ncontentType: overview\ntitle: Root nodes\ndescription: Understand root nodes in n8n, and browse the root nodes library.\n---\n\n Root nodes\n\nRoot nodes are the foundational nodes within a group of cluster nodes.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/cluster-nodes-summary.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "root",
+  "keywords": [
+    "root",
+    "nodes",
+    "cluster",
+    "contenttype",
+    "overview",
+    "title",
+    "description",
+    "understand",
+    "browse",
+    "library"
+  ],
+  "fetchedAt": "2025-10-07T16:15:23.280Z",
+  "hash": "f6d52b780fe54eefeac5d74a5313d2b4"
+}

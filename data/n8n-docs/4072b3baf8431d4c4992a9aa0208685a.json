@@ -1,0 +1,21 @@
+{
+  "title": "Strava Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.stravatrigger",
+  "content": "---\ntitle: Strava Trigger node documentation\ndescription: Learn how to use the Strava Trigger node in n8n. Follow technical documentation to integrate Strava Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Strava Trigger node\n\nStrava is an internet service for tracking human exercise which incorporates social network features.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Strava Trigger integrations page.\n///\n\n Events\n\n- \\[All\\]\n    - \\[All\\]\n    - Created\n    - Deleted\n    - Updated\n- Activity\n    - \\[All\\]\n    - Created\n    - Deleted\n    - Updated\n- Athlete\n    - \\[All\\]\n    - Created\n    - Deleted\n    - Updated",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.stravatrigger.md",
+  "keywords": [
+    "strava",
+    "trigger",
+    "node",
+    "created",
+    "deleted",
+    "updated",
+    "documentation",
+    "note",
+    "examples",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:15:18.422Z",
+  "hash": "4072b3baf8431d4c4992a9aa0208685a"
+}

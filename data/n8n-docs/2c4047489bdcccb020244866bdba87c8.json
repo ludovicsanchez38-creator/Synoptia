@@ -1,0 +1,21 @@
+{
+  "title": "Segment node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.segment",
+  "content": "---\ntitle: Segment node documentation\ndescription: Learn how to use the Segment node in n8n. Follow technical documentation to integrate Segment node into your workflows.\ncontentType: [integration, reference]\n---\n\n Segment node\n\nUse the Segment node to automate work in Segment, and integrate Segment with other applications. n8n has built-in support for a wide range of Segment features, including adding users to groups, creating identities, and tracking activities. \n\nOn this page, you'll find a list of operations the Segment node supports and links to more resources.\n\n/// note | Credentials\nRefer to Segment credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Group\n     Add a user to a group\n Identify\n     Create an identity\n Track\n     Record the actions your users perform. Every action triggers an event, which can also have associated properties.\n     Record page views on your website, along with optional extra information about the page being viewed.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'segment') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.segment.md",
+  "keywords": [
+    "segment",
+    "node",
+    "page",
+    "your",
+    "title",
+    "documentation",
+    "integrate",
+    "with",
+    "users",
+    "operations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:51.521Z",
+  "hash": "2c4047489bdcccb020244866bdba87c8"
+}

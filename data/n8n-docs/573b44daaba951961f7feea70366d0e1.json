@@ -1,0 +1,21 @@
+{
+  "title": "Microsoft Teams node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.microsoftteams",
+  "content": "---\ntitle: Microsoft Teams node documentation\ndescription: Learn how to use the Microsoft Teams node in n8n. Follow technical documentation to integrate Microsoft Teams node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Microsoft Teams node\n\nUse the Microsoft Teams node to automate work in Microsoft Teams, and integrate Microsoft Teams with other applications. n8n has built-in support for a wide range of Microsoft Teams features, including creating and deleting, channels, messages, and tasks. \n\nOn this page, you'll find a list of operations the Microsoft Teams node supports and links to more resources.\n\n/// note | Credentials\nRefer to Microsoft credentials for guidance on setting up authentication.\n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Channel\n     Create\n     Delete\n     Get\n     Get Many\n     Update\n Channel Message\n     Create\n     Get Many\n Chat Message\n\t Create\n\t Get\n\t Get Many\n\t Send and Wait for Response\n Task\n     Create\n     Delete\n     Get\n     Get Many\n     Update\n\n--8<-- \"snippets/integrations/builtin/send-and-wait-operation.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'microsoft-teams') ]]\n\n Related resources\n\nRefer to Microsoft Teams' API documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.microsoftteams.md",
+  "keywords": [
+    "microsoft",
+    "teams",
+    "node",
+    "integrations",
+    "create",
+    "many",
+    "documentation",
+    "snippets",
+    "builtin",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:41.728Z",
+  "hash": "573b44daaba951961f7feea70366d0e1"
+}

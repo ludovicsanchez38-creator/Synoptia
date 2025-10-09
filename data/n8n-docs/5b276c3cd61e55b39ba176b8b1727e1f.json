@@ -1,0 +1,21 @@
+{
+  "title": "Postmark Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.postmarktrigger",
+  "content": "---\ntitle: Postmark Trigger node documentation\ndescription: Learn how to use the Postmark Trigger node in n8n. Follow technical documentation to integrate Postmark Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Postmark Trigger node\n\nPostmark helps deliver and track application email. You can track statistics such as the number of emails sent or processed, opens, bounces and, spam complaints.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Postmark Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.postmarktrigger.md",
+  "keywords": [
+    "postmark",
+    "trigger",
+    "node",
+    "documentation",
+    "track",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:15:17.194Z",
+  "hash": "5b276c3cd61e55b39ba176b8b1727e1f"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Google Business Profile Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.googlebusinessprofiletrigger",
+  "content": "---\ntitle: Google Business Profile Trigger node documentation\ndescription: Learn how to use the Google Business Profile Trigger node in n8n. Follow technical documentation to integrate Google Business Profile Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Google Business Profile Trigger node\n\nUse the Google Business Profile Trigger node to respond to events in Google Business Profile and integrate Google Business Profile with other applications. n8n has built-in support for responding to new reviews.\n\nOn this page, you'll find a list of events the Google Business Profile Trigger node can respond to and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Events\n\n Review Added\n\n Related resources\n\nn8n provides an app node for Google Business Profile. You can find the node docs here.\n\n<!-- add a link to the node page on n8n's website. For example: https://n8n.io/integrations/356-gmail/ -->\nView example workflows and related content on n8n's website.\n\nRefer to Google Business Profile's documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.googlebusinessprofiletrigger.md",
+  "keywords": [
+    "google",
+    "business",
+    "profile",
+    "trigger",
+    "node",
+    "documentation",
+    "events",
+    "find",
+    "integrate",
+    "workflows"
+  ],
+  "fetchedAt": "2025-10-07T16:15:12.023Z",
+  "hash": "4bde75c6e1bfa92936b2857d3013f648"
+}

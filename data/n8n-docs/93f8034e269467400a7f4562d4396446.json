@@ -1,0 +1,21 @@
+{
+  "title": "Clockify node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.clockify",
+  "content": "---\ntitle: Clockify node documentation\ndescription: Learn how to use the Clockify node in n8n. Follow technical documentation to integrate Clockify node into your workflows.\ncontentType: [integration, reference]\n---\n\n Clockify node\n\nUse the Clockify node to automate work in Clockify, and integrate Clockify with other applications. n8n has built-in support for a wide range of Clockify features, including creating, updating, getting, and deleting tasks, time entries, projects, and tags.\n\nOn this page, you'll find a list of operations the Clockify node supports and links to more resources.\n\n/// note | Credentials\nRefer to Clockify credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Project\n     Create a project\n     Delete a project\n     Get a project\n     Get all projects\n     Update a project\n Tag\n     Create a tag\n     Delete a tag\n     Get all tags\n     Update a tag\n Task\n     Create a task\n     Delete a task\n     Get a task\n     Get all tasks\n     Update a task\n Time Entry\n     Create a time entry\n     Delete a time entry\n     Get time entry\n     Update a time entry\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'clockify') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.clockify.md",
+  "keywords": [
+    "clockify",
+    "node",
+    "time",
+    "project",
+    "task",
+    "entry",
+    "create",
+    "delete",
+    "update",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:22.326Z",
+  "hash": "93f8034e269467400a7f4562d4396446"
+}

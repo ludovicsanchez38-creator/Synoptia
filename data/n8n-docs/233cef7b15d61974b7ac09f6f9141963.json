@@ -1,0 +1,21 @@
+{
+  "title": "Facebook Trigger User object",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.facebooktrigger/user",
+  "content": "---\ntitle: Facebook Trigger User object documentation\ndescription: Learn how to use the User object of the Facebook Trigger node in n8n. Follow technical documentation to integrate the Facebook Trigger node's User object into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Facebook Trigger User object\n\nUse this object to receive updates when changes to a user's profile occur. Refer to Facebook Trigger for more information on the trigger itself.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Facebook Trigger integrations page.\n///\n\n Trigger configuration\n\nTo configure the trigger with this Object:\n\n1. Select the Credential to connect with. Select an existing or create a new Facebook App credential.\n1. Enter the APP ID of the app connected to your credential. Refer to the Facebook App credential documentation for more information.\n1. Select User as the Object.\n1. Field Names or IDs: By default, the node will trigger on all the available events using the  wildcard filter. If you'd like to limit the events, use the X to remove the star and use the dropdown or an expression to select the updates you're interested in.\n1. In Options, choose whether to turn on the toggle to Include Values. When turned on, the node includes the new values for the changes.\n\n Related resources\n\nRefer to Meta's User Graph API reference for more information.",
+  "category": "trigger-nodes",
+  "nodeType": null,
+  "keywords": [
+    "facebook",
+    "trigger",
+    "user",
+    "object",
+    "node",
+    "refer",
+    "information",
+    "select",
+    "credential",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:15:09.904Z",
+  "hash": "233cef7b15d61974b7ac09f6f9141963"
+}

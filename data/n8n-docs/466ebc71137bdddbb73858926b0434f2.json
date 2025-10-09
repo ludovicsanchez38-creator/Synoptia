@@ -1,0 +1,21 @@
+{
+  "title": "Zendesk node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.zendesk",
+  "content": "---\ntitle: Zendesk node documentation\ndescription: Learn how to use the Zendesk node in n8n. Follow technical documentation to integrate Zendesk node into your workflows.\ncontentType: [integration, reference]\n---\n\n Zendesk node\n\nUse the Zendesk node to automate work in Zendesk, and integrate Zendesk with other applications. n8n has built-in support for a wide range of Zendesk features, including creating, and deleting tickets, users, and organizations. \n\nOn this page, you'll find a list of operations the Zendesk node supports and links to more resources.\n\n/// note | Credentials\nRefer to Zendesk credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Ticket\n     Create a ticket\n     Delete a ticket\n     Get a ticket\n     Get all tickets\n     Recover a suspended ticket\n     Update a ticket\n Ticket Field\n     Get a ticket field\n     Get all system and custom ticket fields\n User\n     Create a user\n     Delete a user\n     Get a user\n     Get all users\n     Get a user's organizations\n     Get data related to the user\n     Search users\n     Update a user\n Organization\n     Create an organization\n     Delete an organization\n     Count organizations\n     Get an organization\n     Get all organizations\n     Get data related to the organization\n     Update a organization\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'zendesk') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.zendesk.md",
+  "keywords": [
+    "zendesk",
+    "node",
+    "ticket",
+    "user",
+    "organization",
+    "organizations",
+    "users",
+    "integrations",
+    "create",
+    "delete"
+  ],
+  "fetchedAt": "2025-10-07T16:15:00.948Z",
+  "hash": "466ebc71137bdddbb73858926b0434f2"
+}

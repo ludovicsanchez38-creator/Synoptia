@@ -1,0 +1,21 @@
+{
+  "title": "HTTP node variables",
+  "url": "https://docs.n8n.io/code/builtin/http-node-variables",
+  "content": "---\ndescription: n8n provides these methods to make it easier to perform common tasks in expressions.\ncontentType: reference\nhide:\n  - toc\n---\n\n HTTP node variables\n\nVariables for working with HTTP node requests and responses when using pagination.\n\nRefer to HTTP Request for guidance on using the HTTP node, including configuring pagination.\n\nRefer to HTTP Request node cookbook | Pagination for example pagination configurations.\n\n/// note | HTTP node only\nThese variables are for use in expressions in the HTTP node. You can't use them in other nodes.\n///\n--8<-- \"snippets/integrations/builtin/core-nodes/http/pagination-variables.md\"",
+  "category": "code",
+  "nodeType": "http",
+  "keywords": [
+    "http",
+    "node",
+    "variables",
+    "pagination",
+    "these",
+    "expressions",
+    "using",
+    "refer",
+    "request",
+    "nodes"
+  ],
+  "fetchedAt": "2025-10-07T16:15:46.563Z",
+  "hash": "bbce60a79495651f26e513e6bb7f425e"
+}

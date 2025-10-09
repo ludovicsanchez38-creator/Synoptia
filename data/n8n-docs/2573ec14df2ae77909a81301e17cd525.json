@@ -1,0 +1,22 @@
+{
+  "title": "Configure the Base URL for n8n's front end access",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/base-url",
+  "content": "---\ntitle: Configure the Base URL for n8n's front end access\ndescription: Configure the Base URL environment variable to define the front end's access path to the back end's REST API for n8n.\ncontentType: howto\n---\n\n Configure the Base URL for n8n's front end access\n\n/// warning | Requires manual UI build\nThis use case involves configuring the VUEAPPURLBASEAPI environmental variable which requires a manual build of the n8n-editor-ui package. You can't use it with the default n8n Docker image where the default setting for this variable is /, meaning that it uses the root-domain.\n///\n\nYou can configure the Base URL that the front end uses to connect to the back end's REST API. This is relevant when you want to host n8n's front end and back end separately. \n\nRefer to Environment variables reference for more information on this variable.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "configure",
+    "base",
+    "n8n's",
+    "front",
+    "access",
+    "variable",
+    "this",
+    "back",
+    "environment",
+    "rest",
+    "requires"
+  ],
+  "fetchedAt": "2025-10-07T16:15:53.776Z",
+  "hash": "2573ec14df2ae77909a81301e17cd525"
+}

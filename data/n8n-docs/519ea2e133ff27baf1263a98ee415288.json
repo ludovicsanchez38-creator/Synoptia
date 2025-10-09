@@ -1,0 +1,21 @@
+{
+  "title": "Disable the public REST API",
+  "url": "https://docs.n8n.io/hosting/securing/disable-public-api",
+  "content": "---\ntitle: Disable the public REST API\ndescription: \"Disable the n8n public REST API to prevent others from using it.\"\ncontentType: howto\n---\n\n Disable the public REST API\n\nThe n8n public REST API allows you to programmatically perform many of the same tasks as you can in the n8n GUI.\n\nIf you don't plan on using this API, n8n recommends disabling it to improve the security of your n8n installation.\n\nTo disable the public REST API, set the N8NPUBLICAPIDISABLED environment variable to true, for example:\n\n Disable the API playground\n\nTo disable the API playground, set the N8NPUBLICAPISWAGGERUIDISABLED environment variable to true, for example:\n\n Related resources\n\nRefer to Deployment environment variables for more information on these environment variables.\n\nRefer to Configuration for more information on setting environment variables.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "disable",
+    "public",
+    "rest",
+    "environment",
+    "variables",
+    "using",
+    "variable",
+    "true",
+    "example",
+    "playground"
+  ],
+  "fetchedAt": "2025-10-07T16:16:03.482Z",
+  "hash": "519ea2e133ff27baf1263a98ee415288"
+}

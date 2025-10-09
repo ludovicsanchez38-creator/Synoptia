@@ -1,0 +1,21 @@
+{
+  "title": "Workflow settings",
+  "url": "https://docs.n8n.io/workflows/settings",
+  "content": "---\ndescription: Manage settings for an individual workflow.\ncontentType: howto\n---\n\n Workflow settings\n\nYou can customize workflow behavior for individual workflows using workflow settings.\n\n Access workflow settings\n\nTo open the settings:\n\n1. Open your workflow.\n1. Select the three dots icon <span class=\"n8n-inline-image\">!three dots icon{.off-glb}</span> in the upper-right corner.\n3. Select Settings. n8n opens the Workflow settings modal.\n\n Available settings\n\nThe following settings are available:\n\n Execution order\n\nChoose the execution order for multi-branch workflows:\n\nv1 (recommended) executes each branch in turn, completing one branch before starting another. n8n orders the branches based on their position on the canvas, from topmost to bottommost. If two branches are at the same height, the leftmost branch executes first.\n\nv0 (legacy) executes the first node of each branch, then the second node of each branch, and so on.\n\n Error Workflow (to notify when this one errors)\n\nSelect a workflow to trigger if the current workflow fails. See error workflows for more details.\n\n<!-- vale from-write-good.Passive = NO -->\n This workflow can be called by\n<!-- vale from-write-good.Passive = YES -->\n\nChoose which other workflows can call this workflow.\n\n Timezone\n\nSets the timezone for this workflow. The timezone setting is important for the Schedule Trigger node.\n\nYou can set your n8n instance's timezone to configure the default timezone workflows use:\n\n Set a n8n Cloud instance timezone\n Configure the timezone for self-hosted instances\n\nIf you don't configure the workflow or instance timezone, n8n defaults to the EDT (New York) timezone.\n\n Save failed production executions\n\nWhether n8n should save failed executions for active workflows.\n\n Save successful production executions\n\nWhether n8n should save successful executions for active workflows.\n\n Save manual executions\n\nWhether n8n should save executions for workflows started by the user in the editor.\n\n Save execution progress\n\nWhether n8n should save execution data for each node.\n\nIf set to Save, the workflow resumes from where it stopped in case of an error. This may increase latency.\n\n Timeout Workflow\n\nWhether n8n should cancel the current workflow execution after a certain amount of time elapses.\n\nWhen enabled, the Timeout After option appears. Here, you can set the time (in hours, minutes, and seconds) after which the workflow should timeout. For n8n Cloud users, n8n enforces a maximum available timeout for each plan.\n\n Estimated time saved\n\nAn estimate of the number of minutes each of execution of this workflow saves you.\n\nSetting this lets n8n calculate the amount of time saved for insights.",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "workflow",
+    "settings",
+    "timezone",
+    "save",
+    "workflows",
+    "this",
+    "execution",
+    "branch",
+    "each",
+    "executions"
+  ],
+  "fetchedAt": "2025-10-07T16:15:42.471Z",
+  "hash": "1618afd013eb8b1e5bae3e94c815f77c"
+}

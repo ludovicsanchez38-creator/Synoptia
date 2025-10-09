@@ -1,0 +1,21 @@
+{
+  "title": "Toggl Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.toggltrigger",
+  "content": "---\ntitle: Toggl Trigger node documentation\ndescription: Learn how to use the Toggl Trigger node in n8n. Follow technical documentation to integrate Toggl Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Toggl Trigger node\n\nToggl is a time tracking app that offers online time tracking and reporting services through their website along with mobile and desktop applications.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Toggl Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.toggltrigger.md",
+  "keywords": [
+    "toggl",
+    "trigger",
+    "node",
+    "documentation",
+    "time",
+    "tracking",
+    "note",
+    "examples",
+    "templates",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:15:19.922Z",
+  "hash": "b0f502075346c09db45a4705c5e1d111"
+}

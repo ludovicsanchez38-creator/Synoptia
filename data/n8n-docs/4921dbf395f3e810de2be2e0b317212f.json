@@ -1,0 +1,21 @@
+{
+  "title": "Wise node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.wise",
+  "content": "---\ntitle: Wise node documentation\ndescription: Learn how to use the Wise node in n8n. Follow technical documentation to integrate Wise node into your workflows.\ncontentType: [integration, reference]\n---\n\n Wise node\n\nUse the Wise node to automate work in Wise, and integrate Wise with other applications. n8n has built-in support for a wide range of Wise features, including getting profiles, exchange rates, and recipients. \n\nOn this page, you'll find a list of operations the Wise node supports and links to more resources.\n\n/// note | Credentials\nRefer to Wise credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Account\n     Retrieve balances for all account currencies of this user.\n     Retrieve currencies in the borderless account of this user.\n     Retrieve the statement for the borderless account of this user.\n Exchange Rate\n     Get\n Profile\n     Get\n     Get All\n Recipient\n     Get All\n Quote\n     Create\n     Get\n Transfer\n     Create\n     Delete\n     Execute\n     Get\n     Get All\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'wise') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.wise.md",
+  "keywords": [
+    "wise",
+    "node",
+    "this",
+    "account",
+    "retrieve",
+    "user",
+    "title",
+    "documentation",
+    "integrate",
+    "exchange"
+  ],
+  "fetchedAt": "2025-10-07T16:14:59.931Z",
+  "hash": "4921dbf395f3e810de2be2e0b317212f"
+}

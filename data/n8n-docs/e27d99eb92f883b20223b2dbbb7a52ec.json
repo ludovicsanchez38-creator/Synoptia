@@ -1,0 +1,21 @@
+{
+  "title": "Telegram node File operations",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.telegram/file-operations",
+  "content": "---\ntitle: Telegram node File operations documentation\ndescription: Documentation for the File operations in the Telegram node in n8n, a workflow automation platform. Includes details to configure all File operations.\ncontentType: [integration, reference]\npriority: critical\n---\n\n Telegram node File operations\n\nUse this operation to get a file from Telegram. Refer to Telegram for more information on the Telegram node itself.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Get File\n\nUse this operation to get a file from Telegram using the Bot API getFile method.\n\nEnter these parameters:\n\n Credential to connect with: Create or select an existing Telegram credential.\n Resource: Select File.\n Operation: Select Get.\n File ID: Enter the ID of the file you want to get.\n Download: Choose whether you want the node to download the file (turned on) or not (turned off).\n\nRefer to the Telegram Bot API getFile documentation for more information.",
+  "category": "app-nodes",
+  "nodeType": "telegram",
+  "keywords": [
+    "telegram",
+    "node",
+    "file",
+    "operations",
+    "documentation",
+    "operation",
+    "select",
+    "this",
+    "from",
+    "refer"
+  ],
+  "fetchedAt": "2025-10-07T16:14:55.806Z",
+  "hash": "e27d99eb92f883b20223b2dbbb7a52ec"
+}

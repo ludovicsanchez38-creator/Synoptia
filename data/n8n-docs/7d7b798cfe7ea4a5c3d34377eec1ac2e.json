@@ -1,0 +1,21 @@
+{
+  "title": "Copper Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.coppertrigger",
+  "content": "---\ntitle: Copper Trigger node documentation\ndescription: Learn how to use the Copper Trigger node in n8n. Follow technical documentation to integrate Copper Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Copper Trigger node\n\nCopper is a CRM that focuses on strong integration with Google Workspace. It's mainly targeted towards small and medium-sized businesses.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Copper Trigger integrations page.\n///\n\n Events\n\n Delete\n New\n Update\n\n Related resources\n\nn8n provides an app node for Copper. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to Copper's documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.coppertrigger.md",
+  "keywords": [
+    "copper",
+    "trigger",
+    "node",
+    "documentation",
+    "workflows",
+    "integration",
+    "note",
+    "find",
+    "here",
+    "examples"
+  ],
+  "fetchedAt": "2025-10-07T16:15:07.388Z",
+  "hash": "7d7b798cfe7ea4a5c3d34377eec1ac2e"
+}

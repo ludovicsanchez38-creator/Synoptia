@@ -1,0 +1,21 @@
+{
+  "title": "PostBin node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.postbin",
+  "content": "---\ntitle: PostBin node documentation\ndescription: Learn how to use the PostBin node in n8n. Follow technical documentation to integrate PostBin node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n PostBin node\n\nPostBin is a service that helps you test API clients and webhooks. Use the PostBin node to automate work in PostBin, and integrate PostBin with other applications. n8n has built-in support for a wide range of PostBin features, including creating and deleting bins, and getting and sending requests. \n\nOn this page, you'll find a list of operations the PostBin node supports, and links to more resources.\n\n Operations\n\n Bin\n\t Create\n\t Get\n\t Delete\n Request\n\t Get\n\t Remove First\n\t Send\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'postbin') ]]\n\n Send requests\n\nTo send requests to a PostBin bin:\n\n1. Go to PostBin and follow the steps to generate a new bin. PostBin gives you a unique URL, including a bin ID.\n2. In the PostBin node, select the Request resource.\n3. Choose the type of Operation you want to perform.\n4. Enter your bin ID in Bin ID.\n\n Create and manage bins\n\nYou can create and manage PostBin bins using the PostBin node. \n\n1. In Resource, select Bin.\n2. Choose an Operation. You can create, delete, or get a bin.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.postbin.md",
+  "keywords": [
+    "postbin",
+    "node",
+    "create",
+    "bins",
+    "requests",
+    "send",
+    "title",
+    "documentation",
+    "follow",
+    "integrate"
+  ],
+  "fetchedAt": "2025-10-07T16:14:47.893Z",
+  "hash": "d5977ac5dac6dbd682c79bbaa22ca5b4"
+}

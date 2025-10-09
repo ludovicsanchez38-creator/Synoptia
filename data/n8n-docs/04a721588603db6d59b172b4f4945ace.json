@@ -1,0 +1,21 @@
+{
+  "title": "Airtable node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.airtable/index",
+  "content": "---\ntitle: Airtable node documentation\ndescription: Learn how to use the Airtable node in n8n. Follow technical documentation to integrate Airtable node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Airtable node\n\nUse the Airtable node to automate work in Airtable, and integrate Airtable with other applications. n8n has built-in support for a wide range of Airtable features, including creating, reading, listing, updating and deleting tables.\n\nOn this page, you'll find a list of operations the Airtable node supports and links to more resources.\n\n/// note | Credentials\nRefer to Airtable credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Append the data to a table\n Delete data from a table\n List data from a table\n Read data from a table\n Update data in a table\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'airtable') ]]\n\n Related resources\n\nn8n provides a trigger node for Airtable. You can find the trigger node docs here.\n\nRefer to Airtable's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Node reference\n\n Get the Record ID\n\nTo fetch data for a particular record, you need the Record ID. There are two ways to get the Record ID.\n\n Create a Record ID column in Airtable\n\nTo create a Record ID column in your table, refer to this article. You can then use this Record ID in your Airtable node.\n\n Use the List operation\n\nTo get the Record ID of your record, you can use the List operation of the Airtable node. This operation will return the Record ID along with the fields. You can then use this Record ID in your Airtable node.\n\n Filter records when using the List operation\n\nTo filter records from your Airtable base, use the Filter By Formula option. For example, if you want to return all the users that belong to the organization n8n, follow the steps mentioned below:\n\n1. Select 'List' from the Operation dropdown list.\n2. Enter the base ID and the table name in the Base ID and Table field, respectively.\n3. Click on Add Option and select 'Filter By Formula' from the dropdown list.\n4. Enter the following formula in the Filter By Formula field: {Organization}='n8n'.\n\nSimilarly, if you want to return all the users that don't belong to the organization n8n, use the following formula: NOT({Organization}='n8n').\n\nRefer to the Airtable documentation to learn more about the formulas.\n\n Common issues\n\nFor common errors or issues and suggested resolution steps, refer to Common Issues.",
+  "category": "app-nodes",
+  "nodeType": "airtable",
+  "keywords": [
+    "airtable",
+    "node",
+    "record",
+    "list",
+    "table",
+    "your",
+    "data",
+    "from",
+    "operation",
+    "this"
+  ],
+  "fetchedAt": "2025-10-07T16:14:17.075Z",
+  "hash": "04a721588603db6d59b172b4f4945ace"
+}

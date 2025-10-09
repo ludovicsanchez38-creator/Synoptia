@@ -1,0 +1,21 @@
+{
+  "title": "Gmail node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.gmail/common-issues",
+  "content": "---\ntitle: Gmail node common issues \ndescription: Documentation for common issues and questions in the Gmail node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: critical\n---\n\n Gmail node common issues\n\nHere are some common errors and issues with the Gmail node and steps to resolve or troubleshoot them.\n\n Remove the n8n attribution from sent messages\n\nIf you're using the node to send a message or reply to a message, the node appends this statement to the end of the email:\n\n> This email was sent automatically with n8n\n\nTo remove this attribution:\n\n1. In the node's Options section, select Add option.\n2. Select Append n8n attribution.\n3. Turn the toggle off.\n\nRefer to Send options and Reply options for more information.\n\n Forbidden - perhaps check your credentials\n\nThis error displays next to certain dropdowns in the node, like the Label Names or IDs dropdown. The full text looks something like this:\n\nThe error most often displays when you're using a Google Service Account as the credential and the credential doesn't have Impersonate a User turned on.\n\nRefer to Google Service Account: Finish your n8n credential for more information.\n\n 401 unauthorized error\n\nThe full text of the error looks like this:\n<!--vale off-->\n\n<!--vale on-->\n\nThis error occurs when there's an issue with the credential you're using and its scopes or permissions.\n\nTo resolve:\n\n1. For OAuth2 credentials, make sure you've enabled the Gmail API in APIs & Services > Library. Refer to Google OAuth2 Single Service - Enable APIs for more information.\n2. For Service Account credentials:\n    1. Enable domain-wide delegation.\n    2. Make sure you add the Gmail API as part of the domain-wide delegation configuration.\n\n Bad request - please check your parameters\n\nThis error most often occurs if you enter a Message ID, Thread ID, or Label ID that doesn't exist.\n\nTry a Get operation with the ID to confirm it exists.",
+  "category": "app-nodes",
+  "nodeType": "gmail",
+  "keywords": [
+    "gmail",
+    "node",
+    "common",
+    "issues",
+    "this",
+    "error",
+    "with",
+    "service",
+    "credential",
+    "attribution"
+  ],
+  "fetchedAt": "2025-10-07T16:14:28.055Z",
+  "hash": "056ab02efc9391623d236903809c43d0"
+}

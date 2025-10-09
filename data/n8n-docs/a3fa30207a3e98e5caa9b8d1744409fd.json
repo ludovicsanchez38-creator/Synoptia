@@ -1,0 +1,21 @@
+{
+  "title": "Elastic Security node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.elasticsecurity",
+  "content": "---\ntitle: Elastic Security node documentation\ndescription: Learn how to use the Elastic Security node in n8n. Follow technical documentation to integrate Elastic Security node into your workflows.\ncontentType: [integration, reference]\n---\n\n Elastic Security node\n\nUse the Elastic Security node to automate work in Elastic Security, and integrate Elastic Security with other applications. n8n's has built-in support for a wide range of Elastic Security features, including creating, updating, deleting, retrieving, and getting cases.\n\nOn this page, you'll find a list of operations the Elastic Security node supports and links to more resources.\n\n/// note | Credentials\nRefer to Elastic Security credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Case\n     Create a case\n     Delete a case\n     Get a case\n     Retrieve all cases\n     Retrieve a summary of all case activity\n     Update a case\n Case Comment\n     Add a comment to a case\n     Get a case comment\n     Retrieve all case comments\n     Remove a comment from a case\n     Update a comment in a case\n Case Tag\n     Add a tag to a case\n     Remove a tag from a case\n Connector\n     Create a connector\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'elastic-security') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.elasticsecurity.md",
+  "keywords": [
+    "elastic",
+    "security",
+    "node",
+    "case",
+    "comment",
+    "retrieve",
+    "title",
+    "documentation",
+    "integrate",
+    "cases"
+  ],
+  "fetchedAt": "2025-10-07T16:14:25.980Z",
+  "hash": "a3fa30207a3e98e5caa9b8d1744409fd"
+}

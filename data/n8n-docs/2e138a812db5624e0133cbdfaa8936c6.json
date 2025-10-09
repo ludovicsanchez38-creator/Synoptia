@@ -1,0 +1,21 @@
+{
+  "title": "Split Out",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.splitout",
+  "content": "---\ntitle: Split Out\ndescription: Documentation for the Split Out node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: high\n---\n\n Split Out\n\nUse the Split Out node to separate a single data item containing a list into multiple items. For example, a list of customers, and you want to split them so that you have an item for each customer.\n\n Node parameters\n\nConfigure this node using the following parameters.\n\n Field to Split Out\n\nEnter the field containing the list you want to separate out into individual items.\n\nIf you're working with binary data inputs, use $binary in an expression to set the field to split out.\n\n Include\n\nSelect whether and how you want n8n to keep any other fields from the input data with each new individual item.\n\nYou can select:\n\n No Other Fields: No other fields will be included.\n All Other Fields: All other fields will be included.\n Selected Other Fields: Only the selected fields will be included.\n     Fields to Include: Enter a comma separated list of the fields you want to include.\n\n Node options\n\n Disable Dot Notation\n\nBy default, n8n enables dot notation to reference child fields in the format parent.child. Use this option to disable dot notation (turned on) or to continue using dot (turned off).\n\n Destination Field Name\n\nEnter the field in the output where the split field contents should go.\n\n Include Binary\n\nChoose whether to include binary data from the input in the new output (turned on) or not (turned off).\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'split-out') ]]\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/core-nodes/data-transformation-actions/data-section-link.md\"",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.splitout.md",
+  "keywords": [
+    "split",
+    "fields",
+    "data",
+    "field",
+    "other",
+    "node",
+    "include",
+    "list",
+    "want",
+    "binary"
+  ],
+  "fetchedAt": "2025-10-07T16:14:11.699Z",
+  "hash": "2e138a812db5624e0133cbdfaa8936c6"
+}

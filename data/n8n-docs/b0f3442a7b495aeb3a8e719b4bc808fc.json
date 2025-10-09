@@ -1,0 +1,21 @@
+{
+  "title": "UptimeRobot node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.uptimerobot",
+  "content": "---\ntitle: UptimeRobot node documentation\ndescription: Learn how to use the UptimeRobot node in n8n. Follow technical documentation to integrate UptimeRobot node into your workflows.\ncontentType: [integration, reference]\n---\n\n UptimeRobot node\n\nUse the UptimeRobot node to automate work in UptimeRobot, and integrate UptimeRobot with other applications. n8n has built-in support for a wide range of UptimeRobot features, including creating and deleting alerts, as well as getting account details. \n\nOn this page, you'll find a list of operations the UptimeRobot node supports and links to more resources.\n\n/// note | Credentials\nRefer to UptimeRobot credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Account\n     Get account details\n Alert Contact\n     Create an alert contact\n     Delete an alert contact\n     Get an alert contact\n     Get all alert contacts\n     Update an alert contact\n Maintenance Window\n     Create a maintenance window\n     Delete a maintenance window\n     Get a maintenance window\n     Get all a maintenance windows\n     Update a maintenance window\n Monitor\n     Create a monitor\n     Delete a monitor\n     Get a monitor\n     Get all monitors\n     Reset a monitor\n     Update a monitor\n Public Status Page\n     Create a public status page\n     Delete a public status page\n     Get a public status page\n     Get all a public status pages\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'uptimerobot') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.uptimerobot.md",
+  "keywords": [
+    "uptimerobot",
+    "node",
+    "page",
+    "alert",
+    "maintenance",
+    "monitor",
+    "contact",
+    "window",
+    "public",
+    "status"
+  ],
+  "fetchedAt": "2025-10-07T16:14:58.192Z",
+  "hash": "b0f3442a7b495aeb3a8e719b4bc808fc"
+}

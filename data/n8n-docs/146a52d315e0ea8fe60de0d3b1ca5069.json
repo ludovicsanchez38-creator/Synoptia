@@ -1,0 +1,21 @@
+{
+  "title": "Summarize",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.summarize",
+  "content": "---\ntitle: Summarize\ndescription: Documentation for the Summarize node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: high\n---\n\n Summarize\n\nUse the Summarize node to aggregate items together, in a manner similar to Excel pivot tables.\n\n Node parameters\n\n Fields to Summarize\n\nUse these fields to define how you want to summarize your input data.\n\n Aggregation: Select the aggregation method to use on a given field. Options include:\n\t Append: Append \n\t\t If you select this option, decide whether you want to Include Empty Values or not.\n\t Average: Calculate the numeric average of your input data.\n\t Concatenate: Combine together values in your input data.\n\t\t If you select this option, decide whether you want to Include Empty Values or not.\n\t\t Separator: Select the separator you want to insert between concatenated values.\n\t Count: Count the total number of values in your input data.\n\t Count Unique: Count the number of unique values in your input data.\n\t Max: Find the highest numeric value in your input data.\n\t Min: Find the lowest numeric value in your input data.\n\t Sum: Add together the numeric values in your input data.\n Field: Enter the name of the field you want to perform the aggregation on.\n\n Fields to Split By\n\nEnter the name of the input fields that you want to split the summary by (similar to a group by statement). This allows you to get separate summaries based on values in other fields.\n\nFor example, if our input data contains columns for Sales Rep and Deal Amount and we're performing a Sum on the Deal Amount field, we could split by Sales Rep to get a Sum total for each Sales Rep.\n\nTo enter multiple fields to split by, enter a comma-separated list.\n\n Node options\n\n Continue if Field Not Found\n\nBy default, if a Field to Summarize isn't in any items, the node throws an error. Use this option to continue and return a single empty item (turned on) instead or keep the default error behavior (turned off).\n\n Disable Dot Notation\n\nBy default, n8n enables dot notation to reference child fields in the format parent.child. Use this option to disable dot notation (turned on) or to continue using dot (turned off).\n\n Output Format\n\nSelect the format for your output format. This option is recommended if you're using Fields to Split By\n\n Each Split in a Separate Item: Use this option to generate a separate output item for each split out field.\n All Splits in a Single Item: Use this option to generate a single item that lists the split out fields.\n\n Ignore items without valid fields to group by\n\nSet whether to ignore input items that don't contain the Fields to Split By (turned on) or not (turned off).\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'summarize') ]]\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/core-nodes/data-transformation-actions/data-section-link.md\"",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.summarize.md",
+  "keywords": [
+    "summarize",
+    "fields",
+    "input",
+    "data",
+    "your",
+    "split",
+    "this",
+    "values",
+    "field",
+    "option"
+  ],
+  "fetchedAt": "2025-10-07T16:14:12.262Z",
+  "hash": "146a52d315e0ea8fe60de0d3b1ca5069"
+}

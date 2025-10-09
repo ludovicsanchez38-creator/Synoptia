@@ -1,0 +1,21 @@
+{
+  "title": "Check incoming data",
+  "url": "https://docs.n8n.io/code/cookbook/expressions/check-incoming-data",
+  "content": "---\ncontentType: howto\n---\n\n Check incoming data\n\nAt times, you may want to check the incoming data. If the incoming data doesn't match a condition, you may want to return a different value. For example, you want to check if a variable from the previous node is empty and return a string if it's empty. Use the following code snippet to return not found if the variable is empty.\n\nThe above expression uses the ternary operator. You can learn more about the ternary operator here.\n\nAs an alternative, you can use the nullish coalescing operator (??) or the logical or operator (||):\n\nIn either of the above two cases, the value of $x will be used if it's set to a non-null, non-false value. The string default value is the fallback value.",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "check",
+    "incoming",
+    "data",
+    "value",
+    "operator",
+    "want",
+    "return",
+    "empty",
+    "variable",
+    "string"
+  ],
+  "fetchedAt": "2025-10-07T16:15:49.809Z",
+  "hash": "89cc12d1f803ec58d1e9a94c7020b478"
+}

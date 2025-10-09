@@ -1,0 +1,21 @@
+{
+  "title": "Get number of items returned by the previous node",
+  "url": "https://docs.n8n.io/code/cookbook/code-node/number-items-last-node",
+  "content": "---\ncontentType: howto\n---\n\n Get number of items returned by the previous node\n\nTo get the number of items returned by the previous node:\n\n=== \"JavaScript\"\n\n\t\n\n\tThe output will be similar to the following.\n\n\t\n=== \"Python\"\n\t\n\tThe output will be similar to the following.",
+  "category": "code",
+  "nodeType": "get",
+  "keywords": [
+    "number",
+    "items",
+    "returned",
+    "previous",
+    "node",
+    "output",
+    "will",
+    "similar",
+    "following",
+    "contenttype"
+  ],
+  "fetchedAt": "2025-10-07T16:15:49.463Z",
+  "hash": "ef38499aab12b75136dc3398f1f77843"
+}

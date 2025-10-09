@@ -1,0 +1,26 @@
+{
+  "title": "User management SMTP, and two-factor authentication environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/user-management-smtp-2fa",
+  "content": "---\ntitle: User management SMTP, and two-factor authentication environment variables\ndescription: Environment variables to set up user management and emails.\ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n User management SMTP, and two-factor authentication environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nRefer to User management for more information on setting up user management and emails.\n<!-- vale off -->\n| Variable | Type | Default | Description |\n| :------- | :--- | :------ | :---------- |\n| N8NEMAILMODE | String | smtp | Enable emails. |\n| N8NSMTPHOST | String | - | yourSMTPservername |\n| N8NSMTPPORT | Number | - | yourSMTPserverport |\n| N8NSMTPUSER | String | - | yourSMTPusername |\n| N8NSMTPPASS | String | - | yourSMTPpassword |\n| N8NSMTPOAUTHSERVICECLIENT | String | - | If using 2LO with a service account this is your client ID |\n| N8NSMTPOAUTHPRIVATEKEY | String | - | If using 2LO with a service account this is your private key |\n| N8NSMTPSENDER | String | - | Sender email address. You can optionally include the sender name. Example with name: N8N <contact@n8n.com> |\n| N8NSMTPSSL | Boolean | true | Whether to use SSL for SMTP (true) or not (false). |\n| N8NSMTPSTARTTLS | Boolean | true | Whether to use STARTTLS for SMTP (true) or not (false). |\n| N8NUMEMAILTEMPLATESINVITE | String | - | Full path to your HTML email template. This overrides the default template for invite emails. |\n| N8NUMEMAILTEMPLATESPWRESET | String | - | Full path to your HTML email template. This overrides the default template for password reset emails. |\n| N8NUMEMAILTEMPLATESWORKFLOWSHARED | String | - | Overrides the default HTML template for notifying users that a workflow was shared. Provide the full path to the template. |\n| N8NUMEMAILTEMPLATESCREDENTIALSSHARED | String | - | Overrides the default HTML template for notifying users that a credential was shared. Provide the full path to the template.  |\n| N8NUMEMAILTEMPLATESPROJECTSHARED | String | - | Overrides the default HTML template for notifying users that a project was shared. Provide the full path to the template.  |\n| N8NUSERMANAGEMENTJWTSECRET | String | - | Set a specific JWT secret. By default, n8n generates one on start. |\n| N8NUSERMANAGEMENTJWTDURATIONHOURS | Number | 168 | Set an expiration date for the JWTs in hours. |\n| N8NUSERMANAGEMENTJWTREFRESHTIMEOUTHOURS | Number | 0 | How many hours before the JWT expires to automatically refresh it. 0 means 25% of N8NUSERMANAGEMENTJWTDURATIONHOURS. -1 means it will never refresh, which forces users to log in again after the period defined in N8NUSERMANAGEMENTJWTDURATIONHOURS. |\n| N8NMFAENABLED | Boolean | true | Whether to enable two-factor authentication (true) or disable (false). n8n ignores this if existing users have 2FA enabled. |\n<!-- vale on -->",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "user",
+    "management",
+    "smtp,",
+    "two-factor",
+    "authentication",
+    "environment",
+    "variables",
+    "string",
+    "template",
+    "default",
+    "true",
+    "smtp",
+    "emails",
+    "this",
+    "full"
+  ],
+  "fetchedAt": "2025-10-07T16:15:58.542Z",
+  "hash": "6cc3d95911df9801540479ab54ace55f"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Affinity node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.affinity",
+  "content": "---\ntitle: Affinity node documentation\ndescription: Learn how to use the Affinity node in n8n. Follow technical documentation to integrate Affinity node into your workflows.\ncontentType: [integration, reference]\n---\n\n Affinity node\n\nUse the Affinity node to automate work in Affinity, and integrate Affinity with other applications. n8n has built-in support for a wide range of Affinity features, including creating, getting, updating and deleting lists, entries, organization, and persons.\n\nOn this page, you'll find a list of operations the Affinity node supports and links to more resources.\n\n/// note | Credentials\nRefer to Affinity credentials for guidance on setting up authentication.\n///\t\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n List\n     Get a list\n     Get all lists\n List Entry\n     Create a list entry\n     Delete a list entry\n     Get a list entry\n     Get all list entries\n Organization\n     Create an organization\n     Delete an organization\n     Get an organization\n     Get all organizations\n     Update an organization\n Person\n     Create a person\n     Delete a person\n     Get a person\n     Get all persons\n     Update a person\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'affinity') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.affinity.md",
+  "keywords": [
+    "affinity",
+    "node",
+    "list",
+    "organization",
+    "person",
+    "entry",
+    "create",
+    "delete",
+    "title",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:16.456Z",
+  "hash": "9841d5681659b38701553ea61373c995"
+}

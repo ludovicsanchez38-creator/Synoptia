@@ -1,0 +1,21 @@
+{
+  "title": "Keap node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.keap",
+  "content": "---\ntitle: Keap node documentation\ndescription: Learn how to use the Keap node in n8n. Follow technical documentation to integrate Keap node into your workflows.\ncontentType: [integration, reference]\n---\n\n Keap node\n\nUse the Keap node to automate work in Keap, and integrate Keap with other applications. n8n has built-in support for a wide range of Keap features, including creating, updating, deleting, and getting companies, products, ecommerce orders, emails, and files. \n\nOn this page, you'll find a list of operations the Keap node supports and links to more resources.\n\n/// note | Credentials\nRefer to Keap credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Company\n     Create a company\n     Retrieve all companies\n Contact\n     Create/update a contact\n     Delete an contact\n     Retrieve an contact\n     Retrieve all contacts\n Contact Note\n     Create a note\n     Delete a note\n     Get a notes\n     Retrieve all notes\n     Update a note\n Contact Tag\n     Add a list of tags to a contact\n     Delete a contact's tag\n     Retrieve all contact's tags\n Ecommerce Order\n     Create an ecommerce order\n     Get an ecommerce order\n     Delete an ecommerce order\n     Retrieve all ecommerce orders\n Ecommerce Product\n     Create an ecommerce product\n     Delete an ecommerce product\n     Get an ecommerce product\n     Retrieve all ecommerce product\n Email\n     Create a record of an email sent to a contact\n     Retrieve all sent emails\n     Send Email\n File\n     Delete a file\n     Retrieve all files\n     Upload a file\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'keap') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.keap.md",
+  "keywords": [
+    "keap",
+    "node",
+    "ecommerce",
+    "contact",
+    "retrieve",
+    "create",
+    "delete",
+    "note",
+    "product",
+    "order"
+  ],
+  "fetchedAt": "2025-10-07T16:14:37.107Z",
+  "hash": "49fbcff8da1ec213b4474d4edae26e09"
+}

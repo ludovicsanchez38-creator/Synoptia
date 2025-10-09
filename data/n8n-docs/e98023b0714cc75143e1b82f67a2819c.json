@@ -1,0 +1,21 @@
+{
+  "title": "Bitwarden node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.bitwarden",
+  "content": "---\ntitle: Bitwarden node documentation\ndescription: Learn how to use the Bitwarden node in n8n. Follow technical documentation to integrate Bitwarden node into your workflows.\ncontentType: [integration, reference]\n---\n\n Bitwarden node\n\nUse the Bitwarden node to automate work in Bitwarden, and integrate Bitwarden with other applications. n8n has built-in support for a wide range of Bitwarden features, including creating, getting, deleting, and updating collections, events, groups, and members.\n\nOn this page, you'll find a list of operations the Bitwarden node supports and links to more resources.\n\n/// note | Credentials\nRefer to Bitwarden credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Collection\n     Delete\n     Get\n     Get All\n     Update\n Event\n     Get All\n Group\n     Create\n     Delete\n     Get\n     Get All\n     Get Members\n     Update\n     Update Members\n Member\n     Create\n     Delete\n     Get\n     Get All\n     Get Groups\n     Update\n     Update Groups\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'bitwarden') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.bitwarden.md",
+  "keywords": [
+    "bitwarden",
+    "node",
+    "update",
+    "groups",
+    "members",
+    "delete",
+    "title",
+    "documentation",
+    "integrate",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:20.937Z",
+  "hash": "e98023b0714cc75143e1b82f67a2819c"
+}

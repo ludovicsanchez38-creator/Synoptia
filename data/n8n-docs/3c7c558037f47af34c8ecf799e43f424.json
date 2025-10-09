@@ -1,0 +1,21 @@
+{
+  "title": "Mattermost node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mattermost",
+  "content": "---\ntitle: Mattermost node documentation\ndescription: Learn how to use the Mattermost node in n8n. Follow technical documentation to integrate Mattermost node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Mattermost node\n\nUse the Mattermost node to automate work in Mattermost, and integrate Mattermost with other applications. n8n has built-in support for a wide range of Mattermost features, including creating, deleting, and getting channels, and users, as well as posting messages, and adding reactions.\n\nOn this page, you'll find a list of operations the Mattermost node supports and links to more resources.\n\n/// note | Credentials\nRefer to Mattermost credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Channel\n     Add a user to a channel\n     Create a new channel\n     Soft delete a channel\n     Get a page of members for a channel\n     Restores a soft deleted channel\n     Search for a channel\n     Get statistics for a channel\n Message\n     Soft delete a post, by marking the post as deleted in the database\n     Post a message into a channel\n     Post an ephemeral message into a channel\n Reaction\n     Add a reaction to a post.\n     Remove a reaction from a post\n     Get all the reactions to one or more posts\n User\n     Create a new user\n     Deactivates the user and revokes all its sessions by archiving its user object.\n     Retrieve all users\n     Get a user by email\n     Get a user by ID\n     Invite user to team\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'mattermost') ]]\n\n Related resources\n\nRefer to Mattermost's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Channel ID field error\n\nIf you're not the System Administrator, you might get an error: there was a problem loading the parameter options from server: \"Mattermost error response: You do not have the appropriate permissions. next to the Channel ID field.\n\nAsk your system administrator to grant you the post:channel permission.\n\n Find the channel ID\n\nTo find the channel ID in Mattermost:\n\n1. Select the channel from the left sidebar.\n2. Select the channel name at the top.\n3. Select View Info.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.mattermost.md",
+  "keywords": [
+    "mattermost",
+    "node",
+    "channel",
+    "user",
+    "post",
+    "documentation",
+    "into",
+    "page",
+    "find",
+    "more"
+  ],
+  "fetchedAt": "2025-10-07T16:14:39.765Z",
+  "hash": "3c7c558037f47af34c8ecf799e43f424"
+}

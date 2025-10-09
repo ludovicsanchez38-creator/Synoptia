@@ -1,0 +1,23 @@
+{
+  "title": "MySQL node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mysql/common-issues",
+  "content": "---\ntitle: MySQL node common issues\ndescription: Documentation for common issues and questions in the MySQL node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: high\n---\n\n MySQL node common issues\n\nHere are some common errors and issues with the MySQL node and steps to resolve or troubleshoot them.\n\n Update rows by composite key\n\nThe MySQL node's Update operation lets you to update rows in a table by providing a Column to Match On and a value. This works for tables where single column values can uniquely identify individual rows.\n\nYou can't use this pattern for tables that use composite keys, where you need multiple columns to uniquely identify a row. A example of this is MySQL's user table in the mysql database, where you need both the user and host columns to uniquely identify rows.\n\nTo update tables with composite keys, write the query manually with the Execute SQL operation instead. There, you can match on multiple values, like in this example which matches on both customerid and productid: \n\n Can't connect to a local MySQL server when using Docker\n\nWhen you run either n8n or MySQL in Docker, you need to configure the network so that n8n can connect to MySQL.\n\nThe solution depends on how you're hosting the two components.\n\n If only MySQL is in Docker\n\nIf only MySQL is running in Docker, configure MySQL to listen on all interfaces by binding to 0.0.0.0 inside of the container (the official images are already configured this way).\n\nWhen running the container, publish the port with the -p flag. By default, MySQL runs on port 3306, so your Docker command should look like this:\n\nWhen configuring MySQL credentials, the localhost address should work without a problem (set the Host to localhost).\n\n If only n8n is in Docker\n\nIf only n8n is running in Docker, configure MySQL to listen on all interfaces by binding to 0.0.0.0 on the host.\n\nIf you are running n8n in Docker on Linux, use the --add-host flag to map host.docker.internal to host-gateway when you start the container. For example:\n\nIf you are using Docker Desktop, this is automatically configured for you.\n\nWhen configuring MySQL credentials, use host.docker.internal as the Host address instead of localhost.\n\n If MySQL and n8n are running in separate Docker containers\n\nIf both n8n and MySQL are running in Docker in separate containers, you can use Docker networking to connect them.\n\nConfigure MySQL to listen on all interfaces by binding to 0.0.0.0 inside of the container (the official images are already configured this way). Add both the MySQL and n8n containers to the same user-defined bridge network.\n\nWhen configuring MySQL credentials, use the MySQL container's name as the host address instead of localhost. For example, if you call the MySQL container my-mysql, you would set the Host to my-mysql.\n\n If MySQL and n8n are running in the same Docker container\n\nIf MySQL and n8n are running in the same Docker container, the localhost address doesn't need any special configuration. You can configure MySQL to listen on localhost and configure the Host in the MySQL credentials in n8n to use localhost.\n\n Decimal numbers returned as strings\n\nBy default, the MySQL node returns DECIMAL values as strings. This is done intentionally to avoid loss of precision that can occur due to limitation with the way JavaScript represents numbers. You can learn more about the decision in the documentation for the MySQL library that n8n uses.\n\nTo output decimal values as numbers instead of strings and ignore the risks in loss of precision, enable the Output Decimals as Numbers option. This will output the values as numbers instead of strings.\n\nAs an alternative, you can manually\tconvert from the string to a decimal using the toFloat() function with toFixed() or with the Edit Fields (Set) node after the MySQL node. Be aware that you may still need to account for a potential loss of precision.",
+  "category": "app-nodes",
+  "nodeType": "mysql",
+  "keywords": [
+    "mysql",
+    "node",
+    "common",
+    "issues",
+    "docker",
+    "host",
+    "this",
+    "running",
+    "container",
+    "with",
+    "when",
+    "localhost"
+  ],
+  "fetchedAt": "2025-10-07T16:14:43.528Z",
+  "hash": "75e85cc537c592af82e3f2832933bb27"
+}

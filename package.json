@@ -1,0 +1,53 @@
+{
+  "name": "synoptia-workflow-builder",
+  "version": "1.0.0",
+  "description": "Agent IA pour générer automatiquement des workflows n8n à partir de demandes en français",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:old": "node tests/test.js"
+  },
+  "keywords": [
+    "n8n",
+    "workflow",
+    "automation",
+    "mcp",
+    "ai"
+  ],
+  "author": "Ludo - Synoptia",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.65.0",
+    "@qdrant/js-client-rest": "^1.11.0",
+    "axios": "^1.6.0",
+    "bcrypt": "^6.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.3.1",
+    "dotenv-safe": "^9.1.0",
+    "eventsource": "^4.0.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^8.1.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.3.2",
+    "joi": "^18.0.1",
+    "openai": "^4.20.0",
+    "prom-client": "^15.1.3",
+    "sqlite3": "^5.1.7",
+    "turndown": "^7.1.3",
+    "winston": "^3.18.1",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^7.1.4"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Formstack Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.formstacktrigger",
+  "content": "---\ntitle: Formstack Trigger node documentation\ndescription: Learn how to use the Formstack Trigger node in n8n. Follow technical documentation to integrate Formstack Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Formstack Trigger node\n\nFormstack is a workplace productivity platform that helps organizations streamline digital work through no-code online forms, documents, and signatures.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Formstack Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.formstacktrigger.md",
+  "keywords": [
+    "formstack",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:10.810Z",
+  "hash": "d5195baab7af8187a5b8216ece1bb7df"
+}

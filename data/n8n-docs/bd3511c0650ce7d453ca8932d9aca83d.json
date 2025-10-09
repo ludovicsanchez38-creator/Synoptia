@@ -1,0 +1,21 @@
+{
+  "title": "Travis CI node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.travisci",
+  "content": "---\ntitle: Travis CI node documentation\ndescription: Learn how to use the Travis CI node in n8n. Follow technical documentation to integrate Travis CI node into your workflows.\ncontentType: [integration, reference]\n---\n\n Travis CI node\n\nUse the Travis CI node to automate work in Travis CI, and integrate Travis CI with other applications. n8n has built-in support for a wide range of Travis CI features, including cancelling and getting builds. \n\nOn this page, you'll find a list of operations the Travis CI node supports and links to more resources.\n\n/// note | Credentials\nRefer to Travis CI credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Build\n     Cancel a build\n     Get a build\n     Get all builds\n     Restart a build\n     Trigger a build\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'travisci') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.travisci.md",
+  "keywords": [
+    "travis",
+    "node",
+    "build",
+    "title",
+    "documentation",
+    "integrate",
+    "builds",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:56.846Z",
+  "hash": "bd3511c0650ce7d453ca8932d9aca83d"
+}

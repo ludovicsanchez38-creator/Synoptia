@@ -1,0 +1,21 @@
+{
+  "title": "AWS Comprehend node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.awscomprehend",
+  "content": "---\ntitle: AWS Comprehend node documentation\ndescription: Learn how to use the AWS Comprehend node in n8n. Follow technical documentation to integrate AWS Comprehend node into your workflows.\ncontentType: [integration, reference]\n---\n\n AWS Comprehend node\n\nUse the AWS Comprehend node to automate work in AWS Comprehend, and integrate AWS Comprehend with other applications. n8n has built-in support for a wide range of AWS Comprehend features, including identifying and analyzing texts.\n\nOn this page, you'll find a list of operations the AWS Comprehend node supports and links to more resources.\n\n/// note | Credentials\nRefer to AWS Comprehend credentials for guidance on setting up authentication. \n///\n\n Operations\n\nText\n\n- Identify the dominant language\n- Analyse the sentiment of the text\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'aws-comprehend') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.awscomprehend.md",
+  "keywords": [
+    "comprehend",
+    "node",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "text",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:14:18.232Z",
+  "hash": "861453283deed4029df4d25e4cc6197a"
+}

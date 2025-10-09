@@ -1,0 +1,21 @@
+{
+  "title": "Workflow history",
+  "url": "https://docs.n8n.io/workflows/history",
+  "content": "---\ntitle: Workflow history\ndescription: View and restore previous versions of your workflow.\ncontentType: howto\n---\n\n Workflow history\n\n/// info | Feature availability\n Full workflow history is available on Enterprise Cloud and Enterprise Self-hosted.\n Versions from the last five days are available for Cloud Pro users.\n Versions from the last 24 hours are available for registered Community users.\n///\t\n\nUse workflow history to view and restore previous versions of your workflows. \n\n Understand workflow history\n\nn8n creates a new version when you:\n\n  Save your workflow.\n  Restore an old version. n8n saves the latest version before restoring.\n  Pull from a Git repository using Source control. Note that n8n saves versions to the instance database, not to Git.\n\n/// note | Workflow history and execution history\nDon't confuse workflow history with the Workflow-level executions list.\n\nExecutions are workflow runs. With the executions list, you can see previous runs of the current version of the workflow. You can copy previous executions into the editor to Debug and re-run past executions in your current workflow.\n\nWorkflow history is previous versions of the workflow: for example, a version with a different node, or different parameters set.\n///\n\n View workflow history\n\nTo view a workflow's history:\n\n1. Open the workflow.\n1. Select Workflow history <span class=\"n8n-inline-image\">!Workflow history icon{.off-glb}</span>. n8n opens a menu showing the saved workflow versions, and a canvas with a preview of the selected version.\n\n Restore or copy previous versions\n\nYou can restore a previous workflow version, or make a copy of it:\n\n1. On the version you want to restore or copy, select Options <span class=\"n8n-inline-image\">!Options icon{.off-glb}</span>.\n1. Choose what you want to do:\n\t Restore this version: replace your current workflow with the selected version.\n\t Clone to new workflow: create a new workflow based on the selected version.\n\t Open version in new tab: open a second tab displaying the selected version. Use this to compare versions.\n\t Download: download the version as JSON.",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "workflow",
+    "history",
+    "version",
+    "versions",
+    "restore",
+    "previous",
+    "your",
+    "with",
+    "executions",
+    "view"
+  ],
+  "fetchedAt": "2025-10-07T16:15:42.183Z",
+  "hash": "b6793c3f6ca9c667d8691656d5294aca"
+}

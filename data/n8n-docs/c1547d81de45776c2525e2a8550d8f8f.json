@@ -1,0 +1,21 @@
+{
+  "title": "Microsoft Outlook Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.microsoftoutlooktrigger",
+  "content": "---\ntitle: Microsoft Outlook Trigger node documentation\ndescription: Learn how to use the Microsoft Outlook Trigger node in n8n. Follow technical documentation to integrate Microsoft Outlook Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Microsoft Outlook Trigger node\n\nUse the Microsoft Outlook Trigger node to respond to events in Microsoft Outlook and integrate Microsoft Outlook with other applications.\n\nOn this page, you'll find a list of events the Microsoft Outlook Trigger node can respond to, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Microsoft Outlook integrations page.\n///\n\n Events\n\n Message Received\n\n Related resources\n\nn8n provides an app node for Microsoft Outlook. You can find the node docs here.\n\nView example workflows and related content on n8n's website.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.microsoftoutlooktrigger.md",
+  "keywords": [
+    "microsoft",
+    "outlook",
+    "trigger",
+    "node",
+    "events",
+    "find",
+    "documentation",
+    "integrate",
+    "workflows",
+    "respond"
+  ],
+  "fetchedAt": "2025-10-07T16:15:15.844Z",
+  "hash": "c1547d81de45776c2525e2a8550d8f8f"
+}

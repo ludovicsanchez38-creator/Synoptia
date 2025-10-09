@@ -1,0 +1,21 @@
+{
+  "title": "Core nodes library",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/index",
+  "content": "---\ncontentType: overview\n---\n\n Core nodes library\n\nThis section provides information about n8n's core nodes.",
+  "category": "core-nodes",
+  "nodeType": "core",
+  "keywords": [
+    "core",
+    "nodes",
+    "library",
+    "contenttype",
+    "overview",
+    "this",
+    "section",
+    "provides",
+    "information",
+    "about"
+  ],
+  "fetchedAt": "2025-10-07T16:14:01.999Z",
+  "hash": "8ba4daddff2c015cc01ffec873a02b0e"
+}

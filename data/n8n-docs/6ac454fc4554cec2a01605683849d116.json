@@ -1,0 +1,21 @@
+{
+  "title": "YouTube node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.youtube",
+  "content": "---\ntitle: YouTube node documentation\ndescription: Learn how to use the YouTube node in n8n. Follow technical documentation to integrate YouTube node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n YouTube node\n\nUse the YouTube node to automate work in YouTube, and integrate YouTube with other applications. n8n has built-in support for a wide range of YouTube features, including retrieving and updating channels, as well as creating and deleting playlists. \n\nOn this page, you'll find a list of operations the YouTube node supports and links to more resources.\n\n/// note | Credentials\nRefer to YouTube credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Channel\n     Retrieve a channel\n     Retrieve all channels\n     Update a channel\n     Upload a channel banner\n Playlist\n     Create a playlist\n     Delete a playlist\n     Get a playlist\n     Retrieve all playlists\n     Update a playlist\n Playlist Item\n     Add an item to a playlist\n     Delete a item from a playlist\n     Get a playlist's item\n     Retrieve all playlist items\n Video\n     Delete a video\n     Get a video\n     Retrieve all videos\n     Rate a video\n     Update a video\n     Upload a video\n Video Category\n     Retrieve all video categories\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'youtube') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.youtube.md",
+  "keywords": [
+    "youtube",
+    "node",
+    "playlist",
+    "video",
+    "retrieve",
+    "channel",
+    "item",
+    "integrations",
+    "update",
+    "delete"
+  ],
+  "fetchedAt": "2025-10-07T16:15:00.665Z",
+  "hash": "6ac454fc4554cec2a01605683849d116"
+}

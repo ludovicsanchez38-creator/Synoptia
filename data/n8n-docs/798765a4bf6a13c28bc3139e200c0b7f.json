@@ -1,0 +1,21 @@
+{
+  "title": "Hunter node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.hunter",
+  "content": "---\ntitle: Hunter node documentation\ndescription: Learn how to use the Hunter node in n8n. Follow technical documentation to integrate Hunter node into your workflows.\ncontentType: [integration, reference]\n---\n\n Hunter node\n\nUse the Hunter node to automate work in Hunter, and integrate Hunter with other applications. n8n has built-in support for a wide range of Hunter features, including getting, generating, and verifying email addresses. \n\nOn this page, you'll find a list of operations the Hunter node supports and links to more resources.\n\n/// note | Credentials\nRefer to Hunter credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Get every email address found on the internet using a given domain name, with sources\n Generate or retrieve the most likely email address from a domain name, a first name and a last name\n Verify the deliverability of an email address\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'hunter') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.hunter.md",
+  "keywords": [
+    "hunter",
+    "node",
+    "email",
+    "name",
+    "address",
+    "title",
+    "documentation",
+    "integrate",
+    "with",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:35.901Z",
+  "hash": "798765a4bf6a13c28bc3139e200c0b7f"
+}

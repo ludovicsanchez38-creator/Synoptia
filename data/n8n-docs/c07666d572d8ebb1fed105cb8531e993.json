@@ -1,0 +1,21 @@
+{
+  "title": "Demio node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.demio",
+  "content": "---\ntitle: Demio node documentation\ndescription: Learn how to use the Demio node in n8n. Follow technical documentation to integrate Demio node into your workflows.\ncontentType: [integration, reference]\n---\n\n Demio node\n\nUse the Demio node to automate work in Demio, and integrate Demio with other applications. n8n has built-in support for a wide range of Demio features, including getting, and registering events and reports.\n\nOn this page, you'll find a list of operations the Demio node supports and links to more resources.\n\n/// note | Credentials\nRefer to Demio credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Event\n     Get an event\n     Get all events\n     Register someone to an event\n Report\n     Get an event report\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'demio') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.demio.md",
+  "keywords": [
+    "demio",
+    "node",
+    "event",
+    "title",
+    "documentation",
+    "integrate",
+    "events",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:24.179Z",
+  "hash": "c07666d572d8ebb1fed105cb8531e993"
+}

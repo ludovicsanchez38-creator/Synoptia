@@ -1,0 +1,21 @@
+{
+  "title": "Google Cloud Firestore node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlecloudfirestore",
+  "content": "---\ntitle: Google Cloud Firestore node documentation\ndescription: Learn how to use the Google Cloud Firestore node in n8n. Follow technical documentation to integrate Google Cloud Firestore node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Google Cloud Firestore node\n\nUse the Google Cloud Firestore node to automate work in Google Cloud Firestore, and integrate Google Cloud Firestore with other applications. n8n has built-in support for a wide range of Google Cloud Firestore features, including creating, deleting, and getting documents. \n\nOn this page, you'll find a list of operations the Google Cloud Firestore node supports and links to more resources.\n\n/// note | Credentials\nRefer to Google credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Document\n     Create a document\n     Create/Update a document\n     Delete a document\n     Get a document\n     Get all documents from a collection\n     Runs a query against your documents\n Collection\n     Get all root collections\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-cloud-firestore') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.googlecloudfirestore.md",
+  "keywords": [
+    "google",
+    "cloud",
+    "firestore",
+    "node",
+    "document",
+    "documents",
+    "integrations",
+    "title",
+    "documentation",
+    "integrate"
+  ],
+  "fetchedAt": "2025-10-07T16:14:30.606Z",
+  "hash": "64d659996210494da21985040f857db4"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Information Extractor node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.information-extractor",
+  "content": "---\ntitle: Information Extractor node documentation\ndescription: Learn how to use the Information Extractor node in n8n. Follow technical documentation to integrate Information Extractor node into your workflows.\ncontentType: [integration, reference]\n---\n\n Information Extractor node\n\nUse the Information Extractor node to extract structured information from incoming data.\n\nOn this page, you'll find the node parameters for the Information Extractor node,\nand links to more resources.\n\n Node parameters\n\n Text defines the input text to extract information from. This is usually an expression that references a field from the input items. For example, this could be {{ $json.chatInput }} if the input is a chat trigger, or {{ $json.text }} if a previous node is Extract from PDF.\n Use Schema Type to choose how you want to describe the desired output data format. You can choose between:\n     From Attribute Descriptions: This option allows you to define the schema by specifying the list of attributes and their descriptions.\n     Generate From JSON Example: Input an example JSON object to automatically generate the schema. The node uses the object property types and names. It ignores the actual values. n8n treats every field as mandatory when generating schemas from JSON examples.\n     Define using JSON Schema: Manually input the JSON schema. Read the JSON Schema guides and examples for help creating a valid JSON schema.\n\n Node options\n\n System Prompt Template: Use this option to change the system prompt that's used for the information extraction. n8n automatically appends format specification instructions to the prompt.\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.information-extractor.md",
+  "keywords": [
+    "information",
+    "extractor",
+    "node",
+    "json",
+    "from",
+    "schema",
+    "this",
+    "input",
+    "extract",
+    "text"
+  ],
+  "fetchedAt": "2025-10-07T16:15:25.801Z",
+  "hash": "ff308dc20c3331b86b2c1be885f14c7c"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Community Edition Features",
+  "url": "https://docs.n8n.io/hosting/community-edition-features",
+  "content": "---\ntitle: Community edition features\ndescription: Differences in available features between the Community edition and other paid plans.\ncontentType: explanation\ntags:\n  - Community edition\n  - Enterprise edition\nhide:\n  - tags\n---\n\n Community Edition Features\n\nThe community edition includes almost the complete feature set of n8n, except for the features listed here.\n\nThe community edition doesn't include these features:\n\n- Custom Variables\n- Environments\n- External secrets\n- External storage for binary data\n- Log streaming (Logging is included) \n- Multi-main mode (Queue mode is included)\n- Projects\n- SSO (SAML, LDAP)\n- Sharing (workflows, credentials) (Only the instance owner and the user who creates them can access workflows and credentials)\n- Version control using Git\n- Workflow history (You can get one day of workflow history with the community edition by registering)\n\nThese features are available on the Enterprise Cloud plan, including the self-hosted Enterprise edition. Some of these features are available on the Starter and Pro Cloud plan. \n\nSee pricing for reference.\n\n Registered Community Edition\n\nYou can unlock extra features by registering your n8n community edition. You register with your email and receive a license key.\n\nRegistering unlocks these features for the community edition:\n\n Folders: Organize your workflows into tidy folders\n Debug in editor: Copy and pin execution data when working on a workflow\n One day of workflow history: 24 hours of workflow history so you can revert back to previous workflow versions\n Custom execution data: Save, find, and annotate execution metadata\n\nTo register a new community edition instance, select the option during your initial account creation.\n\nTo register an existing community edition instance:\n\n1. Select the three dots icon <span class=\"n8n-inline-image\">!three dots icon{.off-glb}</span> in the lower-left corner.\n1. Select Settings and then Usage and plan.\n1. Select Unlock to enter your email and then select Send me a free license key.\n1. Check your email for the account you entered.\n\nOnce you have a license key, activate it by clicking the button in the license email or by visiting Options > Settings > Usage and plan and selecting Enter activation key.\n\nOnce activated, your license will not expire. We may change the unlocked features in the future. This will not impact previously unlocked features.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "community",
+    "edition",
+    "features",
+    "your",
+    "workflow",
+    "license",
+    "select",
+    "these",
+    "history",
+    "plan"
+  ],
+  "fetchedAt": "2025-10-07T16:15:53.252Z",
+  "hash": "b5f2824f5cf008c1c65f421a0677a201"
+}

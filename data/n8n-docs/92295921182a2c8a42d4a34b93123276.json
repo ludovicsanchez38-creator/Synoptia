@@ -1,0 +1,21 @@
+{
+  "title": "Unleashed Software node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.unleashedsoftware",
+  "content": "---\ntitle: Unleashed Software node documentation\ndescription: Learn how to use the Unleashed Software node in n8n. Follow technical documentation to integrate Unleashed Software node into your workflows.\ncontentType: [integration, reference]\n---\n\n Unleashed Software node\n\nUse the Unleashed Software node to automate work in Unleashed Software, and integrate Unleashed Software with other applications. n8n has built-in support for a wide range of Unleashed Software features, including getting sales orders and stock on hand. \n\nOn this page, you'll find a list of operations the Unleashed Software node supports and links to more resources.\n\n/// note | Credentials\nRefer to Unleashed Software credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Sales Order\n     Get all sales orders\n Stock On Hand\n     Get a stock on hand\n     Get all stocks on hand\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'unleashed-software') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.unleashedsoftware.md",
+  "keywords": [
+    "unleashed",
+    "software",
+    "node",
+    "hand",
+    "sales",
+    "stock",
+    "title",
+    "documentation",
+    "integrate",
+    "orders"
+  ],
+  "fetchedAt": "2025-10-07T16:14:57.759Z",
+  "hash": "92295921182a2c8a42d4a34b93123276"
+}

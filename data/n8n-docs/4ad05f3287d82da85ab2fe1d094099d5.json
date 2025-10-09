@@ -1,0 +1,21 @@
+{
+  "title": "Quick Base node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.quickbase",
+  "content": "---\ntitle: Quick Base node documentation\ndescription: Learn how to use the Quick Base node in n8n. Follow technical documentation to integrate Quick Base node into your workflows.\ncontentType: [integration, reference]\n---\n\n Quick Base node\n\nUse the Quick Base node to automate work in Quick Base, and integrate Quick Base with other applications. n8n has built-in support for a wide range of Quick Base features, including creating, updating, deleting, and getting records, as well as getting fields, and downloading files. \n\nOn this page, you'll find a list of operations the Quick Base node supports and links to more resources.\n\n/// note | Credentials\nRefer to Quick Base credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Field\n     Get all fields\n File\n     Delete a file\n     Download a file\n Record\n     Create a record\n     Delete a record\n     Get all records\n     Update a record\n     Upsert a record\n Report\n     Get a report\n     Run a report\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'quick-base') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.quickbase.md",
+  "keywords": [
+    "quick",
+    "base",
+    "node",
+    "record",
+    "file",
+    "report",
+    "title",
+    "documentation",
+    "integrate",
+    "getting"
+  ],
+  "fetchedAt": "2025-10-07T16:14:49.435Z",
+  "hash": "4ad05f3287d82da85ab2fe1d094099d5"
+}

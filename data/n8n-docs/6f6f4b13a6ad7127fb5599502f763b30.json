@@ -1,0 +1,21 @@
+{
+  "title": "Google Slides node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googleslides",
+  "content": "---\ntitle: Google Slides node documentation\ndescription: Learn how to use the Google Slides node in n8n. Follow technical documentation to integrate Google Slides node into your workflows.\ncontentType: [integration, reference]\n---\n\n Google Slides node\n\nUse the Google Slides node to automate work in Google Slides, and integrate Google Slides with other applications. n8n has built-in support for a wide range of Google Slides features, including creating presentations, and getting pages. \n\nOn this page, you'll find a list of operations the Google Slides node supports and links to more resources.\n\n/// note | Credentials\nRefer to Google credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Page\n     Get a page\n     Get a thumbnail\n Presentation\n     Create a presentation\n     Get a presentation\n     Get presentation slides\n     Replace text in a presentation\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-slides') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.googleslides.md",
+  "keywords": [
+    "google",
+    "slides",
+    "node",
+    "presentation",
+    "page",
+    "integrations",
+    "title",
+    "documentation",
+    "integrate",
+    "pages"
+  ],
+  "fetchedAt": "2025-10-07T16:14:33.532Z",
+  "hash": "6f6f4b13a6ad7127fb5599502f763b30"
+}

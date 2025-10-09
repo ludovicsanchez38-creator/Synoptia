@@ -1,0 +1,21 @@
+{
+  "title": "Perplexity node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.perplexity",
+  "content": "---\ntitle: Perplexity node documentation\ndescription: Learn how to use the Perplexity node in n8n. Follow technical documentation to integrate Perplexity node into your workflows.\ncontentType: [integration, reference]\n---\n\n Perplexity node\n\nUse the Perplexity node to automate work in Perplexity and integrate Perplexity with other applications. n8n has built-in support for messaging a model.\n\nOn this page, you'll find a list of operations the Perplexity node supports, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n Message a Model: Create one or more completions for a given text.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'perplexity') ]]\n\n Related resources\n\n<!-- add a link to the service's documentation. This should usually go direct to the API docs -->\nRefer to Perplexity's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-langchain.perplexity.md",
+  "keywords": [
+    "perplexity",
+    "node",
+    "documentation",
+    "this",
+    "more",
+    "title",
+    "integrate",
+    "model",
+    "page",
+    "find"
+  ],
+  "fetchedAt": "2025-10-07T16:15:03.226Z",
+  "hash": "5d87237ddf351eaffdcd0f4b2505af8f"
+}

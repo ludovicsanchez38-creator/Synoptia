@@ -1,0 +1,21 @@
+{
+  "title": "Cal Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.caltrigger",
+  "content": "---\ntitle: Cal Trigger node documentation\ndescription: Learn how to use the Cal Trigger node in n8n. Follow technical documentation to integrate Cal Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Cal Trigger node\n\nCal is the event-juggling scheduler for everyone. Focus on meeting, not making meetings.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Cal Trigger integrations page.\n///\n\n Events\n\n Booking cancelled\n Booking created\n Booking rescheduled\n Meeting ended",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.caltrigger.md",
+  "keywords": [
+    "trigger",
+    "node",
+    "booking",
+    "documentation",
+    "meeting",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:15:06.526Z",
+  "hash": "7fbe2e4096082614d5dd1a200403e7bc"
+}

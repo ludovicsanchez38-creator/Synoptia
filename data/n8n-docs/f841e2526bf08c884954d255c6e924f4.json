@@ -1,0 +1,21 @@
+{
+  "title": "Pushbullet node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.pushbullet",
+  "content": "---\ntitle: Pushbullet node documentation\ndescription: Learn how to use the Pushbullet node in n8n. Follow technical documentation to integrate Pushbullet node into your workflows.\ncontentType: [integration, reference]\n---\n\n Pushbullet node\n\nUse the Pushbullet node to automate work in Pushbullet, and integrate Pushbullet with other applications. n8n has built-in support for a wide range of Pushbullet features, including creating, updating, deleting, and getting a push. \n\nOn this page, you'll find a list of operations the Pushbullet node supports and links to more resources.\n\n/// note | Credentials\nRefer to Pushbullet credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Push\n     Create a push\n     Delete a push\n     Get all pushes\n     Update a push\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'pushbullet') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.pushbullet.md",
+  "keywords": [
+    "pushbullet",
+    "node",
+    "push",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:14:48.828Z",
+  "hash": "f841e2526bf08c884954d255c6e924f4"
+}

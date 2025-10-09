@@ -1,0 +1,21 @@
+{
+  "title": "Tags",
+  "url": "https://docs.n8n.io/workflows/tags",
+  "content": "---\ntitle: Workflow tags\ndescription: Use tags to label workflows, making it easier to browse your workflows.\ncontentType: howto\n---\n\n Tags\n\nWorkflow tags allow you to label your workflows. You can then filter workflows by tag.\n\nTags are global. This means when you create a tag, it's available to all users on your n8n instance.\n\n Add a tag to a workflow\n\nTo add a tag to your workflow:\n\n1. In your workflow, select + Add tag.\n2. Select an existing tag, or enter a new tag name.\n3. Once you select a tag and click away from the tag modal, n8n displays the tag next to the workflow name.\n\nYou can add more than one tag.\n\n Filter by tag\n\nWhen browsing the workflows on your instance, you can filter by tag.\n\n1. On the Workflows page, select Filters.\n2. Select Tags.\n3. Select the tag or tags you want to filter by. n8n lists the workflows with that tag.\n\n Manage tags\n\nYou can edit existing tags. Instance owners can delete tags.\n\n1. Select Manage tags. This is available from Filters > Tags on the Workflows page, or in the + Add tag modal in your workflow.\n2. Hover over the tag you want to change.\n3. Select Edit <span class=\"n8n-inline-image\">!Add node icon{.off-glb}</span> to rename it, or Delete <span class=\"n8n-inline-image\">!Add node icon{.off-glb}</span> to delete it.\n\n/// warning | Global tags\nTags are global. If you edit or delete a tag, this affects all users of your n8n instance.\n///",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "tags",
+    "workflows",
+    "your",
+    "select",
+    "workflow",
+    "filter",
+    "instance",
+    "delete",
+    "span",
+    "global"
+  ],
+  "fetchedAt": "2025-10-07T16:15:43.014Z",
+  "hash": "07c6c8d7f4a405660c8883fc3791490e"
+}

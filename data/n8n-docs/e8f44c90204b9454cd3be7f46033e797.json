@@ -1,0 +1,21 @@
+{
+  "title": "Facebook Trigger Page object",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.facebooktrigger/page",
+  "content": "---\ntitle: Facebook Trigger Page object documentation\ndescription: Learn how to use the Page object of the Facebook Trigger node in n8n. Follow technical documentation to integrate the Facebook Trigger node's Page object into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Facebook Trigger Page object\n\nUse this object to receive updates when updates to your page profile fields or profile settings occur or someone mentions your page. Refer to Facebook Trigger for more information on the trigger itself.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Facebook Trigger integrations page.\n///\n\n Prerequisites\n\nThis Object requires some configuration in your app and page before you can use the trigger:\n\n1. At least one page admin needs to grant the managepages permission to your app.\n1. The page admin needs to have at least moderator privileges. If they don't, they won't receive all content.\n1. You'll also need to add the app to your page, and you may need to go to the Graph API explorer and execute this call with your app token:\n\n    \n\n Trigger configuration\n\nTo configure the trigger with this Object:\n\n1. Select the Credential to connect with. Select an existing or create a new Facebook App credential.\n1. Enter the APP ID of the app connected to your credential. Refer to the Facebook App credential documentation for more information.\n1. Select Page as the Object.\n1. Field Names or IDs: By default, the node will trigger on all the available events using the  wildcard filter. If you'd like to limit the events, use the X to remove the star and use the dropdown or an expression to select the updates you're interested in. Options include individual profile fields, as well as:\n     Feed: Describes most changes to a page's feed, including posts, likes, shares, and so on.\n     Leadgen: Notifies you when a page's lead generation settings change.\n     Live Videos: Notifies you when a page's live video status changes.\n     Mention: Notifies you when new mentions in pages, comments, and so on occur.\n     Merchant Review: Notifies you when a page's merchant review settings change.\n     Page Change Proposal: Notifies you when Facebook suggests proposed changes for your Facebook Page.\n     Page Upcoming Change: Notifies you about upcoming changes that will occur on your Facebook Page. Facebook has suggested these changes and they may have a deadline to accept or reject before automatically taking effect.\n     Product Review: Notifies you when a page's product review settings change.\n     Ratings: Notifies you when a page's ratings change, including new ratings or when a user comments on or reacts to a rating.\n     Videos: Notifies you when the encoding status of a video on a page changes.\n1. In Options, turn on the toggle to Include Values. This Object type fails without the option enabled.\n\n Related resources\n\nRefer to Webhooks for Pages and Meta's Page Graph API reference for more information.",
+  "category": "trigger-nodes",
+  "nodeType": null,
+  "keywords": [
+    "facebook",
+    "trigger",
+    "page",
+    "object",
+    "your",
+    "when",
+    "notifies",
+    "this",
+    "changes",
+    "change"
+  ],
+  "fetchedAt": "2025-10-07T16:15:09.628Z",
+  "hash": "e8f44c90204b9454cd3be7f46033e797"
+}

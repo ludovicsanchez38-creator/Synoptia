@@ -1,0 +1,26 @@
+{
+  "title": "Output to the browser console with `console.log()` or `print()` in the Code node",
+  "url": "https://docs.n8n.io/code/cookbook/code-node/console-log",
+  "content": "---\ndescription: How to use console.log() or print()\ncontentType: howto\n---\n\n Output to the browser console with console.log() or print() in the Code node\n\nYou can use console.log() or print() in the Code node to help when writing and debugging your code.\n\nFor help opening your browser console, refer to this guide by Balsamiq.\n\n console.log (JavaScript)\n\nFor technical information on console.log(), refer to the MDN developer docs.\n\nFor example, copy the following code into a Code node, then open your console and run the node:\n\n print (Python)\n\nFor technical information on print(), refer to the Real Python's guide.\n\nFor example, set your Code node Language to Python, copy the following code into the node, then open your console and run the node:\n\n Handling an output of [object Object]\n\nIf the console displays [object Object] when you print, check the data type, then convert it as needed.\n\nTo check the data type:\n\n JsProxy\n\nIf type() outputs <class 'pyodide.ffi.JsProxy'>, you need to convert the JsProxy to a native Python object using topy(). This occurs when working with data in the n8n node data structure, such as node inputs and outputs. For example, if you want to print the data from a previous node in the workflow:\n\nRefer to the Pyodide documentation on JsProxy for more information on this class.",
+  "category": "code",
+  "nodeType": "output",
+  "keywords": [
+    "output",
+    "browser",
+    "console",
+    "with",
+    "`console.log()`",
+    "`print()`",
+    "code",
+    "node",
+    "print",
+    "your",
+    "object",
+    "data",
+    "refer",
+    "python",
+    "jsproxy"
+  ],
+  "fetchedAt": "2025-10-07T16:15:49.032Z",
+  "hash": "96d7d8e25c1bd46a9930683f8570dbd6"
+}

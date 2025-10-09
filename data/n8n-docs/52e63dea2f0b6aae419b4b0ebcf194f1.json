@@ -1,0 +1,21 @@
+{
+  "title": "Pipedrive Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.pipedrivetrigger",
+  "content": "---\ntitle: Pipedrive Trigger node documentation\ndescription: Learn how to use the Pipedrive Trigger node in n8n. Follow technical documentation to integrate Pipedrive Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Pipedrive Trigger node\n\nPipedrive is a cloud-based sales software company that aims to improve the productivity of businesses through the use of their software.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Pipedrive Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.pipedrivetrigger.md",
+  "keywords": [
+    "pipedrive",
+    "trigger",
+    "node",
+    "documentation",
+    "software",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:15:16.886Z",
+  "hash": "52e63dea2f0b6aae419b4b0ebcf194f1"
+}

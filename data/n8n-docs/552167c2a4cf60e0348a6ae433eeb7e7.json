@@ -1,0 +1,23 @@
+{
+  "title": "Set up Single Sign-On (SSO)",
+  "url": "https://docs.n8n.io/hosting/securing/set-up-sso",
+  "content": "---\ntitle: Set up Single Sign-On (SSO)\ndescription: \"Set up SAML or OIDC Single Sign-On for your self-hosted n8n instance.\"\ncontentType: howto\n---\n\n Set up Single Sign-On (SSO)\n\n/// info | Feature availability\n Available on Enterprise plans.\n You need to be an instance owner or admin to enable and configure SAML or OIDC.\n///\t\n\nn8n supports the SAML and OIDC authentication protocols for single sign-on (SSO). See OIDC vs SAML for more general information on the two protocols, the differences between them, and their respective benefits.\n\n Set up SAML: a general guide to setting up SAML in n8n, and links to resources for common identity providers (IdPs).\n Set up OIDC: a general guide to setting up OpenID Connect (OIDC) SSO in n8n.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "single",
+    "sign-on",
+    "(sso)",
+    "saml",
+    "oidc",
+    "sign",
+    "general",
+    "instance",
+    "protocols",
+    "guide",
+    "setting",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:16:04.185Z",
+  "hash": "552167c2a4cf60e0348a6ae433eeb7e7"
+}

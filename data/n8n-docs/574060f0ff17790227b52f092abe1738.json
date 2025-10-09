@@ -1,0 +1,21 @@
+{
+  "title": "Configuration examples",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/index",
+  "content": "---\ntitle: Configuration examples\ndescription: An overview containing different configuration examples.\ncontentType: overview\n---\n\n Configuration examples\n\nThis section contains examples for how to configure n8n to solve particular use cases.\n\n[[% import \"macros/section-toc.html\" as sectionToc %]]\n\n[[ sectionToc.sectionToc(page) ]]",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "configuration",
+    "examples",
+    "sectiontoc",
+    "overview",
+    "section",
+    "title",
+    "description",
+    "containing",
+    "different",
+    "contenttype"
+  ],
+  "fetchedAt": "2025-10-07T16:15:54.481Z",
+  "hash": "574060f0ff17790227b52f092abe1738"
+}

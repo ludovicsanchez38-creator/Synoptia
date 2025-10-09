@@ -1,0 +1,21 @@
+{
+  "title": "Sub nodes",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/index",
+  "content": "---\ncontentType: overview\ntitle: Sub-nodes\ndescription: Understand sub-nodes in n8n, and browse the sub-nodes library.\n---\n\n Sub nodes\n\nSub nodes attach to root nodes within a group of cluster nodes. They configure the overall functionality of the cluster.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/cluster-nodes-summary.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "sub",
+  "keywords": [
+    "nodes",
+    "cluster",
+    "contenttype",
+    "overview",
+    "title",
+    "description",
+    "understand",
+    "browse",
+    "library",
+    "attach"
+  ],
+  "fetchedAt": "2025-10-07T16:15:27.806Z",
+  "hash": "a2c3fa786deb938ab6248c2da2215c09"
+}

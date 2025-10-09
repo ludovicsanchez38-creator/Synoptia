@@ -1,0 +1,21 @@
+{
+  "title": "Mautic Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.mautictrigger",
+  "content": "---\ntitle: Mautic Trigger node documentation\ndescription: Learn how to use the Mautic Trigger node in n8n. Follow technical documentation to integrate Mautic Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Mautic Trigger node\n\nMautic is an open-source marketing automation software that helps online businesses automate their repetitive marketing tasks such as lead generation, contact scoring, contact segmentation, and marketing campaigns.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Mautic Trigger integrations page.\n///\n\n Related resources\n\nn8n provides an app node for Mautic. You can find the node docs here.\n\nView example workflows and related content on n8n's website.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.mautictrigger.md",
+  "keywords": [
+    "mautic",
+    "trigger",
+    "node",
+    "marketing",
+    "documentation",
+    "workflows",
+    "contact",
+    "note",
+    "find",
+    "here"
+  ],
+  "fetchedAt": "2025-10-07T16:15:15.557Z",
+  "hash": "1ba68e080c56292897025b6977f059d4"
+}

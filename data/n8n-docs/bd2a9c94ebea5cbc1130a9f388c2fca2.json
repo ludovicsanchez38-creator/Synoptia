@@ -1,0 +1,21 @@
+{
+  "title": "LangChain Code node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.code",
+  "content": "---\ntitle: LangChain Code node documentation\ndescription: Learn how to use the LangChain Code node in n8n. Follow technical documentation to integrate LangChain Code node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n LangChain Code node\n\nUse the LangChain Code node to import LangChain. This means if there is functionality you need that n8n hasn't created a node for, you can still use it. By configuring the LangChain Code node connectors you can use it as a normal node, root node or sub-node.\n\nOn this page, you'll find the node parameters, guidance on configuring the node, and links to more resources.\n\n/// note | Not available on Cloud\nThis node is only available on self-hosted n8n.\n///\n\n Node parameters\n\n Add Code\n\nAdd your custom code. Choose either Execute or Supply Data mode. You can only use one mode.\n\nUnlike the Code node, the LangChain Code node doesn't support Python.\n\n Execute: use the LangChain Code node like n8n's own Code node. This takes input data from the workflow, processes it, and returns it as the node output. This mode requires a main input and output. You must create these connections in Inputs and Outputs.\n Supply Data: use the LangChain Code node as a sub-node, sending data to a root node. This uses an output other than main.\n\nBy default, you can't load built-in or external modules in this node. Self-hosted users can enable built-in and external modules.\n\n Inputs\n\nChoose the input types. \n\nThe main input is the normal connector found in all n8n workflows. If you have a main input and output set in the node, Execute code is required.\n\n Outputs\n\nChoose the output types. \n\nThe main output is the normal connector found in all n8n workflows. If you have a main input and output set in the node, Execute code is required.\n\n Node inputs and outputs configuration\n\nBy configuring the LangChain Code node connectors (inputs and outputs) you can use it as an app node, root node or sub-node.\n\n!Screenshot of a workflow with four LangChain nodes, configured as different node types\n\n| Node type | Inputs | Outputs | Code mode |\n| --------- | ------ | ------- | --------- |\n| App node. Similar to the Code node. | Main | Main | Execute |\n| Root node | Main; at least one other type | Main | Execute |\n| Sub-node | - | A type other than main. Must match the input type you want to connect to. | Supply Data |\n| Sub-node with sub-nodes | A type other than main |A type other than main. Must match the input type you want to connect to. | Supply Data |\n\n Built-in methods\n\nn8n provides these methods to make it easier to perform common tasks in the LangChain Code node.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-root-nodes/langchaincode/builtin-methods.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'langchain-code') ]]\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.code.md",
+  "keywords": [
+    "langchain",
+    "code",
+    "node",
+    "main",
+    "input",
+    "this",
+    "output",
+    "type",
+    "execute",
+    "data"
+  ],
+  "fetchedAt": "2025-10-07T16:15:25.653Z",
+  "hash": "bd2a9c94ebea5cbc1130a9f388c2fca2"
+}

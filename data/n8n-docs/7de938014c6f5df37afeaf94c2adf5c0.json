@@ -1,0 +1,21 @@
+{
+  "title": "Streaming responses",
+  "url": "https://docs.n8n.io/workflows/streaming",
+  "content": "---\ntitle: Streaming responses\ndescription: Build a workflow with streaming responses\ncontentType: howto\n---\n\n Streaming responses\n\n/// info | Feature availability\nAvailable on all plans from version 1.105.2.\n///\n\nStreaming responses let you send data back to users as an AI Agent node generates it. This is useful for chatbots, where you want to show the user the answer as it's generated to provide a better user experience.\n\nYou can enable streaming using either:\n\n- The Chat Trigger \n- The Webhook node\n\nIn both cases, set the node's Response Mode to Streaming.\n\n Configure nodes for streaming\n\nTo stream data, you need to add nodes to the workflow that support streaming output. Not all nodes support this feature.\n\n1. Choose a node that supports streaming, such as:\n\t- AI agent\n\t- Respond to Webhook\n2. You can disable streaming in the options of these nodes. By default, they stream data whenever the executed trigger has its Response Mode set to Streaming response.\n\n Important information\n\nKeep in mind the following details when configuring streaming responses:\n\n- Trigger: Your trigger node must support streaming and have streaming configured. Without this, the workflow behaves according to your response mode settings.\n- Node configuration: Even with streaming enabled on the trigger, you need at least one node configured to stream data. Otherwise, your workflow will send no data.",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "streaming",
+    "responses",
+    "node",
+    "data",
+    "trigger",
+    "workflow",
+    "response",
+    "nodes",
+    "this",
+    "mode"
+  ],
+  "fetchedAt": "2025-10-07T16:15:42.752Z",
+  "hash": "7de938014c6f5df37afeaf94c2adf5c0"
+}

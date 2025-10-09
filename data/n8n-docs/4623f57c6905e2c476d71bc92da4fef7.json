@@ -1,0 +1,21 @@
+{
+  "title": "WooCommerce Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.woocommercetrigger",
+  "content": "---\ntitle: WooCommerce Trigger node documentation\ndescription: Learn how to use the WooCommerce Trigger node in n8n. Follow technical documentation to integrate WooCommerce Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n WooCommerce Trigger node\n\nWooCommerce is a customizable, open-source e-commerce plugin for WordPress.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's WooCommerce Trigger integrations page.\n///\n\n Events\n\n- coupon.created\n- coupon.updated\n- coupon.deleted\n- customer.created\n- customer.updated\n- customer.deleted\n- order.created\n- order.updated\n- order.deleted\n- product.created\n- product.updated\n- product.deleted",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.woocommercetrigger.md",
+  "keywords": [
+    "woocommerce",
+    "trigger",
+    "node",
+    "created",
+    "updated",
+    "deleted",
+    "coupon",
+    "customer",
+    "order",
+    "product"
+  ],
+  "fetchedAt": "2025-10-07T16:15:21.107Z",
+  "hash": "4623f57c6905e2c476d71bc92da4fef7"
+}

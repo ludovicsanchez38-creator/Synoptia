@@ -1,0 +1,22 @@
+{
+  "title": "Execute Sub-workflow Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.executeworkflowtrigger",
+  "content": "---\ntitle: Execute Sub-workflow Trigger node documentation\ndescription: Learn how to use the Execute Sub-workflow Trigger node in n8n. Follow technical documentation to integrate Execute Sub-workflow Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Execute Sub-workflow Trigger node\n\nUse this node to start a workflow in response to another workflow. It should be the first node in the workflow.\n\nn8n allows you to call workflows from other workflows. This is useful if you want to:\n\n Reuse a workflow: for example, you could have multiple workflows pulling and processing data from different sources, then have all those workflows call a single workflow that generates a report.\n Break large workflows into smaller components.\n\n Usage\n\nThis node runs in response to a call from the Execute Sub-workflow or Call n8n Workflow Tool nodes.\n\n--8<-- \"snippets/flow-logic/subworkflow-usage.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'execute-workflow-trigger') ]]\n\n How data passes between workflows\n\n--8<-- \"snippets/flow-logic/subworkflow-data-flow.md\"",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.executeworkflowtrigger.md",
+  "keywords": [
+    "execute",
+    "sub-workflow",
+    "trigger",
+    "node",
+    "workflow",
+    "workflows",
+    "call",
+    "this",
+    "from",
+    "data",
+    "flow"
+  ],
+  "fetchedAt": "2025-10-07T16:14:05.807Z",
+  "hash": "291259c0ce2cdf76a73c0bbd9ea6e302"
+}

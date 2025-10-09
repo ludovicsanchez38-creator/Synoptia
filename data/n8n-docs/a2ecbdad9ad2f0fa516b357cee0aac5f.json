@@ -1,0 +1,21 @@
+{
+  "title": "Wufoo Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.wufootrigger",
+  "content": "---\ntitle: Wufoo Trigger node documentation\ndescription: Learn how to use the Wufoo Trigger node in n8n. Follow technical documentation to integrate Wufoo Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Wufoo Trigger node\n\nWufoo is an online form builder that helps you create custom HTML forms without writing code.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Wufoo Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.wufootrigger.md",
+  "keywords": [
+    "wufoo",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:21.417Z",
+  "hash": "a2ecbdad9ad2f0fa516b357cee0aac5f"
+}

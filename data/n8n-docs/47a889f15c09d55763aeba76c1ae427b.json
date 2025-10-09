@@ -1,0 +1,21 @@
+{
+  "title": "Zammad node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.zammad",
+  "content": "---\ntitle: Zammad node documentation\ndescription: Learn how to use the Zammad node in n8n. Follow technical documentation to integrate Zammad node into your workflows.\ncontentType: [integration, reference]\n---\n\n Zammad node\n\nUse the Zammad node to automate work in Zammad, and integrate Zammad with other applications. n8n has built-in support for a wide range of Zammad features, including creating, retrieving, and deleting groups and organizations.\n\nOn this page, you'll find a list of operations the Zammad node supports and links to more resources.\n\n/// note | Credentials\nRefer to Zammad credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Group\n     Create\n     Delete\n     Get\n     Get many\n     Update\n Organization\n     Create\n     Delete\n     Get\n     Get many\n     Update\n Ticket\n     Create\n     Delete\n     Get\n     Get many\n User\n     Create\n     Delete\n     Get\n     Get many\n\t Get self\n     Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'zammad') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.zammad.md",
+  "keywords": [
+    "zammad",
+    "node",
+    "create",
+    "delete",
+    "many",
+    "update",
+    "title",
+    "documentation",
+    "integrate",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:15:00.812Z",
+  "hash": "47a889f15c09d55763aeba76c1ae427b"
+}

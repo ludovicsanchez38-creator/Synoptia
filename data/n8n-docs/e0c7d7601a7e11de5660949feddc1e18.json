@@ -1,0 +1,21 @@
+{
+  "title": "PostHog node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.posthog",
+  "content": "---\ntitle: PostHog node documentation\ndescription: Learn how to use the PostHog node in n8n. Follow technical documentation to integrate PostHog node into your workflows.\ncontentType: [integration, reference]\n---\n\n PostHog node\n\nUse the PostHog node to automate work in PostHog, and integrate PostHog with other applications. n8n has built-in support for a wide range of PostHog features, including creating aliases, events, and identity, as well as tracking pages.\n\nOn this page, you'll find a list of operations the PostHog node supports and links to more resources.\n\n/// note | Credentials\nRefer to PostHog credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Alias\n     Create an alias\n Event\n     Create an event\n Identity\n     Create\n Track\n     Track a page\n     Track a screen\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'posthog') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.posthog.md",
+  "keywords": [
+    "posthog",
+    "node",
+    "page",
+    "create",
+    "track",
+    "title",
+    "documentation",
+    "integrate",
+    "identity",
+    "pages"
+  ],
+  "fetchedAt": "2025-10-07T16:14:48.526Z",
+  "hash": "e0c7d7601a7e11de5660949feddc1e18"
+}

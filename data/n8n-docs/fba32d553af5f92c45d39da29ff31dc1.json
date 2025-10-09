@@ -1,0 +1,21 @@
+{
+  "title": "Onfleet node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.onfleet",
+  "content": "---\ntitle: Onfleet node documentation\ndescription: Learn how to use the Onfleet node in n8n. Follow technical documentation to integrate Onfleet node into your workflows.\ncontentType: [integration, reference]\n---\n\n Onfleet node\n\nUse the Onfleet node to automate work in Onfleet, and integrate Onfleet with other applications. n8n has built-in support for a wide range of Onfleet features, including creating and deleting tasks in Onfleet as well as retrieving organizations' details. \n\nOn this page, you'll find a list of operations the Onfleet node supports and links to more resources.\n\n/// note | Credentials\nRefer to Onfleet credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Admin\n     Create a new Onfleet admin\n     Delete an Onfleet admin\n     Get all Onfleet admins\n     Update an Onfleet admin\n Container\n     Add task at index (or append)\n     Get container information\n     Fully replace a container's tasks\n Destination\n     Create a new destination\n     Get a specific destination\n Hub\n     Create a new Onfleet hub\n     Get all Onfleet hubs\n     Update an Onfleet hub\n Organization\n     Retrieve your own organization's details\n     Retrieve the details of an organization with which you are connected\n Recipient\n     Create a new Onfleet recipient\n     Get a specific Onfleet recipient\n     Update an Onfleet recipient\n Task\n     Create a new Onfleet task\n     Clone an Onfleet task\n     Force-complete a started Onfleet task\n     Delete an Onfleet task\n     Get all Onfleet tasks\n     Get a specific Onfleet task\n     Update an Onfleet task\n Team\n     Automatically dispatch tasks assigned to a team to on-duty drivers\n     Create a new Onfleet team\n     Delete an Onfleet team\n     Get a specific Onfleet team\n     Get all Onfleet teams\n     Get estimated times for upcoming tasks for a team, returns a selected driver\n     Update an Onfleet team\n Worker\n     Create a new Onfleet worker\n     Delete an Onfleet worker\n     Get a specific Onfleet worker\n     Get all Onfleet workers\n     Get a specific Onfleet worker schedule\n     Update an Onfleet worker\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'onfleet') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.onfleet.md",
+  "keywords": [
+    "onfleet",
+    "node",
+    "task",
+    "create",
+    "team",
+    "update",
+    "specific",
+    "worker",
+    "tasks",
+    "admin"
+  ],
+  "fetchedAt": "2025-10-07T16:14:46.160Z",
+  "hash": "fba32d553af5f92c45d39da29ff31dc1"
+}

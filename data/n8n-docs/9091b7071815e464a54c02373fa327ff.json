@@ -1,0 +1,21 @@
+{
+  "title": "Stop And Error",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stopanderror",
+  "content": "---\ntitle: Stop And Error\ndescription: Documentation for the Stop And Error node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: high\n---\n\n Stop And Error\n\nUse the Stop And Error node to display custom error messages, cause executions to fail under certain conditions, and send custom error information to error workflows.\n\n Operations\n\n Error Message\n Error Object\n\n Node parameters\n\nBoth operations include one node parameter, the Error Type. Use this parameter to select the type of error to throw. Choose between the two operations: Error Message and Error Object.\n\nThe other parameters depend on which operation you select.\n\n Error Message parameters\n\nThe Error Message Error Type adds one parameter, the Error Message field. Enter the message you'd like to throw.\n\n Error Object parameters\n\nThe Error Object Error Type adds one parameter, the Error Object. Enter a JSON object that contains the error properties you'd like to throw.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'stop-and-error') ]]\n\n Related resources\n\nYou can use the Stop And Error node with the Error trigger node.\n\nRead more about Error workflows in n8n workflows.",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.stopanderror.md",
+  "keywords": [
+    "stop",
+    "error",
+    "node",
+    "message",
+    "object",
+    "parameters",
+    "parameter",
+    "type",
+    "workflows",
+    "operations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:12.123Z",
+  "hash": "9091b7071815e464a54c02373fa327ff"
+}

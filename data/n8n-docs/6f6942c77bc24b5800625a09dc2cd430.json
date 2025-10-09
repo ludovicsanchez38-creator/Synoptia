@@ -1,0 +1,21 @@
+{
+  "title": "JotForm Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.jotformtrigger",
+  "content": "---\ntitle: JotForm Trigger node documentation\ndescription: Learn how to use the JotForm Trigger node in n8n. Follow technical documentation to integrate JotForm Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n JotForm Trigger node\n\nJotForm is an online form building service. JotForm's software creates forms with a drag and drop creation tool and an option to encrypt user data.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's JotForm Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.jotformtrigger.md",
+  "keywords": [
+    "jotform",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:14.108Z",
+  "hash": "6f6942c77bc24b5800625a09dc2cd430"
+}

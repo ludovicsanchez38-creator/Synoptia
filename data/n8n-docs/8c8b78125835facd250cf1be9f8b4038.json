@@ -1,0 +1,21 @@
+{
+  "title": "Notion Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.notiontrigger",
+  "content": "---\ntitle: Notion Trigger node documentation\ndescription: Learn how to use the Notion Trigger node in n8n. Follow technical documentation to integrate Notion Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Notion Trigger node\n\nNotion is an all-in-one workspace for your notes, tasks, wikis, and databases.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Notion Trigger integrations page.\n///\n\n Events\n\n Page added to database\n Page updated in database\n\n Related resources\n\nn8n provides an app node for Notion. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to Notion's documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.notiontrigger.md",
+  "keywords": [
+    "notion",
+    "trigger",
+    "node",
+    "documentation",
+    "page",
+    "your",
+    "workflows",
+    "note",
+    "find",
+    "here"
+  ],
+  "fetchedAt": "2025-10-07T16:15:16.436Z",
+  "hash": "8c8b78125835facd250cf1be9f8b4038"
+}

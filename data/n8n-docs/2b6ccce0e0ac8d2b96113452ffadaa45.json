@@ -1,0 +1,21 @@
+{
+  "title": "Azure OpenAI Chat Model node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatazureopenai",
+  "content": "---\ntitle: Azure OpenAI Chat Model node documentation\ndescription: Learn how to use the Azure OpenAI Chat Model node in n8n. Follow technical documentation to integrate Azure OpenAI Chat Model node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Azure OpenAI Chat Model node\n\nUse the Azure OpenAI Chat Model node to use OpenAI's chat models with conversational agents.\n\nOn this page, you'll find the node parameters for the Azure OpenAI Chat Model node, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Model: Select the model to use to generate the completion.\n\n Node options\n\n Frequency Penalty: Use this option to control the chances of the model repeating itself. Higher values reduce the chance of the model repeating itself.\n Maximum Number of Tokens: Enter the maximum number of tokens used, which sets the completion length.\n Response Format: Choose Text or JSON. JSON ensures the model returns valid JSON.\n Presence Penalty: Use this option to control the chances of the model talking about new topics. Higher values increase the chance of the model talking about new topics.\n Sampling Temperature: Use this option to control the randomness of the sampling process. A higher temperature creates more diverse sampling, but increases the risk of hallucinations.\n Timeout: Enter the maximum request time in milliseconds.\n Max Retries: Enter the maximum number of times to retry a request.\n Top P: Use this option to set the probability the completion should use. Use a lower value to ignore less probable options. \n\n Proxy limitations\n\nThis node doesn't support the NOPROXY environment variable.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'azure-openai-chat-model') ]]\n\n Related resources\n\nRefer to LangChains's Azure OpenAI documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.lmchatazureopenai.md",
+  "keywords": [
+    "azure",
+    "openai",
+    "chat",
+    "model",
+    "node",
+    "this",
+    "option",
+    "maximum",
+    "documentation",
+    "more"
+  ],
+  "fetchedAt": "2025-10-07T16:15:30.109Z",
+  "hash": "2b6ccce0e0ac8d2b96113452ffadaa45"
+}

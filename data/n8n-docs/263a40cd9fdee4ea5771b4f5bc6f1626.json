@@ -1,0 +1,23 @@
+{
+  "title": "AI Agent node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/common-issues",
+  "content": "---\ntitle: AI Agent node common issues \ndescription: Documentation for common issues and questions in the AI Agent node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: critical\n---\n\n AI Agent node common issues\n\nHere are some common errors and issues with the AI Agent node and steps to resolve or troubleshoot them.\n\n Internal error: 400 Invalid value for 'content'\n\nA full error message might look like this:\n\nThis error can occur if the Prompt input contains a null value.\n\nYou might see this in one of two scenarios:\n\n1. When you've set the Prompt to Define below and have an expression in your Text that isn't generating a value.\n     To resolve, make sure your expressions reference valid fields and that they resolve to valid input rather than null.\n2. When you've set the Prompt to Connected Chat Trigger Node and the incoming data has null values.\n     To resolve, remove any null values from the chatInput field of the input node.\n\n Error in sub-node Simple Memory\n\nThis error displays when n8n runs into an issue with the Simple Memory sub-node.\n\nIt most often occurs when your workflow or the workflow template you copied uses an older version of the Simple memory node (previously known as \"Window Buffer Memory\").\n\nTry removing the Simple Memory node from your workflow and re-adding it, which will guarantee you're using the latest version of the node.\n\n A Chat Model sub-node must be connected error\n\nThis error displays when n8n tries to execute the node without having a Chat Model connected.\n\nTo resolve this, click the + Chat Model button at the bottom of your screen when the node is open, or click the Chat Model + connector when the node is closed. n8n will then open a selection of possible Chat Models to pick from.\n\n No prompt specified error\n\nThis error occurs when the agent expects to get the prompt from the previous node automatically. Typically, this happens when you're using the Chat Trigger Node. \n\nTo resolve this issue, find the Prompt parameter of the AI Agent node and change it from Connected Chat Trigger Node to Define below. This allows you to manually build your prompt by referencing output data from other nodes or by adding static text.",
+  "category": "cluster-nodes",
+  "nodeType": "ai",
+  "keywords": [
+    "agent",
+    "node",
+    "common",
+    "issues",
+    "this",
+    "error",
+    "when",
+    "chat",
+    "prompt",
+    "resolve",
+    "your",
+    "from"
+  ],
+  "fetchedAt": "2025-10-07T16:15:23.640Z",
+  "hash": "263a40cd9fdee4ea5771b4f5bc6f1626"
+}

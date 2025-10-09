@@ -1,0 +1,21 @@
+{
+  "title": "Copper node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.copper",
+  "content": "---\ntitle: Copper node documentation\ndescription: Learn how to use the Copper node in n8n. Follow technical documentation to integrate Copper node into your workflows.\ncontentType: [integration, reference]\n---\n\n Copper node\n\nUse the Copper node to automate work in Copper, and integrate Copper with other applications. n8n has built-in support for a wide range of Copper features, including getting, updating, deleting, and creating companies, customer sources, leads, projects and tasks.\n\nOn this page, you'll find a list of operations the Copper node supports and links to more resources.\n\n/// note | Credentials\nRefer to Copper credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Company\n     Create\n     Delete\n     Get\n     Get All\n     Update\n Customer Source\n     Get All\n Lead\n     Create\n     Delete\n     Get\n     Get All\n     Update\n Opportunity\n     Create\n     Delete\n     Get\n     Get All\n     Update\n Person\n     Create\n     Delete\n     Get\n     Get All\n     Update\n Project\n     Create\n     Delete\n     Get\n     Get All\n     Update\n Task\n     Create\n     Delete\n     Get\n     Get All\n     Update\n User\n     Get All\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'copper') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.copper.md",
+  "keywords": [
+    "copper",
+    "node",
+    "create",
+    "delete",
+    "update",
+    "title",
+    "documentation",
+    "integrate",
+    "customer",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:23.321Z",
+  "hash": "37fd46257216a2837d867e0cb08ec2db"
+}

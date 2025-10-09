@@ -1,0 +1,21 @@
+{
+  "title": "Microsoft OneDrive node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.microsoftonedrive",
+  "content": "---\ntitle: Microsoft OneDrive node documentation\ndescription: Learn how to use the Microsoft OneDrive node in n8n. Follow technical documentation to integrate Microsoft OneDrive node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Microsoft OneDrive node\n\nUse the Microsoft OneDrive node to automate work in Microsoft OneDrive, and integrate Microsoft OneDrive with other applications. n8n has built-in support for a wide range of Microsoft OneDrive features, including creating, updating, deleting, and getting files, and folders.\n\nOn this page, you'll find a list of operations the Microsoft OneDrive node supports and links to more resources.\n\n/// note | Credentials\nRefer to Microsoft credentials for guidance on setting up authentication.\n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n File\n     Copy a file\n     Delete a file\n     Download a file\n     Get a file\n     Rename a file\n     Search a file\n     Share a file\n     Upload a file up to 4MB in size\n Folder\n     Create a folder\n     Delete a folder\n     Get Children (get items inside a folder)\n     Rename a folder\n     Search a folder\n     Share a folder\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'microsoft-onedrive') ]]\n\n Related resources\n\nRefer to Microsoft's OneDrive API documentation for more information about the service.\n\n Find the folder ID\n\nTo perform operations on folders, you need to supply the ID. You can find this:\n\n In the URL of the folder\n By searching for it using the node. You need to do this if using MS 365 (where OneDrive uses SharePoint behind the scenes):\n\t1. Select Resource > Folder.\n\t2. Select Operation > Search.\n\t3. In Query, enter the folder name.\n\t4. Select Execute step. n8n runs the query and returns data about the folder, including an id field containing the folder ID.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.microsoftonedrive.md",
+  "keywords": [
+    "microsoft",
+    "onedrive",
+    "node",
+    "folder",
+    "file",
+    "documentation",
+    "this",
+    "find",
+    "operations",
+    "search"
+  ],
+  "fetchedAt": "2025-10-07T16:14:41.149Z",
+  "hash": "f876c704f5f1b44eb202c4559ca750e4"
+}

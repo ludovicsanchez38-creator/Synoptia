@@ -1,0 +1,21 @@
+{
+  "title": "Hardening task runners",
+  "url": "https://docs.n8n.io/hosting/securing/hardening-task-runners",
+  "content": "---\ntitle: Hardening task runners\ndescription: \"Harden task runners for better isolation for your self-hosted n8n instance.\"\ncontentType: howto\n---\n\n Hardening task runners\n\nTask runners are responsible for executing code from the Code node. While Code node executions are secure, you can follow these recommendations to further harden your task runners.\n\n Run task runners as sidecars in external mode\n\nTo increase the isolation between the core n8n process and code in the Code node, run task runners in external mode. External task runners launch as separate containers, providing a fully isolated environment to execute the JavaScript defined in the Code node.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "hardening",
+    "task",
+    "runners",
+    "code",
+    "node",
+    "external",
+    "harden",
+    "isolation",
+    "your",
+    "mode"
+  ],
+  "fetchedAt": "2025-10-07T16:16:03.629Z",
+  "hash": "a79b3d5b07a51bf7465c90eeaa58efa8"
+}

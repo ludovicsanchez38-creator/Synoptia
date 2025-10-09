@@ -1,0 +1,22 @@
+{
+  "title": "Self-hosting n8n",
+  "url": "https://docs.n8n.io/hosting/index",
+  "content": "---\ntitle: n8n Hosting Documentation and Guides\ndescription: Access n8n hosting documentation and guides. Find comprehensive resources to help you set up and manage your self-hosted n8n instances.\ncontentType: overview\nhide:\n  - toc\n  - feedback\n  - kapaButton\n---\n\n Self-hosting n8n\n\nThis section provides guidance on setting up n8n for both the Enterprise and Community self-hosted editions. The Community edition is free, the Enterprise edition isn't. \n\nSee Community edition features for a list of available features. \n\n<div class=\"grid-cards-vertical cards\" markdown>\n\n- Installation and server setups\n\n\tInstall n8n on any platform using npm or Docker. Or follow our guides to popular hosting platforms.\n\n\t:octicons-arrow-right-24: Docker installation guide\n\n- Configuration\n\n\tLearn how to configure n8n with environment variables.\n\n\t:octicons-arrow-right-24: Environment Variables\n\n- Users and authentication\n\n\tChoose and set up user authentication for your n8n instance.\n\n\t:octicons-arrow-right-24: Authentication\n\n- Scaling\n\n\tManage data, modes, and processes to keep n8n running smoothly at scale.\n\n\t:octicons-arrow-right-24: Scaling\n\n- Securing n8n\n\n\tSecure your n8n instance by setting up SSL, SSO, or 2FA or blocking or opting out of some data collection or features.\n\n\t:octicons-arrow-right-24: Securing n8n guide\n\n- Starter kits\n\n\tNew to n8n or AI? Try our Self-hosted AI Starter Kit. Curated by n8n, it combines the self-hosted n8n platform with compatible AI products and components to get you started building self-hosted AI workflows.\n\n\t:octicons-arrow-right-24: Starter kits\n\n</div>\n\n--8<-- \"snippets/self-hosting/warning.md\"",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "self-hosting",
+    "self",
+    "octicons",
+    "arrow",
+    "right",
+    "hosting",
+    "hosted",
+    "guides",
+    "your",
+    "community",
+    "edition"
+  ],
+  "fetchedAt": "2025-10-07T16:15:59.271Z",
+  "hash": "415082fcdc46c24ab8416149d9416d55"
+}

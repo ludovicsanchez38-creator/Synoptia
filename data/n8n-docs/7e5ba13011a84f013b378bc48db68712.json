@@ -1,0 +1,21 @@
+{
+  "title": "Configure workflow timeout settings",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/execution-timeout",
+  "content": "---\ntitle: Configure workflow timeout settings\ndescription: Set execution timeouts to determine how long workflows can run.  \ncontentType: howto\n---\n\n Configure workflow timeout settings\n\nA workflow times out and gets canceled after this time (in seconds). If the workflow runs in the main process, a soft timeout happens (takes effect after the current node finishes). If a workflow runs in its own process, n8n attempts a soft timeout first, then kills the process after waiting for a fifth of the given timeout duration.\n\nEXECUTIONSTIMEOUT default is -1. For example, if you want to set the timeout to one hour:\n\nYou can also set maximum execution time (in seconds) for each workflow individually. For example, if you want to set maximum execution time to two hours:\n\nRefer to Environment variables reference for more information on these variables.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "configure",
+    "workflow",
+    "timeout",
+    "settings",
+    "execution",
+    "after",
+    "time",
+    "process",
+    "seconds",
+    "runs"
+  ],
+  "fetchedAt": "2025-10-07T16:15:54.345Z",
+  "hash": "7e5ba13011a84f013b378bc48db68712"
+}

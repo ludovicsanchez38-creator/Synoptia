@@ -1,0 +1,21 @@
+{
+  "title": "LinkedIn node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.linkedin",
+  "content": "---\ntitle: LinkedIn node documentation\ndescription: Learn how to use the LinkedIn node in n8n. Follow technical documentation to integrate LinkedIn node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n LinkedIn node\n\nUse the LinkedIn node to automate work in LinkedIn, and integrate LinkedIn with other applications. n8n supports creating posts.\n\nOn this page, you'll find a list of operations the LinkedIn node supports and links to more resources.\n\n/// note | Credentials\nRefer to LinkedIn credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Post\n     Create\n\n Parameters\n\n Post As: choose whether to post as a Person or Organization.\n Person Name or ID and Organization URN: enter an identifier for the person or organization.\n\n\t/// note | Posting as organization\n\tIf posting as an Organization enter the organization number in the URN field. For example, 03262013 not urn:li:company:03262013.\n\t///\n\t\n Text: the post contents.\n Media Category: use this when including images or article URLs in your post.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'linkedin') ]]\n\n Related resources\n\nRefer to LinkedIn's API documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.linkedin.md",
+  "keywords": [
+    "linkedin",
+    "node",
+    "organization",
+    "post",
+    "documentation",
+    "integrations",
+    "person",
+    "title",
+    "integrate",
+    "your"
+  ],
+  "fetchedAt": "2025-10-07T16:14:38.126Z",
+  "hash": "b3d0e855569cedf6b1e215afc4dc038c"
+}

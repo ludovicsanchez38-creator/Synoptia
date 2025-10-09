@@ -1,0 +1,21 @@
+{
+  "title": "Workable Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.workabletrigger",
+  "content": "---\ntitle: Workable Trigger node documentation\ndescription: Learn how to use the Workable Trigger node in n8n. Follow technical documentation to integrate Workable Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Workable Trigger node\n\nUse the Workable Trigger node to respond to events in the Workable recruiting platform and integrate Workable with other applications. n8n has built-in support for a wide range of Workable events, including candidate created and moved.\n\nOn this page, you'll find a list of events the Workable Trigger node can respond to and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Workable Trigger integrations page.\n///\n\n Events\n\n- Candidate Created\n- Candidate Moved\n\n Related resources\n\nView example workflows and related content on n8n's website.\n\nRefer to Workable's API documentation for details about using the service.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.workabletrigger.md",
+  "keywords": [
+    "workable",
+    "trigger",
+    "node",
+    "events",
+    "documentation",
+    "candidate",
+    "integrate",
+    "workflows",
+    "respond",
+    "created"
+  ],
+  "fetchedAt": "2025-10-07T16:15:21.258Z",
+  "hash": "38851fb10482817b513081228fec88e9"
+}

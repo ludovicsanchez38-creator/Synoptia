@@ -1,0 +1,21 @@
+{
+  "title": "Shopify Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.shopifytrigger",
+  "content": "---\ntitle: Shopify Trigger node documentation\ndescription: Learn how to use the Shopify Trigger node in n8n. Follow technical documentation to integrate Shopify Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Shopify Trigger node\n\nShopify is an e-commerce platform that allows users to set up an online store and sell their products.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Shopify Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.shopifytrigger.md",
+  "keywords": [
+    "shopify",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:18.113Z",
+  "hash": "1608f2895fab5d190f5e9d44d1a0f889"
+}

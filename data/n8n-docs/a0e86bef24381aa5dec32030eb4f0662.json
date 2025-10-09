@@ -1,0 +1,21 @@
+{
+  "title": "FileMaker node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.filemaker",
+  "content": "---\ntitle: FileMaker node documentation\ndescription: Learn how to use the FileMaker node in n8n. Follow technical documentation to integrate FileMaker node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n FileMaker node\n\nUse the FileMaker node to automate work in FileMaker, and integrate FileMaker with other applications. n8n has built-in support for a wide range of FileMaker features, including creating, finding, getting, editing, and duplicating files.\n\nOn this page, you'll find a list of operations the FileMaker node supports and links to more resources.\n\n/// note | Credentials\nRefer to FileMaker credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n- Find Records\n- Get Records\n- Get Records by Id\n- Perform Script\n- Create Record\n- Edit Record\n- Duplicate Record\n- Delete Record\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'filemaker') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.filemaker.md",
+  "keywords": [
+    "filemaker",
+    "node",
+    "record",
+    "records",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "find",
+    "operations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:26.575Z",
+  "hash": "a0e86bef24381aa5dec32030eb4f0662"
+}

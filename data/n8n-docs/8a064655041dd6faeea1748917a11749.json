@@ -1,0 +1,21 @@
+{
+  "title": "Question and Answer Chain node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.chainretrievalqa/index",
+  "content": "---\ntitle: Question and Answer Chain node documentation\ndescription: Learn how to use the Question and Answer Chain node in n8n. Follow technical documentation to integrate Question and Answer Chain node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Question and Answer Chain node\n\nUse the Question and Answer Chain node to use a vector store as a retriever.\n\nOn this page, you'll find the node parameters for the Question and Answer Chain node, and links to more resources.\n\n Node parameters\n\n Query\n\nThe question you want to ask.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'retrieval-qanda-chain') ]]\n\n Related resources\n\nRefer to LangChain's documentation on retrieval chains for examples of how LangChain can use a vector store as a retriever.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"\n\n Common issues\n\nFor common errors or issues and suggested resolution steps, refer to Common Issues.",
+  "category": "cluster-nodes",
+  "nodeType": "question",
+  "keywords": [
+    "question",
+    "answer",
+    "chain",
+    "node",
+    "documentation",
+    "langchain",
+    "common",
+    "issues",
+    "title",
+    "vector"
+  ],
+  "fetchedAt": "2025-10-07T16:15:25.375Z",
+  "hash": "8a064655041dd6faeea1748917a11749"
+}

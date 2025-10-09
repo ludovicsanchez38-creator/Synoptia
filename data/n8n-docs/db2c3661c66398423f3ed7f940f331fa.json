@@ -1,0 +1,21 @@
+{
+  "title": "OpenAI node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.openai/index",
+  "content": "---\ntitle: OpenAI node documentation\ndescription: Learn how to use the OpenAI node in n8n. Follow technical documentation to integrate OpenAI node into your workflows.\ncontentType: [integration, reference]\npriority: critical\nsearch:\n    boost: 3\n---\n\n OpenAI node\n\nUse the OpenAI node to automate work in OpenAI and integrate OpenAI with other applications. n8n has built-in support for a wide range of OpenAI features, including creating images and assistants, as well as chatting with models. \n\nOn this page, you'll find a list of operations the OpenAI node supports and links to more resources.\n\n/// note | OpenAI Assistant node\nThe OpenAI node replaces the OpenAI assistant node from version 1.29.0 on.\n///\n\n/// note | Credentials\nRefer to OpenAI credentials for guidance on setting up authentication. \n///\n\n Operations\n\n- Assistant \n\t- Create an Assistant\n\t- Delete an Assistant\n\t- List Assistants\n\t- Message an Assistant\n\t- Update an Assistant\n- Text\n\t- Message a Model\n\t- Classify Text for Violations\n- Image\n\t- Analyze Image\n\t- Generate an Image\n- Audio\n\t- Generate Audio\n\t- Transcribe a Recording\n\t- Translate a Recording\n- File\n\t- Delete a File\n\t- List Files\n\t- Upload a File\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'openai') ]]\n\n Related resources\n\nRefer to OpenAI's documentation for more information about the service.\n\nRefer to OpenAI's assistants documentation for more information about how assistants work.\n\nFor help dealing with rate limits, refer to Handling rate limits.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Using tools with OpenAI assistants\n\nSome operations allow you to connect tools. Tools act like addons that your AI can use to access extra context or resources.\n\nSelect the Tools connector to browse the available tools and add them.\n\nOnce you add a tool connection, the OpenAI node becomes a root node, allowing it to form a cluster node with the tools sub-nodes. See Node types for more information on cluster nodes and root nodes.\n\n Operations that support tool connectors\n\n- Assistant\n\t- Message an Assistant\n- Text\n\t- Message a Model\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common issues.",
+  "category": "app-nodes",
+  "nodeType": "openai",
+  "keywords": [
+    "openai",
+    "node",
+    "assistant",
+    "tools",
+    "with",
+    "assistants",
+    "refer",
+    "documentation",
+    "operations",
+    "more"
+  ],
+  "fetchedAt": "2025-10-07T16:15:02.880Z",
+  "hash": "db2c3661c66398423f3ed7f940f331fa"
+}

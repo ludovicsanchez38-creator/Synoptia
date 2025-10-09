@@ -1,0 +1,21 @@
+{
+  "title": "Flow node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.flow",
+  "content": "---\ntitle: Flow node documentation\ndescription: Learn how to use the Flow node in n8n. Follow technical documentation to integrate Flow node into your workflows.\ncontentType: [integration, reference]\n---\n\n Flow node\n\nUse the Flow node to automate work in Flow, and integrate Flow with other applications. n8n has built-in support for a wide range of Flow features, including creating, updating, and getting tasks.\n\nOn this page, you'll find a list of operations the Flow node supports and links to more resources.\n\n/// note | Credentials\nRefer to Flow credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Task\n     Create a new task\n     Update a task\n     Get a task\n     Get all the tasks\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'flow') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.flow.md",
+  "keywords": [
+    "flow",
+    "node",
+    "task",
+    "title",
+    "documentation",
+    "integrate",
+    "tasks",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:26.714Z",
+  "hash": "5dd6636cf729f405a4a58ee35af3ca82"
+}

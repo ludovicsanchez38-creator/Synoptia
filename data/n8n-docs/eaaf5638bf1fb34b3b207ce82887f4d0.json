@@ -1,0 +1,22 @@
+{
+  "title": "crowd.dev Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.crowddevtrigger",
+  "content": "---\ntitle: crowd.dev Trigger node documentation\ndescription: Learn how to use the crowd.dev Trigger node in n8n. Follow technical documentation to integrate crowd.dev Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n crowd.dev Trigger node\n\nUse the crowd.dev Trigger node to respond to events in crowd.dev and integrate crowd.dev with other applications. n8n has built-in support for a wide range of crowd.dev events, including new activities and new members.\n\nOn this page, you'll find a list of events the crowd.dev Trigger node can respond to and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n/// note | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's crowd.dev Trigger integrations list.\n///\t\n\n Events\n\n New Activity\n New Member\n\n Related resources\n\nn8n provides an app node for crowd.dev. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to crowd.dev's documentation for more information about the service.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.crowddevtrigger.md",
+  "keywords": [
+    "crowd.dev",
+    "trigger",
+    "node",
+    "crowd",
+    "events",
+    "documentation",
+    "find",
+    "integrate",
+    "workflows",
+    "respond",
+    "this"
+  ],
+  "fetchedAt": "2025-10-07T16:15:07.582Z",
+  "hash": "eaaf5638bf1fb34b3b207ce82887f4d0"
+}

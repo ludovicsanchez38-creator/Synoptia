@@ -1,0 +1,21 @@
+{
+  "title": "TOTP",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.totp",
+  "content": "---\ntitle: TOTP\ndescription: Documentation for the TOTP node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\n---\n\n TOTP\n\nThe TOTP node provides a way to generate a TOTP (time-based one-time password).\n\n/// note | Credentials\nRefer to TOTP credentials for guidance on setting up authentication. \n///\n\n Node parameters\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\nConfigure this node with these parameters.\n\n Credential to connect with\n\nSelect or create a TOTP credential for the node to use.\n\n Operation\n\nGenerate Secret is the only operation currently supported.\n\n Node options\n\nUse these Options to further configure the node.\n\n Algorithm\n\nSelect the HMAC hashing algorithm to use. Default is SHA1.\n\n Digits\n\nEnter the number of digits in the generated code. Default is 6.\n\n Period\n\nEnter how many seconds the TOTP is valid for. Default is 30.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'totp') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.totp.md",
+  "keywords": [
+    "totp",
+    "node",
+    "default",
+    "title",
+    "guidance",
+    "examples",
+    "generate",
+    "time",
+    "credentials",
+    "parameters"
+  ],
+  "fetchedAt": "2025-10-07T16:14:12.553Z",
+  "hash": "441856c3cdc87f78cf45c3e57654a5ee"
+}

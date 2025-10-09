@@ -1,0 +1,21 @@
+{
+  "title": "Embeddings AWS Bedrock node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.embeddingsawsbedrock",
+  "content": "---\ntitle: Embeddings AWS Bedrock node documentation\ndescription: Learn how to use the Embeddings AWS Bedrock node in n8n. Follow technical documentation to integrate Embeddings AWS Bedrock node into your workflows.\ncontentType: [integration, reference]\n---\n\n Embeddings AWS Bedrock node\n\nUse the Embeddings AWS Bedrock node to generate embeddings for a given text.\n\nOn this page, you'll find the node parameters for the Embeddings AWS Bedrock node, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Model: Select the model to use to generate the embedding.\n\nLearn more about available models in the Amazon Bedrock documentation. \n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'embeddings-aws-bedrock') ]]\n\n Related resources\n\nRefer to LangChains's AWS Bedrock embeddings documentation and the AWS Bedrock documentation for more information about AWS Bedrock.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.embeddingsawsbedrock.md",
+  "keywords": [
+    "embeddings",
+    "bedrock",
+    "node",
+    "documentation",
+    "more",
+    "integrations",
+    "title",
+    "learn",
+    "generate",
+    "this"
+  ],
+  "fetchedAt": "2025-10-07T16:15:28.267Z",
+  "hash": "61bc31574411d4d8e2ead4ba0241ce76"
+}

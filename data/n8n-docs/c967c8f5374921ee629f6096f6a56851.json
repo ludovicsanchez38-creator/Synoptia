@@ -1,0 +1,21 @@
+{
+  "title": "Get the binary data buffer",
+  "url": "https://docs.n8n.io/code/cookbook/code-node/get-binary-data-buffer",
+  "content": "---\ncontentType: howto\n---\n\n Get the binary data buffer\n\nThe binary data buffer contains all the binary file data processed by a workflow. You need to access it if you want to perform operations on the binary data, such as:\n\n Manipulating the data: for example, adding column headers to a CSV file.\n Using the data in calculations: for example, calculating a hash value based on it.\n Complex HTTP requests: for example, combining file upload with sending other data formats.\n\n/// note | Not available in Python\ngetBinaryDataBuffer() isn't supported when using Python.\n///\nYou can access the buffer using n8n's getBinaryDataBuffer() function:\n\nFor example:\n\nYou should always use the getBinaryDataBuffer() function, and avoid using older methods of directly accessing the buffer, such as targeting it with expressions like items[0].binary.data.data.",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "binary",
+    "data",
+    "buffer",
+    "example",
+    "using",
+    "file",
+    "getbinarydatabuffer",
+    "access",
+    "such",
+    "with"
+  ],
+  "fetchedAt": "2025-10-07T16:15:49.190Z",
+  "hash": "c967c8f5374921ee629f6096f6a56851"
+}

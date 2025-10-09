@@ -1,0 +1,21 @@
+{
+  "title": "External storage",
+  "url": "https://docs.n8n.io/hosting/scaling/external-storage",
+  "content": "---\ndescription: External storage of binary data for your n8n instance.\ncontentType: howto\ntags:\n  - external storage\n  - storage\nhide:\n  - tags\nsearch:\n  boost: 1.5\n---\n\n External storage\n\n/// info | Feature availability\n\n Available on Self-hosted Enterprise plans\n If you want access to this feature on Cloud Enterprise, contact n8n.\n///\n\nn8n can store binary data produced by workflow executions externally. This feature is useful to avoid relying on the filesystem for storing large amounts of binary data.\n\nn8n will introduce external storage for other data types in the future.\n\n Storing n8n's binary data in S3\n\nn8n supports AWS S3 as an external store for binary data produced by workflow executions. You can use other S3-compatible services like Cloudflare R2 and Backblaze B2, but n8n doesn't officially support these.\n\n/// info | Enterprise-tier feature\nYou will need an Enterprise license key for external storage. If your license key expires and you remain on S3 mode, the instance will be able to read from, but not write to, the S3 bucket.\n///\n\n Setup\n\nCreate and configure a bucket following the AWS documentation. You can use the following policy, replacing <bucket-name> with the name of the bucket you created:\n\nSet a bucket-level lifecycle configuration so that S3 automatically deletes old binary data. n8n delegates pruning of binary data to S3, so setting a lifecycle configuration is required unless you want to preserve binary data indefinitely.\n\nOnce you finish creating the bucket, you will have a host, bucket name and region, and an access key ID and secret access key. You need to set them in n8n's environment:\n\n/// note | No region\nIf your provider doesn't require a region, you can set N8NEXTERNALSTORAGES3BUCKETREGION to 'auto'.\n///\nTell n8n to store binary data in S3:\n\n/// note | Auth autodetection\nTo automatically detect credentials to authenticate your S3 calls, set N8NEXTERNALSTORAGES3AUTHAUTODETECT to true. This will use the default credential provider chain.\n///\n\nRestart the server to load the new configuration.\n\n Usage\n\nAfter you enable S3, n8n writes and reads any new binary data to and from the S3 bucket. n8n writes binary data to your S3 bucket in this format:\n\nn8n continues to read older binary data stored in the filesystem from the filesystem, if filesystem remains listed as an option in N8NAVAILABLEBINARYDATAMODES.\n\nIf you store binary data in S3 and later switch to filesystem mode, the instance continues to read any data stored in S3, as long as s3 remains listed in N8NAVAILABLEBINARYDATAMODES and your S3 credentials remain valid.\n\n--8<-- \"snippets/self-hosting/scaling/binary-data-pruning.md\"",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "external",
+    "storage",
+    "data",
+    "binary",
+    "bucket",
+    "your",
+    "filesystem",
+    "will",
+    "feature",
+    "enterprise"
+  ],
+  "fetchedAt": "2025-10-07T16:16:02.457Z",
+  "hash": "7f6641e2c8d2905c64ece24b7cb0c4c5"
+}

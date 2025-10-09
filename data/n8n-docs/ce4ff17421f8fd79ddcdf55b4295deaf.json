@@ -1,0 +1,21 @@
+{
+  "title": "Azure Cosmos DB node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.azurecosmosdb",
+  "content": "---\ntitle: Azure Cosmos DB node documentation\ndescription: Learn how to use the Azure Cosmos DB node in n8n. Follow technical documentation to integrate Azure Cosmos DB node into your workflows.\ncontentType: [integration, reference]\n---\n\n Azure Cosmos DB node\n\nUse the Azure Cosmos DB node to automate work in Azure Cosmos DB and integrate Azure Cosmos DB with other applications. n8n has built-in support for a wide range of Azure Cosmos DB features, which includes creating, getting, updating, and deleting containers and items.\n\nOn this page, you'll find a list of operations the Azure Cosmos DB node supports, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n Container:\n\t Create\n\t Delete\n\t Get\n\t Get Many\n Item:\n\t Create\n\t Delete\n\t Get\n\t Get Many\n\t Execute Query\n\t Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'azure-cosmos-db') ]]\n\n Related resources\n\n<!-- vale Vale.Spelling = NO -->\nRefer to Azure Cosmos DB's documentation for more information about the service.\n<!-- vale Vale.Spelling = YES -->\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.azurecosmosdb.md",
+  "keywords": [
+    "azure",
+    "cosmos",
+    "node",
+    "vale",
+    "documentation",
+    "title",
+    "integrate",
+    "this",
+    "page",
+    "find"
+  ],
+  "fetchedAt": "2025-10-07T16:14:19.938Z",
+  "hash": "ce4ff17421f8fd79ddcdf55b4295deaf"
+}

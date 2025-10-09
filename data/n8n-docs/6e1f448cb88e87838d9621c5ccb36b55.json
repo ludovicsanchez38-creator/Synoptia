@@ -1,0 +1,21 @@
+{
+  "title": "Set a custom encryption key",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/encryption-key",
+  "content": "---\ntitle: Set a custom encryption key\ndescription: Set a custom encryption key for n8n to securely encrypt credentials.\ncontentType: howto\n---\n\n Set a custom encryption key\n\nn8n creates a random encryption key automatically on the first launch and saves\nit in the /.n8n folder. n8n uses that key to encrypt the credentials before\nthey get saved to the database. If the key isn't yet in the settings file,\nyou can set it using an environment variable, so that n8n \nuses your custom key instead of generating a new one.\n\nIn queue mode, you must specify the encryption key environment variable for all workers.\n\nRefer to Environment variables reference for more information on this variable.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "custom",
+    "encryption",
+    "environment",
+    "variable",
+    "encrypt",
+    "credentials",
+    "uses",
+    "that",
+    "title",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:15:54.203Z",
+  "hash": "6e1f448cb88e87838d9621c5ccb36b55"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Onfleet Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.onfleettrigger",
+  "content": "---\ntitle: Onfleet Trigger node documentation\ndescription: Learn how to use the Onfleet Trigger node in n8n. Follow technical documentation to integrate Onfleet Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Onfleet Trigger node\n\nOnfleet is a logistics platform offering a last-mile delivery solution.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Onfleet Trigger integrations page.\n///\n\n Events\n\nTrigger a workflow on:\n\n SMS recipient opt out\n SMS recipient response missed\n Task arrival\n Task assigned\n Task cloned\n Task completed\n Task created\n Task delayed\n Task ETA\n Task failed\n Task started\n Task unassigned\n Task updated\n Worker created\n Worker deleted\n Worker duty",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.onfleettrigger.md",
+  "keywords": [
+    "onfleet",
+    "trigger",
+    "node",
+    "task",
+    "worker",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "started"
+  ],
+  "fetchedAt": "2025-10-07T16:15:16.592Z",
+  "hash": "a99cfc636eca2f5aa0a6be610d4d3b6a"
+}

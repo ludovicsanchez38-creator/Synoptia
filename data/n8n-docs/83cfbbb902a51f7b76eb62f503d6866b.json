@@ -1,0 +1,21 @@
+{
+  "title": "Magento 2 node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.magento2",
+  "content": "---\ntitle: Magento 2 node documentation\ndescription: Learn how to use the Magento 2 node in n8n. Follow technical documentation to integrate Magento 2 node into your workflows.\ncontentType: [integration, reference]\n---\n\n Magento 2 node\n\nUse the Magento 2 node to automate work in Magento 2, and integrate Magento 2 with other applications. n8n has built-in support for a wide range of Magento 2 features, including creating, updating, deleting, and getting customers, invoices, orders, and projects. \n\nOn this page, you'll find a list of operations the Magento 2 node supports and links to more resources.\n\n/// note | Credentials\nRefer to Magento 2 credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Customer\n     Create a new customer\n     Delete a customer\n     Get a customer\n     Get all customers\n     Update a customer\n Invoice\n     Create an invoice\n Order\n     Cancel an order\n     Get an order\n     Get all orders\n     Ship an order\n Product\n     Create a product\n     Delete a product\n     Get a product\n     Get all products\n     Update a product\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'magento-2') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.magento2.md",
+  "keywords": [
+    "magento",
+    "node",
+    "customer",
+    "product",
+    "order",
+    "create",
+    "title",
+    "documentation",
+    "integrate",
+    "customers"
+  ],
+  "fetchedAt": "2025-10-07T16:14:38.412Z",
+  "hash": "83cfbbb902a51f7b76eb62f503d6866b"
+}

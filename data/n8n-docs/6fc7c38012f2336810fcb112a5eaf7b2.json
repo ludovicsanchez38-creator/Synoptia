@@ -1,0 +1,22 @@
+{
+  "title": "Examples using n8n's HTTP Request node",
+  "url": "https://docs.n8n.io/code/cookbook/http-node/index",
+  "content": "---\ncontentType: overview\n---\n\n Examples using n8n's HTTP Request node\n\nThe HTTP Request node is one of the most versatile nodes in n8n. Use this node to make HTTP requests to query data from any app or service with a REST API.\n\nRefer to HTTP Request for information on node settings.\n\n[[% import \"macros/section-toc.html\" as sectionToc %]]\n\n[[ sectionToc.sectionToc(page) ]]\n\n Related resources\n\n HTTP Request\n Built-in methods and variables reference\n Expressions",
+  "category": "code",
+  "nodeType": "examples",
+  "keywords": [
+    "examples",
+    "using",
+    "n8n's",
+    "http",
+    "request",
+    "node",
+    "sectiontoc",
+    "contenttype",
+    "overview",
+    "most",
+    "versatile"
+  ],
+  "fetchedAt": "2025-10-07T16:15:50.414Z",
+  "hash": "6fc7c38012f2336810fcb112a5eaf7b2"
+}

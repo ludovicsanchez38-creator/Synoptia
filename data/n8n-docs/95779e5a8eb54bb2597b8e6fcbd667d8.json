@@ -1,0 +1,21 @@
+{
+  "title": "SurveyMonkey Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.surveymonkeytrigger",
+  "content": "---\ntitle: SurveyMonkey Trigger node documentation\ndescription: Learn how to use the SurveyMonkey Trigger node in n8n. Follow technical documentation to integrate SurveyMonkey Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n SurveyMonkey Trigger node\n\nSurveyMonkey is an online cloud-based SaaS survey platform that also provides a suite of paid back-end programs.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's SurveyMonkey Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.surveymonkeytrigger.md",
+  "keywords": [
+    "surveymonkey",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:18.738Z",
+  "hash": "95779e5a8eb54bb2597b8e6fcbd667d8"
+}

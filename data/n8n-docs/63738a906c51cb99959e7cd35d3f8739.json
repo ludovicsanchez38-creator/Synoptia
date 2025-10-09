@@ -1,0 +1,21 @@
+{
+  "title": "Freshservice node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.freshservice",
+  "content": "---\ntitle: Freshservice node documentation\ndescription: Learn how to use the Freshservice node in n8n. Follow technical documentation to integrate Freshservice node into your workflows.\ncontentType: [integration, reference]\n---\n\n Freshservice node\n\nUse the Freshservice node to automate work in Freshservice and integrate Freshservice with other applications. n8n has built-in support for a wide range of Freshdesk features, including creating, updating, deleting, and getting agent information and departments.\n\nOn this page, you'll find a list of operations the Freshservice node supports and links to more resources.\n\n/// note | Credentials\nRefer to Freshservice credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Agent\n     Create an agent\n     Delete an agent\n     Retrieve an agent\n     Retrieve all agents\n     Update an agent\n Agent Group\n     Create an agent group\n     Delete an agent group\n     Retrieve an agent group\n     Retrieve all agent groups\n     Update an agent group\n Agent Role\n     Retrieve an agent role\n     Retrieve all agent roles\n Announcement\n     Create an announcement\n     Delete an announcement\n     Retrieve an announcement\n     Retrieve all announcements\n     Update an announcement\n Asset Type\n     Create an asset type\n     Delete an asset type\n     Retrieve an asset type\n     Retrieve all asset types\n     Update an asset type\n Change\n     Create a change\n     Delete a change\n     Retrieve a change\n     Retrieve all changes\n     Update a change\n Department\n     Create a department\n     Delete a department\n     Retrieve a department\n     Retrieve all departments\n     Update a department\n Location\n     Create a location\n     Delete a location\n     Retrieve a location\n     Retrieve all locations\n     Update a location\n Problem\n     Create a problem\n     Delete a problem\n     Retrieve a problem\n     Retrieve all problems\n     Update a problem\n Product\n     Create a product\n     Delete a product\n     Retrieve a product\n     Retrieve all products\n     Update a product\n Release\n     Create a release\n     Delete a release\n     Retrieve a release\n     Retrieve all releases\n     Update a release\n Requester\n     Create a requester\n     Delete a requester\n     Retrieve a requester\n     Retrieve all requesters\n     Update a requester\n Requester Group\n     Create a requester group\n     Delete a requester group\n     Retrieve a requester group\n     Retrieve all requester groups\n     Update a requester group\n Software\n     Create a software application\n     Delete a software application\n     Retrieve a software application\n     Retrieve all software applications\n     Update a software application\n Ticket\n     Create a ticket\n     Delete a ticket\n     Retrieve a ticket\n     Retrieve all tickets\n     Update a ticket\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'freshservice') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.freshservice.md",
+  "keywords": [
+    "freshservice",
+    "node",
+    "retrieve",
+    "agent",
+    "create",
+    "delete",
+    "update",
+    "requester",
+    "group",
+    "asset"
+  ],
+  "fetchedAt": "2025-10-07T16:14:27.009Z",
+  "hash": "63738a906c51cb99959e7cd35d3f8739"
+}

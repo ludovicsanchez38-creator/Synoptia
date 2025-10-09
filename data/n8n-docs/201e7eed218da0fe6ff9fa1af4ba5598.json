@@ -1,0 +1,21 @@
+{
+  "title": "Cluster nodes",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/index",
+  "content": "---\ncontentType: overview\ntitle: Cluster nodes\ndescription: Understand cluster nodes in n8n, and browse the cluster nodes library.\n---\n\n Cluster nodes\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/cluster-nodes-summary.md\"\n\n Root nodes\n\nEach cluster starts with one root node.\n\n Sub-nodes\n\nEach root node can have one or more sub-nodes attached to it.",
+  "category": "cluster-nodes",
+  "nodeType": "cluster",
+  "keywords": [
+    "cluster",
+    "nodes",
+    "root",
+    "each",
+    "node",
+    "contenttype",
+    "overview",
+    "title",
+    "description",
+    "understand"
+  ],
+  "fetchedAt": "2025-10-07T16:15:22.924Z",
+  "hash": "201e7eed218da0fe6ff9fa1af4ba5598"
+}

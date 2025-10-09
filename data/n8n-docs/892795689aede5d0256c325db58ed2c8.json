@@ -1,0 +1,21 @@
+{
+  "title": "Microsoft Teams Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.microsoftteamstrigger",
+  "content": "---\ntitle: Microsoft Teams Trigger node documentation\ndescription: Learn how to use the Microsoft Teams Trigger node in n8n. Follow technical documentation to integrate Microsoft Teams Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Microsoft Teams Trigger node\n\nUse the Microsoft Teams Trigger node to respond to events in Microsoft Teams and integrate Microsoft Teams with other applications.\n\nOn this page, you'll find a list of events the Microsoft Teams Trigger node can respond to and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Events\n\n New Channel\n New Channel Message\n New Chat\n New Chat Message\n New Team Member\n\n Related resources\n\nn8n provides an app node for Microsoft Teams. You can find the node docs here.\n\n<!-- add a link to the node page on n8n's website. For example: https://n8n.io/integrations/356-gmail/ -->\nView example workflows and related content on n8n's website.\n\n<!-- add a link to the service's documentation. This should usually go direct to the API docs -->\nRefer to the Microsoft Teams documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.microsoftteamstrigger.md",
+  "keywords": [
+    "microsoft",
+    "teams",
+    "trigger",
+    "node",
+    "documentation",
+    "events",
+    "this",
+    "find",
+    "integrate",
+    "workflows"
+  ],
+  "fetchedAt": "2025-10-07T16:15:15.995Z",
+  "hash": "892795689aede5d0256c325db58ed2c8"
+}

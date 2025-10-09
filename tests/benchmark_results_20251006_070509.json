@@ -1,0 +1,654 @@
+{
+  "timestamp": "2025-10-06T07:05:09.407418",
+  "metrics": {
+    "total_tests": 10,
+    "successful": 10,
+    "success_rate": 100.0,
+    "workflows_generated": 10,
+    "valid_json": 10,
+    "avg_duration": 15.998914647102357,
+    "min_duration": 6.271866321563721,
+    "max_duration": 31.92815136909485,
+    "avg_score": 96,
+    "min_score": 79,
+    "max_score": 99,
+    "grade_distribution": {
+      "A+": 8,
+      "A": 1,
+      "B": 1
+    },
+    "total_duration": 169.993134
+  },
+  "results": [
+    {
+      "id": 1,
+      "category": "Email",
+      "prompt": "Crée un workflow qui envoie un email tous les lundis matin à 9h",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 6.271866321563721,
+      "node_count": 2,
+      "validation": {
+        "valid": true,
+        "score": 99,
+        "grade": "A+",
+        "recommendation": "Excellent workflow! Ready for production deployment.",
+        "errors": [],
+        "warnings": [],
+        "suggestions": [],
+        "tests": {
+          "jsonValid": {
+            "passed": true,
+            "errors": []
+          },
+          "structure": {
+            "passed": true,
+            "errors": []
+          },
+          "nodes": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "connections": {
+            "passed": true,
+            "errors": []
+          },
+          "trigger": {
+            "passed": true,
+            "warnings": []
+          },
+          "errorHandling": {
+            "passed": true,
+            "score": 10
+          },
+          "bestPractices": {
+            "score": 4,
+            "suggestions": []
+          }
+        },
+        "metadata": {
+          "nodeCount": 2,
+          "testsPassed": 6,
+          "testsTotal": 7,
+          "deploymentReady": true
+        }
+      },
+      "score": 99,
+      "grade": "A+",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": 2,
+      "category": "RSS & Automation",
+      "prompt": "Automatise la veille : récupère un flux RSS, résume avec IA et envoie vers Notion",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 14.10758376121521,
+      "node_count": 5,
+      "validation": {
+        "valid": true,
+        "score": 99,
+        "grade": "A+",
+        "recommendation": "Excellent workflow! Ready for production deployment.",
+        "errors": [],
+        "warnings": [],
+        "suggestions": [],
+        "tests": {
+          "jsonValid": {
+            "passed": true,
+            "errors": []
+          },
+          "structure": {
+            "passed": true,
+            "errors": []
+          },
+          "nodes": {
+            "passed": true,
+            "errors": [],
+            "warnings": [
+              "Unknown node type: n8n-nodes-base.httpRequest (may be a community node)"
+            ]
+          },
+          "connections": {
+            "passed": true,
+            "errors": []
+          },
+          "trigger": {
+            "passed": true,
+            "warnings": []
+          },
+          "errorHandling": {
+            "passed": true,
+            "score": 10
+          },
+          "bestPractices": {
+            "score": 4,
+            "suggestions": []
+          }
+        },
+        "metadata": {
+          "nodeCount": 5,
+          "testsPassed": 6,
+          "testsTotal": 7,
+          "deploymentReady": true
+        }
+      },
+      "score": 99,
+      "grade": "A+",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": 3,
+      "category": "Scraping",
+      "prompt": "Scrape ce site web et stocke les données dans Google Sheets",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 9.971374750137329,
+      "node_count": 4,
+      "validation": {
+        "valid": true,
+        "score": 99,
+        "grade": "A+",
+        "recommendation": "Excellent workflow! Ready for production deployment.",
+        "errors": [],
+        "warnings": [],
+        "suggestions": [],
+        "tests": {
+          "jsonValid": {
+            "passed": true,
+            "errors": []
+          },
+          "structure": {
+            "passed": true,
+            "errors": []
+          },
+          "nodes": {
+            "passed": true,
+            "errors": [],
+            "warnings": [
+              "Unknown node type: n8n-nodes-base.httpRequest (may be a community node)",
+              "Unknown node type: n8n-nodes-base.googleSheets (may be a community node)"
+            ]
+          },
+          "connections": {
+            "passed": true,
+            "errors": []
+          },
+          "trigger": {
+            "passed": true,
+            "warnings": []
+          },
+          "errorHandling": {
+            "passed": true,
+            "score": 10
+          },
+          "bestPractices": {
+            "score": 4,
+            "suggestions": []
+          }
+        },
+        "metadata": {
+          "nodeCount": 4,
+          "testsPassed": 6,
+          "testsTotal": 7,
+          "deploymentReady": true
+        }
+      },
+      "score": 99,
+      "grade": "A+",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": 4,
+      "category": "Chatbot",
+      "prompt": "Chatbot support client avec base de connaissances",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 8.090688705444336,
+      "node_count": 3,
+      "validation": {
+        "valid": true,
+        "score": 99,
+        "grade": "A+",
+        "recommendation": "Excellent workflow! Ready for production deployment.",
+        "errors": [],
+        "warnings": [],
+        "suggestions": [],
+        "tests": {
+          "jsonValid": {
+            "passed": true,
+            "errors": []
+          },
+          "structure": {
+            "passed": true,
+            "errors": []
+          },
+          "nodes": {
+            "passed": true,
+            "errors": [],
+            "warnings": [
+              "Unknown node type: n8n-nodes-base.openAI (may be a community node)",
+              "Unknown node type: n8n-nodes-langchain.chatTrigger (may be a community node)"
+            ]
+          },
+          "connections": {
+            "passed": true,
+            "errors": []
+          },
+          "trigger": {
+            "passed": true,
+            "warnings": []
+          },
+          "errorHandling": {
+            "passed": true,
+            "score": 10
+          },
+          "bestPractices": {
+            "score": 4,
+            "suggestions": []
+          }
+        },
+        "metadata": {
+          "nodeCount": 3,
+          "testsPassed": 6,
+          "testsTotal": 7,
+          "deploymentReady": true
+        }
+      },
+      "score": 99,
+      "grade": "A+",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": 5,
+      "category": "Backup",
+      "prompt": "Backup automatique MongoDB vers S3 tous les jours",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 31.76836371421814,
+      "node_count": 3,
+      "validation": {
+        "valid": true,
+        "score": 99,
+        "grade": "A+",
+        "recommendation": "Excellent workflow! Ready for production deployment.",
+        "errors": [],
+        "warnings": [],
+        "suggestions": [],
+        "tests": {
+          "jsonValid": {
+            "passed": true,
+            "errors": []
+          },
+          "structure": {
+            "passed": true,
+            "errors": []
+          },
+          "nodes": {
+            "passed": true,
+            "errors": [],
+            "warnings": [
+              "Unknown node type: n8n-nodes-base.s3 (may be a community node)"
+            ]
+          },
+          "connections": {
+            "passed": true,
+            "errors": []
+          },
+          "trigger": {
+            "passed": true,
+            "warnings": []
+          },
+          "errorHandling": {
+            "passed": true,
+            "score": 10
+          },
+          "bestPractices": {
+            "score": 4,
+            "suggestions": []
+          }
+        },
+        "metadata": {
+          "nodeCount": 3,
+          "testsPassed": 6,
+          "testsTotal": 7,
+          "deploymentReady": true
+        }
+      },
+      "score": 99,
+      "grade": "A+",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": 6,
+      "category": "Notification",
+      "prompt": "Notification Slack quand nouvel email important arrive dans Gmail",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 7.398532152175903,
+      "node_count": 2,
+      "validation": {
+        "valid": true,
+        "score": 89,
+        "grade": "A",
+        "recommendation": "Good workflow. Consider addressing minor issues before deployment.",
+        "errors": [],
+        "warnings": [
+          "Workflow has no trigger node. It can only be executed manually or called from another workflow."
+        ],
+        "suggestions": [],
+        "tests": {
+          "jsonValid": {
+            "passed": true,
+            "errors": []
+          },
+          "structure": {
+            "passed": true,
+            "errors": []
+          },
+          "nodes": {
+            "passed": true,
+            "errors": [],
+            "warnings": [
+              "Unknown node type: n8n-nodes-base.emailReadImap (may be a community node)"
+            ]
+          },
+          "connections": {
+            "passed": true,
+            "errors": []
+          },
+          "trigger": {
+            "passed": false,
+            "warnings": [
+              "Workflow has no trigger node. It can only be executed manually or called from another workflow."
+            ]
+          },
+          "errorHandling": {
+            "passed": true,
+            "score": 10
+          },
+          "bestPractices": {
+            "score": 4,
+            "suggestions": []
+          }
+        },
+        "metadata": {
+          "nodeCount": 2,
+          "testsPassed": 5,
+          "testsTotal": 7,
+          "deploymentReady": true
+        }
+      },
+      "score": 89,
+      "grade": "A",
+      "errors": [],
+      "warnings": [
+        "Workflow has no trigger node. It can only be executed manually or called from another workflow."
+      ]
+    },
+    {
+      "id": 7,
+      "category": "AI Image",
+      "prompt": "Génère des images avec DALL-E et stocke sur Google Drive",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 31.92815136909485,
+      "node_count": 2,
+      "validation": {
+        "valid": true,
+        "score": 79,
+        "grade": "B",
+        "recommendation": "Acceptable workflow. Fix errors and warnings before deploying to production.",
+        "errors": [],
+        "warnings": [
+          "Workflow has no trigger node. It can only be executed manually or called from another workflow."
+        ],
+        "suggestions": [],
+        "tests": {
+          "jsonValid": {
+            "passed": true,
+            "errors": []
+          },
+          "structure": {
+            "passed": true,
+            "errors": []
+          },
+          "nodes": {
+            "passed": true,
+            "errors": [],
+            "warnings": [
+              "Unknown node type: n8n-nodes-base.dalle (may be a community node)",
+              "Unknown node type: n8n-nodes-base.googleDrive (may be a community node)"
+            ]
+          },
+          "connections": {
+            "passed": true,
+            "errors": []
+          },
+          "trigger": {
+            "passed": false,
+            "warnings": [
+              "Workflow has no trigger node. It can only be executed manually or called from another workflow."
+            ]
+          },
+          "errorHandling": {
+            "passed": false,
+            "score": 0
+          },
+          "bestPractices": {
+            "score": 4,
+            "suggestions": []
+          }
+        },
+        "metadata": {
+          "nodeCount": 2,
+          "testsPassed": 4,
+          "testsTotal": 7,
+          "deploymentReady": false
+        }
+      },
+      "score": 79,
+      "grade": "B",
+      "errors": [],
+      "warnings": [
+        "Workflow has no trigger node. It can only be executed manually or called from another workflow."
+      ]
+    },
+    {
+      "id": 8,
+      "category": "ETL",
+      "prompt": "Pipeline ETL : récupère données API, transforme avec IA, stocke dans PostgreSQL",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 9.605064392089844,
+      "node_count": 4,
+      "validation": {
+        "valid": true,
+        "score": 99,
+        "grade": "A+",
+        "recommendation": "Excellent workflow! Ready for production deployment.",
+        "errors": [],
+        "warnings": [],
+        "suggestions": [],
+        "tests": {
+          "jsonValid": {
+            "passed": true,
+            "errors": []
+          },
+          "structure": {
+            "passed": true,
+            "errors": []
+          },
+          "nodes": {
+            "passed": true,
+            "errors": [],
+            "warnings": [
+              "Unknown node type: n8n-nodes-base.formTrigger (may be a community node)",
+              "Unknown node type: n8n-nodes-base.httpRequest (may be a community node)"
+            ]
+          },
+          "connections": {
+            "passed": true,
+            "errors": []
+          },
+          "trigger": {
+            "passed": true,
+            "warnings": []
+          },
+          "errorHandling": {
+            "passed": true,
+            "score": 10
+          },
+          "bestPractices": {
+            "score": 4,
+            "suggestions": []
+          }
+        },
+        "metadata": {
+          "nodeCount": 4,
+          "testsPassed": 6,
+          "testsTotal": 7,
+          "deploymentReady": true
+        }
+      },
+      "score": 99,
+      "grade": "A+",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": 9,
+      "category": "Sentiment Analysis",
+      "prompt": "Analyse le sentiment des commentaires réseaux sociaux et alerte si négatif",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 12.051423072814941,
+      "node_count": 4,
+      "validation": {
+        "valid": true,
+        "score": 99,
+        "grade": "A+",
+        "recommendation": "Excellent workflow! Ready for production deployment.",
+        "errors": [],
+        "warnings": [],
+        "suggestions": [],
+        "tests": {
+          "jsonValid": {
+            "passed": true,
+            "errors": []
+          },
+          "structure": {
+            "passed": true,
+            "errors": []
+          },
+          "nodes": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "connections": {
+            "passed": true,
+            "errors": []
+          },
+          "trigger": {
+            "passed": true,
+            "warnings": []
+          },
+          "errorHandling": {
+            "passed": true,
+            "score": 10
+          },
+          "bestPractices": {
+            "score": 4,
+            "suggestions": []
+          }
+        },
+        "metadata": {
+          "nodeCount": 4,
+          "testsPassed": 6,
+          "testsTotal": 7,
+          "deploymentReady": true
+        }
+      },
+      "score": 99,
+      "grade": "A+",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": 10,
+      "category": "Onboarding",
+      "prompt": "Workflow d'onboarding client automatique avec emails et création de comptes",
+      "success": true,
+      "workflow_generated": true,
+      "json_valid": true,
+      "duration": 28.796098232269287,
+      "node_count": 3,
+      "validation": {
+        "valid": true,
+        "score": 99,
+        "grade": "A+",
+        "recommendation": "Excellent workflow! Ready for production deployment.",
+        "errors": [],
+        "warnings": [],
+        "suggestions": [],
+        "tests": {
+          "jsonValid": {
+            "passed": true,
+            "errors": []
+          },
+          "structure": {
+            "passed": true,
+            "errors": []
+          },
+          "nodes": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "connections": {
+            "passed": true,
+            "errors": []
+          },
+          "trigger": {
+            "passed": true,
+            "warnings": []
+          },
+          "errorHandling": {
+            "passed": true,
+            "score": 10
+          },
+          "bestPractices": {
+            "score": 4,
+            "suggestions": []
+          }
+        },
+        "metadata": {
+          "nodeCount": 3,
+          "testsPassed": 6,
+          "testsTotal": 7,
+          "deploymentReady": true
+        }
+      },
+      "score": 99,
+      "grade": "A+",
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Google Drive node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googledrive/index",
+  "content": "---\ntitle: Google Drive node documentation\ndescription: Learn how to use the Google Drive node in n8n. Follow technical documentation to integrate Google Drive node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Google Drive node\n\nUse the Google Drive node to automate work in Google Drive, and integrate Google Drive with other applications. n8n has built-in support for a wide range of Google Drive features, including creating, updating, listing, deleting, and getting drives, files, and folders. \n\nOn this page, you'll find a list of operations the Google Drive node supports and links to more resources.\n\n/// note | Credentials\nRefer to Google Drive credentials for guidance on setting up authentication. \n///\n\n Operations\n\n File\n     Copy a file\n     Create from text\n     Delete a file\n     Download a file\n     Move a file\n     Share a file\n     Update a file\n     Upload a file\n File/Folder\n     Search files and folders\n Folder\n     Create a folder\n     Delete a folder\n     Share a folder\n Shared Drive\n     Create a shared drive\n     Delete a shared drive\n     Get a shared drive\n     Get Many shared drives\n     Update a shared drive\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-drive') ]]\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common issues.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "google",
+  "keywords": [
+    "google",
+    "drive",
+    "node",
+    "file",
+    "shared",
+    "folder",
+    "create",
+    "delete",
+    "common",
+    "issues"
+  ],
+  "fetchedAt": "2025-10-07T16:14:32.305Z",
+  "hash": "16ae9053977e40fefd4a148a15e35ee5"
+}

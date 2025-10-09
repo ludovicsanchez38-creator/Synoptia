@@ -1,0 +1,21 @@
+{
+  "title": "Summarization Chain node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.chainsummarization",
+  "content": "---\ntitle: Summarization Chain node documentation\ndescription: Learn how to use the Summarize Chain node in n8n. Follow technical documentation to integrate Summarize Chain node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Summarization Chain node\n\nUse the Summarization Chain node to summarize multiple documents.\n\nOn this page, you'll find the node parameters for the Summarization Chain node, and links to more resources.\n\n Node parameters\n\nChoose the type of data you need to summarize in Data to Summarize. The data type you choose determines the other node parameters.\n\n Use Node Input (JSON) and Use Node Input (Binary): summarize the data coming into the node from the workflow. \n\t You can configure the Chunking Strategy: choose what strategy to use to define the data chunk sizes.\n\t\t If you choose Simple (Define Below) you can then set Characters Per Chunk and Chunk Overlap (Characters).\n\t\t Choose Advanced if you want to connect a splitter sub-node that provides more configuration options.\n Use Document Loader: summarize data provided by a document loader sub-node.\n\n Node Options\n\nYou can configure the summarization method and prompts. Select Add Option > Summarization Method and Prompts.\n\nOptions in Summarization Method:\n\n Map Reduce: this is the recommended option. Learn more about Map Reduce in the LangChain documentation.\n Refine: learn more about Refine in the LangChain documentation.\n Stuff: learn more about Stuff in the LangChain documentation.\n\nYou can customize the Individual Summary Prompts and the Final Prompt to Combine. There are examples in the node. You must include the \"{text}\" placeholder.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'summarization-chain') ]]\n\n Related resources\n\nRefer to LangChain's documentation on summarization for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.chainsummarization.md",
+  "keywords": [
+    "summarization",
+    "chain",
+    "node",
+    "summarize",
+    "documentation",
+    "more",
+    "data",
+    "choose",
+    "langchain",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:25.514Z",
+  "hash": "c125efbec8162519441d6ab07034e964"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Google Workspace Admin node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.gsuiteadmin",
+  "content": "---\ntitle: Google Workspace Admin node documentation\ndescription: Learn how to use the Google Workspace Admin node in n8n. Follow technical documentation to integrate Google Workspace Admin node into your workflows.\ncontentType: [integration, reference]\n---\n\n Google Workspace Admin node\n\nUse the Google Workspace Admin node to automate work in Google Workspace Admin, and integrate Google Workspace Admin with other applications. n8n has built-in support for a wide range of Google Workspace Admin features, including creating, updating, deleting, and getting users, groups, and ChromeOS devices. \n\nOn this page, you'll find a list of operations the Google Workspace Admin node supports and links to more resources.\n\n/// note | Credentials\nRefer to Google credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n ChromeOS Device\n\t Get a ChromeOS device\n\t Get many ChromeOS devices\n\t Update a ChromeOS device\n\t Change the status of a ChromeOS device\n Group\n     Create a group\n     Delete a group\n     Get a group\n     Get many groups\n     Update a group\n User\n\t Add an existing user to a group\n     Create a user\n     Delete a user\n     Get a user\n     Get many users\n\t Remove a user from a group\n     Update a user\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-workspace-admin') ]]\n\n How to control which custom fields to fetch for a user\n\nThere are three different ways to control which custom fields to retrieve when getting a user's information. Use the Custom Fields parameter to select one of the following:\n\n- Don't Include: Doesn't include any custom fields.\n- Custom: Includes the custom fields from schemas in Custom Schema Names or IDs.\n- Include All: Include all the fields associated with the user.\n\nTo include custom fields, follow these steps:\n\n1. Select Custom from the Custom Fields dropdown list.\n2. Select the schema names you want to include in the Custom Schema Names or IDs dropdown list.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.gsuiteadmin.md",
+  "keywords": [
+    "google",
+    "workspace",
+    "admin",
+    "node",
+    "custom",
+    "user",
+    "fields",
+    "group",
+    "chromeos",
+    "include"
+  ],
+  "fetchedAt": "2025-10-07T16:14:34.549Z",
+  "hash": "fed90bcb9d7d75adddcd69ba792baadf"
+}

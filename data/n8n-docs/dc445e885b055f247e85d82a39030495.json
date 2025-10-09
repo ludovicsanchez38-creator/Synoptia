@@ -1,0 +1,21 @@
+{
+  "title": "Dirty nodes",
+  "url": "https://docs.n8n.io/workflows/executions/dirty-nodes",
+  "content": "---\ntitle: Dirty nodes\ndescription: What dirty nodes are and how they affect workflow execution.\ncontentType: explanation\n---\n\n Dirty nodes\n\nA dirty node is a node that executed successfully in the past, but whose output n8n now considers stale or unreliable. They're labeled like this to indicate that if the node executes again, the output may be different. It may also be the point where a partial execution starts from.\n\n How to recognize dirty node data\n\nIn the canvas of the workflow editor, you can identify dirty notes by their different-colored border and a yellow triangle in place of the previous green tick symbol. For example:\n\n!\"Image of node displayed with yellow border\"\n\nIn the node editor view, the output panel also displays a yellow triangle on the output panel. If you hover over the triangle, a tooltip appears with more information about why n8n considers the data stale:\n\n!\"Image of node displayed with yellow border\"\n\n Why n8n marks nodes dirty\n\nThere are several reasons why n8n might flag execution data as stale. For example:\n\n- Inserting or deleting a node: labels the first node that follows the inserted node dirty.\n- Modifying node parameters: labels the modified node dirty.\n- Adding a connector: labels the destination node of the new connector dirty.\n- Deactivating a node: labels the first node that follows the deactivated node dirty.\n\n??? explanation \"Other reasons n8n marks nodes dirty\"\n    - Unpinning a node: labels the unpinned node dirty.\n    - Modifying pinned data: labels the node that comes after the pinned data dirty.\n    - If any of the above actions occur inside a loop, also labels the first node of the loop dirty.\n\n    For sub-nodes, also labels any executed parent nodes (up to and including the root) when:\n\n    - Editing an executed sub-node\n    - Adding a new sub-node\n    - Disconnecting or deleting a sub-node\n    - Deactivating a sub-node\n    - Activating a sub-node\n\n<div class=\"grid cards\" markdown>\n\n-   When deleting a connected node in a workflow:\n\n    !\"Image of node displayed with yellow border\"\n\n-   The next node in the sequence becomes dirty:\n\n    !\"Image of node displayed with yellow border\"\n\n</div>\n\nWhen using loops (with the Loop over Items node), when any node within the loop is dirty, the initial node of the loop is also considered dirty:\n\n!\"Image of node displayed with yellow border\"\n\n Resolving dirty nodes\n\nExecuting a node again clears its dirty status. You can do this manually by triggering the whole workflow, or by running a partial execution with Execute step on the individual node or any node which follows it.",
+  "category": "workflows",
+  "nodeType": "dirty",
+  "keywords": [
+    "dirty",
+    "nodes",
+    "node",
+    "with",
+    "labels",
+    "yellow",
+    "border",
+    "that",
+    "also",
+    "data"
+  ],
+  "fetchedAt": "2025-10-07T16:15:41.509Z",
+  "hash": "dc445e885b055f247e85d82a39030495"
+}

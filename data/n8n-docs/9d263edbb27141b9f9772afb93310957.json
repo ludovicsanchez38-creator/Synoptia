@@ -1,0 +1,21 @@
+{
+  "title": "Flow Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.flowtrigger",
+  "content": "---\ntitle: Flow Trigger node documentation\ndescription: Learn how to use the Flow Trigger node in n8n. Follow technical documentation to integrate Flow Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Flow Trigger node\n\nFlow is modern task and project management software for teams. It brings together tasks, projects, timelines, and conversations, and integrates with a lot of tools.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Flow Trigger integrations page.\n///\n\n Events\n\n New Flow event\n\n Related resources\n\nn8n provides an app node for Flow. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to Flow's documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.flowtrigger.md",
+  "keywords": [
+    "flow",
+    "trigger",
+    "node",
+    "documentation",
+    "workflows",
+    "note",
+    "find",
+    "here",
+    "examples",
+    "templates"
+  ],
+  "fetchedAt": "2025-10-07T16:15:10.523Z",
+  "hash": "9d263edbb27141b9f9772afb93310957"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "UpLead node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.uplead",
+  "content": "---\ntitle: UpLead node documentation\ndescription: Learn how to use the UpLead node in n8n. Follow technical documentation to integrate UpLead node into your workflows.\ncontentType: [integration, reference]\n---\n\n UpLead node\n\nUse the UpLead node to automate work in UpLead, and integrate UpLead with other applications. n8n supports several UpLead operations, including getting company information. \n\nOn this page, you'll find a list of operations the UpLead node supports and links to more resources.\n\n/// note | Credentials\nRefer to UpLead credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Company\n     Enrich\n Person\n     Enrich\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'uplead') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.uplead.md",
+  "keywords": [
+    "uplead",
+    "node",
+    "operations",
+    "title",
+    "documentation",
+    "integrate",
+    "supports",
+    "company",
+    "page",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:57.895Z",
+  "hash": "3af8c3c0cee9567a0eda20dec59f54a8"
+}

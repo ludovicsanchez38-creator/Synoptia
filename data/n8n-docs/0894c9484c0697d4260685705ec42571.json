@@ -1,0 +1,21 @@
+{
+  "title": "CircleCI node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.circleci",
+  "content": "---\ntitle: CircleCI node documentation\ndescription: Learn how to use the CircleCI node in n8n. Follow technical documentation to integrate CircleCI node into your workflows.\ncontentType: [integration, reference]\n---\n\n CircleCI node\n\nUse the CircleCI node to automate work in CircleCI, and integrate CircleCI with other applications. n8n has built-in support for a wide range of CircleCI features, including getting and triggering pipelines.\n\nOn this page, you'll find a list of operations the CircleCI node supports and links to more resources.\n\n/// note | Credentials\nRefer to CircleCI credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Pipeline\n     Get a pipeline\n     Get all pipelines\n     Trigger a pipeline\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'circleci') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.circleci.md",
+  "keywords": [
+    "circleci",
+    "node",
+    "pipeline",
+    "title",
+    "documentation",
+    "integrate",
+    "pipelines",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:21.779Z",
+  "hash": "0894c9484c0697d4260685705ec42571"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Connections",
+  "url": "https://docs.n8n.io/workflows/components/connections",
+  "content": "---\ndescription: A connection establishes a link between nodes to route data through the workflow. \ncontentType: howto\n---\n\n Connections\n\nA connection establishes a link between nodes to route data through the workflow. A connection between two nodes passes data from one node's output to another node's input.\n\n!Example of creating and deleting a connection\n\n Create a connection\n\nTo create a connection between two nodes, select the grey dot or Add node <span class=\"n8n-inline-image\">!Add node icon{.off-glb}</span> on the right side of a node and slide the arrow to the grey rectangle on the left side of the following node.\n\n Delete a connection\n\nHover over the connection, then select Delete <span class=\"n8n-inline-image\">!Delete connector icon{.off-glb}</span>.",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "connections",
+    "connection",
+    "node",
+    "between",
+    "nodes",
+    "span",
+    "data",
+    "delete",
+    "establishes",
+    "link",
+    "route"
+  ],
+  "fetchedAt": "2025-10-07T16:15:40.167Z",
+  "hash": "dff188f713b6583faffc4533ee941372"
+}

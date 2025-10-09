@@ -1,0 +1,22 @@
+{
+  "title": "Set the self-hosted instance timezone",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/time-zone",
+  "content": "---\ntitle: Set the self-hosted instance timezone\ndescription: Change the default timezone for your self-hosted n8n instance.\ncontentType: howto\n---\n\n Set the self-hosted instance timezone\n\nThe default timezone is America/NewYork. For instance, the Schedule node uses it to know at what time the workflow should start. To set a different default timezone, set GENERICTIMEZONE to the appropriate value. For example, if you want to set the timezone to Berlin (Germany):\n\nYou can find the name of your timezone here.\n\nRefer to Environment variables reference for more information on this variable.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "self-hosted",
+    "instance",
+    "timezone",
+    "self",
+    "hosted",
+    "default",
+    "your",
+    "title",
+    "description",
+    "change",
+    "contenttype"
+  ],
+  "fetchedAt": "2025-10-07T16:15:55.076Z",
+  "hash": "dda9b42fbbd24adaeb0652d9a6583532"
+}

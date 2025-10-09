@@ -1,0 +1,21 @@
+{
+  "title": "Freshworks CRM node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.freshworkscrm",
+  "content": "---\ntitle: Freshworks CRM node documentation\ndescription: Learn how to use the Freshworks CRM node in n8n. Follow technical documentation to integrate Freshworks CRM node into your workflows.\ncontentType: [integration, reference]\n---\n\n Freshworks CRM node\n\nUse the Freshworks CRM node to automate work in Freshworks CRM, and integrate Freshworks CRM with other applications. n8n has built-in support for a wide range of Freshworks CRM features, including creating, updating, deleting, and retrieve, accounts, appointments, contacts, deals, notes, sales activity and more. \n\nOn this page, you'll find a list of operations the Freshworks CRM node supports and links to more resources.\n\n/// note | Credentials\nRefer to Freshworks CRM credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Account\n     Create an account\n     Delete an account\n     Retrieve an account\n     Retrieve all accounts\n     Update an account\n Appointment\n     Create an appointment\n     Delete an appointment\n     Retrieve an appointment\n     Retrieve all appointments\n     Update an appointment\n Contact\n     Create a contact\n     Delete a contact\n     Retrieve a contact\n     Retrieve all contacts\n     Update a contact\n Deal\n     Create a deal\n     Delete a deal\n     Retrieve a deal\n     Retrieve all deals\n     Update a deal\n Note\n     Create a note\n     Delete a note\n     Update a note\n Sales Activity\n     Retrieve a sales activity\n     Retrieve all sales activities\n Task\n     Create a task\n     Delete a task\n     Retrieve a task\n     Retrieve all tasks\n     Update a task\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'freshworks-crm') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.freshworkscrm.md",
+  "keywords": [
+    "freshworks",
+    "node",
+    "retrieve",
+    "create",
+    "delete",
+    "update",
+    "note",
+    "account",
+    "appointment",
+    "contact"
+  ],
+  "fetchedAt": "2025-10-07T16:14:27.165Z",
+  "hash": "99df66ae4ce82de2536a708e900c2d26"
+}

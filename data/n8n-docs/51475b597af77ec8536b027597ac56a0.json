@@ -1,0 +1,21 @@
+{
+  "title": "Think Tool node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolthink",
+  "content": "---\ntitle: Think Tool node documentation\ndescription: Learn how to use the Think Tool node in n8n. Follow technical documentation to integrate the Tool Think node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Think Tool node\n\nThe Think Tool node is a tool that invites an agent to do some thinking before answering. Essentially, it allows the agent to reflect on the question by talking to itself before providing an answer. In particular, this is useful for complex queries that require a thoughtful response.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'think-tool') ]]\n\n Prompting example\n\nAs an example, say you ask the agent:\n\n<!-- vale off -->\n> Jack is looking at Anne. Anne is looking at George. Jack is married, George is not, and we don't know if Anne is married. Is a married person looking at an unmarried person?\n<!-- vale on -->\n\t\nThe agent will do its thinking with the tool:\n\n<!-- vale off -->\n> We have the following information: 1. Jack is looking at Anne. 2. Anne is looking at George. 3. Jack is married. 4. George is not married. 5. We don't know if Anne is married or not.\n\n> We need to determine if a married person is looking at an unmarried person. Let's consider both cases for Anne:\n\n> Case 1: Anne is married.\n\n> - If Anne is married, then she (married) is looking at George (unmarried). In this case, a married person (Anne) is looking at an unmarried person (George).\n\n> Case 2: Anne is unmarried.\n\n> - If Anne is unmarried, then Jack (married) is looking at Anne (unmarried). In this case, a married person (Jack) is looking at an unmarried person (Anne).\n\n> In both scenarios, we find that a married person is looking at an unmarried person. Therefore, the answer to the question is yes.\n<!-- vale on -->\n\t\nand then afterward provide the answer:\n\n<!-- vale off -->\n> Yes, a married person is looking at an unmarried person. In both possible scenarios regarding Anne's marital status, we find that a married individual (either Jack or Anne) is looking at an unmarried individual (either George or Anne).\n<!-- vale on -->\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/tools-link.md\"\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.toolthink.md",
+  "keywords": [
+    "think",
+    "tool",
+    "node",
+    "anne",
+    "married",
+    "looking",
+    "person",
+    "unmarried",
+    "jack",
+    "george"
+  ],
+  "fetchedAt": "2025-10-07T16:15:38.098Z",
+  "hash": "51475b597af77ec8536b027597ac56a0"
+}

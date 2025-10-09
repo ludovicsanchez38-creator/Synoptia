@@ -1,0 +1,21 @@
+{
+  "title": "ReAct AI Agent node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/react-agent",
+  "content": "---\ntitle: ReAct AI Agent node documentation\ndescription: Learn how to use the ReAct Agent of the AI Agent node in n8n. Follow technical documentation to integrate the ReAct Agent into your workflows.\ncontentType: [integration, reference]\npriority: critical\n---\n\n ReAct AI Agent node\n\n/// note | Feature removed\nn8n removed this functionality in February 2025.\n///\n\nThe ReAct Agent node implements ReAct logic. ReAct (reasoning and acting) brings together the reasoning powers of chain-of-thought prompting and action plan generation.\n\nThe ReAct Agent reasons about a given task, determines the necessary actions, and then executes them. It follows the cycle of reasoning and acting until it completes the task. The ReAct agent can break down complex tasks into smaller sub-tasks, prioritise them, and execute them one after the other.\n\nRefer to AI Agent for more information on the AI Agent node itself.\n\n/// note | No memory\nThe ReAct agent doesn't support memory sub-nodes. This means it can't recall previous prompts or simulate an ongoing conversation.\n///\n\n Node parameters\n\nConfigure the ReAct Agent using the following parameters.\n\n Prompt\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-root-nodes/prompt.md\"\n\n Require Specific Output Format\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-root-nodes/output-format.md\"\n\n Node options\n\nUse the options to create a message to send to the agent at the start of the conversation. The message type depends on the model you're using:\n\n Chat models: These models have the concept of three components interacting (AI, system, and human). They can receive system messages and human messages (prompts).\n Instruct models: These models don't have the concept of separate AI, system, and human components. They receive one body of text, the instruct message.\n\n Human Message Template\n\nUse this option to extend the user prompt. This is a way for the agent to pass information from one iteration to the next.\n\nAvailable LangChain expressions:\n\n {input}: Contains the user prompt.\n {agentscratchpad}: Information to remember for the next iteration.\n\n Prefix Message\n\nEnter text to prefix the tools list at the start of the conversation. You don't need to add the list of tools. LangChain automatically adds the tools list.\n\n Suffix Message for Chat Model\n\nAdd text to append after the tools list at the start of the conversation when the agent uses a chat model. You don't need to add the list of tools. LangChain automatically adds the tools list.\n\n Suffix Message for Regular Model\n\nAdd text to append after the tools list at the start of the conversation when the agent uses a regular/instruct model. You don't need to add the list of tools. LangChain automatically adds the tools list.\n\n Return Intermediate Steps\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-root-nodes/return-intermediate-steps.md\"\n\n Related resources\n\nRefer to LangChain's ReAct Agents documentation for more information.\n\n Templates and examples\n\nRefer to the main AI Agent node's Templates and examples section.\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common issues.",
+  "category": "cluster-nodes",
+  "nodeType": "react",
+  "keywords": [
+    "react",
+    "agent",
+    "node",
+    "tools",
+    "list",
+    "langchain",
+    "nodes",
+    "message",
+    "conversation",
+    "model"
+  ],
+  "fetchedAt": "2025-10-07T16:15:24.460Z",
+  "hash": "8d5236f7ae643dbc2dcd78207ba49c67"
+}

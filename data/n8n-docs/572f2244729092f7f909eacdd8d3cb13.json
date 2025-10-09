@@ -1,0 +1,23 @@
+{
+  "title": "Postgres node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.postgres/common-issues",
+  "content": "---\ntitle: Postgres node common issues\ndescription: Documentation for common issues and questions in the Postgres node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: high\n---\n\n Postgres node common issues\n\nHere are some common errors and issues with the Postgres node and steps to resolve or troubleshoot them.\n\n Dynamically populate SQL IN groups with parameters\n\nIn Postgres, you can use the SQL IN comparison construct to make comparisons between groups of values:\n\nWhile you can use n8n expressions in your query to dynamically populate the values in an IN group, combining this with query parameters provides extra protection by automatically sanitizing input.\n\nTo construct an IN group query with query parameters:\n\n1. Set the Operation to Execute Query.\n2. In Options, select Query Parameters.\n3. Use an expression to select an array from the input data. For example, {{ $json.inputshirtsizes }}.\n4. In the Query parameter, write your query with the IN construct with an empty set of parentheses. For example:\n\t\n5. Inside of the IN parentheses, use an expression to dynamically create index-based placeholders (like $1, $2, and $3) for the number of items in your query parameter array. You can do this by increasing each array index by one since the placeholder variables are 1 indexed:\n\t\n\nWith this technique, n8n automatically creates the correct number of prepared statement placeholders for the IN values according to the number of items in your array.\n\n Working with timestamps and time zones\n\nTo avoid complications with how n8n and Postgres interpret timestamp and time zone data, follow these general tips:\n\n- Use UTC when storing and passing dates: Using UTC helps avoid confusion over timezone conversions when converting dates between different representations and systems.\n- Set the execution timezone: Set the global timezone in n8n using either environment variables (for self-hosted) or in the settings (for n8n Cloud). You can set a workflow-specific timezone in the workflow settings.\n- Use ISO 8601 format: The ISO 8601 format encodes the day of the month, month, year, hour, minutes, and seconds in a standardized string. n8n passes dates between nodes as strings and uses Luxon to parse dates. If you need to cast to ISO 8601 explicitly, you can use the Date & Time node and a custom format set to the string yyyy-MM-dd'T'HH:mm:ss.\n\n Outputting Date columns as date strings instead of ISO datetime strings \n\nn8n's uses the pg package to integrate with Postgres, which affects how n8n processes date, timestamp, and related types from Postgres.\n\nThe pg package parses DATE values into new Date(rowvalue) by default, which produces a date that follows the ISO 8601 datetime string format. For example, a date of 2025-12-25 might produce a datetime sting of 2025-12-25T23:00:00.000Z depending on the instance's timezone settings.\n\nTo work around this, use the Postgres TOCHAR function to format the date into the expected format at query time:\n\nThis will produce the date as a string without the time or timezone components. To continue the earlier example, with this casting, a date of 2025-12-25 would produce the string 2025-12-25. You can find out more in the pg package documentation on dates.",
+  "category": "app-nodes",
+  "nodeType": "postgres",
+  "keywords": [
+    "postgres",
+    "node",
+    "common",
+    "issues",
+    "with",
+    "date",
+    "query",
+    "this",
+    "timezone",
+    "format",
+    "time",
+    "dates"
+  ],
+  "fetchedAt": "2025-10-07T16:14:48.246Z",
+  "hash": "572f2244729092f7f909eacdd8d3cb13"
+}

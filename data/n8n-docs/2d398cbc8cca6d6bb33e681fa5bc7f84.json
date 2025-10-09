@@ -1,0 +1,21 @@
+{
+  "title": "Facebook Trigger WhatsApp Business Account object",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.facebooktrigger/whatsapp",
+  "content": "---\ntitle: Facebook Trigger WhatsApp Business Account object documentation\ndescription: Learn how to use the WhatsApp Business Account object of the Facebook Trigger node in n8n. Follow technical documentation to integrate the Facebook Trigger node's WhatsApp Business Account object into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Facebook Trigger WhatsApp Business Account object\n\nUse this object to receive updates when your WhatsApp Business Account (WABA) changes. Refer to Facebook Trigger for more information on the trigger itself.\n\n/// warning | Use WhatsApp trigger\nn8n recommends using the WhatsApp Trigger node with the WhatsApp credentials instead of the Facebook Trigger node. That trigger node includes twice the events to subscribe to.\n///\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Facebook Trigger integrations page.\n///\n\n Prerequisites\n\nThis Object requires some configuration in your app and WhatsApp account before you can use the trigger:\n\n1. Subscribe your app under your WhatsApp business account. You must subscribe an app owned by your business. Apps shared with your business can't receive webhook notifications.\n1. If you are working as a Solution Partner, make sure your app has completed App Review and requested the whatsappbusinessmanagement permission.\n\n Trigger configuration\n\nTo configure the trigger with this Object:\n\n1. Select the Credential to connect with. Select an existing or create a new Facebook App credential.\n1. Enter the APP ID of the app connected to your credential. Refer to the Facebook App credential documentation for more information.\n1. Select WhatsApp Business Account as the Object.\n1. Field Names or IDs: By default, the node will trigger on all the available events using the  wildcard filter. If you'd like to limit the events, use the X to remove the star and use the dropdown or an expression to select the updates you're interested in. Options include:\n     Message Template Status Update\n     Phone Number Name Update\n     Phone Number Quality Update\n     Account Review Update\n     Account Update\n1. In Options, turn on the toggle to Include Values. This Object type fails without the option enabled.\n\nRefer to Webhooks for WhatsApp Business Accounts and Meta's WhatsApp Business Account Graph API reference for more information.",
+  "category": "trigger-nodes",
+  "nodeType": null,
+  "keywords": [
+    "facebook",
+    "trigger",
+    "whatsapp",
+    "business",
+    "account",
+    "object",
+    "your",
+    "node",
+    "this",
+    "update"
+  ],
+  "fetchedAt": "2025-10-07T16:15:10.053Z",
+  "hash": "2d398cbc8cca6d6bb33e681fa5bc7f84"
+}

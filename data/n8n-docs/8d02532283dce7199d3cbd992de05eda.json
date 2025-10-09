@@ -1,0 +1,21 @@
+{
+  "title": "Twist node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.twist",
+  "content": "---\ntitle: Twist node documentation\ndescription: Learn how to use the Twist node in n8n. Follow technical documentation to integrate Twist node into your workflows.\ncontentType: [integration, reference]\n---\n\n Twist node\n\nUse the Twist node to automate work in Twist, and integrate Twist with other applications. n8n has built-in support for a wide range of Twist features, including creating conversations in a channel, as well as creating and deleting comments on a thread. \n\nOn this page, you'll find a list of operations the Twist node supports and links to more resources.\n\n/// note | Credentials\nRefer to Twist credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Channel\n     Archive a channel\n     Initiates a public or private channel-based conversation\n     Delete a channel\n     Get information about a channel\n     Get all channels\n     Unarchive a channel\n     Update a channel\n Comment\n     Create a new comment to a thread\n     Delete a comment\n     Get information about a comment\n     Get all comments\n     Update a comment\n Message Conversation\n     Create a message in a conversation\n     Delete a message in a conversation\n     Get a message in a conversation\n     Get all messages in a conversation\n     Update a message in a conversation\n Thread\n     Create a new thread in a channel\n     Delete a thread\n     Get information about a thread\n     Get all threads\n     Update a thread\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'twist') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Get the User ID\n\nTo get the User ID for a user:\n\n1. Open the Team tab.\n2. Select a user's avatar.\n3. Copy the string of characters located after /u/ in your Twist URL. This string is the User ID. For example, if the URL is https://twist.com/a/4qw45/people/u/475370 the User ID is 475370.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.twist.md",
+  "keywords": [
+    "twist",
+    "node",
+    "channel",
+    "thread",
+    "conversation",
+    "user",
+    "comment",
+    "message",
+    "delete",
+    "update"
+  ],
+  "fetchedAt": "2025-10-07T16:14:57.466Z",
+  "hash": "8d02532283dce7199d3cbd992de05eda"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Queue mode environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/queue-mode",
+  "content": "---\ntitle: Queue mode environment variables\ndescription: Environment variables to configure queue mode on your self-hosted n8n instance.\ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Queue mode environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nYou can run n8n in different modes depending on your needs. Queue mode provides the best scalability. Refer to Queue mode for more information.\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| OFFLOADMANUALEXECUTIONSTOWORKERS | Boolean | false | Set to true if you want manual executions to run on the worker rather than on main. |\n| QUEUEBULLPREFIX | String | - | Prefix to use for all queue keys. |\n| QUEUEBULLREDISDB | Number | 0 | The Redis database used. |\n| QUEUEBULLREDISHOST | String | localhost | The Redis host. |\n| QUEUEBULLREDISPORT | Number | 6379 | The Redis port used. |\n| QUEUEBULLREDISUSERNAME | String | - | The Redis username (needs Redis version 6 or above). Don't define it for Redis < 6 compatibility |\n| QUEUEBULLREDISPASSWORD | String | - | The Redis password. |\n| QUEUEBULLREDISTIMEOUTTHRESHOLD | Number | 10000 | The Redis timeout threshold (in ms). |\n| QUEUEBULLREDISCLUSTERNODES | String | - | Expects a comma-separated list of Redis Cluster nodes in the format host:port, for the Redis client to initially connect to. If running in queue mode (EXECUTIONSMODE = queue), setting this variable will create a Redis Cluster client instead of a Redis client, and n8n will ignore QUEUEBULLREDISHOST and QUEUEBULLREDISPORT. |\n| QUEUEBULLREDISTLS | Boolean | false | Enable TLS on Redis connections. |\n| QUEUEBULLREDISDUALSTACK | Boolean | false | Enable dual-stack support (IPv4 and IPv6) on Redis connections. |\n| QUEUEWORKERTIMEOUT (deprecated) | Number | 30 | Deprecated Use N8NGRACEFULSHUTDOWNTIMEOUT instead.<br/><br/>How long should n8n wait (seconds) for running executions before exiting worker process on shutdown. |\n| QUEUEHEALTHCHECKACTIVE | Boolean | false | Whether to enable health checks (true) or disable (false). |\n| QUEUEHEALTHCHECKPORT | Number | 5678 | The port to serve health checks on. If you experience a port conflict error when starting a worker server using its default port, change this. |\n| QUEUEWORKERLOCKDURATION | Number | 60000 | How long (in ms) is the lease period for a worker to work on a message. |\n| QUEUEWORKERLOCKRENEWTIME | Number | 10000 | How frequently (in ms) should a worker renew the lease time. |\n| QUEUEWORKERSTALLEDINTERVAL | Number | 30000 | How often should a worker check for stalled jobs (use 0 for never). |\n| QUEUEWORKERMAXSTALLEDCOUNT | Number | 1 | Maximum amount of times a stalled job will be re-processed. |\n\n Multi-main setup\n\nRefer to Configuring multi-main setup for details.\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| N8NMULTIMAINSETUPENABLED | Boolean | false | Whether to enable multi-main setup for queue mode (license required). |\n| N8NMULTIMAINSETUPKEYTTL | Number | 10 | Time to live (in seconds) for leader key in multi-main setup. |\n| N8NMULTIMAINSETUPCHECKINTERVAL | Number | 3 | Interval (in seconds) for leader check in multi-main setup. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "queue",
+    "mode",
+    "environment",
+    "variables",
+    "redis",
+    "number",
+    "false",
+    "worker",
+    "main",
+    "boolean",
+    "string",
+    "port"
+  ],
+  "fetchedAt": "2025-10-07T16:15:57.812Z",
+  "hash": "b42eab0431891eef50d86b32523036d5"
+}

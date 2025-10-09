@@ -1,0 +1,23 @@
+{
+  "title": "Supported databases",
+  "url": "https://docs.n8n.io/hosting/configuration/supported-databases-settings",
+  "content": "---\ncontentType: reference\n---\n\n Supported databases\n\nBy default, n8n uses SQLite to save credentials, past executions, and workflows. n8n also supports PostgresDB.\n\n Shared settings\n\nThe following environment variables get used by all databases:\n\n - DBTABLEPREFIX (default: -) - Prefix for table names\n\n PostgresDB\n\nTo use PostgresDB as the database, you can provide the following environment variables:\n\n - DBTYPE=postgresdb\n - DBPOSTGRESDBDATABASE (default: 'n8n')\n - DBPOSTGRESDBHOST (default: 'localhost')\n - DBPOSTGRESDBPORT (default: 5432)\n - DBPOSTGRESDBUSER (default: 'postgres')\n - DBPOSTGRESDBPASSWORD (default: empty)\n - DBPOSTGRESDBSCHEMA (default: 'public')\n - DBPOSTGRESDBSSLCA (default: undefined): Path to the server's CA certificate used to validate the connection (opportunistic encryption isn't supported)\n - DBPOSTGRESDBSSLCERT (default: undefined): Path to the client's TLS certificate\n - DBPOSTGRESDBSSLKEY (default: undefined): Path to the client's private key corresponding to the certificate\n - DBPOSTGRESDBSSLREJECTUNAUTHORIZED (default: true): If TLS connections that fail validation should be rejected\n\n Required permissions\n\nn8n needs to create and modify the schemas of the tables it uses.\n\nRecommended permissions:\n\n TLS\n\nYou can choose between these configurations:\n\n- Not declaring (default): Connect with SSL=off\n- Declaring only the CA and unauthorized flag: Connect with SSL=on and verify the server's signature\n- Declaring {CERT,KEY} and the above: Use the certificate and key for client TLS authentication\n\n SQLite\n\nThis is the default database that gets used if nothing is defined.\n\nThe database file is located at:\n/.n8n/database.sqlite",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "supported",
+    "databases",
+    "default",
+    "postgresdb",
+    "database",
+    "certificate",
+    "sqlite",
+    "used",
+    "undefined",
+    "path",
+    "client",
+    "declaring"
+  ],
+  "fetchedAt": "2025-10-07T16:15:58.827Z",
+  "hash": "382c217ef4cbd21d330523b888fc0bb3"
+}

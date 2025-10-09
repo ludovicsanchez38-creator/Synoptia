@@ -1,0 +1,21 @@
+{
+  "title": "Cloudflare node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.cloudflare",
+  "content": "---\ntitle: Cloudflare node documentation\ndescription: Learn how to use the Cloudflare node in n8n. Follow technical documentation to integrate Cloudflare node into your workflows.\ncontentType: [integration, reference]\n---\n\n Cloudflare node\n\nUse the Cloudflare node to automate work in Cloudflare, and integrate Cloudflare with other applications. n8n has built-in support for a wide range of Cloudflare features, including deleting, getting, and uploading zone certificates.\n\nOn this page, you'll find a list of operations the Cloudflare node supports and links to more resources.\n\n/// note | Credentials\nRefer to Cloudflare  credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Zone Certificate\n\t Delete\n\t Get\n\t Get Many\n\t Upload\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'cloudflare') ]]\n\n Related resources\n\nRefer to Cloudflare's API documentation on zone-level authentication for more information on this service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.cloudflare.md",
+  "keywords": [
+    "cloudflare",
+    "node",
+    "documentation",
+    "zone",
+    "title",
+    "integrate",
+    "this",
+    "page",
+    "operations",
+    "more"
+  ],
+  "fetchedAt": "2025-10-07T16:14:22.458Z",
+  "hash": "1fe726901b3205e7a6b5587cdd9dea9d"
+}

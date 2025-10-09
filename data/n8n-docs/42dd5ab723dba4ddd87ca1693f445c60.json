@@ -1,0 +1,21 @@
+{
+  "title": "Box Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.boxtrigger",
+  "content": "---\ntitle: Box Trigger node documentation\ndescription: Learn how to use the Box Trigger node in n8n. Follow technical documentation to integrate Box Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Box Trigger node\n\nBox is a cloud computing company which provides file sharing, collaborating, and other tools for working with files uploaded to its servers.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Box Trigger integrations page.\n///\n\n Find your Box Target ID\n\nTo get your Target ID in Box:\n\n1. Open the file/folder that you would like to monitor.\n2. Copy the string of characters after folder/ in your URL. This is the target ID. For example, if the URL is https://app.box.com/folder/12345, then 12345 is the target ID.\n3. Paste it in the Target ID field in n8n.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.boxtrigger.md",
+  "keywords": [
+    "trigger",
+    "node",
+    "target",
+    "your",
+    "folder",
+    "documentation",
+    "file",
+    "note",
+    "find",
+    "this"
+  ],
+  "fetchedAt": "2025-10-07T16:15:06.107Z",
+  "hash": "42dd5ab723dba4ddd87ca1693f445c60"
+}

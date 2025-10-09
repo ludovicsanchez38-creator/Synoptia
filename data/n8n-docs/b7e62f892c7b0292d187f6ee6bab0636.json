@@ -1,0 +1,21 @@
+{
+  "title": "SSH",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.ssh",
+  "content": "---\ntitle: SSH\ndescription: Documentation for the SSH node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: medium\n---\n\n SSH\n\nThe SSH node is useful for executing commands using the Secure Shell Protocol.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n- Execute a command\n- Download a file\n- Upload a file\n\n/// note | Uploading files\nTo attach a file for upload, you will need to use an extra node such as the Read/Write Files from Disk node or the HTTP Request node to pass the file as a data property.\n///\n\n Execute Command\n\nConfigure this operation with these parameters:\n\n- Credential to connect with: Select an existing or create a new SSH credential to connect with.\n- Command: Enter the command to execute on the remote device.\n- Working Directory: Enter the directory where n8n should execute the command.\n\n Download File\n\n- Credential to connect with: Select an existing or create a new SSH credential to connect with.\n- Path: Enter the path for the file you want to download. This path must include the file name. The downloaded file will use this file name. To use a different name, use the File Name option. Refer to Download File options for more information.\n- File Property: Enter the name of the object property that holds the binary data you want to download.\n\n Download File options\n\nYou can further configure this operation with the File Name option. Use this option to override the binary data file name to a name of your choice.\n\n Upload File\n\n- Credential to connect with: Select an existing or create a new SSH credential to connect with.\n- Input Binary Field: Enter the name of the input binary field that contains the file you want to upload.\n- Target Directory: The directory to upload the file to. The name of the file is taken from the binary data file name. To enter a different name, use the File Name option. Refer to Upload File options for more information.\n\n Upload File options\n\nYou can further configure this operation with the File Name option. Use this option to override the binary data file name to a name of your choice.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'ssh') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.ssh.md",
+  "keywords": [
+    "file",
+    "name",
+    "with",
+    "this",
+    "upload",
+    "node",
+    "download",
+    "credential",
+    "connect",
+    "enter"
+  ],
+  "fetchedAt": "2025-10-07T16:14:11.976Z",
+  "hash": "b7e62f892c7b0292d187f6ee6bab0636"
+}

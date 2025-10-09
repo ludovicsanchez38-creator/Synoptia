@@ -1,0 +1,21 @@
+{
+  "title": "MongoDB Chat Memory node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorymongochat",
+  "content": "---\ntitle: MongoDB Chat Memory node documentation\ndescription: Learn how to use the MongoDB Chat Memory node in n8n. Follow technical documentation to integrate MongoDB Chat Memory node into your workflows.\ncontentType: [integration, reference]\n---\n\n MongoDB Chat Memory node\n\nUse the MongoDB Chat Memory node to use MongoDB as a memory server for storing chat history.\n\nOn this page, you'll find a list of operations the MongoDB Chat Memory node supports, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Session Key: Enter the key to use to store the memory in the workflow data.\n Collection Name: Enter the name of the collection to store the chat history in. The system will create the collection if it doesn't exist.\n Database Name: Enter the name of the database to store the chat history in. If not provided, the database from credentials will be used.\n Context Window Length: Enter the number of previous interactions to consider for context.\n\n Related resources\n\nRefer to LangChain's MongoDB Chat Message History documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"\n\n Single memory instance\n\n[[% include \"includes/integrations/cluster-nodes/memory-shared.html\" %]]",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.memorymongochat.md",
+  "keywords": [
+    "mongodb",
+    "chat",
+    "memory",
+    "node",
+    "history",
+    "enter",
+    "name",
+    "documentation",
+    "integrations",
+    "cluster"
+  ],
+  "fetchedAt": "2025-10-07T16:15:33.995Z",
+  "hash": "f5e1c82502d20e469ce9a3b9c232c4ce"
+}

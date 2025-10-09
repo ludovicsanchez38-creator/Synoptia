@@ -1,0 +1,21 @@
+{
+  "title": "Hosting n8n on Heroku",
+  "url": "https://docs.n8n.io/hosting/installation/server-setups/heroku",
+  "content": "---\ncontentType: tutorial\n---\n\n Hosting n8n on Heroku\n\nThis hosting guide shows you how to self-host n8n on Heroku. It uses:\n\n- Docker Compose to create and define the application components and how they work together.\n- Heroku's PostgreSQL service to host n8n's data storage.\n- A Deploy to Heroku button offering a one click, with minor configuration, deployment.\n\n--8<-- \"snippets/self-hosting/warning.md\"\n\n--8<-- \"snippets/self-hosting/installation/latest-next-version.md\"\n\n Use the deployment template to create a Heroku project\n\nThe quickest way to get started with deploying n8n to Heroku is using the Deploy to Heroku button:\n\n![Deploy](https://dashboard.heroku.com/new?template=https://github.com/n8n-io/n8n-heroku/tree/main)\n\nThis opens the Create New App page on Heroku. Set a name for the project, and choose the region to deploy the project to.\n\n Configure environment variables\n\nHeroku pre-fills the configuration options defined in the env section of the app.json file, which also sets default values for the environment variables n8n uses.\n\nYou can change any of these values to suit your needs. You must change the following values:\n\n- N8NENCRYPTIONKEY, which n8n uses to encrypt user account details before saving to the database.\n- WEBHOOKURL should match the application name you create to ensure that webhooks have the correct URL.\n\n Deploy n8n\n\nSelect Deploy app.\n\nAfter Heroku builds and deploys the app it provides links to Manage App or View the application.\n\n/// note | Heroku and DNS\nRefer to the Heroku documentation to find out how to connect your domain to a Heroku application.\n///\n Changing the deployment template\n\nYou can make changes to the deployment template by forking the repository and deploying from you fork.\n\n The Dockerfile\n\nBy default the Dockerfile pulls the latest n8n image, if you want to use a different or fixed version, then update the image tag on the top line of the Dockerfile.\n\n Heroku and exposing ports\n\nHeroku doesn't allow Docker-based applications to define an exposed port with the EXPOSE command. Instead, Heroku provides a PORT environment variable that it dynamically populates at application runtime. The entrypoint.sh file overrides the default Docker image command to instead set the port variable that Heroku provides. You can then access n8n on port 80 in a web browser.\n\n/// note | Docker limitations with Heroku\nRead this guide for more details on the limitations of using Docker with Heroku.\n///\n Configuring Heroku\n\nThe heroku.yml file defines the application you want to create on Heroku. It consists of two sections:\n\n setup > addons defines the Heroku addons to use. In this case, the PostgreSQL database addon.\n The build section defines how Heroku builds the application. In this case it uses the Docker buildpack to build a web service based on the supplied Dockerfile.\n\n Next steps\n\n--8<-- \"snippets/self-hosting/installation/server-setups-next-steps.md\"",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "hosting",
+    "heroku",
+    "application",
+    "docker",
+    "deploy",
+    "this",
+    "create",
+    "with",
+    "self",
+    "uses"
+  ],
+  "fetchedAt": "2025-10-07T16:16:00.748Z",
+  "hash": "b23e02ae684d207c6356de04d4aa4799"
+}

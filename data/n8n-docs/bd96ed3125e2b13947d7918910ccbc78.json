@@ -1,0 +1,21 @@
+{
+  "title": "NASA node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nasa",
+  "content": "---\ntitle: NASA node documentation\ndescription: Learn how to use the NASA node in n8n. Follow technical documentation to integrate NASA node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n NASA node\n\nUse the NASA node to automate work in NASA, and integrate NASA with other applications. n8n has built-in support for a wide range of NASA features, including retrieving imagery and data. \n\nOn this page, you'll find a list of operations the NASA node supports and links to more resources.\n\n/// note | Credentials\nRefer to NASA credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Astronomy Picture of the Day\n     Get the Astronomy Picture of the Day\n Asteroid Neo-Feed\n     Retrieve a list of asteroids based on their closest approach date to Earth\n Asteroid Neo-Lookup\n     Look up an asteroid based on its NASA SPK-ID\n Asteroid Neo-Browse\n     Browse the overall asteroid dataset\n DONKI Coronal Mass Ejection\n     Retrieve DONKI coronal mass ejection data\n DONKI Interplanetary Shock\n     Retrieve DONKI interplanetary shock data\n DONKI Solar Flare\n     Retrieve DONKI solar flare data\n DONKI Solar Energetic Particle\n     Retrieve DONKI solar energetic particle data\n DONKI Magnetopause Crossing\n     Retrieve data on DONKI magnetopause crossings\n DONKI Radiation Belt Enhancement\n     Retrieve DONKI radiation belt enhancement data\n DONKI High Speed Stream\n     Retrieve DONKI high speed stream data\n DONKI WSA+EnlilSimulation\n     Retrieve DONKI WSA+EnlilSimulation data\n DONKI Notifications\n     Retrieve DONKI notifications data\n Earth Imagery\n     Retrieve Earth imagery\n Earth Assets\n     Retrieve Earth assets\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'nasa') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.nasa.md",
+  "keywords": [
+    "nasa",
+    "node",
+    "donki",
+    "retrieve",
+    "data",
+    "asteroid",
+    "earth",
+    "solar",
+    "imagery",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:44.189Z",
+  "hash": "bd96ed3125e2b13947d7918910ccbc78"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Code node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/common-issues",
+  "content": "---\ntitle: Code node common issues \ndescription: Documentation for common issues and questions in the Code node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: high\n---\n\n Code node common issues\n\nHere are some common errors and issues with the Code node and steps to resolve or troubleshoot them.\n\n<!-- vale off -->\n Code doesn't return items properly\n<!-- vale on -->\n\nThis error occurs when the code in your Code node doesn't return data in the expected format.\n\nIn n8n, all data passed between nodes is an array of objects. Each of these objects wraps another object with the json key:\n\nTo troubleshoot this error, check the following:\n\n Read the data structure to understand the data you receive in the Code node and the requirements for outputting data from the node.\n Understand how data items work and how to connect data items from previous nodes with item linking.\n\n<!-- vale off -->\n A 'json' property isn't an object\n<!-- vale on -->\n\nThis error occurs when the Code node returns data where the json key isn't pointing to an object.\n\nThis may happen if you set json to a different data structure, like an array:\n\nTo resolve this, ensure that the json key references an object in your return data:\n\n Code doesn't return an object\n\nThis error may occur when your Code node doesn't return anything or if it returns an unexpected result.\n\nTo resolve this, ensure that your Code node returns the expected data structure:\n\nThis error may also occur if the code you provided returns 'undefined' instead of the expected result. In that case, ensure that the data you are referencing in your Code node exists in each execution and that it has the structure your code expects.\n\n 'import' and 'export' may only appear at the top level\n\nThis error occurs if you try to use import or export in the Code node. These aren't supported by n8n's JavaScript sandbox. Instead, use the require function to load modules.\n\nTo resolve this issue, try changing your import statements to use require:\n\n<!-- vale off -->\n Cannot find module '&lt;module&gt;'\n<!-- vale on -->\n\nThis error occurs if you try to use require in the Code node and n8n can't find the module.\n\n/// warning | Only for self-hosted\nn8n doesn't support importing modules in the Cloud version.\n///\n\nIf you're self-hosting n8n, follow these steps:\n\n Install the module into your n8n environment.\n\t If you are running n8n with npm, install the module in the same environment as n8n.\n\t If you are running n8n with Docker, you need to extend the official n8n image with a custom image that includes your module.\n Set the NODEFUNCTIONALLOWBUILTIN and NODEFUNCTIONALLOWEXTERNAL environment variables to allow importing modules.\n\n Using global variables\n\nSometimes you may wish to set and retrieve simple global data related to a workflow across and within executions. For example, you may wish to include the date of the previous report when compiling a report with a list of project updates.\n\nTo set, update, and retrieve data directly to a workflow, use the static data functions within your code. You can manage data either globally or tied to specific nodes.\n\n/// info | Use Remove Duplicates when possible\nIf you're interested in using variables to avoid processing the same data items more than once, consider using the Remove Duplicates node instead. The Remove Duplicates node can save information across executions to avoid processing the same items multiple times.\n///",
+  "category": "core-nodes",
+  "nodeType": "code",
+  "keywords": [
+    "code",
+    "node",
+    "common",
+    "issues",
+    "data",
+    "this",
+    "your",
+    "with",
+    "error",
+    "vale",
+    "that",
+    "module"
+  ],
+  "fetchedAt": "2025-10-07T16:14:02.784Z",
+  "hash": "93ac3fb4d3d83c064eb11e31b695b0ad"
+}

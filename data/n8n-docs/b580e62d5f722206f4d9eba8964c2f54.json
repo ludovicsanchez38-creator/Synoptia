@@ -1,0 +1,22 @@
+{
+  "title": "https://www.notion.so/n8n/Frontmatter-432c2b8dff1f43d4b1c8d20075510fe4",
+  "url": "https://docs.n8n.io/hosting/installation/updating",
+  "content": "---\n https://www.notion.so/n8n/Frontmatter-432c2b8dff1f43d4b1c8d20075510fe4\ndescription: Best practices for updating your self-hosted n8n\ntitle: Update self-hosted n8n\ncontentType: explanation\ntags:\n  - update npm\n  - update docker\nhide:\n  - tags\n---\n\n Update self-hosted n8n\n\nIt's important to keep your n8n version up to date. This ensures you get the latest features and fixes.\n\nSome tips when updating:\n\n--8<-- \"snippets/manage-cloud/updating-best-practices.md\"\n\nFor instructions on how to update, refer to the documentation for your installation method:\n\n Installed with npm\n Installed with Docker",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "https://www.notion.so/n8n/frontmatter-432c2b8dff1f43d4b1c8d20075510fe4",
+    "update",
+    "updating",
+    "your",
+    "self",
+    "hosted",
+    "best",
+    "practices",
+    "tags",
+    "docker",
+    "installed"
+  ],
+  "fetchedAt": "2025-10-07T16:16:01.192Z",
+  "hash": "b580e62d5f722206f4d9eba8964c2f54"
+}

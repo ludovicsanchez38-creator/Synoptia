@@ -1,0 +1,21 @@
+{
+  "title": "OpenAI node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.openai/common-issues",
+  "content": "---\ntitle: OpenAI node common issues \ndescription: Documentation for common issues and questions in the OpenAI node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: critical\n---\n\n OpenAI node common issues\n\nHere are some common errors and issues with the OpenAI node and steps to resolve or troubleshoot them.\n\n--8<-- \"snippets/integrations/openai-api-issues.md\"\n--8<-- \"snippets/integrations/referenced-node-unexecuted.md\"",
+  "category": "app-nodes",
+  "nodeType": "openai",
+  "keywords": [
+    "openai",
+    "node",
+    "common",
+    "issues",
+    "snippets",
+    "integrations",
+    "title",
+    "description",
+    "documentation",
+    "questions"
+  ],
+  "fetchedAt": "2025-10-07T16:15:02.376Z",
+  "hash": "8f0ddccf4c29b291a3c12dd0c56c617b"
+}

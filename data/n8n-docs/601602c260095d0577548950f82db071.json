@@ -1,0 +1,21 @@
+{
+  "title": "Xero node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.xero",
+  "content": "---\ntitle: Xero node documentation\ndescription: Learn how to use the Xero node in n8n. Follow technical documentation to integrate Xero node into your workflows.\ncontentType: [integration, reference]\n---\n\n Xero node\n\nUse the Xero node to automate work in Xero, and integrate Xero with other applications. n8n has built-in support for a wide range of Xero features, including creating, updating, and getting contacts and invoices. \n\nOn this page, you'll find a list of operations the Xero node supports and links to more resources.\n\n/// note | Credentials\nRefer to Xero credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Contact\n     Create a contact\n     Get a contact\n     Get all contacts\n     Update a contact\n Invoice\n     Create a invoice\n     Get a invoice\n     Get all invoices\n     Update a invoice\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'xero') ]]\n\n Related resources\n\nRefer to Xero's API documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.xero.md",
+  "keywords": [
+    "xero",
+    "node",
+    "contact",
+    "invoice",
+    "documentation",
+    "title",
+    "integrate",
+    "contacts",
+    "invoices",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:15:00.384Z",
+  "hash": "601602c260095d0577548950f82db071"
+}

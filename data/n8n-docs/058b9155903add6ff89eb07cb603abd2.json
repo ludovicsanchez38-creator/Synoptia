@@ -1,0 +1,21 @@
+{
+  "title": "Affinity Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.affinitytrigger",
+  "content": "---\ntitle: Affinity Trigger node documentation\ndescription: Learn how to use the Affinity Trigger node in n8n. Follow technical documentation to integrate Affinity Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Affinity Trigger node\n\nAffinity is a powerful relationship intelligence platform enabling teams to leverage their network to close the next big deal.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Affinity Trigger integrations page.\n///\n\n Events\n\n Field value\n   Created\n   Deleted\n   Updated\n Field\n   Created\n   Deleted\n   Updated\n File\n   Created\n   Deleted\n List entry\n   Created\n   Deleted\n List\n   Created\n   Deleted\n   Updated\n Note\n   Created\n   Deleted\n   Updated\n Opportunity\n   Created\n   Deleted\n   Updated\n Organization\n   Created\n   Deleted\n   Updated\n Person\n   Created\n   Deleted\n   Updated\n\n Related resources\n\nn8n provides an app node for Affinity. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to Affinity's documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.affinitytrigger.md",
+  "keywords": [
+    "affinity",
+    "trigger",
+    "node",
+    "created",
+    "deleted",
+    "updated",
+    "documentation",
+    "note",
+    "workflows",
+    "their"
+  ],
+  "fetchedAt": "2025-10-07T16:15:05.041Z",
+  "hash": "058b9155903add6ff89eb07cb603abd2"
+}

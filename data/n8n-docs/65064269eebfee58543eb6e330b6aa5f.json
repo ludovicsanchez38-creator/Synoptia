@@ -1,0 +1,21 @@
+{
+  "title": "Google Chat node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlechat",
+  "content": "---\ntitle: Google Chat node documentation\ndescription: Learn how to use the Google Chat node in n8n. Follow technical documentation to integrate Google Chat node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Google Chat node\n\nUse the Google Chat node to automate work in Google Chat, and integrate Google Chat with other applications. n8n has built-in support for a wide range of Google Chat features, including getting membership and spaces, as well as creating and deleting messages. \n\nOn this page, you'll find a list of operations the Google Chat node supports and links to more resources.\n\n/// note | Credentials\nRefer to Google credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Member\n     Get a membership\n     Get all memberships in a space\n Message\n     Create a message\n     Delete a message\n     Get a message\n\t Send and Wait for Response\n     Update a message\n Space\n     Get a space\n     Get all spaces the caller is a member of\n\n--8<-- \"snippets/integrations/builtin/send-and-wait-operation.md\"\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-chat') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.googlechat.md",
+  "keywords": [
+    "google",
+    "chat",
+    "node",
+    "message",
+    "integrations",
+    "space",
+    "title",
+    "documentation",
+    "integrate",
+    "membership"
+  ],
+  "fetchedAt": "2025-10-07T16:14:30.472Z",
+  "hash": "65064269eebfee58543eb6e330b6aa5f"
+}

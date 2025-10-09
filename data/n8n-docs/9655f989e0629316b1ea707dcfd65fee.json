@@ -1,0 +1,22 @@
+{
+  "title": "Monitoring",
+  "url": "https://docs.n8n.io/hosting/logging-monitoring/monitoring",
+  "content": "---\ndescription: Get metrics for a health check\ncontentType: howto\n---\n\n Monitoring\n\nThere are three API endpoints you can call to check the status of your instance: /healthz, healthz/readiness, and /metrics.\n\n<!-- vale off -->\n healthz and healthz/readiness\n<!-- vale on -->\nThe /healthz endpoint returns a standard HTTP status code. 200 indicates the instance is reachable. It doesn't indicate DB status. It's available for both self-hosted and Cloud users.\n\nAccess the endpoint:\n\nThe /healthz/readiness endpoint is similar to the /healthz endpoint, but it returns a HTTP status code of 200 if the DB is connected and migrated and therefore the instance is ready to accept traffic.\n\nAccess the endpoint:\n\n metrics\n\nThe /metrics endpoint provides more detailed information about the current status of the instance.\n\nAccess the endpoint:\n\n/// info | Feature availability\nThe /metrics endpoint isn't available on n8n Cloud.\n///\n<!-- vale off -->\n Enable metrics and healthz for self-hosted n8n\n<!-- vale on -->\nThe /metrics and /healthz endpoints are disabled by default. To enable them, configure your n8n instance:\n\nRefer to Configuration methods for more information on how to configure your instance using environment variables.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "monitoring",
+    "healthz",
+    "endpoint",
+    "metrics",
+    "instance",
+    "status",
+    "vale",
+    "your",
+    "readiness",
+    "access",
+    "check"
+  ],
+  "fetchedAt": "2025-10-07T16:16:01.682Z",
+  "hash": "9655f989e0629316b1ea707dcfd65fee"
+}

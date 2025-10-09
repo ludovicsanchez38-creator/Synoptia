@@ -1,0 +1,21 @@
+{
+  "title": "LangChain Code node methods",
+  "url": "https://docs.n8n.io/code/builtin/langchain-methods",
+  "content": "---\ndescription: n8n provides these methods to make it easier to perform common tasks in the LangChain Code node.\ncontentType: reference\nhide:\n  - toc\n---\n LangChain Code node methods\n\nn8n provides these methods to make it easier to perform common tasks in the LangChain Code node.\n\n/// note | LangChain Code node only\nThese variables are for use in expressions in the LangChain Code node. You can't use them in other nodes.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-root-nodes/langchaincode/builtin-methods.md\"",
+  "category": "code",
+  "nodeType": "langchain",
+  "keywords": [
+    "langchain",
+    "code",
+    "node",
+    "methods",
+    "these",
+    "nodes",
+    "provides",
+    "make",
+    "easier",
+    "perform"
+  ],
+  "fetchedAt": "2025-10-07T16:15:46.866Z",
+  "hash": "cc9108b33ab646cac996bc3f441440f3"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "QuickBooks Online node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.quickbooks",
+  "content": "---\ntitle: QuickBooks Online node documentation\ndescription: Learn how to use the QuickBooks Online node in n8n. Follow technical documentation to integrate QuickBooks Online node into your workflows.\ncontentType: [integration, reference]\n---\n\n QuickBooks Online node\n\nUse the QuickBooks node to automate work in QuickBooks, and integrate QuickBooks with other applications. n8n has built-in support for a wide range of QuickBooks features, including creating, updating, deleting, and getting bills, customers, employees, estimates, and invoices. \n\nOn this page, you'll find a list of operations the QuickBooks node supports and links to more resources.\n\n/// note | Credentials\nRefer to QuickBooks credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Bill\n     Create\n     Delete\n     Get\n     Get All\n     Update\n Customer\n     Create\n     Get\n     Get All\n     Update\n Employee\n     Create\n     Get\n     Get All\n     Update\n Estimate\n     Create\n     Delete\n     Get\n     Get All\n     Send\n     Update\n Invoice\n     Create\n     Delete\n     Get\n     Get All\n     Send\n     Update\n     Void\n Item\n     Get\n     Get All\n Payment\n     Create\n     Delete\n     Get\n     Get All\n     Send\n     Update\n     Void\n Purchase\n     Get\n     Get All\n Transaction\n     Get Report\n Vendor\n     Create\n     Get\n     Get All\n     Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'quickbooks-online') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.quickbooks.md",
+  "keywords": [
+    "quickbooks",
+    "online",
+    "node",
+    "create",
+    "update",
+    "delete",
+    "integrations",
+    "send",
+    "title",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:49.603Z",
+  "hash": "174e77cf74cf75ee70fceef123116617"
+}

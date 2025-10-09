@@ -1,0 +1,22 @@
+{
+  "title": "SIGNL4 node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.signl4",
+  "content": "---\ntitle: SIGNL4 node documentation\ndescription: Learn how to use the SIGNL4 node in n8n. Follow technical documentation to integrate SIGNL4 node into your workflows.\ncontentType: [integration, reference]\n---\n\n SIGNL4 node\n\nUse the SIGNL4 node to automate work in SIGNL4, and integrate SIGNL4 with other applications. n8n supports sending and resolving alerts with SIGNL4.\n\nOn this page, you'll find a list of operations the SIGNL4 node supports and links to more resources.\n\n/// note | Credentials\nRefer to SIGNL4 credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Alert\n     Send an alert\n     Resolve an alert\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'signl4') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.signl4.md",
+  "keywords": [
+    "signl4",
+    "node",
+    "alert",
+    "title",
+    "documentation",
+    "integrate",
+    "with",
+    "supports",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:52.496Z",
+  "hash": "7bfe7fed5f5c2ca25491b28d67fc8edf"
+}

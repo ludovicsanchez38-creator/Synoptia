@@ -1,0 +1,21 @@
+{
+  "title": "Binary data",
+  "url": "https://docs.n8n.io/hosting/scaling/binary-data",
+  "content": "---\ntitle: Scaling binary data in n8n\ndescription: How to handle large files without degrading n8n's performance.\ncontentType: howto\n---\n\n Binary data\n\nBinary data is any file-type data, such as image files or documents generated or processed during the execution of a workflow. \n\n Enable filesystem mode\n\nWhen handling binary data, n8n keeps the data in memory by default. This can cause crashes when working with large files. \n\nTo avoid this, change the N8NDEFAULTBINARYDATAMODE environment variable to filesystem. This causes n8n to save data to disk, instead of using memory.\n\nIf you're using queue mode, keep this to default. n8n doesn't support filesystem mode with queue mode.\n\n Binary data pruning\n\nn8n executes binary data pruning as part of execution data pruning. Refer to Execution data | Enable executions pruning for details. \n\nIf you configure multiple binary data modes, binary data pruning operates on the active binary data mode. For example, if your instance stored data in S3, and you later switched to filesystem mode, n8n only prunes binary data in the filesystem. Refer to External storage for details.",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "binary",
+    "data",
+    "mode",
+    "filesystem",
+    "pruning",
+    "this",
+    "files",
+    "execution",
+    "large",
+    "enable"
+  ],
+  "fetchedAt": "2025-10-07T16:16:02.002Z",
+  "hash": "8f3c5d2528f360cd4aa112679f35962a"
+}

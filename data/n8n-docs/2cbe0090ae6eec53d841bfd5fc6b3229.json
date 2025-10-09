@@ -1,0 +1,20 @@
+{
+  "title": "Triggers library",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/index",
+  "content": "---\ncontentType: overview\n---\n\n Triggers library\n\nThis section provides information about n8n's Triggers.",
+  "category": "trigger-nodes",
+  "nodeType": null,
+  "keywords": [
+    "triggers",
+    "library",
+    "contenttype",
+    "overview",
+    "this",
+    "section",
+    "provides",
+    "information",
+    "about"
+  ],
+  "fetchedAt": "2025-10-07T16:15:04.579Z",
+  "hash": "2cbe0090ae6eec53d841bfd5fc6b3229"
+}

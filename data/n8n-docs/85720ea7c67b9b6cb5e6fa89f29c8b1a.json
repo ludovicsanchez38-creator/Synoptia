@@ -1,0 +1,23 @@
+{
+  "title": "Customer Datastore (n8n Training) node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.n8ntrainingcustomerdatastore",
+  "content": "---\ntitle: Customer Datastore (n8n Training) node documentation\ndescription: Learn how to use the Customer Datastore (n8n Training) node in n8n. Follow technical documentation to integrate Customer Datastore (n8n Training) node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Customer Datastore (n8n Training) node\n\nUse this node only for the n8n new user onboarding tutorial. It provides dummy data for testing purposes and has no further functionality.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.n8ntrainingcustomerdatastore.md",
+  "keywords": [
+    "customer",
+    "datastore",
+    "(n8n",
+    "training)",
+    "node",
+    "training",
+    "documentation",
+    "title",
+    "description",
+    "learn",
+    "follow",
+    "technical"
+  ],
+  "fetchedAt": "2025-10-07T16:14:43.869Z",
+  "hash": "85720ea7c67b9b6cb5e6fa89f29c8b1a"
+}

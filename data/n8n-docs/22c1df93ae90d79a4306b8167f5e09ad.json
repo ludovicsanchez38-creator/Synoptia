@@ -1,0 +1,21 @@
+{
+  "title": "MySQL node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mysql/index",
+  "content": "---\ntitle: MySQL node documentation\ndescription: Learn how to use the MySQL node in n8n. Follow technical documentation to integrate MySQL node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n MySQL node\n\nUse the MySQL node to automate work in MySQL, and integrate MySQL with other applications. n8n has built-in support for a wide range of MySQL features, including executing an SQL query, as well as inserting, and updating rows in a database.\n\nOn this page, you'll find a list of operations the MySQL node supports and links to more resources.\n\n/// note | Credentials\nRefer to MySQL credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Delete\n Execute SQL\n Insert\n Insert or Update\n Select\n Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'mysql') ]]\n\n Related resources\n\nRefer to MySQL's Connectors and APIs documentation for more information about the service.\n\nRefer to MySQL's SELECT statement documentation for more information on writing SQL queries.\n\n Use query parameters\n\nWhen creating a query to run on a MySQL database, you can use the Query Parameters field in the Options section to load data into the query. n8n sanitizes data in query parameters, which prevents SQL injection.\n\nFor example, you want to find a person by their email address. Given the following input data:\n\nYou can write a query like:\n\nThen in Query Parameters, provide the field values to use. You can provide fixed values or expressions. For this example, use expressions so the node can pull the email address from each input item in turn:\n\n Common issues\n\nFor common errors or issues and suggested resolution steps, refer to Common issues.",
+  "category": "app-nodes",
+  "nodeType": "mysql",
+  "keywords": [
+    "mysql",
+    "node",
+    "query",
+    "documentation",
+    "refer",
+    "parameters",
+    "more",
+    "data",
+    "common",
+    "issues"
+  ],
+  "fetchedAt": "2025-10-07T16:14:43.711Z",
+  "hash": "22c1df93ae90d79a4306b8167f5e09ad"
+}

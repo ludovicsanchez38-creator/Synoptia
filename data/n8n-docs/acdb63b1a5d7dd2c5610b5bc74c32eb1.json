@@ -1,0 +1,21 @@
+{
+  "title": "Google Books node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlebooks",
+  "content": "---\ntitle: Google Books node documentation\ndescription: Learn how to use the Google Books node in n8n. Follow technical documentation to integrate Google Books node into your workflows.\ncontentType: [integration, reference]\n---\n\n Google Books node\n\nUse the Google Books node to automate work in Google Books, and integrate Google Books with other applications. n8n has built-in support for a wide range of Google Books features, including retrieving a specific bookshelf resource for the specified user, adding volume to a bookshelf, and getting volume.\n\nOn this page, you'll find a list of operations the Google Books node supports and links to more resources.\n\n/// note | Credentials\nRefer to Google credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Bookshelf\n     Retrieve a specific bookshelf resource for the specified user\n     Get all public bookshelf resource for the specified user\n Bookshelf Volume\n     Add a volume to a bookshelf\n     Clears all volumes from a bookshelf\n     Get all volumes in a specific bookshelf for the specified user\n     Moves a volume within a bookshelf\n     Removes a volume from a bookshelf\n Volume\n     Get a volume resource based on ID\n     Get all volumes filtered by query\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-books') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.googlebooks.md",
+  "keywords": [
+    "google",
+    "books",
+    "node",
+    "bookshelf",
+    "volume",
+    "resource",
+    "specified",
+    "user",
+    "specific",
+    "volumes"
+  ],
+  "fetchedAt": "2025-10-07T16:14:29.526Z",
+  "hash": "acdb63b1a5d7dd2c5610b5bc74c32eb1"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Execution data",
+  "url": "https://docs.n8n.io/hosting/scaling/execution-data",
+  "content": "---\ncontentType: howto\n---\n\n Execution data\n\nDepending on your executions settings and volume, your n8n database can grow in size and run out of storage.\n\nTo avoid this, n8n recommends that you don't save unnecessary data, and enable pruning of old executions data.\n\nTo do this, configure the corresponding environment variables.\n\n Reduce saved data\n\n/// note | Configuration at workflow level\nYou can also configure these settings on an individual workflow basis using the workflow settings.\n///\nYou can select which executions data n8n saves. For example, you can save only executions that result in an Error.\n\n Enable executions pruning\n\nExecutions pruning deletes finished executions along with their execution data and binary data on a regular schedule. n8n enables pruning by default. For performance reasons, pruning first marks targets for deletion, and then later permanently removes them.\n\nn8n prunes executions when either of the following condition occur:\n\n- Age: The execution finished more than EXECUTIONSDATAMAXAGE hours ago (default: 336 hours -> 14 days).\n- Count: The total number of executions exceeds EXECUTIONSDATAPRUNEMAXCOUNT (default: 10,000). When this occurs, n8n deletes executions from oldest to newest.\n\nKeep in mind:\n\n- Executions with the new, running, or waiting status aren't eligible for pruning.\n- Annotated executions are permanently exempt from pruning.\n- Pruning honors a safety buffer period of EXECUTIONSDATAHARDDELETEBUFFER hours (default: 1h), to ensure recent data remains available while the user is building or debugging a workflow.\n\n/// note | SQLite\nIf you run n8n using the default SQLite database, the disk space of any pruned data isn't automatically freed up but rather reused for future executions data. To free up this space configure the DBSQLITEVACUUMONSTARTUP environment variable or manually run the VACUUM operation.\n///\n\n--8<-- \"snippets/self-hosting/scaling/binary-data-pruning.md\"",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "execution",
+    "data",
+    "executions",
+    "pruning",
+    "default",
+    "this",
+    "workflow",
+    "settings",
+    "configure",
+    "hours"
+  ],
+  "fetchedAt": "2025-10-07T16:16:02.309Z",
+  "hash": "a3326624e1e8307fe6d8d66b0d835a50"
+}

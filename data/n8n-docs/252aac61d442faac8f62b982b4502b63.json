@@ -1,0 +1,21 @@
+{
+  "title": "Webex by Cisco Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.ciscowebextrigger",
+  "content": "---\ntitle: Webex by Cisco Trigger node documentation\ndescription: Learn how to use the Webex by Cisco Trigger node in n8n. Follow technical documentation to integrate Webex by Cisco Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Webex by Cisco Trigger node\n\nWebex by Cisco is a web conferencing and videoconferencing application.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Webex by Cisco Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.ciscowebextrigger.md",
+  "keywords": [
+    "webex",
+    "cisco",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description"
+  ],
+  "fetchedAt": "2025-10-07T16:15:06.802Z",
+  "hash": "252aac61d442faac8f62b982b4502b63"
+}

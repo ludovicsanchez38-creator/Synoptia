@@ -1,0 +1,21 @@
+{
+  "title": "OpenAI Chat Model node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/common-issues",
+  "content": "---\ntitle: OpenAI Chat Model node common issues\ndescription: Documentation for common issues and questions in the OpenAI Chat Model node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: high\n---\n\n OpenAI Chat Model node common issues\n\nHere are some common errors and issues with the OpenAI Chat Model node and steps to resolve or troubleshoot them.\n\n Processing parameters\n\nThe OpenAI Chat Model node is a sub-node. Sub-nodes behave differently than other nodes when processing multiple items using expressions.\n\nMost nodes, including root nodes, take any number of items as input, process these items, and output the results. You can use expressions to refer to input items, and the node resolves the expression for each item in turn. For example, given an input of five name values, the expression {{ $json.name }} resolves to each name in turn.\n\nIn sub-nodes, the expression always resolves to the first item. For example, given an input of five name values, the expression {{ $json.name }} always resolves to the first name.\n\n--8<-- \"snippets/integrations/openai-api-issues.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "openai",
+  "keywords": [
+    "openai",
+    "chat",
+    "model",
+    "node",
+    "common",
+    "issues",
+    "name",
+    "nodes",
+    "items",
+    "input"
+  ],
+  "fetchedAt": "2025-10-07T16:15:31.850Z",
+  "hash": "e3ab6cdcd2211b7b04b26e66773c53e3"
+}

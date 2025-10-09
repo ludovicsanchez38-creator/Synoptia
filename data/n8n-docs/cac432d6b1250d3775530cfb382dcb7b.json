@@ -1,0 +1,21 @@
+{
+  "title": "HighLevel node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.highlevel",
+  "content": "---\ntitle: HighLevel node documentation\ndescription: Learn how to use the HighLevel node in n8n. Follow technical documentation to integrate HighLevel node into your workflows.\ncontentType: [integration, reference]\n---\n\n HighLevel node\n\nUse the HighLevel node to automate work in HighLevel, and integrate HighLevel with other applications. n8n has built-in support for a wide range of HighLevel features, including creating, updating, deleting, and getting contacts, opportunities, and tasks, as well as booking appointments and getting free time slots in calendars. \n\nOn this page, you'll find a list of operations the HighLevel node supports and links to more resources.\n\n/// note | Credentials\nRefer to HighLevel credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Contact\n\t Create or update\n\t Delete\n\t Get\n\t Get many\n\t Update\n Opportunity\n\t Create\n\t Delete\n\t Get\n\t Get many\n\t Update\n Task\n\t Create\n\t Delete\n\t Get\n\t Get many\n\t Update\n Calendar\n\t Book an appointment\n\t Get free slots\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'highlevel') ]]\n\n Related resources\n\nRefer to HighLevel's API documentation and support forums for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.highlevel.md",
+  "keywords": [
+    "highlevel",
+    "node",
+    "update",
+    "documentation",
+    "create",
+    "delete",
+    "many",
+    "title",
+    "integrate",
+    "support"
+  ],
+  "fetchedAt": "2025-10-07T16:14:35.311Z",
+  "hash": "cac432d6b1250d3775530cfb382dcb7b"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Local File Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.localfiletrigger",
+  "content": "---\ntitle: Local File Trigger node documentation\ndescription: Learn how to use the Local File Trigger node in n8n. Follow technical documentation to integrate Local File Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Local File Trigger node\n\nThe Local File Trigger node starts a workflow when it detects changes on the file system. These changes involve a file or folder getting added, changed, or deleted.\n\n/// note | Self-hosted n8n only\nThis node isn't available on n8n Cloud.\n///\n\n Node parameters\n\nYou can choose what event to watch for using the Trigger On parameter.\n\n Changes to a Specific File\n\nThe node triggers when the specified file changes.\n\nEnter the path for the file to watch in File to Watch.\n\n Changes Involving a Specific Folder\n\nThe node triggers when a change occurs in the selected folder.\n\nConfigure these parameters:\n\n- Folder to Watch: Enter the path of the folder to watch.\n- Watch for: Select the type of change to watch for.\n\n Node options\n\nUse the node Options to include or exclude files and folders.\n\n- Include Linked Files/Folders: also watch for changes to linked files or folders.\n- Ignore: files or paths to ignore. n8n tests the whole path, not just the filename. Supports the Anymatch syntax.\n- Max Folder Depth: how deep into the folder structure to watch for changes.\n\n Examples for Ignore\n\nIgnore a single file:\n\nIgnore a sub-directory of a directory you're watching:\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'local-file-trigger') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.localfiletrigger.md",
+  "keywords": [
+    "local",
+    "file",
+    "trigger",
+    "node",
+    "watch",
+    "changes",
+    "folder",
+    "ignore",
+    "files",
+    "when"
+  ],
+  "fetchedAt": "2025-10-07T16:14:08.414Z",
+  "hash": "eb3451cd8210fab16cca5c6dc7f45376"
+}

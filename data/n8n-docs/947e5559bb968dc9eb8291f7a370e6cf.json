@@ -1,0 +1,21 @@
+{
+  "title": "One Simple API node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.onesimpleapi",
+  "content": "---\ntitle: One Simple API node documentation\ndescription: Learn how to use the One Simple API node in n8n. Follow technical documentation to integrate One Simple API node into your workflows.\ncontentType: [integration, reference]\n---\n<!-- vale off -->\n<!-- linting off because 'simple' isn't something I want to add to accept.txt -->\n One Simple API node\n\nUse the One Simple API node to automate work in One Simple API, and integrate One Simple API with other applications. n8n has built-in support for a wide range of One Simple API features, including getting profiles, retrieving information, and generating utilities. \n\nOn this page, you'll find a list of operations the One Simple API node supports and links to more resources.\n\n/// note | Credentials\nRefer to One Simple API credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Information\n     Convert a value between currencies\n     Retrieve image metadata from a URL\n Social Profile\n     Get details about an Instagram profile\n     Get details about a Spotify Artist\n Utility\n     Expand a shortened url\n     Generate a QR Code\n     Validate an email address\n Website\n     Generate a PDF from a webpage\n     Get SEO information from website\n     Create a screenshot from a webpage\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'one-simple-api') ]]\n\n Related resources\n\nRefer to One Simple API's documentation for more information about the service.\n\n<!-- vale on -->",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.onesimpleapi.md",
+  "keywords": [
+    "simple",
+    "node",
+    "information",
+    "from",
+    "documentation",
+    "about",
+    "title",
+    "integrate",
+    "vale",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:46.017Z",
+  "hash": "947e5559bb968dc9eb8291f7a370e6cf"
+}

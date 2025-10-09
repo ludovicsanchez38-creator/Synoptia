@@ -1,0 +1,21 @@
+{
+  "title": "GitHub node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.github",
+  "content": "---\ntitle: GitHub node documentation\ndescription: Learn how to use the GitHub node in n8n. Follow technical documentation to integrate GitHub node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n GitHub node\n\nUse the GitHub node to automate work in GitHub, and integrate GitHub with other applications. n8n has built-in support for a wide range of GitHub features, including creating, updating, deleting, and editing files, repositories, issues, releases, and users. \n\nOn this page, you'll find a list of operations the GitHub node supports and links to more resources.\n\n/// note | Credentials\nRefer to GitHub credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n File\n\t Create\n\t Delete\n\t Edit\n\t Get\n\t List\n Issue\n\t Create\n\t Create Comment\n\t Edit\n\t Get\n\t Lock\n Organization\n\t Get Repositories\n Release\n\t Create\n\t Delete\n\t Get\n\t Get Many\n\t Update\n Repository\n     Get\n\t Get Issues\n\t Get License\n\t Get Profile\n\t Get Pull Requests\n\t List Popular Paths\n\t List Referrers\n Review\n\t Create\n\t Get\n\t Get Many\n\t Update\n User\n     Get Repositories\n     Invite\n Workflow\n\t Disable\n\t Dispatch\n\t Enable\n\t Get\n\t Get Usage\n\t List\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'github') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.github.md",
+  "keywords": [
+    "github",
+    "node",
+    "list",
+    "create",
+    "repositories",
+    "integrations",
+    "title",
+    "documentation",
+    "integrate",
+    "issues"
+  ],
+  "fetchedAt": "2025-10-07T16:14:27.585Z",
+  "hash": "9f81d7bf852dcdc9ee2e5103c04280f4"
+}

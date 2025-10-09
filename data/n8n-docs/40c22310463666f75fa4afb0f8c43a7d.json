@@ -1,0 +1,21 @@
+{
+  "title": "Telegram node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.telegram/index",
+  "content": "---\ntitle: Telegram node documentation\ndescription: Documentation for the Telegram node in n8n, a workflow automation platform. Includes details of operations and configuration, and links to examples and credentials information.\ncontentType: [integration, reference]\npriority: critical\n---\n\n Telegram node\n\nUse the Telegram node to automate work in Telegram and integrate Telegram with other applications. n8n has built-in support for a wide range of Telegram features, including getting files as well as deleting and editing messages. \n\nOn this page, you'll find a list of operations the Telegram node supports and links to more resources.\n\n/// note | Credentials\nRefer to Telegram credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Chat operations\n     Get up-to-date information about a chat.\n     Get Administrators: Get a list of all administrators in a chat.\n     Get Member: Get the details of a chat member.\n     Leave a chat.\n     Set Description of a chat.\n     Set Title of a chat.\n Callback operations\n     Answer Query: Send answers to callback queries sent from inline keyboards.\n     Answer Inline Query: Send answers to callback queries sent from inline queries.\n File operations\n     Get File from Telegram.\n Message operations\n     Delete Chat Message.\n     Edit Message Text: Edit the text of an existing message.\n     Pin Chat Message for the chat.\n     Send Animation to the chat.\n         For use with GIFs or H.264/MPEG-4 AVC videos without sound up to 50 MB in size.\n     Send Audio file to the chat and display it in the music player.\n     Send Chat Action: Tell the user that something is happening on the bot's side. The status is set for 5 seconds or less.\n     Send Document to the chat.\n     Send Location: Send a geolocation to the chat.\n     Send Media Group: Send a group of photos and/or videos.\n     Send Message to the chat.\n     Send Photo to the chat.\n     Send Sticker to the chat.\n         For use with static .WEBP, animated .TGS, or video .WEBM stickers.\n     Send Video to the chat.\n     Unpin Chat Message from the chat.\n    \n    /// note | Add bot to channel\n    To use most of the Message operations, you must add your bot to a channel so that it can send messages to that channel. Refer to Common Issues | Add a bot to a Telegram channel for more information.\n    ///\n\n     Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'telegram') ]]\n\n Related resources\n\nRefer to Telegram's API documentation for more information about the service.\n\nn8n provides a trigger node for Telegram. Refer to the trigger node docs here for more information.\n\n Common issues\n\nFor common errors or issues and suggested resolution steps, refer to Common Issues.",
+  "category": "app-nodes",
+  "nodeType": "telegram",
+  "keywords": [
+    "telegram",
+    "node",
+    "chat",
+    "send",
+    "operations",
+    "message",
+    "information",
+    "refer",
+    "more",
+    "from"
+  ],
+  "fetchedAt": "2025-10-07T16:14:55.974Z",
+  "hash": "40c22310463666f75fa4afb0f8c43a7d"
+}

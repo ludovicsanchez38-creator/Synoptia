@@ -1,0 +1,21 @@
+{
+  "title": "Adalo node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.adalo",
+  "content": "---\ntitle: Adalo node documentation\ndescription: Learn how to use the Adalo node in n8n. Follow technical documentation to integrate Adalo node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Adalo node\n\nUse the Adalo node to automate work in Adalo, and integrate Adalo with other applications. n8n has built-in support for a wide range of Adalo features, including like creating, getting, updating and deleting databases, records, and collections.\n\nOn this page, you'll find a list of operations the Adalo node supports and links to more resources.\n\n/// note | Credentials\nRefer to Adalo credentials for guidance on setting up authentication. \n///\t\n\n Operations\n\n Collection\n\t Create\n\t Delete\n\t Get\n\t Get Many\n\t Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'adalo') ]]\n\n Related resources\n\nRefer to Adalo's documentation for more information on using Adalo. Their External Collections with APIs page gives more detail about what you can do with Adalo collections.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.adalo.md",
+  "keywords": [
+    "adalo",
+    "node",
+    "documentation",
+    "with",
+    "collections",
+    "page",
+    "more",
+    "title",
+    "integrate",
+    "operations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:16.308Z",
+  "hash": "23ab3a46790fe78f9cfe815f01e40361"
+}

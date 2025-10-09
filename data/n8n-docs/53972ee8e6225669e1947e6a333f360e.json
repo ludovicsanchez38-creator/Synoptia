@@ -1,0 +1,21 @@
+{
+  "title": "Eventbrite Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.eventbritetrigger",
+  "content": "---\ntitle: Eventbrite Trigger node documentation\ndescription: Learn how to use the Eventbrite Trigger node in n8n. Follow technical documentation to integrate Eventbrite Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Eventbrite Trigger node\n\nEventbrite is an event management and ticketing website. The service allows users to browse, create, and promote local events.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Eventbrite Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.eventbritetrigger.md",
+  "keywords": [
+    "eventbrite",
+    "trigger",
+    "node",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:08.012Z",
+  "hash": "53972ee8e6225669e1947e6a333f360e"
+}

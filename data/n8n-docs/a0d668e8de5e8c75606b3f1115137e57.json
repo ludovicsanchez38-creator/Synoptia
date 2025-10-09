@@ -1,0 +1,21 @@
+{
+  "title": "Plan and Execute Agent node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/plan-execute-agent",
+  "content": "---\ntitle: Plan and Execute AI Agent node documentation\ndescription: Learn how to use the Plan and Execute Agent of the AI Agent node in n8n. Follow technical documentation to integrate the Plan and Execute Agent into your workflows.\ncontentType: [integration, reference]\npriority: critical\n---\n\n Plan and Execute Agent node\n\nThe Plan and Execute Agent is like the ReAct agent but with a focus on planning. It first creates a high-level plan to solve the given task and then executes the plan step by step. This agent is most useful for tasks that require a structured approach and careful planning.\n\nRefer to AI Agent for more information on the AI Agent node itself.\n\n Node parameters\n\nConfigure the Plan and Execute Agent using the following parameters.\n\n Prompt\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-root-nodes/prompt.md\"\n\n Require Specific Output Format\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-root-nodes/output-format.md\"\n\n Node options\n\nRefine the Plan and Execute Agent node's behavior using these options:\n\n Human Message Template\n\nEnter a message that n8n will send to the agent during each step execution.\n\nAvailable LangChain expressions:\n\n {previoussteps}: Contains information about the previous steps the agent's already completed.\n {currentstep}: Contains information about the current step.\n {agentscratchpad}: Information to remember for the next iteration.\n\n Templates and examples\n\nRefer to the main AI Agent node's Templates and examples section.\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common issues.",
+  "category": "cluster-nodes",
+  "nodeType": "plan",
+  "keywords": [
+    "plan",
+    "execute",
+    "agent",
+    "node",
+    "step",
+    "information",
+    "nodes",
+    "refer",
+    "langchain",
+    "common"
+  ],
+  "fetchedAt": "2025-10-07T16:15:24.310Z",
+  "hash": "a0d668e8de5e8c75606b3f1115137e57"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "OpenAI Audio operations",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.openai/audio-operations",
+  "content": "---\ntitle: OpenAI Audio operations \ndescription: Documentation for the Audio operations in OpenAI node in n8n, a workflow automation platform. Includes details of operations and configuration, and links to examples and credentials information.\ncontentType: [integration, reference]\npriority: critical\n---\n\n OpenAI Audio operations\n\nUse this operation to generate an audio, or transcribe or translate a recording in OpenAI. Refer to OpenAI for more information on the OpenAI node itself.\n\n Generate Audio\n\nUse this operation to create audio from a text prompt. \n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing OpenAI credential.\n- Resource: Select Audio.\n- Operation: Select Generate Audio.\n- Model: Select the model you want to use to generate the audio. Refer to TTS | OpenAI for more information.\n    - TTS-1: Use this to optimize for speed.\n    - TTS-1-HD:\tUse this to optimize for quality.\n- Text Input: Enter the text to generate the audio for. The maximum length is 4096 characters.\n- Voice: Select a voice to use when generating the audio. Listen to the previews of the voices in Text to speech guide | OpenAI.\n\n Options\n\n- Response Format: Select the format for the audio response. Choose from MP3 (default), OPUS, AAC, FLAC, WAV, and PCM.\n- Audio Speed: Enter the speed for the generated audio from a value from 0.25 to 4.0. Defaults to 1.\n- Put Output in Field: Defaults to data. Enter the name of the output field to put the binary file data in. \n\nRefer to Create speech | OpenAI documentation for more information.\n\n Transcribe a Recording\n\nUse this operation to transcribe audio into text. OpenAI API limits the size of the audio file to 25 MB. OpenAI will use the whisper-1 model by default. \n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing OpenAI credential.\n- Resource: Select Audio.\n- Operation: Select Transcribe a Recording.\n- Input Data Field Name: Defaults to data. Enter the name of the binary property that contains the audio file in one of these formats: .flac, .mp3, .mp4, .mpeg, .mpga, .m4a, .ogg, .wav, or .webm. \n\n Options\n\n- Language of the Audio File: Enter the language of the input audio in  ISO-639-1. Use this option to improve accuracy and latency.\n- Output Randomness (Temperature): Defaults to 1.0. Adjust the randomness of the response. The range is between 0.0 (deterministic) and 1.0 (maximum randomness). We recommend altering this or Output Randomness (Top P) but not both. Start with a medium temperature (around 0.7) and adjust based on the outputs you observe. If the responses are too repetitive or rigid, increase the temperature. If they’re too chaotic or off-track, decrease it. \n\nRefer to Create transcription | OpenAI documentation for more information.\n\n Translate a Recording\n\nUse this operation to translate audio into English. OpenAI API limits the size of the audio file to 25 MB. OpenAI will use the whisper-1 model by default. \n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing OpenAI credential.\n- Resource: Select Audio.\n- Operation: Select Translate a Recording.\n- Input Data Field Name: Defaults to data. Enter the name of the binary property that contains the audio file in one of these formats: .flac, .mp3, .mp4, .mpeg, .mpga, .m4a, .ogg, .wav, or .webm. \n\n Options\n\n- Output Randomness (Temperature): Defaults to 1.0. Adjust the randomness of the response. The range is between 0.0 (deterministic) and 1.0 (maximum randomness). We recommend altering this or Output Randomness (Top P) but not both. Start with a medium temperature (around 0.7) and adjust based on the outputs you observe. If the responses are too repetitive or rigid, increase the temperature. If they’re too chaotic or off-track, decrease it. \n\nRefer to Create transcription | OpenAI documentation for more information.\n\n Common issues\n\nFor common errors or issues and suggested resolution steps, refer to Common Issues.",
+  "category": "app-nodes",
+  "nodeType": null,
+  "keywords": [
+    "openai",
+    "audio",
+    "operations",
+    "select",
+    "this",
+    "enter",
+    "randomness",
+    "operation",
+    "create",
+    "information",
+    "refer"
+  ],
+  "fetchedAt": "2025-10-07T16:15:02.239Z",
+  "hash": "197ce6af2794ad2cbcaba8f376a7ca62"
+}

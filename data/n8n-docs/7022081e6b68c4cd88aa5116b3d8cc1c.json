@@ -1,0 +1,21 @@
+{
+  "title": "ERPNext node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.erpnext",
+  "content": "---\ntitle: ERPNext node documentation\ndescription: Learn how to use the ERPNext node in n8n. Follow technical documentation to integrate ERPNext node into your workflows.\ncontentType: [integration, reference]\n---\n\n ERPNext node\n\nUse the ERPNext node to automate work in ERPNext, and integrate ERPNext with other applications. n8n has built-in support for a wide range of ERPNext features, including creating, updating, retrieving, and deleting documents. \n\nOn this page, you'll find a list of operations the ERPNext node supports and links to more resources.\n\n/// note | Credentials\nRefer to ERPNext credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\nDocument\n- Create a document\n- Delete a document\n- Retrieve a document\n- Retrieve all documents\n- Update a document\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'erpnext') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.erpnext.md",
+  "keywords": [
+    "erpnext",
+    "node",
+    "document",
+    "integrations",
+    "title",
+    "documentation",
+    "integrate",
+    "documents",
+    "page",
+    "operations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:26.273Z",
+  "hash": "7022081e6b68c4cd88aa5116b3d8cc1c"
+}

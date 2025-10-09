@@ -1,0 +1,21 @@
+{
+  "title": "Activation Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.activationtrigger",
+  "content": "---\ntitle: Activation Trigger node documentation\ndescription: Learn how to use the Activation Trigger node in n8n. Follow technical documentation to integrate Activation Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Activation Trigger node\n\nThe Activation Trigger node gets triggered when an event gets fired by n8n or a workflow.\n\n/// warning\nn8n has deprecated the Activation Trigger node and replaced it with two new nodes: the n8n Trigger node and the Workflow Trigger node. For more details, check out the entry in the breaking changes page.\n///\n\n/// note | Keep in mind\nIf you want to use the Activation Trigger node for a workflow, add the node to the workflow. You don't have to create a separate workflow.\n///\n\nThe Activation Trigger node gets triggered for the workflow that it gets added to. You can use the Activation Trigger node to trigger a workflow to notify the state of the workflow.\n\n Node parameters\n\n- Events\n    - Activation: Run when the workflow gets activated\n    - Start: Run when n8n starts or restarts\n    - Update: Run when the workflow gets saved while it's active\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'activation-trigger') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.activationtrigger.md",
+  "keywords": [
+    "activation",
+    "trigger",
+    "node",
+    "workflow",
+    "gets",
+    "when",
+    "title",
+    "documentation",
+    "triggered",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:02.151Z",
+  "hash": "64be0b06ea5e82c47f2e760389ea589e"
+}

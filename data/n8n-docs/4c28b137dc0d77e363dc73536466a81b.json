@@ -1,0 +1,22 @@
+{
+  "title": "Google Drive node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googledrive/common-issues",
+  "content": "---\ntitle: Google Drive node common issues \ndescription: Documentation for common questions and solutions in the Google Drive node in n8n, a workflow automation platform. Includes details of the issue and suggested resolutions.\ncontentType: [integration, reference]\npriority: high\n---\n\n Google Drive node common issues\n\nHere are some common errors and issues with the Google Drive node and steps to resolve or troubleshoot them.\n\n Google hasn't verified this app\n\n--8<-- \"snippets/integrations/builtin/credentials/google/unverified-app.md\"\n\n Google Cloud app becoming unauthorized\n\n--8<-- \"snippets/integrations/builtin/credentials/google/app-becoming-unauthorized.md\"\n\n Google Drive OAuth error\n\nIf using the OAuth authentication method, you may see an error indicating that you can't sign in because the app doesn't meet Google's expectations for keeping apps secure.\n\nMost often, the actual cause of this issue is that the URLs don't match between Google's OAuth configuration and n8n. To avoid this, start by reviewing any links included in Google's error message. This will contain details about the exact error that occurred.\n\nIf you are self-hostin n8n, check the n8n configuration items used to construct external URLs. Verify that the N8NEDITORBASEURL and WEBHOOKURL environment variables use fully qualified domains.\n\n Get recent files from Google Drive\n\nTo retrieve recent files from Google Drive, you need to sort files by modification time. To do this, you need to search for existing files and retrieve their modification times. Next you can sort the files to find the most recent file and use another Google Drive node target the file by ID.\n\nThe process looks like this:\n\n1. Add a Google Drive node to your canvas.\n2. Select the File/Folder resource and the Search operation.\n3. Enable Return All to sort through all files.\n4. Set the What to Search filter to Files.\n5. In the Options, set the Fields to All.\n6. Connect a Sort node to the output of the Google Drive node.\n7. Choose Simple sort type.\n8. Enter modifiedTime as the Field Name in the Fields To Sort By section.\n9. Choose Descending sort order.\n10. Add a Limit node to the output of the Sort node.\n11. Set Max Items to 1 to keep the most recent file.\n12. Connect another Google Drive node to the output of the Limit node.\n13. Select File as the Resource and the operation of your choice.\n14. In the File selection, choose By ID.\n15. Select Expression and enter {{ $json.id }} as the expression.\n\n[[ workflowDemo(\"file:///integrations/builtin/app-nodes/n8n-nodes-base.googledrive/get-most-recent-file.json\") ]]",
+  "category": "app-nodes",
+  "nodeType": "google",
+  "keywords": [
+    "google",
+    "drive",
+    "node",
+    "common",
+    "issues",
+    "sort",
+    "file",
+    "files",
+    "this",
+    "recent",
+    "error"
+  ],
+  "fetchedAt": "2025-10-07T16:14:31.671Z",
+  "hash": "4c28b137dc0d77e363dc73536466a81b"
+}

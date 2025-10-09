@@ -1,0 +1,21 @@
+{
+  "title": "Google Sheets Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.googlesheetstrigger/index",
+  "content": "---\ntitle: Google Sheets Trigger node documentation\ndescription: Learn how to use the Google Sheets Trigger node in n8n. Follow technical documentation to integrate Google Sheets Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Google Sheets Trigger node\n\nGoogle Sheets is a web-based spreadsheet program that's part of Google's office software suite within its Google Drive service.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Google Sheets Trigger integrations page.\n///\n\n Events\n\n Row added\n Row updated\n Row added or updated\n\n Related resources\n\nRefer to Google Sheet's API documentation for more information about the service.\n\nn8n provides an app node for Google Sheets. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common issues.",
+  "category": "trigger-nodes",
+  "nodeType": "google",
+  "keywords": [
+    "google",
+    "sheets",
+    "trigger",
+    "node",
+    "documentation",
+    "refer",
+    "common",
+    "issues",
+    "workflows",
+    "service"
+  ],
+  "fetchedAt": "2025-10-07T16:15:13.244Z",
+  "hash": "e03ae439c0d942a361348d55762dcfea"
+}

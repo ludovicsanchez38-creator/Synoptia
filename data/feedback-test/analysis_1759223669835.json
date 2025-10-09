@@ -1,0 +1,100 @@
+{
+  "timestamp": 1759223669835,
+  "totalFeedback": 6,
+  "averageRating": 2.8,
+  "successRate": 0.4,
+  "commonIssues": [
+    {
+      "issue": "missing_parameters",
+      "count": 2,
+      "percentage": "33.3"
+    },
+    {
+      "issue": "invalid_connections",
+      "count": 1,
+      "percentage": "16.7"
+    },
+    {
+      "issue": "wrong_node_types",
+      "count": 1,
+      "percentage": "16.7"
+    },
+    {
+      "issue": "missing_credentials",
+      "count": 1,
+      "percentage": "16.7"
+    },
+    {
+      "issue": "syntax_errors",
+      "count": 1,
+      "percentage": "16.7"
+    },
+    {
+      "issue": "poor_node_naming",
+      "count": 1,
+      "percentage": "16.7"
+    }
+  ],
+  "intentPerformance": [
+    {
+      "intent": "create",
+      "count": 5,
+      "averageRating": "2.60",
+      "successRate": "40.0%"
+    },
+    {
+      "intent": "modify",
+      "count": 1,
+      "averageRating": "4.00",
+      "successRate": "100.0%"
+    }
+  ],
+  "modelPerformance": [
+    {
+      "model": "gpt-4o",
+      "count": 5,
+      "averageRating": "3.00",
+      "averageTime": "1200ms"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "count": 1,
+      "averageRating": "2.00",
+      "averageTime": "0ms"
+    }
+  ],
+  "ragEffectiveness": {
+    "withRAG": {
+      "count": 5,
+      "averageRating": "3.00",
+      "averageDocuments": 6
+    },
+    "withoutRAG": {
+      "count": 1,
+      "averageRating": "2.00"
+    },
+    "improvement": "20.0%"
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "category": "success_rate",
+      "message": "Success rate is low (40.0%). Consider improving validation and error handling.",
+      "actions": [
+        "Review failed workflows for common patterns",
+        "Enhance validation rules",
+        "Improve RAG context retrieval"
+      ]
+    },
+    {
+      "priority": "critical",
+      "category": "rating",
+      "message": "Average rating is low (2.8/5). Immediate attention needed.",
+      "actions": [
+        "Review recent negative feedback",
+        "Identify breaking changes or regressions",
+        "Consider prompt version rollback"
+      ]
+    }
+  ]
+}

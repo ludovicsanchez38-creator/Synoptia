@@ -1,0 +1,22 @@
+{
+  "title": "Form.io Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.formiotrigger",
+  "content": "---\ntitle: Form.io Trigger node documentation\ndescription: Learn how to use the Form.io Trigger node in n8n. Follow technical documentation to integrate Form.io Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Form.io Trigger node\n\nForm.io is an enterprise class combined form and API data management platform for building complex form-based business process applications.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Form.io Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.formiotrigger.md",
+  "keywords": [
+    "form.io",
+    "trigger",
+    "node",
+    "form",
+    "documentation",
+    "note",
+    "examples",
+    "templates",
+    "title",
+    "description",
+    "learn"
+  ],
+  "fetchedAt": "2025-10-07T16:15:10.675Z",
+  "hash": "79a2616a215a4d303dd2804628575cdb"
+}

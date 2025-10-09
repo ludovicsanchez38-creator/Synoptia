@@ -1,0 +1,21 @@
+{
+  "title": "Airtop node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.airtop",
+  "content": "---\ntitle: Airtop node documentation\ndescription: Learn how to use the Airtop node in n8n. Follow technical documentation to integrate Airtop node into your workflows.\ncontentType: [integration, reference]\n---\n\n Airtop node\n\nUse the Airtop node to automate work in Airtop, and integrate Airtop with other applications. n8n has built-in support for a wide range of Airtop features, enabling you to control a cloud-based web browser for tasks like querying, scraping, and interacting with web pages.\n\nOn this page, you'll find a list of operations the Airtop node supports, and links to more resources.\n\n///  note  | Credentials\nRefer to Airtop credentials for guidance on setting up authentication.\n///\n\n Operations\n\n Session\n     Create session\n     Save profile on termination\n     Terminate session\n Window\n     Create a new browser window\n     Load URL\n     Take screenshot\n     Close window\n Extraction\n     Query page\n     Query page with pagination\n     Smart scrape page\n Interaction\n     Click an element\n     Hover on an element\n     Type\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'airtop') ]]\n\n Related resources\n\nRefer to Airtop's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\nContact Airtop's Support for assistance or to create a feature request.\n\n Node reference\n\n Create a session and window\n\nCreate an Airtop browser session to get a Session ID, then use it to create a new browser window. After this, you can use any extraction or interaction operation.\n\n Extract content\n\nExtract content from a web browser using these operations:\n\n- Query page: Extract information from the current window.\n- Query page with pagination: Extract information from pages with pagination or infinite scrolling.\n- Smart scrape page: Get the window content as markdown.\n\nGet JSON responses by using the JSON Output Schema parameter in query operations.\n\n Interacting with pages\n\nClick, hover, or type on elements by describing the element you want to interact with.\n\n Terminate a session\n\nEnd your session to save resources. Sessions are automatically terminated based on the Idle Timeout set in the Create Session operation or can be manually terminated using the Terminate Session operation.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.airtop.md",
+  "keywords": [
+    "airtop",
+    "node",
+    "session",
+    "page",
+    "with",
+    "create",
+    "window",
+    "browser",
+    "query",
+    "pages"
+  ],
+  "fetchedAt": "2025-10-07T16:14:17.222Z",
+  "hash": "3b5d41da1071aa9d5b28a6f7cb877d6c"
+}

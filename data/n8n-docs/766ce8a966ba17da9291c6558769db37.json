@@ -1,0 +1,21 @@
+{
+  "title": "Cockpit node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.cockpit",
+  "content": "---\ntitle: Cockpit node documentation\ndescription: Learn how to use the Cockpit node in n8n. Follow technical documentation to integrate Cockpit node into your workflows.\ncontentType: [integration, reference]\n---\n\n Cockpit node\n\nUse the Cockpit node to automate work in Cockpit, and integrate Cockpit with other applications. n8n has built-in support for a wide range of Cockpit features, including creating a collection entry, storing data from a form submission, and getting singletons.\n\nOn this page, you'll find a list of operations the Cockpit node supports and links to more resources.\n\n/// note | Credentials\nRefer to Cockpit credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Collection\n     Create a collection entry\n     Get all collection entries\n     Update a collection entry\n Form\n     Store data from a form submission\n Singleton\n     Get a singleton\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'cockpit') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.cockpit.md",
+  "keywords": [
+    "cockpit",
+    "node",
+    "collection",
+    "entry",
+    "form",
+    "title",
+    "documentation",
+    "integrate",
+    "data",
+    "from"
+  ],
+  "fetchedAt": "2025-10-07T16:14:22.605Z",
+  "hash": "766ce8a966ba17da9291c6558769db37"
+}

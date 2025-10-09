@@ -1,0 +1,21 @@
+{
+  "title": "ClickUp node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.clickup",
+  "content": "---\ntitle: ClickUp node documentation\ndescription: Learn how to use the ClickUp node in n8n. Follow technical documentation to integrate ClickUp node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n ClickUp node\n\nUse the ClickUp node to automate work in ClickUp, and integrate ClickUp with other applications. n8n has built-in support for a wide range of ClickUp features, including creating, getting, deleting, and updating folders, checklists, tags, comments, and goals.\n\nOn this page, you'll find a list of operations the ClickUp node supports and links to more resources.\n\n/// note | Credentials\nRefer to ClickUp credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Checklist\n     Create a checklist\n     Delete a checklist\n     Update a checklist\n Checklist Item\n     Create a checklist item\n     Delete a checklist item\n     Update a checklist item\n Comment\n     Create a comment\n     Delete a comment\n     Get all comments\n     Update a comment\n Folder\n     Create a folder\n     Delete a folder\n     Get a folder\n     Get all folders\n     Update a folder\n Goal\n     Create a goal\n     Delete a goal\n     Get a goal\n     Get all goals\n     Update a goal\n Goal Key Result\n     Create a key result\n     Delete a key result\n     Update a key result\n List\n     Create a list\n     Retrieve list's custom fields\n     Delete a list\n     Get a list\n     Get all lists\n     Get list members\n     Update a list\n Space Tag\n     Create a space tag\n     Delete a space tag\n     Get all space tags\n     Update a space tag\n Task\n     Create a task\n     Delete a task\n     Get a task\n     Get all tasks\n     Get task members\n     Set a custom field\n     Update a task\n Task List\n     Add a task to a list\n     Remove a task from a list\n Task Tag\n     Add a tag to a task\n     Remove a tag from a task\n Task Dependency\n     Create a task dependency\n     Delete a task dependency\n Time Entry\n     Create a time entry\n     Delete a time entry\n     Get a time entry\n     Get all time entries\n     Start a time entry\n     Stop the current running timer\n     Update a time Entry\n Time Entry Tag\n     Add tag to time entry\n     Get all time entry tags\n     Remove tag from time entry\n\n Operation details\n\n Get a task\n\nWhen using the Get a task operation, you can optionally enable the following:\n\n- Include Subtasks: When enabled, also fetches and includes subtasks for the specified task.\n- Include Markdown Description: When enabled, includes the markdowndescription field in the response, which preserves links and formatting in the task description. This is useful if your task descriptions contain links or rich formatting.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'clickup') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.clickup.md",
+  "keywords": [
+    "clickup",
+    "node",
+    "task",
+    "list",
+    "create",
+    "delete",
+    "time",
+    "update",
+    "entry",
+    "checklist"
+  ],
+  "fetchedAt": "2025-10-07T16:14:22.188Z",
+  "hash": "a246a446e1796250204bbbc19e471173"
+}

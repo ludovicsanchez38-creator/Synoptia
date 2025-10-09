@@ -1,0 +1,21 @@
+{
+  "title": "Jina AI node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.jinaai",
+  "content": "---\ntitle: Jina AI node documentation\ndescription: Learn how to use the Jina AI node in n8n. Follow technical documentation to integrate Jina AI node into your workflows.\ncontentType: [integration, reference]\n---\n\n Jina AI node\n\nUse the Jina AI node to automate work in Jina AI and integrate Jina AI with other applications. n8n has built-in support for a wide range of Jina AI features.\n\nOn this page, you'll find a list of operations the Jina AI node supports, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n Reader:\n\t Read: Fetches content from a URL and converts it to clean, LLM-friendly formats.\n\t Search: Performs a web search using Jina AI and returns the top results as clean, LLM-friendly formats.\n Research:\n\t Deep Research: Research a topic and generate a structured research report.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'jina-ai') ]]\n\n Related resources\n\nRefer to Jina AI's reader API documentation and Jina AI's search API documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.jinaai.md",
+  "keywords": [
+    "jina",
+    "node",
+    "documentation",
+    "research",
+    "search",
+    "title",
+    "integrate",
+    "this",
+    "page",
+    "find"
+  ],
+  "fetchedAt": "2025-10-07T16:14:36.640Z",
+  "hash": "fd2054a5c9d7b163f63e361665893c47"
+}

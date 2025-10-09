@@ -1,0 +1,21 @@
+{
+  "title": "Gmail Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.gmailtrigger/index",
+  "content": "---\ntitle: Gmail Trigger node documentation\ndescription: Learn how to use the Gmail Trigger node in n8n. Follow technical documentation to integrate Gmail Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Gmail Trigger node\n\nGmail is an email service developed by Google. The Gmail Trigger node can start a workflow based on events in Gmail.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Gmail Trigger integrations page.\n///\n\n Events\n\n Message Received: The node triggers for new messages at the selected Poll Time.\n\n Node parameters\n\nConfigure the node with these parameters:\n\n Credential to connect with: Select or create a new Google credential to use for the trigger. Refer to Google credentials for more information on setting up a new credential.\n Poll Times: Select a poll Mode to set how often to trigger the poll. Your Mode selection will add or remove relevant fields. Refer to Poll Mode options to configure the parameters for each mode type.\n Simplify: Choose whether to return a simplified version of the response (turned on, default) or the raw data (turned off).\n     The simplified version returns email message IDs, labels, and email headers, including: From, To, CC, BCC, and Subject.\n\n Node filters\n\nUse these filters to further refine the node's behavior:\n\n Include Spam and Trash: Select whether the node should trigger on new messages in the Spam and Trash folders (turned on) or not (turned off).\n Label Names or IDs: Only trigger on messages with the selected labels added to them. Select the Label names you want to apply or enter an expression to specify IDs. The dropdown populates based on the Credential you selected.\n Search: Enter Gmail search refine filters, like from:, to trigger the node on the filtered conditions only. Refer to Refine searches in Gmail for more information.\n Read Status: Choose whether to receive Unread and read emails, Unread emails only (default), or Read emails only.\n Sender: Enter an email or a part of a sender name to trigger only on messages from that sender.\n\n Related resources\n\nn8n provides an app node for Gmail. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to Google's Gmail API documentation for details about their API.\n\n Common issues\n\nFor common questions or issues and suggested solutions, refer to Common issues.",
+  "category": "trigger-nodes",
+  "nodeType": "gmail",
+  "keywords": [
+    "gmail",
+    "trigger",
+    "node",
+    "refer",
+    "poll",
+    "only",
+    "email",
+    "google",
+    "messages",
+    "credential"
+  ],
+  "fetchedAt": "2025-10-07T16:15:11.714Z",
+  "hash": "9d1ed569c0cdf2bfc333c058baa7d55a"
+}

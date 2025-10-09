@@ -1,0 +1,21 @@
+{
+  "title": "Server setups",
+  "url": "https://docs.n8n.io/hosting/installation/server-setups/index",
+  "content": "---\ncontentType: overview\n---\n\n Server setups\n\nSelf-host with Docker Compose:\n\n Digital Ocean\n Heroku\n Hetzner Cloud\n\nStarting points for a Kubernetes setup:\n\n AWS\n Azure\n Google Cloud Platform\n\nConfiguration guides to help you get started on other platforms:\n\n Docker Compose",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "server",
+    "setups",
+    "docker",
+    "compose",
+    "cloud",
+    "contenttype",
+    "overview",
+    "self",
+    "host",
+    "with"
+  ],
+  "fetchedAt": "2025-10-07T16:16:01.051Z",
+  "hash": "e8ce266ce51706b73f17be90583b4229"
+}

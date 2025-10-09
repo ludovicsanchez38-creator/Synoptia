@@ -1,0 +1,21 @@
+{
+  "title": "Custom variables",
+  "url": "https://docs.n8n.io/code/variables",
+  "content": "---\ntitle: Custom variables\ndescription: Custom variables allow you to store and reuse values in n8n workflows.\ncontentType: howto\n---\n\n Custom variables\n\n/// info | Feature availability\n Available on Self-hosted Enterprise and Pro Cloud plans.\n You need access to the n8n instance owner account to create and edit variables. All users can use existing variables.\n\nAvailable in version 0.225.0 and above.\n///\t\n\nCustom variables are read-only variables that you can use to store and reuse values in n8n workflows. \n\n/// warning | Variables are shared\nWhen you create a variable, it's available to everyone on your n8n instance.\n///\n\n Create variables\n\nTo create a new variable:\n\n1. On the Variables page, select Add Variable.\n2. Enter a Key and Value. The maximum key length is 50 characters, and the maximum value length is 220 characters. n8n limits the characters you can use in the key and value to lowercase and uppercase letters, numbers, and underscores (A-Z, a-z, 0-9, ).\n3. Select Save. The variable is now available for use in all workflows in the n8n instance.\n\n Edit and delete variables\n\nTo edit or delete a variable:\n\n1. On the Variables page, hover over the variable you want to change.\n2. Select Edit or Delete.\n\n Use variables in workflows\n\nYou can access variables in the Code node and in expressions:\n\nAll variables are strings.\n\nDuring workflow execution, n8n replaces the variables with the variable value. If the variable has no value, n8n treats its value as undefined. Workflows don't automatically fail in this case.\n\nVariables are read-only. You must use the UI to change the values. If you need to set and access custom data within your workflow, use Workflow static data.",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "custom",
+    "variables",
+    "variable",
+    "value",
+    "workflows",
+    "available",
+    "create",
+    "edit",
+    "values",
+    "access"
+  ],
+  "fetchedAt": "2025-10-07T16:15:51.284Z",
+  "hash": "528ff3c94bf22359ffec6ec9892dec0b"
+}

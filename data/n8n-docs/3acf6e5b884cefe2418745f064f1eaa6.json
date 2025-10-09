@@ -1,0 +1,21 @@
+{
+  "title": "Code node cookbook",
+  "url": "https://docs.n8n.io/code/cookbook/code-node/index",
+  "content": "---\ndescription: Code examples you can use in the Code node.\ncontentType: overview\n---\n\n Code node cookbook\n\nThis section contains examples and recipes for tasks you can do with the Code node.\n\n[[% import \"macros/section-toc.html\" as sectionToc %]]\n\n[[ sectionToc.sectionToc(page) ]]\n\n Related resources\n\n Built-in methods and variables reference\n Code node",
+  "category": "code",
+  "nodeType": "code",
+  "keywords": [
+    "code",
+    "node",
+    "cookbook",
+    "sectiontoc",
+    "examples",
+    "section",
+    "description",
+    "contenttype",
+    "overview",
+    "this"
+  ],
+  "fetchedAt": "2025-10-07T16:15:49.325Z",
+  "hash": "3acf6e5b884cefe2418745f064f1eaa6"
+}

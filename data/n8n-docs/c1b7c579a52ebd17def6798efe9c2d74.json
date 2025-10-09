@@ -1,0 +1,22 @@
+{
+  "title": "Customer.io Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.customeriotrigger",
+  "content": "---\ntitle: Customer.io Trigger node documentation\ndescription: Learn how to use the Customer.io Trigger node in n8n. Follow technical documentation to integrate Customer.io Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Customer.io Trigger node\n\nCustomer.io enables users to send newsletters to selected segments of customers using their website data. You can send targeted emails, push notifications, and SMS to lower churn, create stronger relationships, and drive subscriptions.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Customer.io Trigger integrations page.\n///\n\n Events\n\n Customer\n   Subscribed\n   Unsubscribe\n Email\n   Bounced\n   Clicked\n   Converted\n   Delivered\n   Drafted\n   Failed\n   Opened\n   Sent\n   Spammed\n Push\n   Attempted\n   Bounced\n   Clicked\n   Delivered\n   Drafted\n   Failed\n   Opened\n   Sent\n Slack\n   Attempted\n   Clicked\n   Drafted\n   Failed\n   Sent\n Sms\n   Attempted\n   Bounced\n   Clicked\n   Delivered\n   Drafted\n   Failed\n   Sent\n\n Related resources\n\nn8n provides an app node for Customer.io. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to Customer.io's documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.customeriotrigger.md",
+  "keywords": [
+    "customer.io",
+    "trigger",
+    "node",
+    "customer",
+    "clicked",
+    "drafted",
+    "failed",
+    "sent",
+    "documentation",
+    "bounced",
+    "delivered"
+  ],
+  "fetchedAt": "2025-10-07T16:15:07.737Z",
+  "hash": "c1b7c579a52ebd17def6798efe9c2d74"
+}

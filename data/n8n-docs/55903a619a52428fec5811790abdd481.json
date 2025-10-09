@@ -1,0 +1,22 @@
+{
+  "title": "OpenAI Image operations",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.openai/image-operations",
+  "content": "---\ntitle: OpenAI Image operations \ndescription: Documentation for the Image operations in OpenAI node in n8n, a workflow automation platform. Includes details of operations and configuration, and links to examples and credentials information.\ncontentType: [integration, reference]\npriority: critical\n---\n\n OpenAI Image operations\n\nUse this operation to analyze or generate an image in OpenAI. Refer to OpenAI for more information on the OpenAI node itself.\n\n Analyze Image\n\nUse this operation to take in images and answer questions about them.\n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing OpenAI credential.\n- Resource: Select Image.\n- Operation: Select Analayze Image.\n- Model: Select the model you want to use to generate an image. \n- Text Input: Ask a question about the image.\n- Input Type: Select how you'd like to input the image. Options include:\n    - Image URL(s): Enter the URL(s) of the image(s) to analyze. Add multiple URLs in a comma-separated list.\n    - Binary File(s): Enter the name of the binary property which contains the image(s) in the Input Data Field Name.\n\n Options\n\n- Detail: Specify the balance between response time versus token usage. \n- Length of Description (Max Tokens): Defaults to 300. Fewer tokens will result in shorter, less detailed image description.\n\nRefer to Images | OpenAI documentation for more information.\n\n Generate an Image\n\nUse this operation to create an image from a text prompt.\n\nEnter these parameters:\n\n- Credential to connect with: Create or select an existing OpenAI credential.\n- Resource: Select Image.\n- Operation: Select Generate an Image.\n- Model: Select the model you want to use to generate an image. \n- Prompt: Enter the text description of the desired image(s). The maximum length is 1000 characters for dall-e-2 and 4000 characters for dall-e-3.\n\n Options\n\n- Quality: The quality of the image you generate. HD creates images with finer details and greater consistency across the image. This option is only supported for dall-e-3. Otherwise, choose Standard.\n- Resolution: Select the resolution of the generated images. Select 1024x1024 for dall-e-2. Select one of 1024x1024, 1792x1024, or 1024x1792 for dall-e-3 models.\n- Style: Select the style of the generated images. This option is only supported for dall-e-3. \n    - Natural: Use this to produce more natural looking images.\n    - Vivid: Use this to produce hyper-real and dramatic images.\n- Respond with image URL(s): Whether to return image URL(s) instead of binary file(s).\n- Put Output in Field: Defaults to data. Enter the name of the output field to put the binary file data in. Only available if Respond with image URL(s) is turned off.\n\nRefer to Create image | OpenAI documentation for more information.\n\n Common issues\n\nFor common errors or issues and suggested resolution steps, refer to Common Issues.",
+  "category": "app-nodes",
+  "nodeType": null,
+  "keywords": [
+    "openai",
+    "image",
+    "operations",
+    "select",
+    "this",
+    "images",
+    "generate",
+    "enter",
+    "dall",
+    "operation",
+    "with"
+  ],
+  "fetchedAt": "2025-10-07T16:15:02.720Z",
+  "hash": "55903a619a52428fec5811790abdd481"
+}

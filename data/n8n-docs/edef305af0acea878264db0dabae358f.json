@@ -1,0 +1,21 @@
+{
+  "title": "GitHub Document Loader node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.documentgithubloader",
+  "content": "---\ntitle: GitHub Document Loader node documentation\ndescription: Learn how to use the GitHub Document Loader node in n8n. Follow technical documentation to integrate GitHub Document Loader node into your workflows.\ncontentType: [integration, reference]\n---\n\n GitHub Document Loader node\n\nUse the GitHub Document Loader node to load data from a GitHub repository for vector stores or summarization.\n\nOn this page, you'll find the node parameters for the GitHub Document Loader node, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here. This node doesn't support OAuth for authentication.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Text Splitting: Choose from:\n\t Simple: Uses the Recursive Character Text Splitter with a chunk size of 1000 and an overlap of 200.\n     Custom: Allows you to connect a text splitter of your choice.\n Repository Link: Enter the URL of your GitHub repository.\n Branch: Enter the branch name to use.\n\n Node options\n\n Recursive: Select whether to include sub-folders and files (turned on) or not (turned off).\n Ignore Paths: Enter directories to ignore.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'github-document-loader') ]]\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-doc-loaders-link.md\"\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.documentgithubloader.md",
+  "keywords": [
+    "github",
+    "document",
+    "loader",
+    "node",
+    "integrations",
+    "your",
+    "repository",
+    "this",
+    "snippets",
+    "builtin"
+  ],
+  "fetchedAt": "2025-10-07T16:15:28.107Z",
+  "hash": "edef305af0acea878264db0dabae358f"
+}

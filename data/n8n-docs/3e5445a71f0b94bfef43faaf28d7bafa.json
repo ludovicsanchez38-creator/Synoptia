@@ -1,0 +1,21 @@
+{
+  "title": "Model Selector",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.modelselector",
+  "content": "---\ntitle: Model Selector\ndescription: Learn how to use the Model Selector node in n8n. Follow technical documentation to integrate Model Selector node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Model Selector\n\nThe Model Selector node dynamically selects one of the connected language models during workflow execution based on a set of defined conditions. This enables implementing fallback mechanisms for error handling or choosing the optimal model for specific tasks.\n\nThis page covers node parameters for the Model Selector node and includes links to related resources.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Number of Inputs\n\nSpecifies the number of input connections available for attaching language models.\n\n Rules\n\nEach rule defines the model to use when specific conditions match.\n\nThe Model Selector node evaluates rules sequentially, starting from the first input, and stops evaluation as soon as it finds a match. This means that if multiple rules would match, n8n will only use the model defined by the first matching rule.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'model-selector') ]]\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.modelselector.md",
+  "keywords": [
+    "model",
+    "selector",
+    "node",
+    "this",
+    "integrations",
+    "rules",
+    "match",
+    "title",
+    "language",
+    "models"
+  ],
+  "fetchedAt": "2025-10-07T16:15:34.882Z",
+  "hash": "3e5445a71f0b94bfef43faaf28d7bafa"
+}

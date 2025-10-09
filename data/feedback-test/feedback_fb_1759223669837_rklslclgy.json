@@ -1,0 +1,19 @@
+{
+  "id": "fb_1759223669837_rklslclgy",
+  "sessionId": "s010",
+  "workflowId": null,
+  "rating": 5,
+  "successful": true,
+  "comment": "",
+  "issues": [],
+  "request": "Test workflow request",
+  "workflow": null,
+  "metadata": {
+    "intent": "create",
+    "model": "gpt-4o",
+    "ragUsed": true,
+    "documentsUsed": 12
+  },
+  "timestamp": 1759223669837,
+  "analyzed": false
+}

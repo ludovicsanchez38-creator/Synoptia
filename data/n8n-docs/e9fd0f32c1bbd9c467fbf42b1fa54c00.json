@@ -1,0 +1,21 @@
+{
+  "title": "DeepL node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.deepl",
+  "content": "---\ntitle: DeepL node documentation\ndescription: Learn how to use the DeepL node in n8n. Follow technical documentation to integrate DeepL node into your workflows.\ncontentType: [integration, reference]\n---\n\n DeepL node\n\nUse the DeepL node to automate work in DeepL, and integrate DeepL with other applications. n8n has built-in support for a wide range of DeepL features, including translating languages.\n\nOn this page, you'll find a list of operations the DeepL node supports and links to more resources.\n\n/// note | Credentials\nRefer to DeepL credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Language\n     Translate data\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'deepl') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.deepl.md",
+  "keywords": [
+    "deepl",
+    "node",
+    "integrations",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "snippets"
+  ],
+  "fetchedAt": "2025-10-07T16:14:24.023Z",
+  "hash": "e9fd0f32c1bbd9c467fbf42b1fa54c00"
+}

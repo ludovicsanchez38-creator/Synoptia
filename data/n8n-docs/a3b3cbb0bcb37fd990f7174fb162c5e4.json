@@ -1,0 +1,21 @@
+{
+  "title": "Source control environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/source-control",
+  "content": "---\ntitle: Source control environment variables\ndescription: Environment variable to set the default SSH key type for source control setup.\ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Source control environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nn8n uses Git-based source control to support environments. Refer to Source control and environments for more information on how to link a Git repository to an n8n instance and configure your source control.\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| N8NSOURCECONTROLDEFAULTSSHKEYTYPE | String | ed25519 | Set to rsa to make RSA the default SSH key type for Source control setup. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "source",
+    "control",
+    "environment",
+    "variables",
+    "default",
+    "type",
+    "description",
+    "variable",
+    "setup",
+    "tags"
+  ],
+  "fetchedAt": "2025-10-07T16:15:58.092Z",
+  "hash": "a3b3cbb0bcb37fd990f7174fb162c5e4"
+}

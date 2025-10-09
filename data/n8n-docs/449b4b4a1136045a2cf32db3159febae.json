@@ -1,0 +1,21 @@
+{
+  "title": "Nodes",
+  "url": "https://docs.n8n.io/workflows/components/nodes",
+  "content": "---\ndescription: A node is an entry point for retrieving data, a function to process data, or an exit for sending data.\ncontentType: howto\n---\n\n Nodes\n\nNodes are the key building blocks of a workflow. They perform a range of actions, including:\n\n Starting the workflow.\n Fetching and sending data.\n Processing and manipulating data.\n\nn8n provides a collection of built-in nodes, as well as the ability to create your own nodes. Refer to:\n\n Built-in integrations to browse the node library.\n Community nodes for guidance on finding and installing community-created nodes.\n Creating nodes to start building your own nodes.\n\n Add a node to your workflow\n\n Add a node to an empty workflow\n\n1. Select Add first step. n8n opens the nodes panel, where you can search or browse trigger nodes.\n2. Select the trigger you want to use.\n\n    /// note | Choose the correct app event\n\tIf you select On App Event, n8n shows a list of all the supported services. Use this list to browse n8n's integrations and trigger a workflow in response to an event in your chosen service. Not all integrations have triggers. To see which ones you can use as a trigger, select the node. If a trigger is available, you'll see it at the top of the available operations list.\n\n\tFor example, this is the trigger for Asana:\n\n\t!Screenshot of the Asana node operations list, showing the Recommended section at the top of the list\n\t///\n\n Add a node to an existing workflow\n\nSelect the Add node <span class=\"n8n-inline-image\">!Add node icon{.off-glb}</span> connector. n8n opens the nodes panel, where you can search or browse all nodes.\n\n--8<-- \"snippets/integrations/builtin/node-operations.md\"\n\n Node controls\n\nTo view node controls, hover over the node on the canvas:\n\n Execute step <span class=\"n8n-inline-image\">!Execute step icon{.off-glb}</span>: Run the node.\n Deactivate <span class=\"n8n-inline-image\">!Deactivate node icon{.off-glb}</span>: Deactivate the node.\n Delete <span class=\"n8n-inline-image\">!Delete node icon{.off-glb}</span>: Delete the node.\n Node context menu <span class=\"n8n-inline-image\">!Node context menu icon{.off-glb}</span>: Select node actions. Available actions:\n\t Open node\n\t Execute step\n\t Rename node\n\t Deactivate node\n\t Pin node\n\t Copy node\n\t Duplicate node\n\t Tidy up workflow\n\t Convert node to sub-workflow\n\t Select all\n\t Clear selection\n     Delete node\n\n Node settings\n\nThe node settings under the Settings tab allow you to control node behaviors and add node notes.\n\nWhen active or set, they do the following:\n\n Always Output Data: The node returns an empty item even if the node returns no data during execution. Be careful setting this on IF nodes, as it could cause an infinite loop.\n Execute Once: The node executes once, with data from the first item it receives. It doesn't process any extra items.\n Retry On Fail: When an execution fails, the node reruns until it succeeds. \n On Error: \n    - Stop Workflow: Halts the entire workflow when an error occurs, preventing further node execution.\n    - Continue: Proceeds to the next node despite the error, using the last valid data.\n    - Continue (using error output): Continues workflow execution, passing error information to the next node for potential handling.\n\nYou can document your workflow using node notes:\n\n Notes: Note to save with the node.\n Display note in flow: If active, n8n displays the note in the workflow as a subtitle.",
+  "category": "workflows",
+  "nodeType": "nodes",
+  "keywords": [
+    "nodes",
+    "node",
+    "workflow",
+    "span",
+    "data",
+    "select",
+    "trigger",
+    "your",
+    "list",
+    "class"
+  ],
+  "fetchedAt": "2025-10-07T16:15:40.437Z",
+  "hash": "449b4b4a1136045a2cf32db3159febae"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Twilio Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.twiliotrigger",
+  "content": "---\ntitle: Twilio Trigger node documentation\ndescription: Learn how to use the Twilio Trigger node in n8n. Follow technical documentation to integrate Twilio Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Twilio Trigger node\n\nUse the Twilio Trigger node to respond to events in Twilio and integrate Twilio with other applications. n8n has built-in support for a wide range of Twilio events, including new SMS and calls.\n\nOn this page, you'll find a list of events the Twilio Trigger node can respond to and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Twilio integrations page.\n///\n\n Events\n\n On New SMS\n On New Call\n\n///  note  | New Call Delay\nIt can take Twilio up to thirty minutes to generate a summary for a completed call.\n///\n\n Related resources\n\nn8n provides an app node for Twilio. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to Twilio's documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.twiliotrigger.md",
+  "keywords": [
+    "twilio",
+    "trigger",
+    "node",
+    "events",
+    "documentation",
+    "find",
+    "note",
+    "call",
+    "integrate",
+    "workflows"
+  ],
+  "fetchedAt": "2025-10-07T16:15:20.223Z",
+  "hash": "b44d2dc69a333fd74614f07274c93bb2"
+}

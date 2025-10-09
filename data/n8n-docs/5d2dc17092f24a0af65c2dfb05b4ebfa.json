@@ -1,0 +1,22 @@
+{
+  "title": "Workflow-level executions list",
+  "url": "https://docs.n8n.io/workflows/executions/single-workflow-executions",
+  "content": "---\ndescription: View and filter all executions for the workflow currently open on the canvas.\ncontentType: howto\n---\n\n Workflow-level executions list\n\nThe Executions list in a workflow shows all executions for that workflow.\n\n/// note | Deleted workflows\nWhen you delete a workflow, n8n deletes its execution history as well. This means you can't view executions for deleted workflows.\n///\n\n/// note | Execution history and workflow history\nDon't confuse the execution list with Workflow history.\n\nExecutions are workflow runs. With the executions list, you can see previous runs of the current version of the workflow. You can copy previous executions into the editor to Debug and re-run past executions in your current workflow.\n\nWorkflow history is previous versions of the workflow: for example, a version with a different node, or different parameters set.\n///\n\n View executions for a single workflow\n\nIn the workflow, select the Executions tab in the top menu. You can preview all executions of that workflow.\n\n Filter executions\n\nYou can filter the executions list.\n\n1. In your workflow, select Executions.\t\n2. Select Filters.\n3. Enter your filters. You can filter by:\n\t Status: choose from Failed, Running, Success, or Waiting.\n\t Execution start: see executions that started in the given time.\n\t Saved custom data: this is data you create within the workflow using the Code node. Enter the key and value to filter. Refer to Custom executions data for information on adding custom data.\n\n\t\t--8<-- \"snippets/workflows/executions/custom-execution-data-availability.md\"\n\n Retry failed workflows\n\nIf your workflow execution fails, you can retry the execution. To retry a failed workflow:\n\n1. Open the Executions list.\n2. For the workflow execution you want to retry, select Refresh <span class=\"n8n-inline-image\">!Refresh icon{.off-glb}</span>.\n--8<-- \"snippets/workflows/executions/retry-options.md\"",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "workflow-level",
+    "executions",
+    "list",
+    "workflow",
+    "execution",
+    "filter",
+    "workflows",
+    "history",
+    "data",
+    "retry",
+    "your"
+  ],
+  "fetchedAt": "2025-10-07T16:15:41.916Z",
+  "hash": "5d2dc17092f24a0af65c2dfb05b4ebfa"
+}

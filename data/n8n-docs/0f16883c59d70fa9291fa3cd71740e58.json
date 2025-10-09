@@ -1,0 +1,21 @@
+{
+  "title": "Salesforce Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.salesforcetrigger",
+  "content": "---\ntitle: Salesforce Trigger node documentation\ndescription: Learn how to use the Salesforce Trigger node in n8n. Follow technical documentation to integrate Salesforce Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Salesforce Trigger node\n\nUse the Salesforce Trigger node to respond to events in Salesforce and integrate Salesforce with other applications. n8n has built-in support for a wide range of Salesforce events.\n\nOn this page, you'll find a list of events the Salesforce Trigger node can respond to, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Salesforce trigger integrations page.\n///\n\n Events\n\n On Account Created\n On Account Updated\n On Attachment Created\n On Attachment Updated\n On Case Created\n On Case Updated\n On Contact Created\n On Contact Updated\n On Custom Object Created\n On Custom Object Updated\n On Lead Created\n On Lead Updated\n On Opportunity Created\n On Opportunity Updated\n On Task Created\n On Task Updated\n On User Created\n On User Updated\n\n Related resources\n\nn8n provides an app node for Salesforce. You can find the node docs here.\n\nView example workflows and related content on n8n's website.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.salesforcetrigger.md",
+  "keywords": [
+    "salesforce",
+    "trigger",
+    "node",
+    "created",
+    "updated",
+    "events",
+    "find",
+    "documentation",
+    "integrate",
+    "workflows"
+  ],
+  "fetchedAt": "2025-10-07T16:15:17.820Z",
+  "hash": "0f16883c59d70fa9291fa3cd71740e58"
+}

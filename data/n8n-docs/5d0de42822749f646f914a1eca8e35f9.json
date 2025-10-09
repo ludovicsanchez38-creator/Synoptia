@@ -1,0 +1,22 @@
+{
+  "title": "monday.com node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mondaycom",
+  "content": "---\ntitle: monday.com node documentation\ndescription: Learn how to use the monday.com node in n8n. Follow technical documentation to integrate monday.com node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n monday.com node\n\nUse the monday.com node to automate work in monday.com, and integrate monday.com with other applications. n8n has built-in support for a wide range of monday.com features, including creating a new board, and adding, deleting, and getting items on the board.\n\nOn this page, you'll find a list of operations the monday.com node supports and links to more resources.\n\n/// warning | Minimum required version\nThis node requires n8n version 1.22.6 or above.\n///\n\n/// note | Credentials\nRefer to monday.com credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Board\n     Archive a board\n     Create a new board\n     Get a board\n     Get all boards\n Board Column\n     Create a new column\n     Get all columns\n Board Group\n     Delete a group in a board\n     Create a group in a board\n     Get list of groups in a board\n Board Item\n     Add an update to an item.\n     Change a column value for a board item\n     Change multiple column values for a board item\n     Create an item in a board's group\n     Delete an item\n     Get an item\n     Get all items\n     Get items by column value\n     Move item to group\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'mondaycom') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.mondaycom.md",
+  "keywords": [
+    "monday.com",
+    "node",
+    "board",
+    "monday",
+    "item",
+    "column",
+    "group",
+    "create",
+    "items",
+    "integrations",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:42.593Z",
+  "hash": "5d0de42822749f646f914a1eca8e35f9"
+}

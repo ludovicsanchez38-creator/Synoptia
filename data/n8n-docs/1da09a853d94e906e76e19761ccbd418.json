@@ -1,0 +1,21 @@
+{
+  "title": "All executions",
+  "url": "https://docs.n8n.io/workflows/executions/all-executions",
+  "content": "---\ndescription: View and filter all executions for all workflows.\ncontentType: howto\n---\n\n All executions\n\nTo view all executions from an n8n instance, navigate to the Overview page and then click into the Executions tab. This will show you all executions from the workflows you have access to.\n\nIf your n8n instance supports projects, you'll also be able to view the executions tab within projects you have access to. This will show you executions only from the workflows within the specified project.\n\n/// note | Deleted workflows\nWhen you delete a workflow, n8n deletes its execution history as well. This means you can't view executions for deleted workflows.\n///\n\n Filter executions\n\nYou can filter the executions list:\n\n1. Select the Executions tab either from within the Overview page or a specific project to open the list.\n2. Select Filters.\n3. Enter your filters. You can filter by:\n\t Workflows: choose all workflows, or a specific workflow name.\n\t Status: choose from Failed, Running, Success, or Waiting.\n\t Execution start: see executions that started in the given time.\n\t Saved custom data: this is data you create within the workflow using the Code node. Enter the key and value to filter. Refer to Custom executions data for information on adding custom data.\n\n--8<-- \"snippets/workflows/executions/custom-execution-data-availability.md\"\n\n Retry failed workflows\n\nIf your workflow execution fails, you can retry the execution. To retry a failed workflow:\n\n1. Select the Executions tab from within either the Overview page or a specific project to open the list. \n2. On the execution you want to retry, select Retry execution <span class=\"n8n-inline-image\">!Options menu icon{.off-glb}</span>.\n--8<-- \"snippets/workflows/executions/retry-options.md\"\n\n Load data from previous executions into your current workflow\n\nYou can load data from a previous workflow back into the canvas. Refer to Debug executions for more information.",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "executions",
+    "workflows",
+    "from",
+    "workflow",
+    "execution",
+    "data",
+    "retry",
+    "filter",
+    "within",
+    "view"
+  ],
+  "fetchedAt": "2025-10-07T16:15:41.058Z",
+  "hash": "1da09a853d94e906e76e19761ccbd418"
+}

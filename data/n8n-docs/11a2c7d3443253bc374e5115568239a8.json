@@ -1,0 +1,21 @@
+{
+  "title": "Google Gemini Chat Model node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatgooglegemini",
+  "content": "---\ntitle: Google Gemini Chat Model node documentation\ndescription: Learn how to use the Google Gemini Chat Model node in n8n. Follow technical documentation to integrate Google Gemini Chat Model node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Google Gemini Chat Model node\n\nUse the Google Gemini Chat Model node to use Google's Gemini chat models with conversational agents.\n\nOn this page, you'll find the node parameters for the Google Gemini Chat Model node, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Model: Select the model to use to generate the completion.\n\nn8n dynamically loads models from the Google Gemini API and you'll only see the models available to your account.\n\n Node options\n\n Maximum Number of Tokens: Enter the maximum number of tokens used, which sets the completion length.\n Sampling Temperature: Use this option to control the randomness of the sampling process. A higher temperature creates more diverse sampling, but increases the risk of hallucinations.\n Top K: Enter the number of token choices the model uses to generate the next token.\n Top P: Use this option to set the probability the completion should use. Use a lower value to ignore less probable options. \n Safety Settings: Gemini supports adjustable safety settings. Refer to Google's Gemini API safety settings for information on the available filters and levels.\n\n Limitations\n\n  No proxy support\n\nThe Google Gemini Chat Model node uses Google's SDK, which doesn't support proxy configuration.\n\nIf you need to proxy your connection, as a work around, you can set up a dedicated reverse proxy for Gemini requests and change the Host parameter in your Google Gemini credentials to point to your proxy address:\n\n!Google Gemini credentials proxy configuration\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-gemini-chat-model') ]]\n\n Related resources\n\nRefer to LangChain's Google Gemini documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.lmchatgooglegemini.md",
+  "keywords": [
+    "google",
+    "gemini",
+    "chat",
+    "model",
+    "node",
+    "proxy",
+    "your",
+    "this",
+    "documentation",
+    "models"
+  ],
+  "fetchedAt": "2025-10-07T16:15:30.557Z",
+  "hash": "11a2c7d3443253bc374e5115568239a8"
+}

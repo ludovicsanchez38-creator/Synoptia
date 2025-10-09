@@ -1,0 +1,21 @@
+{
+  "title": "Environment variables overview",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/index",
+  "content": "---\ntitle: Environment Variables Overview\ndescription: An overview of configuration environment variables for self-hosted n8n. \ncontentType: overview\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Environment variables overview\n\nThis section lists the environment variables that you can use to change n8n's configuration settings when self-hosting n8n.\n\n/// note | File-based configuration\nYou can provide a configuration file for n8n. You can also append FILE to certain variables to provide their configuration in a separate file. \n///\n\n[[% import \"macros/section-toc.html\" as sectionToc %]]\n\n[[ sectionToc.sectionToc(page) ]]",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "environment",
+    "variables",
+    "overview",
+    "configuration",
+    "file",
+    "sectiontoc",
+    "self",
+    "tags",
+    "section",
+    "provide"
+  ],
+  "fetchedAt": "2025-10-07T16:15:57.092Z",
+  "hash": "f466813280c68f94781ec8a84c66afc8"
+}

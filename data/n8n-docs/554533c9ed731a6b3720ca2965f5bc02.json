@@ -1,0 +1,21 @@
+{
+  "title": "OpenWeatherMap node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.openweathermap",
+  "content": "---\ntitle: OpenWeatherMap node documentation\ndescription: Learn how to use the OpenWeatherMap node in n8n. Follow technical documentation to integrate OpenWeatherMap node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n OpenWeatherMap node\n\nUse the OpenWeatherMap node to automate work in OpenWeatherMap, and integrate OpenWeatherMap with other applications. n8n supports retrieving current and upcoming weather data with OpenWeatherMap.\n\nOn this page, you'll find a list of operations the OpenWeatherMap node supports and links to more resources.\n\n/// note | Credentials\nRefer to OpenWeatherMap credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Returns the current weather data\n Returns the weather data for the next 5 days\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'openweathermap') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.openweathermap.md",
+  "keywords": [
+    "openweathermap",
+    "node",
+    "weather",
+    "data",
+    "title",
+    "documentation",
+    "integrate",
+    "with",
+    "supports",
+    "current"
+  ],
+  "fetchedAt": "2025-10-07T16:14:46.450Z",
+  "hash": "554533c9ed731a6b3720ca2965f5bc02"
+}

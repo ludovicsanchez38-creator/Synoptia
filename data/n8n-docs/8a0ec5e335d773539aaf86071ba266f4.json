@@ -1,0 +1,21 @@
+{
+  "title": "Asana node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.asana",
+  "content": "---\ntitle: Asana node documentation\ndescription: Learn how to use the Asana node in n8n. Follow technical documentation to integrate Asana node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Asana node\n\nUse the Asana node to automate work in Asana, and integrate Asana with other applications. n8n has built-in support for a wide range of Asana features, including creating, updating, deleting, and getting users, tasks, projects, and subtasks.\n\nOn this page, you'll find a list of operations the Asana node supports and links to more resources.\n\n/// note | Credentials\nRefer to Asana credentials for guidance on setting up authentication.\n///\n\n/// note | Update to 1.22.2 or above\nDue to changes in Asana's API, some operations in this node stopped working on 17th January 2023. Upgrade to n8n 1.22.2 or above.\n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Project\n     Create a new project\n     Delete a project\n     Get a project\n     Get all projects\n     Update a project\n Subtask\n     Create a subtask\n     Get all subtasks\n Task\n     Create a task\n     Delete a task\n     Get a task\n     Get all tasks\n     Move a task\n     Search for tasks\n     Update a task\n Task Comment\n     Add a comment to a task\n     Remove a comment from a task\n Task Tag\n     Add a tag to a task\n     Remove a tag from a task\n Task Project\n     Add a task to a project\n     Remove a task from a project\n User\n     Get a user\n     Get all users\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'asana') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.asana.md",
+  "keywords": [
+    "asana",
+    "node",
+    "task",
+    "project",
+    "tasks",
+    "operations",
+    "update",
+    "integrations",
+    "create",
+    "comment"
+  ],
+  "fetchedAt": "2025-10-07T16:14:17.652Z",
+  "hash": "8a0ec5e335d773539aaf86071ba266f4"
+}

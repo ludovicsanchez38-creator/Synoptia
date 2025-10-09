@@ -1,0 +1,21 @@
+{
+  "title": "Arrays",
+  "url": "https://docs.n8n.io/code/builtin/data-transformation-functions/arrays",
+  "content": "---\ntitle: Data transformation functions for arrays\ndescription: A reference document listing built-in convenience functions to support data transformation in expressions for arrays.\ncontentType: reference\n---\n\n Arrays\n\nA reference document listing built-in convenience functions to support data transformation in expressions for arrays.\n\n/// note | JavaScript in expressions\nYou can use any JavaScript in expressions. Refer to Expressions for more information.\n///\n[[% import \"macros/data-functions.html\" as dataFunctions %]]\n\n[[% for func in dfarray %]]\n[[ dataFunctions.dataFunctions(\"array\", func.funcName, func.returns, func.description, func.args, func.examples ) ]]\n[[% endfor %]]",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "arrays",
+    "func",
+    "expressions",
+    "data",
+    "functions",
+    "transformation",
+    "reference",
+    "datafunctions",
+    "description",
+    "document"
+  ],
+  "fetchedAt": "2025-10-07T16:15:45.411Z",
+  "hash": "2b94ae927dbb6fac71d17b48086ef05d"
+}

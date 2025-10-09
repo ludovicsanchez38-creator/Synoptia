@@ -1,0 +1,21 @@
+{
+  "title": "Compare Datasets",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.comparedatasets",
+  "content": "---\ntitle: Compare Datasets\ndescription: Documentation for the Compare Datasets node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: high\n---\n\n Compare Datasets\n\nThe Compare Datasets node helps you compare data from two input streams.\n\n Node parameters\n\n1. Decide which fields to compare. In Input A Field, enter the name of the field you want to use from input stream A. In Input B Field, enter the name of the field you want to use from input stream B. \n2. Optional: You can compare by multiple fields. Select Add Fields to Match to set up more comparisons.\n3. Choose how to handle differences between the datasets. In When There Are Differences, select one of the following:\n\t Use Input A Version to treat input stream A as the source of truth.\n\t Use Input B Version to treat input stream B as the source of truth.\n\t Use a Mix of Versions to use different inputs for different fields.\n\t\t Use Prefer to select either Input A Version or Input B Version as the main source of truth.\n\t\t Enter input fields that are exceptions to For Everything Except to pull from the other input source. To add multiple input fields, enter a comma-separated list.\n\t Include Both Versions to include both input streams in the output, which may make the structure more complex.\n4. Decide whether to use Fuzzy Compare. When turned on, the comparison will tolerate small type differences when comparing fields. For example, the number 3 and the string 3 are treated as the same with Fuzzy Compare turned on, but wouldn't be treated the same with it turned off.\n\n Understand item comparison\n\nItem comparison is a two stage process:\n\n1. n8n checks if the values of the fields you selected to compare match across both inputs.\n2. If the fields to compare match, n8n then compares all fields within the items, to determine if the items are the same or different.\n\n Node options\n\nUse the node Options to refine your comparison or tweak comparison behavior.\n\n Fields to Skip Comparing\n\nEnter field names that you want to ignore in the comparison.\n\nFor example, if you compare the two datasets below using person.language as the Fields to Match, n8n returns them as different. If you add person.name to Fields to Skip Comparing, n8n returns them as matching.\n\n Disable Dot Notation\n\nWhether to disallow referencing child fields using parent.child in the field name (turned on) or allow it (turned off, default).\n\n Multiple Matches\n\nChoose how to handle duplicate data. The default is Include All Matches. You can choose Include First Match Only.\n\nFor example, given these two datasets:\n\nn8n returns three items in the Same Branch tab. The data is the same in both branches.\n\nIf you select Include First Match Only, n8n returns two items, in the Same Branch tab. The data is the same in both branches, but n8n only returns the first occurrence of the matching \"apple\" items.\n\n Understand the output\n\nThere are four output options:\n\n In A only Branch: Contains data that occurs only in the first input.\n Same Branch: Contains data that's the same in both inputs.\n Different Branch: Contains data that's different between inputs.\n In B only Branch: Contains data that occurs only in the second output.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'compare-datasets') ]]",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.comparedatasets.md",
+  "keywords": [
+    "compare",
+    "datasets",
+    "input",
+    "fields",
+    "same",
+    "data",
+    "only",
+    "field",
+    "match",
+    "different"
+  ],
+  "fetchedAt": "2025-10-07T16:14:03.258Z",
+  "hash": "71d5df6642e881bf6d570f2d29886f56"
+}

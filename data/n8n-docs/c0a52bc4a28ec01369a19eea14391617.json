@@ -1,0 +1,21 @@
+{
+  "title": "Acuity Scheduling Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.acuityschedulingtrigger",
+  "content": "---\ntitle: Acuity Scheduling Trigger node documentation\ndescription: Learn how to use the Acuity Scheduling Trigger node in n8n. Follow technical documentation to integrate Acuity Scheduling Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Acuity Scheduling Trigger node\n\nAcuity Scheduling is a cloud-based appointment scheduling software solution that enables business owners to manage their appointments online. It has the capability to automatically sync calendars according to users' time zones and can send regular alerts and reminders to users regarding their appointment schedules.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Acuity Scheduling Trigger integrations page.\n///\n\n Events\n\n Appointment canceled\n Appointment changed\n Appointment rescheduled\n Appointment scheduled\n Order completed",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.acuityschedulingtrigger.md",
+  "keywords": [
+    "acuity",
+    "scheduling",
+    "trigger",
+    "node",
+    "appointment",
+    "documentation",
+    "their",
+    "users",
+    "note",
+    "examples"
+  ],
+  "fetchedAt": "2025-10-07T16:15:04.889Z",
+  "hash": "c0a52bc4a28ec01369a19eea14391617"
+}

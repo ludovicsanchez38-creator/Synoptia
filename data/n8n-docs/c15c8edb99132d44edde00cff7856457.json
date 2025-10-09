@@ -1,0 +1,21 @@
+{
+  "title": "Kitemaker node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.kitemaker",
+  "content": "---\ntitle: Kitemaker node documentation\ndescription: Learn how to use the Kitemaker node in n8n. Follow technical documentation to integrate Kitemaker node into your workflows.\ncontentType: [integration, reference]\n---\n\n Kitemaker node\n\nUse the Kitemaker node to automate work in Kitemaker, and integrate Kitemaker with other applications. n8n has built-in support for a wide range of Kitemaker features, including retrieving data on organizations, spaces and users, as well as creating, getting, and updating work items. \n\nOn this page, you'll find a list of operations the Kitemaker node supports and links to more resources.\n\n/// note | Credentials\nRefer to Kitemaker credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Organization\n     Retrieve data on the logged-in user's organization.\n Space\n     Retrieve data on all the spaces in the logged-in user's organization.\n User\n     Retrieve data on all the users in the logged-in user's organization.\n Work Item\n     Create\n     Get\n     Get All\n     Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'kitemaker') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.kitemaker.md",
+  "keywords": [
+    "kitemaker",
+    "node",
+    "data",
+    "organization",
+    "user",
+    "work",
+    "retrieve",
+    "logged",
+    "title",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:37.239Z",
+  "hash": "c15c8edb99132d44edde00cff7856457"
+}

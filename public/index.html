@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builder³ - Synoptia</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    <header class="main-header">
+        <div class="header-inner">
+            <div class="logo-stack">
+                <img src="/favicon.png" alt="Synoptia Logo" class="logo-img">
+                <span class="logo-text">Synoptia</span>
+            </div>
+            <nav class="header-nav">
+                <a href="#features">Fonctionnalités</a>
+                <a href="#generator">Générateur</a>
+                <a href="/docs" class="nav-pill">Docs API</a>
+            </nav>
+        </div>
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Builder³</h1>
+                <p>Décris ton besoin en français naturel. <strong>3 agents IA collaborent</strong> pour créer un workflow n8n parfait : planification (GPT-5), génération (GPT-5) et validation stricte (Claude Sonnet 4.5).</p>
+                <div class="hero-badges">
+                    <span class="badge">🧠 Multi-Agent System</span>
+                    <span class="badge">✅ Validation Claude</span>
+                    <span class="badge">🔄 Auto-Correction</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="/images/Les 3.jpeg" alt="Équipe d'agents IA" class="hero-team-image">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="generator" class="panel">
+            <div class="panel-header">
+                <h2>Décris ton automatisation</h2>
+                <p>L'agent sélectionne les meilleurs triggers, prépare les branches complexes et peut déployer directement sur n8n.</p>
+            </div>
+            <div class="panel-body">
+                <form id="workflow-form" class="form-grid">
+                    <label class="form-block span-2">
+                        <span class="label-text">Ta demande</span>
+                        <textarea id="request" name="request" rows="5" placeholder="Exemple : Quand un lead signe via Typeform, enrichis mon CRM, notifie l'équipe et envoie un kit de bienvenue."></textarea>
+                    </label>
+
+                    <div class="form-block">
+                        <span class="label-text">Déploiement automatique</span>
+                        <label class="toggle">
+                            <input type="checkbox" id="autoExecute" name="autoExecute" checked>
+                            <span class="toggle-track"></span>
+                            <span class="toggle-label">Envoyer directement sur n8n</span>
+                        </label>
+                    </div>
+
+                    <!-- Complexité détectée automatiquement -->
+
+                    <div class="form-block span-2">
+                        <span class="label-text">Inspiration rapide</span>
+                        <div class="example-row" id="examples">
+                            <button type="button" class="example">Synchronise HubSpot ↔ Google Sheets chaque nuit et poste un résumé Slack</button>
+                            <button type="button" class="example">Traitement automatique des pièces jointes Gmail vers Drive puis OCR</button>
+                            <button type="button" class="example">Pipeline SAV : webhook entrant ➝ QA ➝ escalade équipe</button>
+                        </div>
+                    </div>
+
+                    <div class="form-block span-2 align-end">
+                        <button id="generateBtn" type="submit" class="primary-btn">Générer le workflow</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section 3-Agents Pipeline -->
+        <section class="panel agents-panel">
+            <div class="panel-header">
+                <h2>Pipeline Multi-Agent</h2>
+                <p>3 intelligences artificielles collaborent pour garantir la qualité maximale</p>
+            </div>
+            <div class="panel-body">
+                <div class="agents-pipeline">
+                    <div class="agent-card" id="agent-planning">
+                        <img src="/images/EL PLANIFICATOR.jpeg" alt="El Planificator" class="agent-avatar">
+                        <h3>El Planificator</h3>
+                        <div class="agent-model">GPT-5</div>
+                        <p>Analyse la demande et planifie l'architecture du workflow</p>
+                        <div class="agent-tasks">
+                            <div class="agent-tasks-header" onclick="toggleTasksList(this)">
+                                <span class="tasks-count">0 tâche</span>
+                                <span class="tasks-toggle">▼</span>
+                            </div>
+                            <ul class="agent-tasks-list collapsed"></ul>
+                        </div>
+                        <div class="agent-status" data-status="idle">
+                            <span class="status-dot"></span>
+                            <span class="status-text">En attente</span>
+                        </div>
+                        <div class="agent-cost" id="cost-planning" style="display: none;">
+                            💰 <span class="cost-amount">0.00€</span>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-arrow">→</div>
+
+                    <div class="agent-card" id="agent-generator">
+                        <img src="/images/EL GENERATOR.jpeg" alt="El Generator" class="agent-avatar">
+                        <h3>El Generator</h3>
+                        <div class="agent-model">GPT-5</div>
+                        <p>Génère le workflow JSON avec les nodes validés</p>
+                        <div class="agent-tasks">
+                            <div class="agent-tasks-header" onclick="toggleTasksList(this)">
+                                <span class="tasks-count">0 tâche</span>
+                                <span class="tasks-toggle">▼</span>
+                            </div>
+                            <ul class="agent-tasks-list collapsed"></ul>
+                        </div>
+                        <div class="agent-status" data-status="idle">
+                            <span class="status-dot"></span>
+                            <span class="status-text">En attente</span>
+                        </div>
+                        <div class="agent-cost" id="cost-generator" style="display: none;">
+                            💰 <span class="cost-amount">0.00€</span>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-arrow">→</div>
+
+                    <div class="agent-card" id="agent-supervisor">
+                        <img src="/images/EL SUPERVISOR.jpeg" alt="El Supervisor" class="agent-avatar">
+                        <h3>El Supervisor</h3>
+                        <div class="agent-model">Claude Sonnet 4.5</div>
+                        <p>Valide strictement et relance si nécessaire</p>
+                        <div class="agent-tasks">
+                            <div class="agent-tasks-header" onclick="toggleTasksList(this)">
+                                <span class="tasks-count">0 tâche</span>
+                                <span class="tasks-toggle">▼</span>
+                            </div>
+                            <ul class="agent-tasks-list collapsed"></ul>
+                        </div>
+                        <div class="agent-status" data-status="idle">
+                            <span class="status-dot"></span>
+                            <span class="status-text">En attente</span>
+                        </div>
+                        <div class="agent-cost" id="cost-supervisor" style="display: none;">
+                            💰 <span class="cost-amount">0.00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coût total du workflow -->
+                <div class="workflow-total-cost" id="workflow-total-cost" style="display: none; margin-top: 24px; padding: 16px; background: rgba(91, 124, 250, 0.1); border: 1px solid rgba(91, 124, 250, 0.3); border-radius: 12px; text-align: center;">
+                    <div style="font-size: 14px; color: #94a3b8; margin-bottom: 4px;">Coût total du workflow</div>
+                    <div style="font-size: 24px; font-weight: 700; color: #38bdf8;">
+                        💰 <span id="total-cost-amount">0.00€</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panneau de Raisonnement en temps réel -->
+        <section class="panel reasoning-panel hidden" id="reasoning-panel">
+            <div class="panel-header">
+                <h2>🧠 Raisonnement en cours...</h2>
+                <div class="reasoning-timer" id="reasoning-timer">
+                    <span class="timer-icon">⏱️</span>
+                    <span class="timer-text" id="timer-text">0s</span>
+                </div>
+            </div>
+            <div class="current-task" id="current-task" style="padding: 12px 24px; background: rgba(91, 124, 250, 0.1); border-left: 3px solid #5b7cfa; margin: 0 24px 16px; border-radius: 4px; display: none;">
+                <strong>Tâche en cours :</strong> <span id="current-task-text">Initialisation...</span>
+            </div>
+            <div class="panel-body">
+                <div class="reasoning-container">
+                    <div class="reasoning-steps" id="reasoning-steps">
+                        <!-- Les étapes apparaîtront ici en temps réel -->
+                    </div>
+                    <div class="reasoning-progress">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel" id="results-panel">
+            <div class="panel-header split">
+                <div>
+                    <h2>Résultat</h2>
+                    <p>Workflow généré et validé par l'équipe d'agents</p>
+                </div>
+                <div class="status-pill" id="status-pill">En attente</div>
+            </div>
+            <div class="panel-body results-body">
+                <div class="placeholder" id="placeholder">
+                    <div class="placeholder-icon">⚙️</div>
+                    <p>Remplis le formulaire pour lancer la génération.</p>
+                </div>
+
+                <div class="results-grid hidden" id="results-grid">
+                    <article class="result-card">
+                        <h3>Workflow</h3>
+                        <dl>
+                            <div>
+                                <dt>Nom</dt>
+                                <dd id="workflow-name">—</dd>
+                            </div>
+                            <div>
+                                <dt>Description</dt>
+                                <dd id="workflow-description">—</dd>
+                            </div>
+                            <div>
+                                <dt>Nombre de nœuds</dt>
+                                <dd id="workflow-nodes">—</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <article class="result-card">
+                        <h3>Analyse IA</h3>
+                        <ul class="analysis-list" id="analysis-list"></ul>
+                    </article>
+
+                    <article class="result-card">
+                        <h3>Déploiement</h3>
+                        <div id="deployment-info" class="deployment-info">
+                            <p>Non lancé</p>
+                        </div>
+                        <button id="copy-json" class="secondary-btn" type="button">Copier le JSON</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="feature-panel">
+            <h2>Pourquoi Synoptia</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Branchements intelligents</h3>
+                    <p>Split-batches, conditions QA et consolidation automatique pour des scénarios très complexes.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Stack unifiée</h3>
+                    <p>Intégrations natives HubSpot, Sheets, Slack, PostgreSQL, Drive et HTTP personnalisés.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Ready to deploy</h3>
+                    <p>Export JSON prêt pour n8n ou déploiement direct via l'API avec monitoring.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© Synoptia 2024 — Automatisation haute couture.</p>
+        <div class="footer-links">
+            <a href="mailto:ludo@synoptia.fr">Contact</a>
+            <a href="https://discord.gg/synoptia" target="_blank" rel="noreferrer">Communauté</a>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <!-- FIX #1: Charger la fonction toggleTasksList AVANT app.js pour éviter race condition -->
+    <script>
+        // Fonction GLOBALE pour toggle - Définie AVANT le chargement de app.js
+        window.toggleTasksList = function(header) {
+            console.log('🔥 toggleTasksList called!', header);
+            const tasksList = header.parentElement.querySelector('.agent-tasks-list');
+            if (tasksList) {
+                tasksList.classList.toggle('collapsed');
+                const toggle = header.querySelector('.tasks-toggle');
+                if (toggle) {
+                    toggle.textContent = tasksList.classList.contains('collapsed') ? '▼' : '▲';
+                }
+                console.log('✅ Toggle executed! Collapsed:', tasksList.classList.contains('collapsed'));
+            } else {
+                console.error('❌ tasksList not found');
+            }
+        };
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>

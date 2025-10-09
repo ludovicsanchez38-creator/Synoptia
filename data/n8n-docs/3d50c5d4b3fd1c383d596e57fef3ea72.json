@@ -1,0 +1,21 @@
+{
+  "title": "External secrets environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/external-secrets",
+  "content": "---\ntitle: External secrets environment variables\ndescription: Configure the interval for checking updates to external secrets in self-hosted n8n instance. \ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n External secrets environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nYou can use an external secrets store to manage credentials for n8n. Refer to External secrets for details.\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| N8NEXTERNALSECRETSUPDATEINTERVAL | Number | 300 (5 minutes) | How often (in seconds) to check for secret updates. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "external",
+    "secrets",
+    "environment",
+    "variables",
+    "description",
+    "updates",
+    "self",
+    "tags",
+    "title",
+    "configure"
+  ],
+  "fetchedAt": "2025-10-07T16:15:56.942Z",
+  "hash": "3d50c5d4b3fd1c383d596e57fef3ea72"
+}

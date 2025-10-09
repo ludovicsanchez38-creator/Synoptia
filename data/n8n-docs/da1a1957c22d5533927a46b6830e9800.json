@@ -1,0 +1,21 @@
+{
+  "title": "MQTT node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mqtt",
+  "content": "---\ntitle: MQTT node documentation\ndescription: Learn how to use the MQTT node in n8n. Follow technical documentation to integrate MQTT node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n MQTT node\n\nUse the MQTT node to automate work in MQTT, and integrate MQTT with other applications. n8n supports transporting messages with MQTT.\n\nOn this page, you'll find a list of operations the MQTT node supports and links to more resources.\n\n/// note | Credentials\nRefer to MQTT credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\nUse the MQTT node to send a message. You can set the message topic, and choose whether to send the node input data as part of the message.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'mqtt') ]]\n\n Related resources\n\nn8n provides a trigger node for MQTT. You can find the trigger node docs here.\n\nRefer to MQTT's documentation for more information about the service.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.mqtt.md",
+  "keywords": [
+    "mqtt",
+    "node",
+    "documentation",
+    "message",
+    "title",
+    "integrate",
+    "with",
+    "supports",
+    "page",
+    "find"
+  ],
+  "fetchedAt": "2025-10-07T16:14:43.034Z",
+  "hash": "da1a1957c22d5533927a46b6830e9800"
+}

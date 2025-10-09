@@ -1,0 +1,21 @@
+{
+  "title": "WordPress node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.wordpress",
+  "content": "---\ntitle: WordPress node documentation\ndescription: Learn how to use the WordPress node in n8n. Follow technical documentation to integrate WordPress node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n WordPress node\n\nUse the WordPress node to automate work in WordPress, and integrate WordPress with other applications. n8n has built-in support for a wide range of WordPress features, including creating, updating, and getting posts and users.\n\nOn this page, you'll find a list of operations the WordPress node supports and links to more resources.\n\n/// note | Credentials\nRefer to WordPress credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Post\n     Create a post\n     Get a post\n     Get all posts\n     Update a post\n Pages\n     Create a page\n     Get a page\n     Get all pages\n     Update a page\n User\n     Create a user\n     Get a user\n     Get all users\n     Update a user\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'wordpress') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.wordpress.md",
+  "keywords": [
+    "wordpress",
+    "node",
+    "page",
+    "post",
+    "user",
+    "integrations",
+    "create",
+    "update",
+    "pages",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:15:00.243Z",
+  "hash": "aded4a6013d75c476ba1e769b6ae8423"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "fb_1759223669833_yedgp49z7",
+  "sessionId": "session_002",
+  "workflowId": null,
+  "rating": 2,
+  "successful": false,
+  "comment": "Missing required parameters on nodes",
+  "issues": [
+    "missing_parameters",
+    "invalid_connections"
+  ],
+  "request": "Create email automation with Gmail",
+  "workflow": null,
+  "metadata": {
+    "intent": "create",
+    "model": "gpt-4o",
+    "ragUsed": false,
+    "generationTime": 2800
+  },
+  "timestamp": 1759223669833,
+  "analyzed": false
+}

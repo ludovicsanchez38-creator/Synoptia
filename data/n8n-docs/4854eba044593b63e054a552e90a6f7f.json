@@ -1,0 +1,22 @@
+{
+  "title": "Execute Sub-workflow",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.executeworkflow",
+  "content": "---\ntitle: Execute Sub-workflow\ndescription: Documentation for the Execute Sub-workflow node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: high\n---\n\n Execute Sub-workflow\n\nUse the Execute Sub-workflow node to run a different workflow on the host machine that runs n8n.\n\n Node parameters\n\n Source\n\nSelect where the node should get the sub-workflow's information from:\n\n- Database: Select this option to load the workflow from the database by ID. You must also enter either:\n\t- From list: Select the workflow from a list of workflows available to your account.\n\t- Workflow ID: Enter the ID for the workflow. The URL of the workflow contains the ID after /workflow/. For example, if the URL of a workflow is https://my-n8n-acct.app.n8n.cloud/workflow/abCDE1f6gHiJKL7, the Workflow ID is abCDE1f6gHiJKL7.\n- Local File: Select this option to load the workflow from a locally saved JSON file. You must also enter:\n\t- Workflow Path: Enter the path to the local JSON workflow file you want the node to execute.\n- Parameter: Select this option to load the workflow from a parameter. You must also enter:\n\t- Workflow JSON: Enter the JSON code you want the node to execute.\n- URL: Select this option to load the workflow from a URL. You must also enter:\n\t- Workflow URL: Enter the URL you want to load the workflow from.\n\n Workflow Inputs\n\nIf you select a sub-workflow using the database and From list options, the sub-workflow's input items will automatically display, ready for you to fill in or map values.\n\nYou can optionally remove requested input items, in which case the sub-workflow receives null as the item's value. You can also enable Attempt to convert types to try to automatically convert data to the sub-workflow item's requested type.\n\nInput items won't appear if the sub-workflow's Workflow Input Trigger node uses the \"Accept all data\" input data mode.\n\n Mode\n\nUse this parameter to control the execution mode for the node. Choose from these options:\n\n- Run once with all items: Pass all input items into a single execution of the node.\n- Run once for each item: Execute the node once for each input item in turn.\n\n Node options\n\nThis node includes one option: Wait for Sub-Workflow Completion. This lets you control whether the main workflow should wait for the sub-workflow's completion before moving on to the next step (turned on) or whether the main workflow should continue without waiting (turned off).\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'execute-workflow') ]]\n\n Set up and use a sub-workflow\n\nThis section walks through setting up both the parent workflow and sub-workflow.\n\n--8<-- \"snippets/flow-logic/subworkflow-usage.md\"\n\n How data passes between workflows\n\n--8<-- \"snippets/flow-logic/subworkflow-data-flow.md\"",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.executeworkflow.md",
+  "keywords": [
+    "execute",
+    "sub-workflow",
+    "workflow",
+    "node",
+    "from",
+    "this",
+    "enter",
+    "select",
+    "input",
+    "option",
+    "load"
+  ],
+  "fetchedAt": "2025-10-07T16:14:05.672Z",
+  "hash": "4854eba044593b63e054a552e90a6f7f"
+}

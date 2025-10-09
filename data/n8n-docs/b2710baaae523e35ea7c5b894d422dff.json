@@ -1,0 +1,21 @@
+{
+  "title": "MailerLite Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.mailerlitetrigger",
+  "content": "---\ntitle: MailerLite Trigger node documentation\ndescription: Learn how to use the MailerLite Trigger node in n8n. Follow technical documentation to integrate MailerLite Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n MailerLite Trigger node\n\nMailerLite is an email marketing solution that provides you with a user-friendly content editor, simplified subscriber management, and campaign reports with the most important statistics.\n\nOn this page, you'll find a list of events the MailerLite Trigger node can respond to and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's MailerLite Trigger integrations page.\n///\n\n Events\n\n- Campaign Sent\n- Subscriber Added to Group\n- Subscriber Automation Completed\n- Subscriber Automation Triggered\n- Subscriber Bounced\n- Subscriber Created\n- Subscriber Complained\n- Subscriber Removed from Group\n- Subscriber Unsubscribe\n- Subscriber Updated",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.mailerlitetrigger.md",
+  "keywords": [
+    "mailerlite",
+    "trigger",
+    "node",
+    "subscriber",
+    "documentation",
+    "with",
+    "campaign",
+    "this",
+    "page",
+    "find"
+  ],
+  "fetchedAt": "2025-10-07T16:15:15.258Z",
+  "hash": "b2710baaae523e35ea7c5b894d422dff"
+}

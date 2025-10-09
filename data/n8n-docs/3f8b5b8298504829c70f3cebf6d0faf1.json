@@ -1,0 +1,21 @@
+{
+  "title": "Jira Software node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.jira",
+  "content": "---\ntitle: Jira Software node documentation\ndescription: Learn how to use the Jira Software node in n8n. Follow technical documentation to integrate Jira Software node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Jira Software node\n\nUse the Jira Software node to automate work in Jira, and integrate Jira with other applications. n8n has built-in support for a wide range of Jira features, including creating, updating, deleting, and getting issues, and users. \n\nOn this page, you'll find a list of operations the Jira Software node supports and links to more resources.\n\n/// note | Credentials\nRefer to Jira credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Issue\n     Get issue changelog\n     Create a new issue\n     Delete an issue\n     Get an issue\n     Get all issues\n     Create an email notification for an issue and add it to the mail queue\n     Return either all transitions or a transition that can be performed by the user on an issue, based on the issue's status\n     Update an issue\n Issue Attachment\n     Add attachment to issue\n     Get an attachment\n     Get all attachments\n     Remove an attachment\n Issue Comment\n     Add comment to issue\n     Get a comment\n     Get all comments\n     Remove a comment\n     Update a comment\n User\n     Create a new user.\n     Delete a user.\n     Retrieve a user.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'jira-software') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Related resources\n\nRefer to the official JQL documentation about Jira Query Language (JQL) to learn more about it.\n\n Fetch issues for a specific project\n\nThe Get All operation returns all the issues from Jira. To fetch issues for a particular project, you need to use Jira Query Language (JQL).\n\nFor example, if you want to receive all the issues of a project named n8n, you'd do something like this:\n\n- Select Get All from the Operation dropdown list.\n- Toggle Return All to true.\n- Select Add Option and select JQL.\n- Enter project=n8n in the JQL field.\n\nThis query will fetch all the issues in the project named n8n. Enter the name of your project instead of n8n to fetch all the issues for your project.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.jira.md",
+  "keywords": [
+    "jira",
+    "software",
+    "node",
+    "issue",
+    "issues",
+    "project",
+    "user",
+    "comment",
+    "attachment",
+    "fetch"
+  ],
+  "fetchedAt": "2025-10-07T16:14:36.792Z",
+  "hash": "3f8b5b8298504829c70f3cebf6d0faf1"
+}

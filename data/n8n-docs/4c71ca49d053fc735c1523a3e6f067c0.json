@@ -1,0 +1,21 @@
+{
+  "title": "Google Drive Trigger node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.googledrivetrigger/common-issues",
+  "content": "---\ntitle: Google Drive Trigger node common issues\ndescription: Documentation for common issues and questions in the Google Drive Trigger node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Google Drive Trigger node common issues\n\nHere are some common errors and issues with the Google Drive Trigger node and steps to resolve or troubleshoot them.\n\n 401 unauthorized error\n\nThe full text of the error looks like this:\n<!--vale off-->\n\n<!--vale on-->\n\nThis error occurs when there's an issue with the credential you're using and its scopes or permissions.\n\nTo resolve:\n\n1. For OAuth2 credentials, make sure you've enabled the Google Drive API in APIs & Services > Library. Refer to Google OAuth2 Single Service - Enable APIs for more information.\n2. For Service Account credentials:\n    1. Enable domain-wide delegation.\n    2. Make sure you add the Google Drive API as part of the domain-wide delegation configuration.\n\n Handling more than one file change\n\nThe Google Drive Trigger node polls Google Drive for changes at a set interval (once every minute by default).\n\nIf multiple changes to the Watch For criteria occur during the polling interval, a single Google Drive Trigger event occurs containing the changes as items. To handle this, your workflow must account for times when the data might contain more than one item.\n\nYou can use an if node or a switch node to change your workflow's behavior depending on whether the data from the Google Drive Trigger node contains a single item or multiple items.",
+  "category": "trigger-nodes",
+  "nodeType": "google",
+  "keywords": [
+    "google",
+    "drive",
+    "trigger",
+    "node",
+    "common",
+    "issues",
+    "workflow",
+    "error",
+    "this",
+    "single"
+  ],
+  "fetchedAt": "2025-10-07T16:15:12.538Z",
+  "hash": "4c71ca49d053fc735c1523a3e6f067c0"
+}

@@ -1,0 +1,25 @@
+{
+  "title": "`(\"<node-name>\").all(branchIndex?: number, runIndex?: number)`",
+  "url": "https://docs.n8n.io/code/cookbook/builtin/all",
+  "content": "---\ncontentType: reference\n---\n\n (\"<node-name>\").all(branchIndex?: number, runIndex?: number)\n\nThis gives access to all the items of the current or parent nodes. If you don't supply any parameters, it returns all the items of the current node.\n\n Getting items\n\n=== \"JavaScript\"\n\t\n=== \"Python\"\n\t\n\n Accessing item data\n\nGet all items output by a previous node, and log out the data they contain:\n\n=== \"JavaScript\"\n\t\n=== \"Python\"",
+  "category": "code",
+  "nodeType": "`(\"<node-name>\").all(branchindex?:",
+  "keywords": [
+    "`(\"<node-name>\").all(branchindex?:",
+    "number,",
+    "runindex?:",
+    "number)`",
+    "items",
+    "node",
+    "number",
+    "current",
+    "javascript",
+    "python",
+    "data",
+    "contenttype",
+    "reference",
+    "name"
+  ],
+  "fetchedAt": "2025-10-07T16:15:47.977Z",
+  "hash": "7887fd52add3112f9decbc7180310f92"
+}

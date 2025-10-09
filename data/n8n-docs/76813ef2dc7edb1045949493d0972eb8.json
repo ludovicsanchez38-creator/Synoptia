@@ -1,0 +1,21 @@
+{
+  "title": "Workflows",
+  "url": "https://docs.n8n.io/workflows/index",
+  "content": "---\ndescription: \"Learn about the key components of automation in n8n.\"\ncontentType: overview\n---\n\n Workflows\n\nA workflow is a collection of nodes connected together to automate a process.\n\n Create a workflow.\n Use Workflow templates to help you get started.\n Learn about the key components of an automation in n8n.\n Debug using the Executions list.\n Share workflows between users.\n\nIf it's your first time building a workflow, you may want to use the quickstart guides to quickly try out n8n features.",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "workflows",
+    "workflow",
+    "learn",
+    "about",
+    "components",
+    "automation",
+    "description",
+    "contenttype",
+    "overview",
+    "collection"
+  ],
+  "fetchedAt": "2025-10-07T16:15:42.345Z",
+  "hash": "76813ef2dc7edb1045949493d0972eb8"
+}

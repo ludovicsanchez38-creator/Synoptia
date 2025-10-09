@@ -1,0 +1,21 @@
+{
+  "title": "Invoice Ninja Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.invoiceninjatrigger",
+  "content": "---\ntitle: Invoice Ninja Trigger node documentation\ndescription: Learn how to use the Invoice Ninja Trigger node in n8n. Follow technical documentation to integrate Invoice Ninja Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Invoice Ninja Trigger node\n\nInvoice Ninja is a free open-source online invoicing app for freelancers & businesses. It offers invoicing, payments, expense tracking, & time-tasks.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Invoice Ninja Trigger integrations page.\n///",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.invoiceninjatrigger.md",
+  "keywords": [
+    "invoice",
+    "ninja",
+    "trigger",
+    "node",
+    "documentation",
+    "invoicing",
+    "note",
+    "examples",
+    "templates",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:15:13.781Z",
+  "hash": "4cf0162eb9bfd7e20e97029f3205fb8c"
+}

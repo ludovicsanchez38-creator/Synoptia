@@ -1,0 +1,21 @@
+{
+  "title": "Pipedrive node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.pipedrive",
+  "content": "---\ntitle: Pipedrive node documentation\ndescription: Learn how to use the Pipedrive node in n8n. Follow technical documentation to integrate Pipedrive node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Pipedrive node\n\nUse the Pipedrive node to automate work in Pipedrive, and integrate Pipedrive with other applications. n8n has built-in support for a wide range of Pipedrive features, including creating, updating, deleting, and getting activity, files, notes, organizations, and leads. \n\nOn this page, you'll find a list of operations the Pipedrive node supports and links to more resources.\n\n/// note | Credentials\nRefer to Pipedrive credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Activity\n     Create an activity\n     Delete an activity\n     Get data of an activity\n     Get data of all activities\n     Update an activity\n Deal\n     Create a deal\n     Delete a deal\n     Duplicate a deal\n     Get data of a deal\n     Get data of all deals\n     Search a deal\n     Update a deal\n Deal Activity\n     Get all activities of a deal\n Deal Product\n     Add a product to a deal\n     Get all products in a deal\n     Remove a product from a deal\n     Update a product in a deal\n File\n     Create a file\n     Delete a file\n     Download a file\n     Get data of a file\n Lead\n     Create a lead\n     Delete a lead\n     Get data of a lead\n     Get data of all leads\n     Update a lead\n Note\n     Create a note\n     Delete a note\n     Get data of a note\n     Get data of all notes\n     Update a note\n Organization\n     Create an organization\n     Delete an organization\n     Get data of an organization\n     Get data of all organizations\n     Update an organization\n     Search organizations\n Person\n     Create a person\n     Delete a person\n     Get data of a person\n     Get data of all persons\n     Search all persons\n     Update a person\n Product\n     Get data of all products\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'pipedrive') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.pipedrive.md",
+  "keywords": [
+    "pipedrive",
+    "node",
+    "data",
+    "deal",
+    "activity",
+    "create",
+    "delete",
+    "update",
+    "note",
+    "product"
+  ],
+  "fetchedAt": "2025-10-07T16:14:47.629Z",
+  "hash": "9492b7cdfe031d3c2b39f380c7c8c989"
+}

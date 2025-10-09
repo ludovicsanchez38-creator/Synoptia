@@ -1,0 +1,21 @@
+{
+  "title": "TheHive node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.thehive",
+  "content": "---\ntitle: TheHive node documentation\ndescription: Learn how to use the TheHive node in n8n. Follow technical documentation to integrate TheHive node into your workflows.\ncontentType: [integration, reference]\n---\n\n TheHive node\n\nUse the TheHive node to automate work in TheHive, and integrate TheHive with other applications. n8n has built-in support for a wide range of TheHive features, including creating alerts, counting tasks logs, cases, and observables. \n\nOn this page, you'll find a list of operations the TheHive node supports and links to more resources.\n\n/// note | TheHive and TheHive 5\nn8n provides two nodes for TheHive. Use this node (TheHive) if you want to use TheHive's version 3 or 4 API. If you want to use version 5, use TheHive 5.\n///\n/// note | Credentials\nRefer to TheHive credentials for guidance on setting up authentication. \n///\n\n Operations\n\nThe available operations depend on your API version. To see the operations list, create your credentials, including selecting your API version. Then return to the node, select the resource you want to use, and n8n displays the available operations for your API version. \n\n Alert\n Case\n Log\n Observable\n Task\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'thehive') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Related resources\n\nn8n provides a trigger node for TheHive. You can find the trigger node docs here.\n\nRefer to TheHive's documentation for more information about the service:\n\n Version 3\n Version 4",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.thehive.md",
+  "keywords": [
+    "thehive",
+    "node",
+    "version",
+    "your",
+    "operations",
+    "documentation",
+    "want",
+    "credentials",
+    "title",
+    "integrate"
+  ],
+  "fetchedAt": "2025-10-07T16:14:56.256Z",
+  "hash": "c4330cb2eeded49726014c2fd5f5a4b0"
+}

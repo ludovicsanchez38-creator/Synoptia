@@ -1,0 +1,22 @@
+{
+  "title": "Zoho CRM node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.zohocrm",
+  "content": "---\ntitle: Zoho CRM node documentation\ndescription: Learn how to use the Zoho CRM node in n8n. Follow technical documentation to integrate Zoho CRM node into your workflows.\ncontentType: [integration, reference]\n---\n\n Zoho CRM node\n\nUse the Zoho CRM node to automate work in Zoho CRM, and integrate Zoho CRM with other applications. n8n has built-in support for a wide range of Zoho CRM features, including creating and deleting accounts, contacts, and deals. \n\nOn this page, you'll find a list of operations the Zoho CRM node supports and links to more resources.\n\n/// note | Credentials\nRefer to Zoho CRM credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Account\n     Create an account\n     Create a new record, or update the current one if it already exists (upsert)\n     Delete an account\n     Get an account\n     Get all accounts\n     Update an account\n Contact\n     Create a contact\n     Create a new record, or update the current one if it already exists (upsert)\n     Delete a contact\n     Get a contact\n     Get all contacts\n     Update a contact\n Deal\n     Create a deal\n     Create a new record, or update the current one if it already exists (upsert)\n     Delete a contact\n     Get a contact\n     Get all contacts\n     Update a contact\n Invoice\n     Create an invoice\n     Create a new record, or update the current one if it already exists (upsert)\n     Delete an invoice\n     Get an invoice\n     Get all invoices\n     Update an invoice\n Lead\n     Create a lead\n     Create a new record, or update the current one if it already exists (upsert)\n     Delete a lead\n     Get a lead\n     Get all leads\n     Get lead fields\n     Update a lead\n Product\n     Create a product\n     Create a new record, or update the current one if it already exists (upsert)\n     Delete a product\n     Get a product\n     Get all products\n     Update a product\n Purchase Order\n     Create a purchase order\n     Create a new record, or update the current one if it already exists (upsert)\n     Delete a purchase order\n     Get a purchase order\n     Get all purchase orders\n     Update a purchase order\n Quote\n     Create a quote\n     Create a new record, or update the current one if it already exists (upsert)\n     Delete a quote\n     Get a quote\n     Get all quotes\n     Update a quote\n Sales Order\n     Create a sales order\n     Create a new record, or update the current one if it already exists (upsert)\n     Delete a sales order\n     Get a sales order\n     Get all sales orders\n     Update a sales order\n Vendor\n     Create a vendor\n     Create a new record, or update the current one if it already exists (upsert)\n     Delete a vendor\n     Get a vendor\n     Get all vendors\n     Update a vendor\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'zoho-crm') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.zohocrm.md",
+  "keywords": [
+    "zoho",
+    "node",
+    "create",
+    "update",
+    "record",
+    "current",
+    "already",
+    "exists",
+    "upsert",
+    "delete",
+    "order"
+  ],
+  "fetchedAt": "2025-10-07T16:15:01.130Z",
+  "hash": "bd0b5b42f0e419105abfd48354320710"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fb_1759223669837_lbfz1n3jy",
+  "sessionId": "s009",
+  "workflowId": null,
+  "rating": 2,
+  "successful": false,
+  "comment": "",
+  "issues": [
+    "missing_trigger"
+  ],
+  "request": "Test workflow request",
+  "workflow": null,
+  "metadata": {
+    "intent": "create",
+    "model": "gpt-4o",
+    "ragUsed": false
+  },
+  "timestamp": 1759223669837,
+  "analyzed": false
+}

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration SAV - Synoptia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f6fa;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        .card h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+        }
+
+        .code-display {
+            background: #f8f9fa;
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 15px;
+            display: none;
+        }
+
+        .code-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .code-info {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .codes-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .codes-table th,
+        .codes-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .codes-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .status-badge {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .status-active {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-used {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-expired {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .alert {
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border-color: #28a745;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border-color: #dc3545;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .refresh-btn {
+            float: right;
+            background: #6c757d;
+            font-size: 12px;
+            padding: 6px 12px;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .codes-table {
+                font-size: 12px;
+            }
+
+            .codes-table th,
+            .codes-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <h1>⚙️ Administration SAV</h1>
+            <div>
+                <button class="btn btn-secondary" onclick="window.open('/sav.html', '_blank')">
+                    👀 Voir interface client
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Alerts -->
+        <div id="alertContainer"></div>
+
+        <!-- Dashboard Stats -->
+        <div class="dashboard-grid">
+            <!-- Statistiques -->
+            <div class="card">
+                <h2>📊 Statistiques SAV</h2>
+                <div class="stats-grid" id="statsGrid">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalCodes">-</div>
+                        <div class="stat-label">Codes totaux</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="usedCodes">-</div>
+                        <div class="stat-label">Codes utilisés</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="activeCodes">-</div>
+                        <div class="stat-label">Codes actifs</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="knowledgeItems">-</div>
+                        <div class="stat-label">Réponses SAV</div>
+                    </div>
+                </div>
+                <button class="btn refresh-btn" onclick="loadStats()">🔄 Actualiser</button>
+            </div>
+
+            <!-- Génération de code -->
+            <div class="card">
+                <h2>🔑 Générer un code SAV</h2>
+                <form id="generateForm">
+                    <div class="form-group">
+                        <label for="clientId">ID Client *</label>
+                        <input
+                            type="text"
+                            id="clientId"
+                            placeholder="ex: client123, support@example.com"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="validityHours">Durée de validité</label>
+                        <select id="validityHours">
+                            <option value="1">1 heure</option>
+                            <option value="4">4 heures</option>
+                            <option value="8">8 heures</option>
+                            <option value="24" selected>24 heures</option>
+                            <option value="48">48 heures</option>
+                            <option value="72">72 heures</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn" id="generateBtn">
+                        🎯 Générer le code
+                    </button>
+                </form>
+
+                <div class="code-display" id="codeDisplay">
+                    <div class="code-value" id="generatedCode"></div>
+                    <div class="code-info" id="codeInfo"></div>
+                    <button class="btn btn-secondary" onclick="copyCode()" style="margin-top: 10px;">
+                        📋 Copier le code
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Liste des codes actifs -->
+        <div class="card">
+            <h2>📋 Codes SAV actifs</h2>
+            <div class="table-container">
+                <table class="codes-table" id="codesTable">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Client ID</th>
+                            <th>Statut</th>
+                            <th>Créé le</th>
+                            <th>Expire le</th>
+                            <th>Session</th>
+                        </tr>
+                    </thead>
+                    <tbody id="codesTableBody">
+                        <tr>
+                            <td colspan="6" style="text-align: center; color: #666;">
+                                Chargement des données...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Variables globales
+        let currentStats = null;
+
+        // Initialisation
+        window.addEventListener('load', () => {
+            loadStats();
+
+            // Auto-refresh toutes les 30 secondes
+            setInterval(loadStats, 30000);
+        });
+
+        // Gestionnaire du formulaire de génération
+        document.getElementById('generateForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            await generateCode();
+        });
+
+        // Charger les statistiques
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/admin/sav-stats');
+                const data = await response.json();
+
+                if (data.success) {
+                    currentStats = data;
+                    updateStatsDisplay(data.stats);
+                    updateCodesTable(data.activeCodes);
+                } else {
+                    showAlert('Erreur lors du chargement des statistiques', 'error');
+                }
+            } catch (error) {
+                console.error('Erreur:', error);
+                showAlert('Erreur de connexion au serveur', 'error');
+            }
+        }
+
+        // Mettre à jour l'affichage des stats
+        function updateStatsDisplay(stats) {
+            document.getElementById('totalCodes').textContent = stats.totalCodes || 0;
+            document.getElementById('usedCodes').textContent = stats.usedCodes || 0;
+            document.getElementById('activeCodes').textContent = stats.activeCodes || 0;
+            document.getElementById('knowledgeItems').textContent = stats.knowledgeBaseItems || 0;
+        }
+
+        // Mettre à jour le tableau des codes
+        function updateCodesTable(codes) {
+            const tbody = document.getElementById('codesTableBody');
+
+            if (!codes || codes.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="6" style="text-align: center; color: #666;">
+                            Aucun code SAV actif
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            tbody.innerHTML = codes.map(code => {
+                const status = getCodeStatus(code);
+                const createdAt = new Date(code.createdAt).toLocaleString('fr-FR');
+                const expiresAt = new Date(code.expiresAt).toLocaleString('fr-FR');
+                const sessionStart = code.sessionStarted ?
+                    new Date(code.sessionStarted).toLocaleString('fr-FR') : '-';
+
+                return `
+                    <tr>
+                        <td><code>${code.code}</code></td>
+                        <td>${code.clientId}</td>
+                        <td><span class="status-badge status-${status.class}">${status.text}</span></td>
+                        <td>${createdAt}</td>
+                        <td>${expiresAt}</td>
+                        <td>${sessionStart}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Déterminer le statut d'un code
+        function getCodeStatus(code) {
+            const now = new Date();
+            const expires = new Date(code.expiresAt);
+
+            if (now > expires) {
+                return { class: 'expired', text: 'Expiré' };
+            } else if (code.used) {
+                return { class: 'used', text: 'Utilisé' };
+            } else {
+                return { class: 'active', text: 'Actif' };
+            }
+        }
+
+        // Générer un nouveau code
+        async function generateCode() {
+            const clientId = document.getElementById('clientId').value.trim();
+            const validityHours = parseInt(document.getElementById('validityHours').value);
+            const generateBtn = document.getElementById('generateBtn');
+
+            if (!clientId) {
+                showAlert('Veuillez saisir un ID client', 'error');
+                return;
+            }
+
+            generateBtn.disabled = true;
+            generateBtn.innerHTML = '<span class="loading"></span>Génération...';
+
+            try {
+                const response = await fetch('/api/admin/generate-sav-code', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        clientId: clientId,
+                        validityHours: validityHours
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    showGeneratedCode(data);
+                    showAlert(`Code généré avec succès pour ${clientId}`, 'success');
+
+                    // Réinitialiser le formulaire
+                    document.getElementById('clientId').value = '';
+
+                    // Recharger les stats
+                    setTimeout(loadStats, 1000);
+                } else {
+                    showAlert(data.error || 'Erreur lors de la génération', 'error');
+                }
+            } catch (error) {
+                console.error('Erreur:', error);
+                showAlert('Erreur de connexion au serveur', 'error');
+            } finally {
+                generateBtn.disabled = false;
+                generateBtn.innerHTML = '🎯 Générer le code';
+            }
+        }
+
+        // Afficher le code généré
+        function showGeneratedCode(data) {
+            const codeDisplay = document.getElementById('codeDisplay');
+            const generatedCode = document.getElementById('generatedCode');
+            const codeInfo = document.getElementById('codeInfo');
+
+            generatedCode.textContent = data.code;
+            codeInfo.innerHTML = `
+                <strong>Client:</strong> ${data.clientId}<br>
+                <strong>Validité:</strong> ${data.validityHours}h<br>
+                <strong>Expire le:</strong> ${new Date(data.expiresAt).toLocaleString('fr-FR')}
+            `;
+
+            codeDisplay.style.display = 'block';
+        }
+
+        // Copier le code dans le presse-papier
+        async function copyCode() {
+            const code = document.getElementById('generatedCode').textContent;
+
+            try {
+                await navigator.clipboard.writeText(code);
+                showAlert('Code copié dans le presse-papier', 'success');
+            } catch (error) {
+                // Fallback pour les navigateurs plus anciens
+                const textArea = document.createElement('textarea');
+                textArea.value = code;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+
+                showAlert('Code copié dans le presse-papier', 'success');
+            }
+        }
+
+        // Afficher une alerte
+        function showAlert(message, type = 'success') {
+            const alertContainer = document.getElementById('alertContainer');
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert alert-${type}`;
+            alertDiv.textContent = message;
+
+            alertContainer.appendChild(alertDiv);
+
+            // Supprimer l'alerte après 5 secondes
+            setTimeout(() => {
+                if (alertDiv.parentNode) {
+                    alertDiv.parentNode.removeChild(alertDiv);
+                }
+            }, 5000);
+        }
+
+        // Raccourci clavier pour recharger
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'F5' || (e.ctrlKey && e.key === 'r')) {
+                e.preventDefault();
+                loadStats();
+            }
+        });
+    </script>
+</body>
+</html>

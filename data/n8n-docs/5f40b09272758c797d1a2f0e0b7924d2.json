@@ -1,0 +1,21 @@
+{
+  "title": "GoToWebinar node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.gotowebinar",
+  "content": "---\ntitle: GoToWebinar node documentation\ndescription: Learn how to use the GoToWebinar node in n8n. Follow technical documentation to integrate GoToWebinar node into your workflows.\ncontentType: [integration, reference]\n---\n\n GoToWebinar node\n\nUse the GoToWebinar node to automate work in GoToWebinar, and integrate GoToWebinar with other applications. n8n has built-in support for a wide range of GoToWebinar features, including creating, getting, and deleting attendees, organizers, and registrants.\n\nOn this page, you'll find a list of operations the GoToWebinar node supports and links to more resources.\n\n/// note | Credentials\nRefer to GoToWebinar credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Attendee\n     Get\n     Get All\n     Get Details\n Co-Organizer\n     Create\n     Delete\n     Get All\n     Re-invite\n Panelist\n     Create\n     Delete\n     Get All\n     Re-invite\n Registrant\n     Create\n     Delete\n     Get\n     Get All\n Session\n     Get\n     Get All\n     Get Details\n Webinar\n     Create\n     Get\n     Get All\n     Update\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'gotowebinar') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.gotowebinar.md",
+  "keywords": [
+    "gotowebinar",
+    "node",
+    "create",
+    "delete",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:34.091Z",
+  "hash": "5f40b09272758c797d1a2f0e0b7924d2"
+}

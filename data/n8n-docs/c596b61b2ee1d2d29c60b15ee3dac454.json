@@ -1,0 +1,21 @@
+{
+  "title": "Emelia node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.emelia",
+  "content": "---\ntitle: Emelia node documentation\ndescription: Learn how to use the Emelia node in n8n. Follow technical documentation to integrate Emelia node into your workflows.\ncontentType: [integration, reference]\n---\n\n Emelia node\n\nUse the Emelia node to automate work in Emelia, and integrate Emelia with other applications. n8n has built-in support for a wide range of Emelia features, including creating campaigns, and adding contacts to a list. \n\nOn this page, you'll find a list of operations the Emelia node supports and links to more resources.\n\n/// note | Credentials\nRefer to Emelia credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Campaign\n     Add Contact\n     Create\n     Get\n     Get All\n     Pause\n     Start\n Contact List\n     Add\n     Get All\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'emelia') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.emelia.md",
+  "keywords": [
+    "emelia",
+    "node",
+    "list",
+    "title",
+    "documentation",
+    "integrate",
+    "page",
+    "operations",
+    "credentials",
+    "contact"
+  ],
+  "fetchedAt": "2025-10-07T16:14:26.127Z",
+  "hash": "c596b61b2ee1d2d29c60b15ee3dac454"
+}

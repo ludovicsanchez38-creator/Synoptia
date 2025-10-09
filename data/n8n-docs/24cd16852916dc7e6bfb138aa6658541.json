@@ -1,0 +1,21 @@
+{
+  "title": "Binary data environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/binary-data",
+  "content": "---\ntitle: Binary data environment variables\ndescription: Customize binary data storage modes and paths with environment variables for your self-hosted n8n instance. \ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n Binary data environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nBy default, n8n uses memory to store binary data. Enterprise users can choose to use an external service instead. Refer to External storage for more information on using external storage for binary data. \n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| N8NAVAILABLEBINARYDATAMODES | String | filesystem | A comma separated list of available binary data modes. |\n| N8NBINARYDATASTORAGEPATH | String | N8NUSERFOLDER/binaryData | The path where n8n stores binary data. |\n| N8NDEFAULTBINARYDATAMODE | String | default | The default binary data mode. default keeps binary data in memory. Set to filesystem to use the filesystem, or s3 to AWS S3. Note that binary data pruning operates on the active binary data mode. For example, if your instance stored data in S3, and you later switched to filesystem mode, n8n only prunes binary data in the filesystem. This may change in future. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "binary",
+    "data",
+    "environment",
+    "variables",
+    "default",
+    "filesystem",
+    "storage",
+    "external",
+    "string",
+    "mode"
+  ],
+  "fetchedAt": "2025-10-07T16:15:55.830Z",
+  "hash": "24cd16852916dc7e6bfb138aa6658541"
+}

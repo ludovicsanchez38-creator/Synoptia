@@ -1,0 +1,21 @@
+{
+  "title": "Custom Code Tool node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolcode",
+  "content": "---\ntitle: Custom Code Tool node documentation\ndescription: Learn how to use the Custom Code Tool node in n8n. Follow technical documentation to integrate Custom Code Tool node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Custom Code Tool node\n\nUse the Custom Code Tool node to write code that an agent can run.\n\nOn this page, you'll find the node parameters for the Custom Code Tool node and links to more resources.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Description\n\nGive your custom code a description. This tells the agent when to use this tool. For example:\n\n> Call this tool to get a random color. The input should be a string with comma separated names of colors to exclude.\n\n Language\n\nYou can use JavaScript or Python.\n\n JavaScript / Python box\n\nWrite the code here.\n\nYou can access the tool input using query. For example, to take the input string and lowercase it:\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'code-tool') ]]\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/tools-link.md\"\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.toolcode.md",
+  "keywords": [
+    "custom",
+    "code",
+    "tool",
+    "node",
+    "this",
+    "integrations",
+    "description",
+    "snippets",
+    "builtin",
+    "cluster"
+  ],
+  "fetchedAt": "2025-10-07T16:15:37.372Z",
+  "hash": "0773086fa0a494420224811950fd86fc"
+}

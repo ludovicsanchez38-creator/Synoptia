@@ -1,0 +1,21 @@
+{
+  "title": "GitLab Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.gitlabtrigger",
+  "content": "---\ntitle: GitLab Trigger node documentation\ndescription: Learn how to use the GitLab Trigger node in n8n. Follow technical documentation to integrate GitLab Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n GitLab Trigger node\n\nGitLab is a web-based DevOps lifecycle tool that provides a Git-repository manager providing wiki, issue-tracking, and continuous integration/continuous installation pipeline features.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's GitLab Trigger integrations page.\n///\n\n Events\n\n Comment\n Confidential issues\n Confidential comments\n Deployments\n Issue\n Job\n Merge request\n Pipeline\n Push\n Release\n Tag\n Wiki page\n\n Related resources\n\nn8n provides an app node for GitLab. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to GitLab's documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.gitlabtrigger.md",
+  "keywords": [
+    "gitlab",
+    "trigger",
+    "node",
+    "documentation",
+    "workflows",
+    "integration",
+    "provides",
+    "wiki",
+    "issue",
+    "continuous"
+  ],
+  "fetchedAt": "2025-10-07T16:15:11.264Z",
+  "hash": "6cb73ca8c7a6a8adc5057d873592e711"
+}

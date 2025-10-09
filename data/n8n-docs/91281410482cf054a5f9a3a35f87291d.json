@@ -1,0 +1,21 @@
+{
+  "title": "Coda node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.coda",
+  "content": "---\ntitle: Coda node documentation\ndescription: Learn how to use the Coda node in n8n. Follow technical documentation to integrate Coda node into your workflows.\ncontentType: [integration, reference]\n---\n\n Coda node\n\nUse the Coda node to automate work in Coda, and integrate Coda with other applications. n8n has built-in support for a wide range of Coda features, including creating, getting, and deleting controls, formulas, tables, and views.\n\nOn this page, you'll find a list of operations the Coda node supports and links to more resources.\n\n/// note | Credentials\nRefer to Coda credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Control\n     Get a control\n     Get all controls\n Formula\n     Get a formula\n     Get all formulas\n Table\n     Create/Insert a row\n     Delete one or multiple rows\n     Get all columns\n     Get all the rows\n     Get a column\n     Get a row\n     Pushes a button\n View\n     Delete view row\n     Get a view\n     Get all views\n     Get all views columns\n     Get all views rows\n     Update row\n     Push view button\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'coda') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.coda.md",
+  "keywords": [
+    "coda",
+    "node",
+    "views",
+    "view",
+    "rows",
+    "title",
+    "documentation",
+    "integrate",
+    "controls",
+    "formulas"
+  ],
+  "fetchedAt": "2025-10-07T16:14:22.752Z",
+  "hash": "91281410482cf054a5f9a3a35f87291d"
+}

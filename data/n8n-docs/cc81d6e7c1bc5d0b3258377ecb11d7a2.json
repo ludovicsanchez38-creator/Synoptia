@@ -1,0 +1,21 @@
+{
+  "title": "S3 node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.s3",
+  "content": "---\ntitle: S3 node documentation\ndescription: Learn how to use the S3 node in n8n. Follow technical documentation to integrate S3 node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n S3 node\n\nUse the S3 node to automate work in non-AWS S3 storage and integrate S3 with other applications. n8n has built-in support for a wide range of S3 features, including creating, deleting, and getting buckets, files, and folders. For AWS S3, use AWS S3.\n\nUse the S3 node for non-AWS S3 solutions like:\n\n MinIO\n Wasabi\n Digital Ocean spaces\n\nOn this page, you'll find a list of operations the S3 node supports and links to more resources.\n\n/// note | Credentials\nRefer to S3 credentials for guidance on setting up authentication.\n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Bucket\n     Create a bucket\n     Delete a bucket\n     Get all buckets\n     Search within a bucket\n File\n     Copy a file\n     Delete a file\n     Download a file\n     Get all files\n     Upload a file\n\n    /// note | Attach file for upload\n    To attach a file for upload, use another node to pass the file as a data property. Nodes like the Read/Write Files from Disk node or the HTTP Request work well.\n    ///\n\n Folder\n     Create a folder\n     Delete a folder\n     Get all folders\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 's3') ]]\n\n Node reference\n\n Setting file permissions in Wasabi\n\nWhen uploading files to Wasabi, you must set permissions for the files using the ACL dropdown and not the toggles.\n\n!File permissions when using the S3 node with Wasabi",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.s3.md",
+  "keywords": [
+    "node",
+    "file",
+    "files",
+    "wasabi",
+    "bucket",
+    "delete",
+    "upload",
+    "folder",
+    "permissions",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:50.789Z",
+  "hash": "cc81d6e7c1bc5d0b3258377ecb11d7a2"
+}

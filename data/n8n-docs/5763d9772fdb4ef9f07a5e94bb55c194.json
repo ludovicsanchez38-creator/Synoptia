@@ -1,0 +1,21 @@
+{
+  "title": "Sendy node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.sendy",
+  "content": "---\ntitle: Sendy node documentation\ndescription: Learn how to use the Sendy node in n8n. Follow technical documentation to integrate Sendy node into your workflows.\ncontentType: [integration, reference]\n---\n\n Sendy node\n\nUse the Sendy node to automate work in Sendy, and integrate Sendy with other applications. n8n has built-in support for a wide range of Sendy features, including creating campaigns, and adding, counting, deleting, and getting subscribers.\n\nOn this page, you'll find a list of operations the Sendy node supports and links to more resources.\n\n/// note | Credentials\nRefer to Sendy credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Campaign\n     Create a campaign\n Subscriber\n     Add a subscriber to a list\n     Count subscribers\n     Delete a subscriber from a list\n     Unsubscribe user from a list\n     Get the status of subscriber\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'sendy') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.sendy.md",
+  "keywords": [
+    "sendy",
+    "node",
+    "list",
+    "subscriber",
+    "title",
+    "documentation",
+    "integrate",
+    "subscribers",
+    "page",
+    "operations"
+  ],
+  "fetchedAt": "2025-10-07T16:14:51.825Z",
+  "hash": "5763d9772fdb4ef9f07a5e94bb55c194"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Microsoft Entra ID node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.microsoftentra",
+  "content": "---\ntitle: Microsoft Entra ID node documentation\ndescription: Learn how to use the Microsoft Entra ID node in n8n. Follow technical documentation to integrate Microsoft Entra ID node into your workflows.\ncontentType: [integration, reference]\n---\n\n Microsoft Entra ID node\n\nUse the Microsoft Entra ID node to automate work in Microsoft Entra ID and integrate Microsoft Entra ID with other applications. n8n has built-in support for a wide range of Microsoft Entra ID features, which includes creating, getting, updating, and deleting users and groups, as well as adding users to and removing them from groups.\n\nOn this page, you'll find a list of operations the Microsoft Entra ID node supports, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n Group\n\t Create: Create a new group\n\t Delete: Delete an existing group\n\t Get: Retrieve data for a specific group\n\t Get Many: Retrieve a list of groups\n\t Update: Update a group\n User\n\t Create: Create a new user\n\t Delete: Delete an existing user\n\t Get: Retrieve data for a specific user\n\t Get Many: Retrieve a list of users\n\t Update: Update a user\n\t Add to Group: Add user to a group\n\t Remove from Group: Remove user from a group\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'microsoft-entra-id-azure-active-directory') ]]\n\n Related resources\n\n<!-- vale from-microsoft.We = NO -->\nRefer to Microsoft Entra ID's documentation for more information about the service.\n<!-- vale from-microsoft.We = YES -->\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Common issues\n\nHere are some common errors and issues with the Microsoft Entra ID node and steps to resolve or troubleshoot them.\n\n Updating the Allow External Senders and Auto Subscribe New Members options fails\n\nYou can't update the Allow External Senders and Auto Subscribe New Members options directly after creating a new group. You must wait after creating a group before you can change the values of these options.\n\nWhen designing workflows that use multiple Microsoft Entra ID nodes to first create groups and then update these options, add a Wait node between the two operations. A Wait node configured to pause for at least two seconds allows time for the group to fully initialize. After the wait, the update operation can complete without erroring.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.microsoftentra.md",
+  "keywords": [
+    "microsoft",
+    "entra",
+    "node",
+    "group",
+    "update",
+    "user",
+    "from",
+    "create",
+    "groups",
+    "delete"
+  ],
+  "fetchedAt": "2025-10-07T16:14:40.666Z",
+  "hash": "d108b3c70cc28a37288e4097478156e7"
+}

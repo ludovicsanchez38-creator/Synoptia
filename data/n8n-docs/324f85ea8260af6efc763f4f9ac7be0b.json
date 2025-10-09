@@ -1,0 +1,21 @@
+{
+  "title": "Specify location for your custom nodes",
+  "url": "https://docs.n8n.io/hosting/configuration/configuration-examples/custom-nodes-location",
+  "content": "---\ntitle: Specify location for your custom nodes\ndescription: Add folders and specify paths for your custom nodes. \ncontentType: howto\n---\n\n Specify location for your custom nodes\n\nEvery user can add custom nodes that get loaded by n8n on startup. The default\nlocation is in the subfolder .n8n/custom of the user who started n8n.\n\nYou can define more folders with an environment variable:\n\nRefer to Environment variables reference for more information on this variable.",
+  "category": "hosting",
+  "nodeType": "specify",
+  "keywords": [
+    "specify",
+    "location",
+    "your",
+    "custom",
+    "nodes",
+    "folders",
+    "user",
+    "more",
+    "environment",
+    "variable"
+  ],
+  "fetchedAt": "2025-10-07T16:15:54.064Z",
+  "hash": "324f85ea8260af6efc763f4f9ac7be0b"
+}

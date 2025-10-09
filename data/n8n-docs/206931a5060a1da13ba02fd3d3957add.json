@@ -1,0 +1,21 @@
+{
+  "title": "Facebook Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.facebooktrigger/index",
+  "content": "---\ntitle: Facebook Trigger\ndescription: Learn how to use the Facebook Trigger node in n8n. Follow technical documentation to integrate Facebook Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Facebook Trigger node\n\nFacebook is a social networking site to connect and share with family and friends online.\n\nUse the Facebook Trigger node to trigger a workflow when events occur in Facebook.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Facebook Trigger integrations page.\n///\n\n Objects\n\n- Ad Account: Get updates for certain ads changes.\n- Application: Get updates sent to the application.\n- Certificate Transparency: Get updates when new security certificates are generated for your subscribed domains, including new certificates and potential phishing attempts.\n- Activity and events in a Group\n- Instagram: Get updates when someone comments on the Media objects of your app users; @mentions your app users; or when Stories of your app users expire.\n- Link: Get updates about the links for rich previews by an external provider\n- Page updates\n- Permissions: Updates when granting or revoking permissions\n- User profile updates\n- WhatsApp Business Account\n    \n    /// note | Use WhatsApp Trigger\n    n8n recommends using the WhatsApp Trigger node with the WhatsApp credentials instead of the Facebook Trigger node for these events. The WhatsApp Trigger node has more events to listen to.\n    ///\n\n- Workplace Security\n\nFor each Object, use the Field Names or IDs dropdown to select more details on what data to receive. Refer to the linked pages for more details.\n\n Related resources\n\nView example workflows and related content on n8n's website.\n\nRefer to Meta's Graph API documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "facebook",
+  "keywords": [
+    "facebook",
+    "trigger",
+    "node",
+    "updates",
+    "your",
+    "when",
+    "whatsapp",
+    "events",
+    "note",
+    "refer"
+  ],
+  "fetchedAt": "2025-10-07T16:15:09.127Z",
+  "hash": "206931a5060a1da13ba02fd3d3957add"
+}

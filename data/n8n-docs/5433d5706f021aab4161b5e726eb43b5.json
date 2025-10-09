@@ -1,0 +1,21 @@
+{
+  "title": "PhantomBuster node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.phantombuster",
+  "content": "---\ntitle: PhantomBuster node documentation\ndescription: Learn how to use the PhantomBuster node in n8n. Follow technical documentation to integrate PhantomBuster node into your workflows.\ncontentType: [integration, reference]\n---\n\n PhantomBuster node\n\nUse the PhantomBuster node to automate work in PhantomBuster, and integrate PhantomBuster with other applications. n8n has built-in support for a wide range of PhantomBuster features, including adding, deleting, and getting agents. \n\nOn this page, you'll find a list of operations the PhantomBuster node supports and links to more resources.\n\n/// note | Credentials\nRefer to PhantomBuster credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Agent\n     Delete an agent by ID.\n     Get an agent by ID.\n     Get all agents of the current user's organization.\n     Get the output of the most recent container of an agent.\n     Add an agent to the launch queue.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'phantombuster') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.phantombuster.md",
+  "keywords": [
+    "phantombuster",
+    "node",
+    "agent",
+    "title",
+    "documentation",
+    "integrate",
+    "agents",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:47.351Z",
+  "hash": "5433d5706f021aab4161b5e726eb43b5"
+}

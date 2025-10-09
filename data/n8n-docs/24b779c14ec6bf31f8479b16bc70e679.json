@@ -1,0 +1,21 @@
+{
+  "title": "GitHub Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.githubtrigger",
+  "content": "---\ntitle: GitHub Trigger node documentation\ndescription: Learn how to use the GitHub Trigger node in n8n. Follow technical documentation to integrate GitHub Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n GitHub Trigger node\n\nGitHub provides hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's GitHub Trigger integrations page.\n///\n\n Events\n\n Check run\n Check suite\n Commit comment\n Create\n Delete\n Deploy key\n Deployment\n Deployment status\n Fork\n GitHub app authorization\n Gollum\n Installation\n Installation repositories\n Issue comment\n Label\n Marketplace purchase\n Member\n Membership\n Meta\n Milestone\n Org block\n Organization\n Page build\n Project\n Project card\n Project column\n Public\n Pull request\n Pull request review\n Pull request review comment\n Push\n Release\n Repository\n Repository import\n Repository vulnerability alert\n Security advisory\n Star\n Status\n Team\n Team add\n Watch\n\n Related resources\n\nn8n provides an app node for GitHub. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to GitHub's documentation for details about their API.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.githubtrigger.md",
+  "keywords": [
+    "github",
+    "trigger",
+    "node",
+    "project",
+    "documentation",
+    "control",
+    "comment",
+    "pull",
+    "request",
+    "repository"
+  ],
+  "fetchedAt": "2025-10-07T16:15:11.114Z",
+  "hash": "24b779c14ec6bf31f8479b16bc70e679"
+}

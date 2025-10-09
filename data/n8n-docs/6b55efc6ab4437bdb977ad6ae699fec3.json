@@ -1,0 +1,21 @@
+{
+  "title": "Chargebee node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.chargebee",
+  "content": "---\ntitle: Chargebee node documentation\ndescription: Learn how to use the Chargebee node in n8n. Follow technical documentation to integrate Chargebee node into your workflows.\ncontentType: [integration, reference]\n---\n\n Chargebee node\n\nUse the Chargebee node to automate work in Chargebee, and integrate Chargebee with other applications. n8n has built-in support for a wide range of Chargebee features, including creating customers, returning invoices, and canceling subscriptions.\n\nOn this page, you'll find a list of operations the Chargebee node supports and links to more resources.\n\n/// note | Credentials\nRefer to Chargebee credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Customer\n     Create a customer\n Invoice\n     Return the invoices\n     Get URL for the invoice PDF\n Subscription\n     Cancel a subscription\n     Delete a subscription\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'chargebee') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.chargebee.md",
+  "keywords": [
+    "chargebee",
+    "node",
+    "subscription",
+    "title",
+    "documentation",
+    "integrate",
+    "invoices",
+    "page",
+    "operations",
+    "credentials"
+  ],
+  "fetchedAt": "2025-10-07T16:14:21.637Z",
+  "hash": "6b55efc6ab4437bdb977ad6ae699fec3"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Reddit node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.reddit",
+  "content": "---\ntitle: Reddit node documentation\ndescription: Learn how to use the Reddit node in n8n. Follow technical documentation to integrate Reddit node into your workflows.\ncontentType: [integration, reference]\n---\n\n Reddit node\n\nUse the Reddit node to automate work in Reddit, and integrate Reddit with other applications. n8n has built-in support for a wide range of Reddit features, including getting profiles, and users, retrieving post comments and subreddit, as well as submitting, getting, and deleting posts. \n\nOn this page, you'll find a list of operations the Reddit node supports and links to more resources.\n\n/// note | Credentials\nRefer to Reddit credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Post\n     Submit a post to a subreddit\n     Delete a post from a subreddit\n     Get a post from a subreddit\n     Get all posts from a subreddit\n     Search posts in a subreddit or in all of Reddit.\n Post Comment\n     Create a top-level comment in a post\n     Retrieve all comments in a post\n     Remove a comment from a post\n     Write a reply to a comment in a post\n Profile\n     Get\n Subreddit\n     Retrieve background information about a subreddit.\n     Retrieve information about subreddits from all of Reddit.\n User\n     Get\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'reddit') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.reddit.md",
+  "keywords": [
+    "reddit",
+    "node",
+    "post",
+    "subreddit",
+    "from",
+    "comment",
+    "posts",
+    "integrations",
+    "retrieve",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:50.196Z",
+  "hash": "d1f5906c44afc064fce4e7a0eb92705e"
+}

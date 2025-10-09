@@ -1,0 +1,21 @@
+{
+  "title": "ConvertKit node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.convertkit",
+  "content": "---\ntitle: ConvertKit node documentation\ndescription: Learn how to use the ConvertKit node in n8n. Follow technical documentation to integrate ConvertKit node into your workflows.\ncontentType: [integration, reference]\n---\n\n ConvertKit node\n\nUse the ConvertKit node to automate work in ConvertKit, and integrate ConvertKit with other applications. n8n has built-in support for a wide range of ConvertKit features, including creating and deleting custom fields, getting tags, and adding subscribers.\n\nOn this page, you'll find a list of operations the ConvertKit node supports and links to more resources.\n\n/// note | Credentials\nRefer to ConvertKit credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Custom Field\n     Create a field\n     Delete a field\n     Get all fields\n     Update a field\n Form\n     Add a subscriber\n     Get all forms\n     List subscriptions to a form including subscriber data\n Sequence\n     Add a subscriber\n     Get all sequences\n     Get all subscriptions to a sequence including subscriber data\n Tag\n     Create a tag\n     Get all tags\n Tag Subscriber\n     Add a tag to a subscriber\n     List subscriptions to a tag including subscriber data\n     Delete a tag from a subscriber\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'convertkit') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.convertkit.md",
+  "keywords": [
+    "convertkit",
+    "node",
+    "subscriber",
+    "including",
+    "field",
+    "list",
+    "subscriptions",
+    "data",
+    "title",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:23.183Z",
+  "hash": "44704ba18700e9a3cbd7dd95288dc291"
+}

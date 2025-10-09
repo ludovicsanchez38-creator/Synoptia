@@ -1,0 +1,21 @@
+{
+  "title": "Rundeck node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.rundeck",
+  "content": "---\ntitle: Rundeck node documentation\ndescription: Learn how to use the Rundeck node in n8n. Follow technical documentation to integrate Rundeck node into your workflows.\ncontentType: [integration, reference]\n---\n\n Rundeck node\n\nUse the Rundeck node to automate work in Rundeck, and integrate Rundeck with other applications. n8n has built-in support for executing jobs and getting metadata.\n\nOn this page, you'll find a list of operations the Rundeck node supports and links to more resources.\n\n/// note | Credentials\nRefer to Rundeck credentials for guidance on setting up authentication. \n///\n\n Operations\n\n- Job\n    - Execute a job\n    - Get metadata of a job\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'rundeck') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Find the job ID\n\n1. Access your Rundeck dashboard.\n2. Open the project that contains the job you want to use with n8n.\n3. In the sidebar, select JOBS.\n4. Under All Jobs, select the name of the job you want to use with n8n.\n5. In the top left corner, under the name of the job, copy the string that's displayed in smaller font below the job name. This is your job ID.\n6. Paste this job ID in the Job Id field in n8n.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.rundeck.md",
+  "keywords": [
+    "rundeck",
+    "node",
+    "your",
+    "with",
+    "jobs",
+    "this",
+    "name",
+    "title",
+    "documentation",
+    "integrate"
+  ],
+  "fetchedAt": "2025-10-07T16:14:50.653Z",
+  "hash": "db099d5b31d62b000c45d5acb745023b"
+}

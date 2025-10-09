@@ -1,0 +1,21 @@
+{
+  "title": "Google Gemini node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.googlegemini",
+  "content": "---\ntitle: Google Gemini node documentation\ndescription: Learn how to use the Google Gemini node in n8n. Follow technical documentation to integrate Google Gemini node into your workflows.\ncontentType: [integration, reference]\n---\n\n Google Gemini node\n\nUse the Google Gemini node to automate work in Google Gemini and integrate Google Gemini with other applications. n8n has built-in support for a wide range of Google Gemini features, including working with audio, videos, images, documents, and files to analyze, generate, and transcribe.\n\nOn this page, you'll find a list of operations the Google Gemini node supports, and links to more resources.\n\n///  note  | Credentials\nYou can find authentication information for this node here.\n///\n\n Operations\n\n Audio:\n\t Analyze Audio: Take in audio and answer questions about it.\n\t Transcribe a Recording: Transcribes audio into text.\n Document:\n\t Analyze Document: Take in documents and answer questions about them.\n File:\n\t Upload File: Upload a file to the Google Gemini API for later user.\n Image:\n\t Analyze Image: Take in images and answer questions about them.\n\t Generate an Image: Creates an image from a text prompt.\n Text:\n\t Message a Model: Create a completion with a Google Gemini model.\n Video:\n\t Analyze Video: Take in videos and answer questions about them.\n\t Generate a Video: Creates a video from a text prompt.\n\t Download Video: Download a generated video from the Google Gemini API using a URL.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'google-gemini') ]]\n\n Related resources\n\n<!-- add a link to the service's documentation. This should usually go direct to the API docs -->\nRefer to Google Gemini's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-langchain.googlegemini.md",
+  "keywords": [
+    "google",
+    "gemini",
+    "node",
+    "video",
+    "audio",
+    "analyze",
+    "about",
+    "documentation",
+    "take",
+    "answer"
+  ],
+  "fetchedAt": "2025-10-07T16:15:01.709Z",
+  "hash": "cd4499907f47cd2167b0b85622124791"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Dates",
+  "url": "https://docs.n8n.io/code/builtin/data-transformation-functions/dates",
+  "content": "---\ntitle: Data transformation functions for dates\ndescription: A reference document listing built-in convenience functions to support data transformation in expressions for dates.\ncontentType: reference\n---\n\n Dates\n\nA reference document listing built-in convenience functions to support data transformation in expressions for dates.\n\n/// note | JavaScript in expressions\nYou can use any JavaScript in expressions. Refer to Expressions for more information.\n///\n[[% import \"macros/data-functions.html\" as dataFunctions %]]\n\n[[% for func in dfdate %]]\n[[ dataFunctions.dataFunctions(\"date\", func.funcName, func.returns, func.description, func.args, func.examples ) ]]\n[[% endfor %]]",
+  "category": "code",
+  "nodeType": null,
+  "keywords": [
+    "dates",
+    "func",
+    "expressions",
+    "data",
+    "functions",
+    "transformation",
+    "reference",
+    "datafunctions",
+    "description",
+    "document"
+  ],
+  "fetchedAt": "2025-10-07T16:15:45.723Z",
+  "hash": "0757e9f39fe26a312c2f78729039f81b"
+}

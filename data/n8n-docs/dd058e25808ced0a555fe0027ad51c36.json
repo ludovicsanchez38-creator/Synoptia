@@ -1,0 +1,21 @@
+{
+  "title": "License environment variables",
+  "url": "https://docs.n8n.io/hosting/configuration/environment-variables/licenses",
+  "content": "---\ntitle: License environment variables\ndescription: Environment variables to configure license settings in n8n, including options to hide the usage page, manage license activation and auto-renewal settings, and specify the server URL for license retrieval.\ncontentType: reference\ntags:\n  - environment variables\nhide:\n  - toc\n  - tags\n---\n\n License environment variables\n\n--8<-- \"snippets/self-hosting/file-based-configuration.md\"\n\nTo enable certain licensed features, you must first activate your license. You can do this either through the UI or by setting environment variables. For more information, see license key.\n\n| Variable | Type  | Default  | Description |\n| :------- | :---- | :------- | :---------- |\n| N8NHIDEUSAGEPAGE | boolean | false | Hide the usage and plans page in the app. |\n| N8NLICENSEACTIVATIONKEY | String | '' | Activation key to initialize license. Not applicable if the n8n instance was already activated. |\n| N8NLICENSEAUTORENEWENABLED | Boolean | true | Enables (true) or disables (false) autorenewal for licenses. <br>If disabled, you need to manually renew the license every 10 days by navigating to Settings > Usage and plan, and pressing F5. Failure to renew the license will disable all licensed features. |\n| N8NLICENSEDETACHFLOATINGONSHUTDOWN | Boolean | true | Controls whether the instance releases floating entitlements back to the pool upon shutdown. Set to true to allow other instances to reuse the entitlements, or false to retain them. <br> For production instances that must always keep their licensed features, set this to false. |\n| N8NLICENSESERVERURL | String | https://license.n8n.io/v1 | Server URL to retrieve license. |\n| N8NLICENSETENANTID | Number | 1 | Tenant ID associated with the license. Only set this variable if explicitly instructed by n8n. |\n| httpsproxylicenseserver | String | https://user:pass@proxy:port | Proxy server URL for HTTPS requests to retrieve license. This variable name needs to be lowercase. |",
+  "category": "hosting",
+  "nodeType": null,
+  "keywords": [
+    "license",
+    "environment",
+    "variables",
+    "this",
+    "false",
+    "true",
+    "settings",
+    "hide",
+    "usage",
+    "server"
+  ],
+  "fetchedAt": "2025-10-07T16:15:57.373Z",
+  "hash": "dd058e25808ced0a555fe0027ad51c36"
+}

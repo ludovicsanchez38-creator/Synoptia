@@ -1,0 +1,22 @@
+{
+  "title": "WhatsApp Business Cloud node common issues",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.whatsapp/common-issues",
+  "content": "---\ntitle: WhatsApp Business Cloud node common issues\ndescription: Documentation for common issues and questions in the WhatsApp Business Cloud node in n8n, a workflow automation platform. Includes details of the issue and suggested solutions.\ncontentType: [integration, reference]\npriority: high\n---\n\n WhatsApp Business Cloud node common issues\n\nHere are some common errors and issues with the WhatsApp Business Cloud node and steps to resolve or troubleshoot them.\n\n Bad request - please check your parameters\n\nThis error occurs when WhatsApp Business Cloud rejects your request because of a problem with its parameters. It's common to see this when using the Send Template operation if the data you send doesn't match the format of your template.\n\nTo resolve this issue, review the parameters in your message template. Pay attention to each parameter's data type and the order they're defined in the template.\n\nCheck the data that n8n is mapping to the template parameters. If you're using expressions to set parameter values, check the input data to make sure each item resolves to a valid value. You may want to use the Edit Fields (Set) node or set a fallback value to ensure you send a value with the correct format.\n\n Working with non-text media\n\nThe WhatsApp Business Cloud node can work with non-text messages and media like images, audio, documents, and more.\n\nIf your operation includes a Input Data Field Name or Property Name parameter, set this to the field name itself rather than referencing the data in an expression.\n\nFor example, if you are trying to send a message with an \"Image\" MessageType and Take Image From set to \"n8n\", set Input Data Field Name to a field name like data instead of an expression like {{ $json.input.data }}.",
+  "category": "app-nodes",
+  "nodeType": "whatsapp",
+  "keywords": [
+    "whatsapp",
+    "business",
+    "cloud",
+    "node",
+    "common",
+    "issues",
+    "data",
+    "with",
+    "your",
+    "template",
+    "name"
+  ],
+  "fetchedAt": "2025-10-07T16:14:59.638Z",
+  "hash": "b5bd405db5e531fedde3ae95ef90bbf3"
+}

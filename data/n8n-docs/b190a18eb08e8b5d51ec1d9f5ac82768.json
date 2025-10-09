@@ -1,0 +1,22 @@
+{
+  "title": "Sentry.io node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.sentryio",
+  "content": "---\ntitle: Sentry.io node documentation\ndescription: Learn how to use the Sentry.io node in n8n. Follow technical documentation to integrate Sentry.io node into your workflows.\ncontentType: [integration, reference]\n---\n\n Sentry.io node\n\nUse the Sentry.io node to automate work in Sentry.io, and integrate Sentry.io with other applications. n8n has built-in support for a wide range of Sentry.io features, including creating, updating, deleting, and getting, issues, projects, and releases, as well as getting all events.\n\nOn this page, you'll find a list of operations the Sentry.io node supports and links to more resources.\n\n/// note | Credentials\nRefer to Sentry.io credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Event\n     Get event by ID\n     Get all events\n Issue\n     Delete an issue\n     Get issue by ID\n     Get all issues\n     Update an issue\n Project\n     Create a new project\n     Delete a project\n     Get project by ID\n     Get all projects\n     Update a project\n Release\n     Create a release\n     Delete a release\n     Get release by version identifier\n     Get all releases\n     Update a release\n Organization\n     Create an organization\n     Get organization by slug\n     Get all organizations\n     Update an organization\n Team\n     Create a new team\n     Delete a team\n     Get team by slug\n     Get all teams\n     Update a team\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'sentryio') ]]\n\n Related resources\n\nRefer to Sentry.io's documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.sentryio.md",
+  "keywords": [
+    "sentry.io",
+    "node",
+    "sentry",
+    "update",
+    "project",
+    "release",
+    "team",
+    "issue",
+    "delete",
+    "create",
+    "organization"
+  ],
+  "fetchedAt": "2025-10-07T16:14:51.972Z",
+  "hash": "b190a18eb08e8b5d51ec1d9f5ac82768"
+}

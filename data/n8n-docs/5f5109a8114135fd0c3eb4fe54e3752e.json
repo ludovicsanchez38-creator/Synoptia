@@ -1,0 +1,21 @@
+{
+  "title": "Groq Chat Model node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatgroq",
+  "content": "---\ntitle: Groq Chat Model node documentation\ndescription: Learn how to use the Groq Chat Model node in n8n. Follow technical documentation to integrate Groq Chat Model node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Groq Chat Model node\n\nUse the Groq Chat Model node to access Groq's large language models for conversational AI and text generation tasks.\n\nOn this page, you'll find the node parameters for the Groq Chat Model node, and links to more resources.\n\n/// note | Credentials \nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node parameters\n\n Model: Select the model which will generate the completion. n8n dynamically loads available models from the Groq API. Learn more in the Groq model documentation.\n\n Node options\n\n Maximum Number of Tokens: Enter the maximum number of tokens used, which sets the completion length.\n Sampling Temperature: Use this option to control the randomness of the sampling process. A higher temperature creates more diverse sampling, but increases the risk of hallucinations.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'groq-chat-model') ]]\n\n Related resources\n\nRefer to Groq's API documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.lmchatgroq.md",
+  "keywords": [
+    "groq",
+    "chat",
+    "model",
+    "node",
+    "documentation",
+    "more",
+    "this",
+    "integrations",
+    "sampling",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:15:30.877Z",
+  "hash": "5f5109a8114135fd0c3eb4fe54e3752e"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Pushcut Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.pushcuttrigger",
+  "content": "---\ntitle: Pushcut Trigger node documentation\ndescription: Learn how to use the Pushcut Trigger node in n8n. Follow technical documentation to integrate Pushcut Trigger node into your workflows.\ncontentType: [integration, reference]\n---\n\n Pushcut Trigger node\n\nPushcut is an app for iOS that lets you create smart notifications to kick off shortcuts, URLs, and online automation.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n///  note  | Examples and templates\nFor usage examples and templates to help you get started, refer to n8n's Pushcut Trigger integrations page.\n///\n\n Configure a Pushcut action\n\nFollow these steps to configure your Pushcut Trigger node with your Pushcut app.\n\n1. In your Pushcut app, select a notification from the Notifications screen.\n2. Select the Add Action button.\n3. Enter an action name in the Label field.\n4. Select the Server tab.\n5. Select the Integration tab.\n6. Select Integration Trigger.\n7. In n8n, enter a name for the action and select Execute step.\n8. Select this action under the Select Integration Trigger screen in your Pushcut app.\n9. Select Done in the top right to save the action.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.pushcuttrigger.md",
+  "keywords": [
+    "pushcut",
+    "trigger",
+    "node",
+    "select",
+    "action",
+    "your",
+    "integration",
+    "documentation",
+    "follow",
+    "notifications"
+  ],
+  "fetchedAt": "2025-10-07T16:15:17.348Z",
+  "hash": "408e1d2d8359341c8f211d2c438114c5"
+}

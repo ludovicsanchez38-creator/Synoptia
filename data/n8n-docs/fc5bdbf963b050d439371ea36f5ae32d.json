@@ -1,0 +1,21 @@
+{
+  "title": "Embeddings Azure OpenAI node",
+  "url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.embeddingsazureopenai",
+  "content": "---\ntitle: Embeddings Azure OpenAI node documentation\ndescription: Learn how to use the Embeddings Azure OpenAI node in n8n. Follow technical documentation to integrate Embeddings Azure OpenAI node into your workflows.\ncontentType: [integration, reference]\n---\n\n Embeddings Azure OpenAI node\n\nUse the Embeddings Azure OpenAI node to generate embeddings for a given text.\n\nOn this page, you'll find the node parameters for the Embeddings Azure OpenAI node, and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/sub-node-expression-resolution.md\"\n\n Node options\n\n Model (Deployment) Name: Select the model (deployment) to use for generating embeddings.\n Batch Size: Enter the maximum number of documents to send in each request.\n Strip New Lines: Select whether to remove new line characters from input text (turned on) or not (turned off). n8n enables this by default.\n Timeout: Enter the maximum amount of time a request can take in seconds. Set to -1 for no timeout.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'embeddings-azure-openai') ]]\n\n Related resources\n\nRefer to LangChains's OpenAI embeddings documentation for more information about the service.\n\n--8<-- \"snippets/integrations/builtin/cluster-nodes/langchain-overview-link.md\"",
+  "category": "cluster-nodes",
+  "nodeType": "n8n-nodes-langchain.embeddingsazureopenai.md",
+  "keywords": [
+    "embeddings",
+    "azure",
+    "openai",
+    "node",
+    "documentation",
+    "this",
+    "integrations",
+    "title",
+    "text",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:15:28.427Z",
+  "hash": "fc5bdbf963b050d439371ea36f5ae32d"
+}

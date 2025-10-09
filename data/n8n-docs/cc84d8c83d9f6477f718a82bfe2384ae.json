@@ -1,0 +1,21 @@
+{
+  "title": "Airtable Trigger node",
+  "url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.airtabletrigger",
+  "content": "---\ntitle: Airtable Trigger node documentation\ndescription: Learn how to use the Airtable Trigger node in n8n. Follow technical documentation to integrate Airtable Trigger node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Airtable Trigger node\n\nAirtable is a spreadsheet-database hybrid, with the features of a database but applied to a spreadsheet. The fields in an Airtable table are similar to cells in a spreadsheet, but have types such as 'checkbox', 'phone number', and 'drop-down list', and can reference file attachments like images.\n\nOn this page, you'll find a list of events the Airtable Trigger node can respond to and links to more resources.\n\n/// note | Credentials\nYou can find authentication information for this node here.\n///\n\n Events\n\n New Airtable event\n\n Related resources\n\nn8n provides an app node for Airtable. You can find the node docs here.\n\nView example workflows and related content on n8n's website.\n\nRefer to Airtable's documentation for details about their API.\n\n Node parameters\n\nUse these parameters to configure your node.\n\n Poll Times\n\nn8n's Airtable node uses polling for check for updates on configured Airtable resources. The Poll Times parameter configures the querying frequency:\n\n Every Minute\n Every Hour\n Every Day\n Every Week\n Every Month\n Every X: Check for updates every given number of minutes or hours.\n Custom: Customize the polling interval by providing a cron expression.\n\nUse the Add Poll Time button to add more polling intervals.\n\n Base\n\nThe Airtable base you want to check for updates on. You can provide your base's URL or base ID.\n\n Table\n\nThe Airtable table within the Airtable base that you want to check for updates on. You can provide the table's URL or table ID.\n\n Trigger Field\n\nA created or last modified field in your table. The Airtable Trigger node uses this to determine what updates occurred since the previous check.\n\n Download Attachments\n\nWhether to download attachments from the table. When enabled, the Download Fields parameter defines the attachment fields.\n\n Download Fields\n\nWhen you enable the Download Attachments toggle, this field defines which table fields to download. Field names are case sensitive. Use a comma to separate multiple field names.\n\n Additional Fields\n\nUse the Add Field button to add the following parameters:\n\n Fields: A comma-separated list of fields to include in the output. If you don't specify anything here, the output will contain only the Trigger Field.\n Formula: An Airtable formula to further filter the results. You can use this to add further constraints to the events that trigger the workflow. Note that formula values aren't taken into account for manual executions, only for production polling.\n View ID: The name or ID of a table view. When defined, only returns records available in the given view.",
+  "category": "trigger-nodes",
+  "nodeType": "n8n-nodes-base.airtabletrigger.md",
+  "keywords": [
+    "airtable",
+    "trigger",
+    "node",
+    "table",
+    "fields",
+    "every",
+    "field",
+    "download",
+    "this",
+    "check"
+  ],
+  "fetchedAt": "2025-10-07T16:15:05.180Z",
+  "hash": "cc84d8c83d9f6477f718a82bfe2384ae"
+}

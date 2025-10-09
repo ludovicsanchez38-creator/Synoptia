@@ -1,0 +1,21 @@
+{
+  "title": "Zulip node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.zulip",
+  "content": "---\ntitle: Zulip node documentation\ndescription: Learn how to use the Zulip node in n8n. Follow technical documentation to integrate Zulip node into your workflows.\ncontentType: [integration, reference]\n---\n\n Zulip node\n\nUse the Zulip node to automate work in Zulip, and integrate Zulip with other applications. n8n has built-in support for a wide range of Zulip features, including creating, deleting, and getting users and streams, as well as sending messages. \n\nOn this page, you'll find a list of operations the Zulip node supports and links to more resources.\n\n/// note | Credentials\nRefer to Zulip credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Message\n     Delete a message\n     Get a message\n     Send a private message\n     Send a message to stream\n     Update a message\n     Upload a file\n Stream\n     Create a stream.\n     Delete a stream.\n     Get all streams.\n     Get subscribed streams.\n     Update a stream.\n User\n     Create a user.\n     Deactivate a user.\n     Get a user.\n     Get all users.\n     Update a user.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'zulip') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.zulip.md",
+  "keywords": [
+    "zulip",
+    "node",
+    "message",
+    "stream",
+    "user",
+    "streams",
+    "update",
+    "title",
+    "documentation",
+    "integrate"
+  ],
+  "fetchedAt": "2025-10-07T16:15:01.413Z",
+  "hash": "eba5dd1d1a8ed5b16be3dbc3cbad27c5"
+}

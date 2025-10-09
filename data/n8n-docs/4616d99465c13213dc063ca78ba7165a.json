@@ -1,0 +1,23 @@
+{
+  "title": "X (Formerly Twitter) node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.twitter",
+  "content": "---\ntitle: X (Formerly Twitter) node documentation\ndescription: Learn how to use the X (Formerly Twitter) node in n8n. Follow technical documentation to integrate X (Formerly Twitter) node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n X (Formerly Twitter) node\n\nUse the X node to automate work in X and integrate X with other applications. n8n has built-in support for a wide range of X features, including creating direct messages and deleting, searching, liking, and retweeting a tweet. \n\nOn this page, you'll find a list of operations the X node supports and links to more resources.\n\n/// note | Credentials\nRefer to X credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Direct Message\n     Create a direct message\n Tweet\n     Create or reply a tweet\n     Delete a tweet\n     Search tweets\n     Like a tweet\n     Retweet a tweet\n User\n  \t Get a user\n List \n     Add a member to a list\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'twitter') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.twitter.md",
+  "keywords": [
+    "(formerly",
+    "twitter)",
+    "node",
+    "tweet",
+    "twitter",
+    "formerly",
+    "direct",
+    "list",
+    "title",
+    "documentation",
+    "integrate",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:57.602Z",
+  "hash": "4616d99465c13213dc063ca78ba7165a"
+}

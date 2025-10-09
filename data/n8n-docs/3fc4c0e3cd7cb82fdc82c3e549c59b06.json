@@ -1,0 +1,21 @@
+{
+  "title": "Aggregate",
+  "url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.aggregate",
+  "content": "---\ntitle: Aggregate\ndescription: Documentation for the Aggregate node in n8n, a workflow automation platform. Includes guidance on usage, and links to examples.\ncontentType: [integration, reference]\npriority: high\n---\n\n Aggregate\n\nUse the Aggregate node to take separate items, or portions of them, and group them together into individual items.\n\n Node parameters\n\nTo begin using the node, select the Aggregate you'd like to use:\n\n Individual Fields: Aggregate individual fields separately.\n All Item Data: Aggregate all item data into a single list.\n\n Individual Fields\n\n Input Field Name: Enter the name of the field in the input data to aggregate together.\n Rename Field: This toggle controls whether to give the field a different name in the aggregated output data. Turn this on to add a different field name. If you're aggregating multiple fields, you must provide new output field names. You can't leave multiple fields undefined.\n\t Output Field Name: This field is displayed when you turn on Rename Field. Enter the field name for the aggregated output data.\n\nRefer to Node options for more configuration options.\n\n All Item Data\n\n Put Output in Field: Enter the name of the field to output the data in.\n Include: Select which fields to include in the output. Choose from:\n\t All fields: The output includes data from all fields with no further parameters.\n\t Specified Fields: If you select this option, enter a comma-separated list of fields the output should include data from in the Fields To Include parameter. The output will include only the fields in this list.\n\t All Fields Except: If you select this option, enter a comma-separated list of fields the output should exclude data from in the Fields To Exclude parameter. The output will include all fields not in this list.\n\nRefer to Node options for more configuration options.\n\n Node options\n\nYou can further configure this node using these Options:\n\n Disable Dot Notation: The node displays this toggle when you select the Individual Fields Aggregate. It controls whether to disallow referencing child fields using parent.child in the field name (turned on), or allow it (turned off, default).\n Merge Lists: The node displays this toggle when you select the Individual Fields Aggregate. Turn it on if the field to aggregate is a list and you want to output a single flat list rather than a list of lists.\n Include Binaries: The node displays this toggle for both Aggregate types. Turn it on if you want to include binary data from the input in the new output.\n Keep Missing And Null Values: The node displays this toggle when you select the Individual Fields Aggregate. Turn it on to add a null (empty) entry in the output list when there is a null or missing value in the input. If turned off, the output ignores null or empty values.\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'aggregate') ]]\n\n Related resources\n\n--8<-- \"snippets/integrations/builtin/core-nodes/data-transformation-actions/data-section-link.md\"",
+  "category": "core-nodes",
+  "nodeType": "n8n-nodes-base.aggregate.md",
+  "keywords": [
+    "aggregate",
+    "fields",
+    "output",
+    "field",
+    "data",
+    "node",
+    "this",
+    "list",
+    "name",
+    "include"
+  ],
+  "fetchedAt": "2025-10-07T16:14:02.284Z",
+  "hash": "3fc4c0e3cd7cb82fdc82c3e549c59b06"
+}

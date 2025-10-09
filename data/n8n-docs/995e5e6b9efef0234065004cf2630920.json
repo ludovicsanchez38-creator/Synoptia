@@ -1,0 +1,21 @@
+{
+  "title": "Splunk node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.splunk",
+  "content": "---\ntitle: Splunk node documentation\ndescription: Learn how to use the Splunk node in n8n. Follow technical documentation to integrate Splunk node into your workflows.\ncontentType: [integration, reference]\n---\n\n Splunk node\n\nUse the Splunk node to automate work in Splunk, and integrate Splunk with other applications. n8n has built-in support for a wide range of Splunk features, including getting fired alerts reports, as well as deleting and getting search configuration. \n\nOn this page, you'll find a list of operations the Splunk node supports and links to more resources.\n\n/// note | Credentials\nRefer to Splunk credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Fired Alert\n     Get a fired alerts report\n Search Configuration\n     Delete a search configuration\n     Get a search configuration\n     Get many search configurations\n Search Job\n     Create a search job\n     Delete a search job\n     Get a search job\n     Get many search jobs\n Search Result\n     Get many search results\n User\n     Create a user\n     Delete a user\n     Get a user\n     Get many users\n     Update a user\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'splunk') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.splunk.md",
+  "keywords": [
+    "splunk",
+    "node",
+    "search",
+    "user",
+    "configuration",
+    "many",
+    "fired",
+    "delete",
+    "title",
+    "documentation"
+  ],
+  "fetchedAt": "2025-10-07T16:14:53.110Z",
+  "hash": "995e5e6b9efef0234065004cf2630920"
+}

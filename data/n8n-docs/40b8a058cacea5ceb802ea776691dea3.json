@@ -1,0 +1,21 @@
+{
+  "title": "MISP node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.misp",
+  "content": "---\ntitle: MISP node documentation\ndescription: Learn how to use the MISP node in n8n. Follow technical documentation to integrate MISP node into your workflows.\ncontentType: [integration, reference]\n---\n\n MISP node\n\nUse the MISP node to automate work in MISP, and integrate MISP with other applications. n8n has built-in support for a wide range of MISP features, including creating, updating, deleting and getting events, feeds, and organizations. \n\nOn this page, you'll find a list of operations the MISP node supports and links to more resources.\n\n/// note | Credentials\nRefer to MISP credentials for guidance on setting up authentication. \n///\n\n Operations\n\n Attribute\n     Create\n     Delete\n     Get\n     Get All\n\t Search\n     Update\n Event\n     Create\n     Delete\n     Get\n     Get All\n     Publish\n\t Search\n     Unpublish\n     Update\n Event Tag\n     Add\n     Remove\n Feed\n     Create\n     Disable\n     Enable\n     Get\n     Get All\n     Update\n Galaxy\n     Delete\n     Get\n     Get All\n Noticelist\n     Get\n     Get All\n Object\n\t Search\n Organisation\n     Create\n     Delete\n     Get\n     Get All\n     Update\n Tag\n     Create\n     Delete\n     Get All\n     Update\n User\n     Create\n     Delete\n     Get\n     Get All\n     Update\n Warninglist\n     Get\n     Get All\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'misp') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.misp.md",
+  "keywords": [
+    "misp",
+    "node",
+    "create",
+    "delete",
+    "update",
+    "search",
+    "title",
+    "documentation",
+    "integrate",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:42.180Z",
+  "hash": "40b8a058cacea5ceb802ea776691dea3"
+}

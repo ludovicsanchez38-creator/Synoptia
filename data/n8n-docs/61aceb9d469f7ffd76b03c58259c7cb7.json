@@ -1,0 +1,21 @@
+{
+  "title": "Jenkins node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.jenkins",
+  "content": "---\ntitle: Jenkins node documentation\ndescription: Learn how to use the Jenkins node in n8n. Follow technical documentation to integrate Jenkins node into your workflows.\ncontentType: [integration, reference]\n---\n\n Jenkins node\n\nUse the Jenkins node to automate work in Jenkins, and integrate Jenkins with other applications. n8n has built-in support for a wide range of Jenkins features, including listing builds, managing instances, and creating and copying jobs. \n\nOn this page, you'll find a list of operations the Jenkins node supports and links to more resources.\n\n/// note | Credentials\nRefer to Jenkins credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Build\n     List Builds\n Instance\n     Cancel quiet down state\n     Put Jenkins in quiet mode, no builds can be started, Jenkins is ready for shutdown\n     Restart Jenkins immediately on environments where it's possible\n     Restart Jenkins once no jobs are running on environments where it's possible\n     Shutdown once no jobs are running\n     Shutdown Jenkins immediately\n Job\n     Copy a specific job\n     Create a new job\n     Trigger a specific job\n     Trigger a specific job\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'jenkins') ]]",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.jenkins.md",
+  "keywords": [
+    "jenkins",
+    "node",
+    "builds",
+    "jobs",
+    "shutdown",
+    "specific",
+    "title",
+    "documentation",
+    "integrate",
+    "page"
+  ],
+  "fetchedAt": "2025-10-07T16:14:36.504Z",
+  "hash": "61aceb9d469f7ffd76b03c58259c7cb7"
+}

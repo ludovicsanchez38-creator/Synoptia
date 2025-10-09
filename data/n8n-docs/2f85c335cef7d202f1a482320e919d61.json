@@ -1,0 +1,21 @@
+{
+  "title": "Notion node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.notion/index",
+  "content": "---\ntitle: Notion node documentation\ndescription: Learn how to use the Notion node in n8n. Follow technical documentation to integrate Notion node into your workflows.\ncontentType: [integration, reference]\npriority: high\n---\n\n Notion node\n\nUse the Notion node to automate work in Notion, and integrate Notion with other applications. n8n has built-in support for a wide range of Notion features, including getting and searching databases, creating pages, and getting users.\n\nOn this page, you'll find a list of operations the Notion node supports and links to more resources.\n\n/// note | Credentials\nRefer to Notion credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Block\n\t Append After\n\t Get Child Blocks\n Database\n\t Get\n\t Get Many\n\t Search\n Database Page\n\t Create\n\t Get\n\t Get Many\n\t Update\n Page\n\t Archive\n\t Create\n\t Search\n User\n\t Get\n\t Get Many\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'notion') ]]\n\n Related resources\n\nn8n provides an app node for Notion. You can find the trigger node docs here.\n\nRefer to Notion's documentation for details about their API.\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Common issues\n\nFor common errors or issues and suggested resolution steps, refer to Common issues.",
+  "category": "app-nodes",
+  "nodeType": "notion",
+  "keywords": [
+    "notion",
+    "node",
+    "page",
+    "documentation",
+    "refer",
+    "integrations",
+    "many",
+    "common",
+    "issues",
+    "title"
+  ],
+  "fetchedAt": "2025-10-07T16:14:45.267Z",
+  "hash": "2f85c335cef7d202f1a482320e919d61"
+}

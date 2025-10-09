@@ -1,0 +1,22 @@
+{
+  "title": "Salesforce node",
+  "url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.salesforce",
+  "content": "---\ntitle: Salesforce node documentation\ndescription: Learn how to use the Salesforce node in n8n. Follow technical documentation to integrate Salesforce node into your workflows.\ncontentType: [integration, reference]\npriority: medium\n---\n\n Salesforce node\n\nUse the Salesforce node to automate work in Salesforce, and integrate Salesforce with other applications. n8n has built-in support for a wide range of Salesforce features, including creating, updating, deleting, and getting accounts, attachments, cases, and leads, as well as uploading documents. \n\nOn this page, you'll find a list of operations the Salesforce node supports and links to more resources.\n\n/// note | Credentials\nRefer to Salesforce credentials for guidance on setting up authentication. \n///\n\n--8<-- \"snippets/integrations/builtin/app-nodes/ai-tools.md\"\n\n Operations\n\n Account\n     Add note to an account\n     Create an account\n     Create a new account, or update the current one if it already exists (upsert)\n     Get an account\n     Get all accounts\n     Returns an overview of account's metadata.\n     Delete an account\n     Update an account\n Attachment\n     Create a attachment\n     Delete a attachment\n     Get a attachment\n     Get all attachments\n     Returns an overview of attachment's metadata.\n     Update a attachment\n Case\n     Add a comment to a case\n     Create a case\n     Get a case\n     Get all cases\n     Returns an overview of case's metadata\n     Delete a case\n     Update a case\n Contact\n     Add lead to a campaign\n     Add note to a contact\n     Create a contact\n     Create a new contact, or update the current one if it already exists (upsert)\n     Delete a contact\n     Get a contact\n     Returns an overview of contact's metadata\n     Get all contacts\n     Update a contact\n Custom Object\n     Create a custom object record\n     Create a new record, or update the current one if it already exists (upsert)\n     Get a custom object record\n     Get all custom object records\n     Delete a custom object record\n     Update a custom object record\n Document\n     Upload a document\n Flow\n     Get all flows\n     Invoke a flow\n Lead\n     Add lead to a campaign\n     Add note to a lead\n     Create a lead\n     Create a new lead, or update the current one if it already exists (upsert)\n     Delete a lead\n     Get a lead\n     Get all leads\n     Returns an overview of Lead's metadata\n     Update a lead\n Opportunity\n     Add note to an opportunity\n     Create an opportunity\n     Create a new opportunity, or update the current one if it already exists (upsert)\n     Delete an opportunity\n     Get an opportunity\n     Get all opportunities\n     Returns an overview of opportunity's metadata\n     Update an opportunity\n Search\n     Execute a SOQL query that returns all the results in a single response\n Task\n     Create a task\n     Delete a task\n     Get a task\n     Get all tasks\n     Returns an overview of task's metadata\n     Update a task\n User\n     Get a user\n     Get all users\n\n Templates and examples\n\n<!-- see https://www.notion.so/n8n/Pull-in-templates-for-the-integrations-pages-37c716837b804d30a33b47475f6e3780 -->\n[[ templatesWidget(page.title, 'salesforce') ]]\n\n--8<-- \"snippets/integrations/builtin/app-nodes/operation-not-supported.md\"\n\n Working with Salesforce custom fields\n\nTo add custom fields to your request:\n\n1. Select Additional Fields > Add Field.\n2. In the dropdown, select Custom Fields.\n\nYou can then find and add your custom fields.",
+  "category": "app-nodes",
+  "nodeType": "n8n-nodes-base.salesforce.md",
+  "keywords": [
+    "salesforce",
+    "node",
+    "create",
+    "update",
+    "lead",
+    "custom",
+    "account",
+    "returns",
+    "delete",
+    "contact",
+    "opportunity"
+  ],
+  "fetchedAt": "2025-10-07T16:14:50.931Z",
+  "hash": "be94e4465f341478eb08e3e6dd7d6380"
+}

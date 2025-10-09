@@ -1,0 +1,21 @@
+{
+  "title": "Workflow components",
+  "url": "https://docs.n8n.io/workflows/components/index",
+  "content": "---\ndescription: Learn about the building blocks of workflows.\ncontentType: overview\n---\n\n Workflow components\n\nThis section contains:\n\n Nodes: integrations and operations.\n Connections: node connectors.\n Sticky notes: document your workflows.",
+  "category": "workflows",
+  "nodeType": null,
+  "keywords": [
+    "workflow",
+    "components",
+    "workflows",
+    "description",
+    "learn",
+    "about",
+    "building",
+    "blocks",
+    "contenttype",
+    "overview"
+  ],
+  "fetchedAt": "2025-10-07T16:15:40.296Z",
+  "hash": "2f310793635571c1c2de98200ca920d3"
+}
