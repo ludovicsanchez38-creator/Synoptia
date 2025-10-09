@@ -48,6 +48,9 @@ temp/
 # Credentials (sécurité)
 credentials.json
 config/credentials.json
+config/encryption.key
+*.key
+*.pem
 
 # Data (éviter de push les données)
 data/*.json
