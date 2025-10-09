@@ -1,24 +1,47 @@
 {
   "name": "synoptia-workflow-builder",
   "version": "1.0.0",
-  "description": "Agent IA pour générer automatiquement des workflows n8n à partir de demandes en français",
-  "main": "src/index.js",
+  "description": "🤖 Multi-agent AI system that generates production-ready n8n workflows in minutes. Uses GPT-5 for planning & generation, Claude Sonnet 4.5 for validation, with RAG over 2000+ workflows.",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js",
+    "start": "node server.js",
+    "dev": "node --watch server.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:old": "node tests/test.js"
+    "ingest": "node scripts/ingest-all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludovicsanchez38-creator/Synoptia.git"
+  },
+  "homepage": "https://github.com/ludovicsanchez38-creator/Synoptia#readme",
+  "bugs": {
+    "url": "https://github.com/ludovicsanchez38-creator/Synoptia/issues"
   },
   "keywords": [
     "n8n",
     "workflow",
     "automation",
-    "mcp",
-    "ai"
+    "ai",
+    "multi-agent",
+    "gpt-5",
+    "claude",
+    "rag",
+    "llm",
+    "openai",
+    "anthropic",
+    "workflow-automation",
+    "no-code",
+    "low-code",
+    "qdrant",
+    "vector-database"
   ],
-  "author": "Ludo - Synoptia",
+  "author": {
+    "name": "Ludovic Sanchez",
+    "email": "ludo@synoptia.fr",
+    "url": "https://synoptia.fr"
+  },
   "license": "MIT",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.65.0",

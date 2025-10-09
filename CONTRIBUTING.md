@@ -288,7 +288,7 @@ __tests__/rag/pipeline/planning-agent.test.js
 
 - **GitHub Issues** : [Issues](../../issues)
 - **Discussions** : [Discussions](../../discussions)
-- **LinkedIn** : [Ludovic Sanchez](https://linkedin.com/in/ludovic-sanchez)
+- **LinkedIn** : [Ludovic Sanchez](https://www.linkedin.com/in/ludovic-sanchez-658b2854/)
 
 ---
 
