@@ -59,8 +59,8 @@ Transforme une demande en français naturel en workflow n8n complet et fonctionn
 
 \`\`\`bash
 # 1. Clone
-git clone https://github.com/yourusername/synoptia-workflow-builder.git
-cd synoptia-workflow-builder
+git clone https://github.com/ludovicsanchez38-creator/Synoptia.git
+cd Synoptia
 
 # 2. Install
 npm install
@@ -82,9 +82,19 @@ Voir [START_HERE.md](START_HERE.md) pour le guide complet.
 
 ---
 
+## 🤝 Contribuer
+
+Les contributions sont les bienvenues ! Consultez [CONTRIBUTING.md](CONTRIBUTING.md) pour :
+- 🐛 Signaler des bugs
+- 💡 Proposer des features
+- 🔧 Soumettre des Pull Requests
+- 📚 Améliorer la documentation
+
+---
+
 ## 🙏 Crédits
 
-Développé par [Ludovic](https://github.com/yourusername) @ [Synoptia](https://synoptia.fr)
+Développé par [Ludovic Sanchez](https://github.com/ludovicsanchez38-creator) @ [Synoptia](https://synoptia.fr)
 
 ---
 
