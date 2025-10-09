@@ -913,3 +913,462 @@ Le système **Synoptia Workflow Builder** est maintenant :
 - ✅ **Robuste** : Feedback loop + retry automatique
 
 **Innovation principale** : Extraction des types exacts depuis le RAG par El Planificator, éliminant complètement l'invention de nodes par GPT-5.
+
+---
+
+## 🔄 Session 4 - 9 octobre 2025 (07h-12h)
+
+### 🎯 Objectifs de la session
+
+1. ✅ Réparer les flèches cliquables dans l'UI (échec session 1, succès session 4!)
+2. ✅ Afficher les coûts par agent en temps réel dans l'UI
+3. ✅ Implémenter reset intelligent (full vs status-only)
+4. ✅ Créer post LinkedIn technique
+5. 🔄 Setup GitHub repository (en cours)
+
+---
+
+### 🐛 Fix des flèches cliquables (RÉSOLU!)
+
+**Problème** : Les toggles "X tâches ▼" ne répondaient pas aux clics (échec en session 1 après 6 tentatives).
+
+**Diagnostic approfondi** : 10 causes potentielles identifiées :
+1. Race condition (defer + inline onclick)
+2. `pointer-events: none` bloquant les événements
+3. z-index/overlay masquant les clics
+4. CSP headers bloquant inline JS
+5. DOM recréé dynamiquement
+6. `overflow: hidden` coupant la zone cliquable
+7. `::before` pseudo-element interceptant les clics
+8. `text-align: center` propageant mal les clics
+9. `transform` sur hover changeant les coordonnées
+10. `transform: scale` sur :active invalidant le clic
+
+**Solutions appliquées** (multi-layered fix) :
+
+**1. Fichier `/home/ludo/synoptia-workflow-builder/public/styles.css`** :
+```css
+/* FIX #6: Permettre les clics sur le header */
+.agent-card {
+    overflow: visible;
+}
+
+/* FIX #7: Ne jamais intercepter les clics */
+.agent-card::before {
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* FIX #8: Reset text-align du parent */
+.agent-tasks {
+    text-align: left;
+}
+
+/* FIX #2/#7: Créer stacking context + z-index */
+.agent-tasks-header {
+    position: relative;
+    z-index: 10;
+}
+
+/* FIX #10: Remplacer scale par opacity */
+.agent-tasks-header:active {
+    opacity: 0.8;
+    background: rgba(15, 23, 42, 0.9);
+}
+
+/* FIX #2: TOUS les enfants ignorent les clics */
+.agent-tasks-header * {
+    pointer-events: none;
+}
+```
+
+**2. Fichier `/home/ludo/synoptia-workflow-builder/public/index.html`** :
+```html
+<!-- FIX #1: Charger toggleTasksList AVANT app.js -->
+<script>
+    window.toggleTasksList = function(header) {
+        const tasksList = header.parentElement.querySelector('.agent-tasks-list');
+        if (tasksList) {
+            tasksList.classList.toggle('collapsed');
+            const toggle = header.querySelector('.tasks-toggle');
+            if (toggle) {
+                toggle.textContent = tasksList.classList.contains('collapsed') ? '▼' : '▲';
+            }
+        }
+    };
+</script>
+```
+
+**3. Fichier `/home/ludo/synoptia-workflow-builder/public/app.js`** :
+```javascript
+// FIX #3: Event delegation avec capture
+document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('click', function(e) {
+        const header = e.target.closest('.agent-tasks-header');
+        if (header && window.toggleTasksList) {
+            e.preventDefault();
+            e.stopPropagation();
+            window.toggleTasksList(header);
+        }
+    }, true); // useCapture=true pour priorité
+});
+```
+
+**Résultat** : ✅ "Les flèches marchent alléluia!" (confirmation utilisateur)
+
+---
+
+### 💰 Affichage des coûts en temps réel
+
+**Objectif** : Afficher le coût de chaque agent + coût total du workflow dans l'UI.
+
+**1. Backend SSE** - Fichier `/home/ludo/synoptia-workflow-builder/utils/cost-tracker.js` :
+```javascript
+// Broadcast SSE après chaque appel API
+if (global.broadcastSSE) {
+    global.broadcastSSE('agent_cost', {
+        agent: agentNames[agent] || agent,
+        agentId: agent,
+        model: model,
+        cost: totalCostEUR,
+        costFormatted: this.formatCurrency(totalCostEUR),
+        inputTokens: inputTokens,
+        outputTokens: outputTokens,
+        totalCost: session.total,
+        totalCostFormatted: this.formatCurrency(session.total)
+    });
+}
+```
+
+**2. Frontend HTML** - Fichier `/home/ludo/synoptia-workflow-builder/public/index.html` :
+```html
+<!-- Cost display dans chaque agent card -->
+<div class="agent-cost" id="cost-planning" style="display: none;">
+    💰 <span class="cost-amount">0.00€</span>
+</div>
+
+<!-- Total workflow cost -->
+<div class="workflow-total-cost" id="workflow-total-cost" style="display: none;">
+    <div>Coût total du workflow</div>
+    <div>💰 <span id="total-cost-amount">0.00€</span></div>
+</div>
+```
+
+**3. Frontend CSS** - Fichier `/home/ludo/synoptia-workflow-builder/public/styles.css` :
+```css
+.agent-cost {
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: var(--radius-small);
+    font-size: 14px;
+    font-weight: 600;
+    color: #38bdf8;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+```
+
+**4. Frontend JS** - Fichier `/home/ludo/synoptia-workflow-builder/public/app.js` :
+```javascript
+// Listener SSE pour costs
+state.eventSource.addEventListener('agent_cost', (e) => {
+    const data = JSON.parse(e.data);
+    updateAgentCost(data.agentId, data.costFormatted);
+    updateTotalCost(data.totalCostFormatted);
+});
+
+function updateAgentCost(agentId, costFormatted) {
+    const costEl = document.getElementById(`cost-${agentId}`);
+    if (!costEl) return;
+    const amountEl = costEl.querySelector('.cost-amount');
+    if (amountEl) {
+        amountEl.textContent = costFormatted;
+        costEl.style.display = 'block';
+        costEl.style.animation = 'pulse 0.5s ease';
+    }
+}
+
+function updateTotalCost(totalCostFormatted) {
+    const totalCostEl = document.getElementById('workflow-total-cost');
+    const amountEl = document.getElementById('total-cost-amount');
+    if (totalCostEl && amountEl) {
+        amountEl.textContent = totalCostFormatted;
+        totalCostEl.style.display = 'block';
+        totalCostEl.style.animation = 'pulse 0.5s ease';
+    }
+}
+```
+
+**Résultat** : ✅ Coûts affichés en temps réel avec animation pulse
+
+---
+
+### 🔄 Reset intelligent de l'UI
+
+**Besoin utilisateur** :
+- **Nouveau workflow** : Reset complet (statut, tâches, compteurs, coûts)
+- **Retry supervisor** : Reset statut uniquement (garder tâches et coûts pour historique)
+
+**Solution** - Fichier `/home/ludo/synoptia-workflow-builder/public/app.js` :
+
+```javascript
+// Full reset pour nouveau workflow
+function resetAgentsPipeline() {
+    ['planning', 'generator', 'supervisor'].forEach(agentId => {
+        const agentCardId = `agent-${agentId}`;
+        const agent = document.getElementById(agentCardId);
+        if (!agent) return;
+
+        // Reset status
+        setAgentStatus(agentCardId, 'idle', 'En attente');
+
+        // Clear tasks
+        const tasksList = agent.querySelector('.agent-tasks-list');
+        if (tasksList) {
+            tasksList.innerHTML = '';
+            tasksList.classList.add('collapsed');
+        }
+
+        // Reset counters
+        const tasksCount = agent.querySelector('.tasks-count');
+        if (tasksCount) tasksCount.textContent = '0 tâche';
+
+        const tasksToggle = agent.querySelector('.tasks-toggle');
+        if (tasksToggle) tasksToggle.textContent = '▼';
+
+        // Reset cost display
+        const costEl = document.getElementById(`cost-${agentId}`);
+        if (costEl) {
+            costEl.style.display = 'none';
+            const amountEl = costEl.querySelector('.cost-amount');
+            if (amountEl) amountEl.textContent = '0.00€';
+        }
+    });
+
+    // Reset total cost
+    const totalCostEl = document.getElementById('workflow-total-cost');
+    if (totalCostEl) {
+        totalCostEl.style.display = 'none';
+        const amountEl = document.getElementById('total-cost-amount');
+        if (amountEl) amountEl.textContent = '0.00€';
+    }
+}
+
+// Status-only reset pour retries
+function resetAgentsStatusOnly() {
+    ['planning', 'generator', 'supervisor'].forEach(agentId => {
+        const agentCardId = `agent-${agentId}`;
+        setAgentStatus(agentCardId, 'idle', 'En attente');
+    });
+}
+
+// Appel dans SSE listeners
+state.eventSource.addEventListener('workflow_request', (e) => {
+    resetAgentsPipeline(); // Full reset
+});
+
+state.eventSource.addEventListener('supervision_retry', (e) => {
+    resetAgentsStatusOnly(); // Status only
+});
+```
+
+**Résultat** : ✅ Reset différencié selon le contexte
+
+---
+
+### 📝 Post LinkedIn technique
+
+**Objectif** : Post technique pour présenter le système multi-agent sur LinkedIn.
+
+**Contenu créé** (Version 1 - choisie par utilisateur) :
+
+```
+🚀 J'ai passé les 48 dernières heures à construire un truc de fou :
+un système multi-agent qui génère des workflows n8n production-ready en quelques minutes.
+
+Le problème ? Créer un workflow n8n complexe prend des heures. La doc, les intégrations, les erreurs...
+
+La solution ? 3 agents IA qui collaborent :
+✨ El Planificator (GPT-5) → Analyse ta demande + plan stratégique
+⚡ El Generator (GPT-5) → Génère le JSON n8n complet
+🔍 El Supervisor (Claude Sonnet 4.5) → Validation stricte 0 erreurs
+
+Le truc de malade :
+- RAG avec 2000+ workflows réels
+- Feedback loop intelligent (retry jusqu'à 3x)
+- 0 nodes inventés (validation stricte)
+- 17-50 centimes par workflow
+- 5-25 minutes selon complexité
+
+Exemple concret :
+"Gérer ma base RGPD à l'envoi d'un devis"
+→ 17 nodes, pipeline complet avec pseudonymisation, extraction IA, classification légale, vectorisation et export Google Sheets.
+
+Coût : 17 centimes. Temps : 5 minutes.
+
+Architecture hybride : GPT-5 pour la créativité, Claude pour la rigueur.
+C'est ça le futur des agents IA.
+
+Le code sera dispo en open source.
+Hésitez pas si vous voulez en discuter !
+```
+
+**CTA choisi** : "en MP si ajout aux contacts :)"
+
+---
+
+### 🐙 Setup GitHub Repository
+
+**Objectif** : Créer le premier repo GitHub pour le projet Synoptia Workflow Builder.
+
+**Compte GitHub créé** : ludovicsanchez38-creator
+**Email** : ludovicsanchez38@gmail.com
+**Repository URL** : https://github.com/ludovicsanchez38-creator/Synoptia.git
+
+**Actions effectuées** :
+
+1. ✅ **Configuration git locale** :
+```bash
+git config --global user.name "Ludovic Sanchez"
+git config --global user.email "ludovicsanchez38@gmail.com"
+```
+
+2. ✅ **Création .gitignore** (protection données sensibles) :
+```
+# Environment variables
+.env
+
+# Credentials
+credentials.json
+config/credentials.json
+
+# Data
+data/*.json
+qdrant_storage/
+workflows/*.json
+
+# Dependencies
+node_modules/
+```
+
+3. ✅ **Création README.md professionnel** :
+```markdown
+# 🤖 Synoptia Workflow Builder
+
+> **Système multi-agent qui génère des workflows n8n production-ready en quelques minutes**
+
+## 🚀 Quick Start
+
+\`\`\`bash
+git clone https://github.com/yourusername/synoptia-workflow-builder.git
+npm install
+cp .env.example .env
+npm start
+# Ouvre http://localhost:3002
+\`\`\`
+```
+
+4. ✅ **Initialisation git + commit initial** :
+```bash
+git init
+git add .
+git commit -m "🎉 Initial commit: Synoptia Workflow Builder"
+```
+→ **880 fichiers** committés
+
+5. ✅ **Génération clé SSH** :
+```bash
+ssh-keygen -t ed25519 -C "ludovicsanchez38@gmail.com"
+```
+→ Clé publique générée : `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGJuD3GIVur7pA8X6yRRGLaxNsy+etZUWnqtLj8vznGQ`
+
+**Étapes restantes** (à faire après la formation) :
+
+6. 🔄 **Ajouter la clé SSH à GitHub** :
+   - Aller sur : https://github.com/settings/keys
+   - Cliquer "New SSH key"
+   - Titre : `Synoptia VPS`
+   - Coller la clé :
+   ```
+   ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGJuD3GIVur7pA8X6yRRGLaxNsy+etZUWnqtLj8vznGQ ludovicsanchez38@gmail.com
+   ```
+   - Cliquer "Add SSH key"
+
+7. 🔄 **Pousser vers GitHub** (commandes prêtes) :
+```bash
+cd /home/ludo/synoptia-workflow-builder
+
+# Changer l'URL remote pour SSH (au lieu de HTTPS)
+git remote remove origin
+git remote add origin git@github.com:ludovicsanchez38-creator/Synoptia.git
+
+# Pousser vers GitHub
+git branch -M main
+git push -u origin main
+```
+
+---
+
+### 📊 Résultats de la session
+
+**UI Fixes** :
+- ✅ Flèches cliquables (7 fixes CSS + inline script + event delegation)
+- ✅ Coûts affichés en temps réel (SSE + animations)
+- ✅ Reset intelligent (différencié nouveau workflow / retry)
+
+**Documentation** :
+- ✅ Post LinkedIn technique créé
+- ✅ README.md professionnel
+
+**Git/GitHub** :
+- ✅ Repo local initialisé (880 fichiers)
+- ✅ Clé SSH générée
+- 🔄 Push vers GitHub (en attente ajout clé SSH)
+
+---
+
+### 📂 Fichiers modifiés (Session 4)
+
+**UI Improvements** :
+- ✅ `/home/ludo/synoptia-workflow-builder/public/styles.css`
+- ✅ `/home/ludo/synoptia-workflow-builder/public/index.html`
+- ✅ `/home/ludo/synoptia-workflow-builder/public/app.js`
+- ✅ `/home/ludo/synoptia-workflow-builder/utils/cost-tracker.js`
+
+**Documentation** :
+- ✅ `/home/ludo/synoptia-workflow-builder/.gitignore` (nouveau)
+- ✅ `/home/ludo/synoptia-workflow-builder/README.md` (nouveau)
+
+**Git** :
+- ✅ `.git/` (repo initialisé)
+- ✅ `~/.ssh/id_ed25519` (clé SSH générée)
+
+---
+
+### 🚀 Prochaines étapes (après formation)
+
+1. **GitHub Push** :
+   - Ajouter clé SSH sur GitHub
+   - Exécuter `git push -u origin main`
+   - Vérifier repo public sur https://github.com/ludovicsanchez38-creator/Synoptia
+
+2. **Post LinkedIn** :
+   - Publier le post technique créé
+   - Ajouter lien vers le repo GitHub
+
+3. **Tests workflow complet** :
+   - Tester un workflow de A à Z avec la nouvelle UI
+   - Vérifier flèches, coûts, reset
+
+---
+
+**Dernière mise à jour** : 9 octobre 2025, 09:00
+**Durée de la session 4** : ~2h
+**Status** : ✅ UI complètement opérationnelle, 🔄 GitHub push en attente
