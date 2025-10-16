@@ -79,10 +79,10 @@ npm start
 
 ## 📖 Documentation complète
 
-- 🗺️ **[DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md)** - Index complet de toute la documentation
-- 📘 **[START_HERE.md](START_HERE.md)** - Guide de démarrage détaillé
+- 🗺️ **[DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md)** - Index complet et guide de navigation
 - ✅ **[RAPPORT_FINAL_TESTS.md](RAPPORT_FINAL_TESTS.md)** - Résultats tests (90% de réussite)
 - 🔧 **[FIXES_APPLIED_OCT_2025.md](FIXES_APPLIED_OCT_2025.md)** - Fixes critiques Oct 2025
+- 📁 **[STRUCTURE.md](STRUCTURE.md)** - Architecture du projet détaillée
 
 ---
 
