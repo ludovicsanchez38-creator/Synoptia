@@ -67,3 +67,21 @@ workflows/*.json
 
 # Docker
 docker-compose.override.yml
+
+# Archives & Backups (Oct 2025)
+.archive/
+backup/
+data/n8n-docs-backup-*/
+
+# Test Results (Oct 2025)
+test-results/
+/tmp/*.log
+
+# RAG Sessions (temporary)
+rag/sessions/*.json
+!rag/sessions/.gitkeep
+
+# Screenshots (temporary)
+screenshots/*.png
+screenshots/*.jpg
+!screenshots/demo/

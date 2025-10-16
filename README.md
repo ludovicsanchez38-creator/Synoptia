@@ -19,9 +19,10 @@ Transforme une demande en français naturel en workflow n8n complet et fonctionn
 
 **Résultat** : 17 nodes, pipeline complet avec pseudonymisation, extraction IA, classification légale, vectorisation et export Google Sheets.
 
-- ⏱️ **Temps** : 5-25 minutes selon complexité
-- 💰 **Coût** : 17-50 centimes d'euro par workflow
+- ⏱️ **Temps** : 30s-5min selon complexité (10x plus rapide avec Haiku 4.5)
+- 💰 **Coût** : 5-15 centimes d'euro par workflow (3x moins cher)
 - ✅ **Qualité** : Validation stricte, 0 nodes inventés
+- 🧠 **RAG** : 3907 points Qdrant (1800 workflows + 709 docs + 88 paramètres détaillés)
 
 ---
 
@@ -31,13 +32,13 @@ Transforme une demande en français naturel en workflow n8n complet et fonctionn
 
 \`\`\`
 ┌────────────────────┐
-│  El Planificator   │  GPT-5
+│  El Planificator   │  Claude Haiku 4.5
 │  (Planning Agent)  │  → Analyse + Plan
 └──────────┬─────────┘
            │
            ▼
 ┌────────────────────┐
-│   El Generator     │  GPT-5
+│   El Generator     │  Claude Haiku 4.5
 │ (Generator Agent)  │  → Génération JSON
 └──────────┬─────────┘
            │
@@ -78,7 +79,10 @@ npm start
 
 ## 📖 Documentation complète
 
-Voir [START_HERE.md](START_HERE.md) pour le guide complet.
+- 🗺️ **[DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md)** - Index complet de toute la documentation
+- 📘 **[START_HERE.md](START_HERE.md)** - Guide de démarrage détaillé
+- ✅ **[RAPPORT_FINAL_TESTS.md](RAPPORT_FINAL_TESTS.md)** - Résultats tests (90% de réussite)
+- 🔧 **[FIXES_APPLIED_OCT_2025.md](FIXES_APPLIED_OCT_2025.md)** - Fixes critiques Oct 2025
 
 ---
 

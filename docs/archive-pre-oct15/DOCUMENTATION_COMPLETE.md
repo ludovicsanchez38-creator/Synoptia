@@ -59,7 +59,7 @@ Synoptia Workflow Builder est un système multi-agent qui génère des workflows
 - Identifie les nodes n8n nécessaires
 - Détecte les intégrations requises
 - Évalue la complexité (simple/medium/complex)
-- Recherche dans le RAG (2000+ workflows)
+- Recherche dans le RAG (2509 embeddings : 1800 workflows + 709 docs)
 - Propose des alternatives si nodes manquants
 
 **Output** :
@@ -408,12 +408,30 @@ ConversationalGenerator
 Le système RAG (Retrieval Augmented Generation) est au cœur de Synoptia.
 
 **Données indexées** :
-- 2000+ workflows n8n réels (repo Zie619)
-- 365 intégrations documentées
+- 1800 workflows n8n réels (GitHub n8n-workflows-github)
+- 709 docs officiels N8N (562 nodes enrichis avec metadata isRootNode/isSubNode)
+- Total : 2509 embeddings
 - Types exacts de nodes extraits
 
 **Vector Database** : Qdrant
 **Embeddings** : OpenAI `text-embedding-3-large` (3072 dimensions)
+
+## Sources de données
+
+### Workflows GitHub (1800 embeddings)
+- **Source** : Repository GitHub n8n-workflows-github
+- **Mise à jour** : Via `scripts/sync-workflows.sh`
+- **Contenu** : Workflows communautaires réels avec descriptions et nodes
+- **Utilité** : Exemples concrets d'implémentations
+
+### Documentation N8N (709 embeddings)
+- **Source** : Docs officielles N8N (docs.n8n.io)
+- **Mise à jour** : Via `scripts/update-rag-docs.sh`
+- **Enrichissement** : 562 docs avec metadata `isRootNode`/`isSubNode`
+- **Utilité** :
+  - Validation des types de nodes exacts
+  - Détection sub-nodes (OpenAI Chat Model, etc.)
+  - Prévention d'usage standalone de sub-nodes
 
 ## Recherche hybride
 
@@ -424,14 +442,14 @@ Le système RAG (Retrieval Augmented Generation) est au cœur de Synoptia.
 const docs = await qdrant.search({
   vector: queryVector,
   limit: 21,
-  filter: { type: 'documentation' }
+  filter: { source: 'n8n-docs' }
 });
 
 // 9 exemples de workflows
 const examples = await qdrant.search({
   vector: queryVector,
   limit: 9,
-  filter: { type: 'workflow_example' }
+  filter: { source: 'n8n-workflows-github' }
 });
 ```
 

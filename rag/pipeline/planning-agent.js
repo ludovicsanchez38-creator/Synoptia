@@ -1,28 +1,71 @@
 /**
- * Planning Agent - Force le raisonnement avant génération
- * Vérifie que tous les nodes existent dans la RAG avant de générer
+ * @fileoverview Planning Agent - First stage of multi-agent workflow generation
+ *
+ * This agent analyzes user requests and creates detailed execution plans before generation.
+ * It verifies that all required nodes exist in the RAG database and proposes alternatives
+ * for missing nodes. Uses Anthropic Claude Haiku 4.5 for fast, cost-effective planning.
+ *
+ * @module rag/pipeline/planning-agent
+ * @requires @anthropic-ai/sdk
+ * @author Synoptia Workflow Builder Team
+ * @since v1.0.0
+ * @lastModified 2025-10-16
+ *
+ * Key improvements (Oct 2025):
+ * - XML tags in user messages (Anthropic best practices)
+ * - Hardcoded email node rules (sendemail lowercase)
+ * - Rate limiting with exponential backoff
+ * - JSON extraction with regex fallback
  */
 
-const OpenAI = require('openai');
+const Anthropic = require('@anthropic-ai/sdk');
 const config = require('../config');
 const costTracker = require('../../utils/cost-tracker');
+const { LANGCHAIN_ARCHITECTURE, FORBIDDEN_NODE_PATTERNS } = require('../../prompts/shared-rules');
 
+/**
+ * Planning Agent - Analyzes user requests and creates execution plans
+ *
+ * First agent in the multi-agent pipeline. Responsible for:
+ * - Understanding user intent
+ * - Identifying required nodes from RAG database
+ * - Detecting missing nodes and proposing alternatives
+ * - Creating execution flow
+ * - Determining workflow complexity
+ *
+ * @class PlanningAgent
+ * @example
+ * const retriever = new WorkflowContextRetriever();
+ * const planningAgent = new PlanningAgent(retriever);
+ * const plan = await planningAgent.createPlan(
+ *   "créer un webhook et envoyer sur Slack",
+ *   ragContext,
+ *   sessionId
+ * );
+ */
 class PlanningAgent {
+  /**
+   * Creates a new Planning Agent instance
+   *
+   * @constructor
+   * @param {WorkflowContextRetriever} retriever - RAG retriever instance
+   * @throws {Error} If ANTHROPIC_API_KEY is not set in environment
+   */
   constructor(retriever) {
-    this.openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
-      timeout: config.openai.timeout // Timeout par défaut
+    this.anthropic = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+      timeout: config.anthropic.timeout // Timeout par défaut
     });
 
     this.retriever = retriever;
-    this.model = config.openai.generationModel;
+    this.model = config.anthropic.generationModel;
   }
 
   /**
    * Retourne le timeout adapté à la complexité
    */
   getTimeoutForComplexity(complexity) {
-    const timeouts = config.openai.timeouts;
+    const timeouts = config.anthropic.timeouts;
     return timeouts[complexity] || timeouts.medium;
   }
 
@@ -61,14 +104,15 @@ class PlanningAgent {
 
       while (retryCount <= maxRetries) {
         try {
-          response = await this.openai.chat.completions.create({
+          response = await this.anthropic.messages.create({
             model: this.model,
+            max_tokens: config.anthropic.maxTokens,
+            system: planningPrompt,
             messages: [{
-              role: 'system',
-              content: planningPrompt
+              role: 'user',
+              content: `<user_request>${userRequest}</user_request>\n\nGénère le plan d'exécution pour cette demande utilisateur (JSON uniquement):`
             }],
-            // GPT-5 n'accepte que temperature: 1 (défaut)
-            response_format: { type: 'json_object' }
+            temperature: 0.3 // Haiku 4.5 supporte temperature (vs GPT-5)
           });
           break; // Success, sortir de la boucle
         } catch (error) {
@@ -97,7 +141,49 @@ class PlanningAgent {
         }
       }
 
-      const plan = JSON.parse(response.choices[0].message.content);
+      let responseText = response.content[0].text;
+
+      // Retirer markdown code blocks si présents (Claude Haiku 4.5 wrap souvent en ```json)
+      responseText = responseText.replace(/```json\s*/g, '').replace(/```\s*$/g, '').trim();
+
+      // ✅ FIX OCT 2025: Extraire UNIQUEMENT le premier objet JSON valide
+      // Le modèle peut générer du texte après le JSON, causant "Unexpected non-whitespace character"
+      let plan;
+      try {
+        plan = JSON.parse(responseText);
+      } catch (parseError) {
+        // Si le parsing échoue, essayer d'extraire le JSON avec une regex
+        // REGEX AMÉLIORÉE: Mode NON-GREEDY pour capturer le premier objet JSON seulement
+        // Match pattern: { ... } en s'arrêtant au premier } qui ferme le premier {
+        let jsonMatch = responseText.match(/\{[\s\S]*?\}/);
+
+        // Si ça ne marche pas, essayer greedy (pour les JSON très longs)
+        if (!jsonMatch || jsonMatch[0].length < 50) {
+          jsonMatch = responseText.match(/\{[\s\S]*\}/);
+        }
+
+        if (jsonMatch) {
+          try {
+            plan = JSON.parse(jsonMatch[0]);
+            console.log('  ⚠️ JSON extrait avec regex (texte superflu détecté)');
+
+            // DEBUG: Vérifier si le plan a les champs requis
+            if (!plan.requiredNodes || plan.requiredNodes.length === 0) {
+              console.error('  🚨 DEBUG: Plan extrait sans requiredNodes!');
+              console.error(`  📄 JSON brut (premiers 500 chars): ${jsonMatch[0].substring(0, 500)}`);
+              console.error(`  📄 Réponse complète (premiers 1000 chars): ${responseText.substring(0, 1000)}`);
+            }
+          } catch (regexError) {
+            console.error(`  ❌ JSON invalide après extraction regex`);
+            console.error(`  📄 JSON extrait (premiers 500 chars): ${jsonMatch[0].substring(0, 500)}`);
+            throw new Error(`JSON invalide même après extraction: ${parseError.message}`);
+          }
+        } else {
+          console.error(`  ❌ Aucun JSON trouvé dans la réponse`);
+          console.error(`  📄 Réponse complète (premiers 1000 chars): ${responseText.substring(0, 1000)}`);
+          throw new Error(`Impossible de trouver un objet JSON dans la réponse: ${parseError.message}`);
+        }
+      }
 
       // Track API costs
       if (sessionId && response.usage) {
@@ -105,8 +191,8 @@ class PlanningAgent {
           sessionId,
           'planning',
           this.model,
-          response.usage.prompt_tokens,
-          response.usage.completion_tokens
+          response.usage.input_tokens,
+          response.usage.output_tokens
         );
       }
 
@@ -217,32 +303,40 @@ class PlanningAgent {
       docsContext = '\n\n📚 NODES DOCUMENTÉS DISPONIBLES (AVEC TYPES EXACTS):\n';
       docsContext += '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n';
 
-      ragContext.documents.forEach(doc => {
-        // Extraire les types exacts depuis le contenu
+      // ⬇️ OPTIMISATION: 25 → 20 docs (moins de bruit avec SmartChunker)
+      ragContext.documents.slice(0, 20).forEach(doc => {
+        // ✅ FIX 1: Extraire les types depuis le contenu avec regex corrigé
+        // Supporte BOTH formats: @n8n/n8n-nodes-langchain.* ET n8n-nodes-base.*
         if (doc.content) {
-          const nodeTypeMatches = doc.content.match(/n8n-nodes-(?:base|langchain)\.[\w]+/g);
+          // Regex corrigé pour capturer le préfixe @n8n/ aussi
+          const nodeTypeMatches = doc.content.match(/(`?)(@n8n\/n8n-nodes-langchain\.[a-zA-Z0-9_]+|n8n-nodes-base\.[a-zA-Z0-9_]+)\1/g);
           if (nodeTypeMatches) {
-            nodeTypeMatches.forEach(type => {
-              const name = doc.nodeType || doc.title || type;
+            nodeTypeMatches.forEach(match => {
+              // Enlever les backticks si présents
+              const type = match.replace(/`/g, '');
+              const name = doc.title || type;
               nodeTypesMap.set(name, type);
             });
           }
         }
 
-        // Ou utiliser le nodeType si disponible
+        // ✅ FIX 2: Utiliser doc.nodeType TEL QUEL (sans guessing!)
+        // Le champ doc.nodeType CONTIENT DÉJÀ le type complet et exact
         if (doc.nodeType) {
-          // Essayer de deviner le type complet
-          const guessedType = `n8n-nodes-base.${doc.nodeType.toLowerCase().replace(/\s+/g, '')}`;
-          nodeTypesMap.set(doc.nodeType, guessedType);
+          // Vérifier que c'est un nodeType valide (commence par n8n-nodes-base. ou @n8n/)
+          if (doc.nodeType.startsWith('n8n-nodes-base.') || doc.nodeType.startsWith('@n8n/')) {
+            const name = doc.title || doc.nodeType;
+            nodeTypesMap.set(name, doc.nodeType); // ✅ Utiliser TEL QUEL - pas de transformation!
+          }
         }
 
-        // Workflow examples
+        // Workflow examples (déjà correct)
         if (doc.workflowInfo && doc.workflowInfo.integrations) {
           doc.workflowInfo.integrations.forEach(integration => {
-            if (integration.startsWith('@n8n/')) {
-              const cleanName = integration.replace('@n8n/', '');
-              const type = `n8n-nodes-langchain.${cleanName.toLowerCase()}`;
-              nodeTypesMap.set(cleanName, type);
+            if (integration.startsWith('@n8n/n8n-nodes-langchain.')) {
+              // Garder le type exact avec @n8n/ et la casse correcte
+              const cleanName = integration.replace('@n8n/n8n-nodes-langchain.', '');
+              nodeTypesMap.set(cleanName, integration);
             }
           });
         }
@@ -257,10 +351,11 @@ class PlanningAgent {
       docsContext += '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n';
     }
 
-    return `Tu es un expert n8n chargé de PLANIFIER un workflow AVANT de le générer.
+    return `Tu es un expert n8n chargé de PLANIFIER un workflow MINIMAL et EFFICACE.
 
 🎯 MISSION CRITIQUE:
-Analyser la demande utilisateur et créer un plan DÉTAILLÉ qui liste TOUS les nodes nécessaires.
+Analyser la demande utilisateur et créer un plan avec le MINIMUM de nodes nécessaires.
+Privilégie la SIMPLICITÉ et l'EFFICACITÉ. Évite les nodes redondants.
 Tu DOIS UTILISER EN PRIORITÉ les nodes documentés ci-dessous.
 
 ${docsContext}
@@ -269,6 +364,21 @@ ${docsContext}
 ${availableNodesList}
 
 ⚠️ RÈGLES ABSOLUES:
+
+0. **MINIMALISME** : Génère le MINIMUM de nodes nécessaires. N'ajoute PAS de nodes "Set" ou "Code" sauf si EXPLICITEMENT demandé.
+   - ✅ CORRECT: Webhook → Slack (2 nodes)
+   - ❌ INCORRECT: Webhook → Set → Code → Slack (4 nodes)
+
+0bis. **TRIGGERS PRIORITAIRES** : Si la demande mentionne "quand", "trigger", "nouveau", "nouvelle", utilise le trigger natif correspondant:
+   - "quand nouvelle ligne Google Sheets" → googleSheetsTrigger (PAS googleSheets)
+   - "nouveau deal Pipedrive" → pipedriveTrigger (PAS pipedrive)
+   - "trigger Discord" → discordTrigger (PAS discord)
+   - "nouveau message Slack" → slackTrigger (PAS slack)
+
+0ter. **NODES EMAIL** : Pour envoyer des emails via SMTP, utilise TOUJOURS:
+   - TYPE EXACT: "n8n-nodes-base.sendemail" (tout en minuscules!)
+   - ❌ INCORRECT: sendEmail, emailSend, SendEmail
+   - ✅ CORRECT: sendemail (lowercase)
 
 1. **PRIORITÉ ABSOLUE** : Si un node est listé dans "NODES DOCUMENTÉS DISPONIBLES" ci-dessus, tu DOIS l'utiliser
    - Exemple: Si OpenAI est documenté, utilise le node OpenAI natif (n8n-nodes-langchain.openai)
@@ -290,9 +400,13 @@ ${availableNodesList}
    ✅ CORRECT : "LinkedIn est documenté → J'utilise n8n-nodes-base.linkedIn"
    ❌ INCORRECT : "LinkedIn est documenté → J'utilise HTTP Request vers LinkedIn API"
 
+${LANGCHAIN_ARCHITECTURE}
+
+${FORBIDDEN_NODE_PATTERNS}
+
 🔍 PROCESSUS DE DÉCISION:
 
-1. **COMPRENDRE** la demande utilisateur
+1. **COMPRENDRE** la demande utilisateur (fournie dans le message utilisateur)
 2. **IDENTIFIER** les fonctionnalités requises (ex: "appel LLM", "récupération LinkedIn")
 3. **CHERCHER DANS LA DOCUMENTATION** : Pour chaque fonctionnalité, regarder si un node existe dans "NODES DOCUMENTÉS DISPONIBLES"
 4. **DÉCISION** :
@@ -302,8 +416,8 @@ ${availableNodesList}
 6. **CRÉER** le flux d'exécution étape par étape
 7. **VALIDER** que les nodes natifs documentés sont bien utilisés
 
-DEMANDE UTILISATEUR:
-"${userRequest}"
+⚠️ La demande utilisateur sera fournie dans le message utilisateur avec le tag <user_request>.
+Analyse cette demande et génère le plan correspondant.
 
 📤 FORMAT DE RÉPONSE (JSON UNIQUEMENT):
 {
@@ -353,9 +467,7 @@ DEMANDE UTILISATEUR:
   ],
   "readyToGenerate": true|false,
   "warnings": ["Warning si nodes manquants ou problèmes détectés"]
-}
-
-GÉNÈRE LE PLAN (JSON UNIQUEMENT):`;
+}`;
   }
 
   /**

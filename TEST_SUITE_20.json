@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "difficulty": "facile",
+    "difficultyLevel": 1,
+    "prompt": "créer un webhook simple qui reçoit des données",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 1,
+      "complexity": "simple"
+    },
+    "criteria": {
+      "mustHave": ["webhook"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Un seul node webhook configuré en trigger"
+    }
+  },
+  {
+    "id": 2,
+    "difficulty": "facile",
+    "difficultyLevel": 2,
+    "prompt": "webhook qui enregistre les données dans un fichier JSON",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook",
+      "n8n-nodes-base.writeFile"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 2,
+      "complexity": "simple"
+    },
+    "criteria": {
+      "mustHave": ["webhook", "writeFile"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Webhook → Write File"
+    }
+  },
+  {
+    "id": 3,
+    "difficulty": "facile",
+    "difficultyLevel": 3,
+    "prompt": "envoyer un email de bienvenue via Gmail",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook",
+      "n8n-nodes-base.gmail"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 2,
+      "complexity": "simple"
+    },
+    "criteria": {
+      "mustHave": ["webhook", "gmail"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Webhook → Gmail"
+    }
+  },
+  {
+    "id": 4,
+    "difficulty": "facile",
+    "difficultyLevel": 4,
+    "prompt": "poster un message sur Slack quand webhook reçu",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook",
+      "n8n-nodes-base.slack"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 2,
+      "complexity": "simple"
+    },
+    "criteria": {
+      "mustHave": ["webhook", "slack"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Webhook → Slack"
+    }
+  },
+  {
+    "id": 5,
+    "difficulty": "facile",
+    "difficultyLevel": 5,
+    "prompt": "ajouter une ligne dans Google Sheets",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook",
+      "n8n-nodes-base.googleSheets"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 2,
+      "complexity": "simple"
+    },
+    "criteria": {
+      "mustHave": ["webhook", "googleSheets"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Webhook → Google Sheets"
+    }
+  },
+  {
+    "id": 6,
+    "difficulty": "moyen",
+    "difficultyLevel": 6,
+    "prompt": "quand nouvelle ligne Google Sheets, envoyer notification Slack",
+    "expectedNodes": [
+      "n8n-nodes-base.googleSheetsTrigger",
+      "n8n-nodes-base.slack"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 2,
+      "complexity": "simple"
+    },
+    "criteria": {
+      "mustHave": ["googleSheetsTrigger", "slack"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Google Sheets Trigger → Slack"
+    }
+  },
+  {
+    "id": 7,
+    "difficulty": "moyen",
+    "difficultyLevel": 7,
+    "prompt": "appeler une API externe et enregistrer la réponse dans Airtable",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook",
+      "n8n-nodes-base.httpRequest",
+      "n8n-nodes-base.airtable"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 3,
+      "complexity": "medium"
+    },
+    "criteria": {
+      "mustHave": ["webhook", "httpRequest", "airtable"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Webhook → HTTP Request → Airtable"
+    }
+  },
+  {
+    "id": 8,
+    "difficulty": "moyen",
+    "difficultyLevel": 8,
+    "prompt": "transformer les données avec Set puis envoyer à Notion",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook",
+      "n8n-nodes-base.set",
+      "n8n-nodes-base.notion"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 3,
+      "complexity": "medium"
+    },
+    "criteria": {
+      "mustHave": ["webhook", "set", "notion"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Webhook → Set (transformation) → Notion"
+    }
+  },
+  {
+    "id": 9,
+    "difficulty": "moyen",
+    "difficultyLevel": 9,
+    "prompt": "vérifier avec IF si email valide avant d'envoyer à Gmail",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook",
+      "n8n-nodes-base.if",
+      "n8n-nodes-base.gmail"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 3,
+      "complexity": "medium"
+    },
+    "criteria": {
+      "mustHave": ["webhook", "if", "gmail"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Webhook → IF (validation) → Gmail (true branch)"
+    }
+  },
+  {
+    "id": 10,
+    "difficulty": "moyen",
+    "difficultyLevel": 10,
+    "prompt": "récupérer données PostgreSQL et les envoyer par email",
+    "expectedNodes": [
+      "n8n-nodes-base.scheduleTrigger",
+      "n8n-nodes-base.postgres",
+      "n8n-nodes-base.emailSend"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 3,
+      "complexity": "medium"
+    },
+    "criteria": {
+      "mustHave": ["scheduleTrigger", "postgres", "emailSend"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Schedule Trigger → Postgres → Email Send"
+    }
+  },
+  {
+    "id": 11,
+    "difficulty": "avancé",
+    "difficultyLevel": 11,
+    "prompt": "créer un système de validation HMAC sur webhook puis enregistrer dans Airtable et notifier Slack",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook",
+      "n8n-nodes-base.code",
+      "n8n-nodes-base.if",
+      "n8n-nodes-base.airtable",
+      "n8n-nodes-base.slack"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 5,
+      "complexity": "medium"
+    },
+    "criteria": {
+      "mustHave": ["webhook", "code", "if", "airtable", "slack"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Webhook → Code (HMAC) → IF (valid) → Airtable + Slack"
+    }
+  },
+  {
+    "id": 12,
+    "difficulty": "avancé",
+    "difficultyLevel": 12,
+    "prompt": "enrichir contacts avec API externe, filtrer les résultats et créer dans CRM (Hubspot ou Pipedrive)",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook",
+      "n8n-nodes-base.httpRequest",
+      "n8n-nodes-base.if",
+      "n8n-nodes-base.set"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 4,
+      "complexity": "medium"
+    },
+    "criteria": {
+      "mustHave": ["webhook", "httpRequest", "if"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Webhook → HTTP Request (enrichment) → IF (filter) → Set → CRM node ou HTTP Request"
+    }
+  },
+  {
+    "id": 13,
+    "difficulty": "avancé",
+    "difficultyLevel": 13,
+    "prompt": "bot WhatsApp avec réponses automatiques basées sur mots-clés",
+    "expectedNodes": [
+      "n8n-nodes-base.whatsAppTrigger",
+      "n8n-nodes-base.switch",
+      "n8n-nodes-base.whatsApp"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 3,
+      "complexity": "medium"
+    },
+    "criteria": {
+      "mustHave": ["whatsAppTrigger", "switch", "whatsApp"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "WhatsApp Trigger → Switch (keywords) → WhatsApp (responses)"
+    }
+  },
+  {
+    "id": 14,
+    "difficulty": "avancé",
+    "difficultyLevel": 14,
+    "prompt": "synchroniser nouveaux deals Pipedrive vers Google Sheets et créer événement Google Calendar",
+    "expectedNodes": [
+      "n8n-nodes-base.pipedriveTrigger",
+      "n8n-nodes-base.googleSheets",
+      "n8n-nodes-base.googleCalendar"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 3,
+      "complexity": "medium"
+    },
+    "criteria": {
+      "mustHave": ["pipedriveTrigger", "googleSheets", "googleCalendar"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Pipedrive Trigger → Google Sheets + Google Calendar (parallel)"
+    }
+  },
+  {
+    "id": 15,
+    "difficulty": "avancé",
+    "difficultyLevel": 15,
+    "prompt": "gérer commandes Shopify : vérifier stock, créer facture, envoyer email confirmation et notifier Discord",
+    "expectedNodes": [
+      "n8n-nodes-base.shopifyTrigger",
+      "n8n-nodes-base.if",
+      "n8n-nodes-base.emailSend",
+      "n8n-nodes-base.discord"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 4,
+      "complexity": "medium"
+    },
+    "criteria": {
+      "mustHave": ["shopifyTrigger", "if", "emailSend", "discord"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Shopify Trigger → IF (check stock) → Email + Discord"
+    }
+  },
+  {
+    "id": 16,
+    "difficulty": "expert",
+    "difficultyLevel": 16,
+    "prompt": "chatbot AI avec GPT-4o-mini, mémoire conversationnelle persistante et trigger Telegram",
+    "expectedNodes": [
+      "@n8n/n8n-nodes-langchain.chatTrigger",
+      "@n8n/n8n-nodes-langchain.agent",
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "@n8n/n8n-nodes-langchain.memoryBufferWindow"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 4,
+      "complexity": "complex"
+    },
+    "criteria": {
+      "mustHave": ["chatTrigger", "agent", "lmChatOpenAi", "memory"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Chat Trigger → AI Agent (avec LLM + Memory connectés)"
+    }
+  },
+  {
+    "id": 17,
+    "difficulty": "expert",
+    "difficultyLevel": 17,
+    "prompt": "système RAG avec Qdrant pour recherche sémantique de documentation, embeddings OpenAI et agent conversationnel",
+    "expectedNodes": [
+      "@n8n/n8n-nodes-langchain.chatTrigger",
+      "@n8n/n8n-nodes-langchain.agent",
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
+      "@n8n/n8n-nodes-langchain.embeddingsOpenAi"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 5,
+      "complexity": "complex"
+    },
+    "criteria": {
+      "mustHave": ["chatTrigger", "agent", "lmChatOpenAi", "vectorStoreQdrant", "embeddingsOpenAi"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Chat Trigger → AI Agent (avec LLM + Qdrant RAG + Embeddings)"
+    }
+  },
+  {
+    "id": 18,
+    "difficulty": "expert",
+    "difficultyLevel": 18,
+    "prompt": "pipeline de traitement de documents : webhook reçoit PDF, extraire texte, chunker, embedder avec Cohere, stocker dans Pinecone",
+    "expectedNodes": [
+      "n8n-nodes-base.webhook",
+      "@n8n/n8n-nodes-langchain.documentBinaryInputLoader",
+      "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
+      "@n8n/n8n-nodes-langchain.embeddingsCohere",
+      "@n8n/n8n-nodes-langchain.vectorStorePinecone"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 5,
+      "complexity": "complex"
+    },
+    "criteria": {
+      "mustHave": ["webhook", "documentLoader", "textSplitter", "embeddings", "vectorStore"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Webhook → Document Loader → Text Splitter → Embeddings → Vector Store"
+    }
+  },
+  {
+    "id": 19,
+    "difficulty": "expert",
+    "difficultyLevel": 19,
+    "prompt": "workflow e-commerce complet : trigger Shopify nouvelle commande, vérifier paiement Stripe, créer contact Airtable, envoyer email Gmail avec tracking, poster dans Slack et créer tâche ClickUp",
+    "expectedNodes": [
+      "n8n-nodes-base.shopifyTrigger",
+      "n8n-nodes-base.httpRequest",
+      "n8n-nodes-base.if",
+      "n8n-nodes-base.airtable",
+      "n8n-nodes-base.gmail",
+      "n8n-nodes-base.slack",
+      "n8n-nodes-base.clickUp"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 7,
+      "complexity": "complex"
+    },
+    "criteria": {
+      "mustHave": ["shopifyTrigger", "httpRequest", "if", "airtable", "gmail", "slack"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Shopify Trigger → HTTP (Stripe) → IF (payment OK) → Airtable + Gmail + Slack + ClickUp (parallel)"
+    }
+  },
+  {
+    "id": 20,
+    "difficulty": "expert",
+    "difficultyLevel": 20,
+    "prompt": "système de support client intelligent : trigger Discord, analyser sentiment du message avec AI, router vers bon département avec Switch, créer ticket Jira, chercher dans base de connaissances Qdrant, générer réponse avec GPT-4, envoyer réponse Discord avec historique conversationnel persistant MongoDB",
+    "expectedNodes": [
+      "n8n-nodes-base.discordTrigger",
+      "@n8n/n8n-nodes-langchain.agent",
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
+      "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "@n8n/n8n-nodes-langchain.memoryMongoDbChat",
+      "n8n-nodes-base.switch",
+      "n8n-nodes-base.jira",
+      "n8n-nodes-base.discord"
+    ],
+    "expectedArchitecture": {
+      "trigger": true,
+      "nodeCount": 9,
+      "complexity": "complex"
+    },
+    "criteria": {
+      "mustHave": ["discordTrigger", "agent", "lmChatOpenAi", "vectorStoreQdrant", "switch", "jira", "discord"],
+      "mustNotHave": ["invented_nodes"],
+      "architecture": "Discord Trigger → AI Agent (sentiment) → Switch (routing) → Jira + RAG search → GPT-4 response → Discord + MongoDB memory"
+    }
+  }
+]

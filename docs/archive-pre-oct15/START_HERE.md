@@ -37,7 +37,7 @@ open http://localhost:3002
 ### **3. Synchroniser les workflows (optionnel mais recommandé)**
 
 ```bash
-# Récupère 500+ workflows depuis GitHub et n8n.io
+# Récupère 1800+ workflows depuis GitHub
 # Les indexe dans le RAG pour améliorer la génération
 ./scripts/sync-workflows.sh
 ```
@@ -103,10 +103,10 @@ open http://localhost:3002
 - Système workflow sync automatique
 
 ### **✅ Base de Connaissance**
-- 500+ workflows communautaires indexés
-- RAG enrichi avec embeddings
-- Recherche sémantique
-- 7 sources automatisées
+- 2509 embeddings indexés (1800 workflows GitHub + 709 docs N8N officiels)
+- RAG enrichi avec metadata isRootNode/isSubNode (562 nodes enrichis)
+- Recherche sémantique avec Qdrant
+- Sources automatisées via scripts
 
 ### **✅ Documentation**
 - 11 guides techniques
@@ -241,7 +241,7 @@ docker compose up -d qdrant
 Votre Workflow Builder est maintenant :
 - 🔒 Sécurisé
 - 💪 Stable
-- 🧠 Intelligent (500+ workflows)
+- 🧠 Intelligent (2509 embeddings)
 - 📚 Documenté
 - 🚀 Production-Ready
 
