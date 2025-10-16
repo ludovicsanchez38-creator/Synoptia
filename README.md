@@ -102,4 +102,15 @@ Développé par [Ludovic Sanchez](https://github.com/ludovicsanchez38-creator) @
 
 ---
 
-⭐ **Star** si tu trouves ça utile !
+## 💖 Support le projet
+
+Si ce projet t'aide, tu peux me soutenir :
+
+- ⭐ **Star** le repo
+- 🐛 Signaler des bugs
+- 💡 Proposer des améliorations
+- ☕ **[Buy me a coffee](https://github.com/sponsors/ludovicsanchez38-creator)** (GitHub Sponsors, 0% de frais)
+
+Chaque contribution compte ! 🙏
+
+---
