@@ -1,4 +1,4 @@
-# 🤖 Synoptia Workflow Builder
+# 🤖 Synoptia Workflow Builder: Builder³
 
 > **Système multi-agent qui génère des workflows n8n production-ready en quelques minutes**
 
