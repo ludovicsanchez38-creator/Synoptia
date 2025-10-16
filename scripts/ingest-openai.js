@@ -3,7 +3,7 @@ const OpenAI = require('openai');
 const crypto = require('crypto');
 require('dotenv').config();
 
-const client = new QdrantClient({ url: 'http://localhost:6333' });
+const client = new QdrantClient({ url: process.env.QDRANT_URL || 'http://localhost:6333' });
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const docs = [

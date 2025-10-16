@@ -5,10 +5,10 @@ const fs = require('fs').promises;
 const path = require('path');
 require('dotenv').config();
 
-const client = new QdrantClient({ url: 'http://localhost:6333' });
+const client = new QdrantClient({ url: process.env.QDRANT_URL || 'http://localhost:6333' });
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-const WORKFLOWS_DIR = '/home/ludo/n8n-workflows/workflows_backup';
+const WORKFLOWS_DIR = process.env.WORKFLOWS_BACKUP_DIR || path.join(__dirname, 'data', 'workflows_backup');
 const BATCH_SIZE = 50; // Traiter par lots pour éviter rate limits
 const MAX_WORKFLOWS = 2000; // Limiter pour l'ingestion initiale
 
