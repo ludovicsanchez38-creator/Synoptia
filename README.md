@@ -68,7 +68,7 @@ npm install
 
 # 3. Configure
 cp .env.example .env
-# Ajoute tes clés API OpenAI + Anthropic
+# Ajoute tes clés API: OpenAI + Anthropic + Cohere
 
 # 4. Start
 npm start
