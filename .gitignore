@@ -85,3 +85,6 @@ rag/sessions/*.json
 screenshots/*.png
 screenshots/*.jpg
 !screenshots/demo/
+
+# Ignore n8n-docs metadata updates (Oct 2025)
+data/n8n-docs/*.json
