@@ -1,0 +1,1424 @@
+{
+  "metadata": {
+    "generatedAt": "2025-10-14T15:42:25.553Z",
+    "source": "workflows-metadata.json",
+    "workflowCount": 10
+  },
+  "workflows": [
+    {
+      "workflow_id": 6270,
+      "workflow_name": "Build Your First AI Agent",
+      "node_docs": [
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.agent",
+          "display_name": "AI Agent",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/",
+          "documentation_title": "AI Agent node common issues",
+          "workflow_node_names": [
+            "Your First AI Agent"
+          ],
+          "summary": "Orchestrates LangChain agents that decide which tools to call.\nRequires system instructions plus linked tools, models, or memory nodes.\nUse to route user prompts through reasoning workflows with tool access."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.chatTrigger",
+          "display_name": "Chat Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.chattrigger/",
+          "documentation_title": "Chat Trigger node common issues",
+          "workflow_node_names": [
+            "Example Chat"
+          ],
+          "summary": "Exposes a hosted chat interface that starts the workflow.\nRequires public endpoint settings, authentication options, and target node.\nUse to capture user questions for AI agents or conversational flows."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+          "display_name": "Google Gemini Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatgooglegemini",
+          "documentation_title": "Google Gemini Chat Model node",
+          "workflow_node_names": [
+            "Connect Gemini"
+          ],
+          "summary": "Streams conversational output from Gemini chat models.\nRequires Gemini credential, model selection, and prompt content.\nUse to answer chat messages or agent queries with Google Gemini."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+          "display_name": "Simple Memory",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorybufferwindow",
+          "documentation_title": "Simple Memory node common issues",
+          "workflow_node_names": [
+            "Conversation Memory"
+          ],
+          "summary": "Stores sliding-window chat history for LangChain agents.\nRequires buffer size, memory key, and linked conversation fields.\nUse to maintain short-term context between user messages."
+        },
+        {
+          "node_type": "n8n-nodes-base.httpRequestTool",
+          "display_name": "HTTP Request Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolhttprequest",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Get Weather"
+          ],
+          "summary": "Provides HTTP requests as an agent-executable tool.\nRequires endpoint URL, method, and optional headers or payload.\nUse when AI agents must query external APIs mid-conversation."
+        },
+        {
+          "node_type": "n8n-nodes-base.rssFeedReadTool",
+          "display_name": "RSS Feed Read Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.rssfeedread/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Get News"
+          ],
+          "summary": "Fetches RSS feeds and exposes them as an agent tool.\nRequires feed URL, item limit, and optional filtering options.\nUse to let agents pull latest news or blog entries on demand."
+        },
+        {
+          "node_type": "n8n-nodes-base.stickyNote",
+          "display_name": "Sticky Note",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stickynote/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Introduction Note",
+            "Sticky Note",
+            "Sticky Note12",
+            "Sticky Note13",
+            "Sticky Note15",
+            "Sticky Note16",
+            "Sticky Note2"
+          ],
+          "summary": "Adds visual annotations to document the workflow canvas.\nRequires note content plus optional color, size, or author fields.\nUse to explain logic, credential setup, or reviewer guidance."
+        }
+      ]
+    },
+    {
+      "workflow_id": 5819,
+      "workflow_name": "🤖 Build an Interactive AI Agent with Chat Interface and Multiple Tools",
+      "node_docs": [
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.agent",
+          "display_name": "AI Agent",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/",
+          "documentation_title": "AI Agent node common issues",
+          "workflow_node_names": [
+            "Your First AI Agent"
+          ],
+          "summary": "Orchestrates LangChain agents that decide which tools to call.\nRequires system instructions plus linked tools, models, or memory nodes.\nUse to route user prompts through reasoning workflows with tool access."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.chatTrigger",
+          "display_name": "Chat Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.chattrigger/",
+          "documentation_title": "Chat Trigger node common issues",
+          "workflow_node_names": [
+            "Example Chat Window"
+          ],
+          "summary": "Exposes a hosted chat interface that starts the workflow.\nRequires public endpoint settings, authentication options, and target node.\nUse to capture user questions for AI agents or conversational flows."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+          "display_name": "Google Gemini Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatgooglegemini",
+          "documentation_title": "Google Gemini Chat Model node",
+          "workflow_node_names": [
+            "Gemini"
+          ],
+          "summary": "Streams conversational output from Gemini chat models.\nRequires Gemini credential, model selection, and prompt content.\nUse to answer chat messages or agent queries with Google Gemini."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+          "display_name": "OpenAI Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/index",
+          "documentation_title": "OpenAI Chat Model node",
+          "workflow_node_names": [
+            "OpenAI"
+          ],
+          "summary": "Produces chat completions through OpenAI Chat endpoints.\nRequires OpenAI API key, model selection, and prompt structure.\nUse for assistant replies, agent reasoning, or natural language output."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+          "display_name": "Simple Memory",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorybufferwindow",
+          "documentation_title": "Simple Memory node common issues",
+          "workflow_node_names": [
+            "Simple Memory"
+          ],
+          "summary": "Stores sliding-window chat history for LangChain agents.\nRequires buffer size, memory key, and linked conversation fields.\nUse to maintain short-term context between user messages."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.toolCode",
+          "display_name": "Custom Code Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolcode",
+          "documentation_title": "Custom Code Tool node",
+          "workflow_node_names": [
+            "calculate_loan_payment"
+          ],
+          "summary": "Executes custom JavaScript as a LangChain tool.\nRequires code snippet, expected inputs, and output variable mapping.\nUse to extend agents with bespoke logic or API integrations."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.toolWikipedia",
+          "display_name": "Wikipedia Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolwikipedia",
+          "documentation_title": "Wikipedia node",
+          "workflow_node_names": [
+            "wikipedia"
+          ],
+          "summary": "Searches Wikipedia and returns article summaries.\nRequires search term input and optional language or result limit.\nUse to fetch reference facts for agent-generated answers."
+        },
+        {
+          "node_type": "n8n-nodes-base.cryptoTool",
+          "display_name": "Crypto Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.crypto/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "create_password"
+          ],
+          "summary": "Provides hashing, encryption, and password helpers as a tool.\nRequires operation selection plus fields like text, key, or length.\nUse to generate secure tokens or digests within AI automations."
+        },
+        {
+          "node_type": "n8n-nodes-base.dateTimeTool",
+          "display_name": "Date Time Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.datetime/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "days_from_now"
+          ],
+          "summary": "Performs date math and formatting for agent flows.\nRequires chosen operation, input date/time, and format options.\nUse to compute reminders, deadlines, or human-readable timestamps."
+        },
+        {
+          "node_type": "n8n-nodes-base.httpRequestTool",
+          "display_name": "HTTP Request Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolhttprequest",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "get_a_joke"
+          ],
+          "summary": "Provides HTTP requests as an agent-executable tool.\nRequires endpoint URL, method, and optional headers or payload.\nUse when AI agents must query external APIs mid-conversation."
+        },
+        {
+          "node_type": "n8n-nodes-base.rssFeedReadTool",
+          "display_name": "RSS Feed Read Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.rssfeedread/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "n8n_blog_rss_feed"
+          ],
+          "summary": "Fetches RSS feeds and exposes them as an agent tool.\nRequires feed URL, item limit, and optional filtering options.\nUse to let agents pull latest news or blog entries on demand."
+        },
+        {
+          "node_type": "n8n-nodes-base.stickyNote",
+          "display_name": "Sticky Note",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stickynote/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Sticky Note1",
+            "Sticky Note10",
+            "Sticky Note2",
+            "Sticky Note3",
+            "Sticky Note4",
+            "Sticky Note5"
+          ],
+          "summary": "Adds visual annotations to document the workflow canvas.\nRequires note content plus optional color, size, or author fields.\nUse to explain logic, credential setup, or reviewer guidance."
+        }
+      ]
+    },
+    {
+      "workflow_id": 7639,
+      "workflow_name": "Talk to Your Google Sheets Using ChatGPT-5",
+      "node_docs": [
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.agent",
+          "display_name": "AI Agent",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/",
+          "documentation_title": "AI Agent node common issues",
+          "workflow_node_names": [
+            "Talk to Your Data"
+          ],
+          "summary": "Orchestrates LangChain agents that decide which tools to call.\nRequires system instructions plus linked tools, models, or memory nodes.\nUse to route user prompts through reasoning workflows with tool access."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.chatTrigger",
+          "display_name": "Chat Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.chattrigger/",
+          "documentation_title": "Chat Trigger node common issues",
+          "workflow_node_names": [
+            "Chat with Your Data"
+          ],
+          "summary": "Exposes a hosted chat interface that starts the workflow.\nRequires public endpoint settings, authentication options, and target node.\nUse to capture user questions for AI agents or conversational flows."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+          "display_name": "OpenAI Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/index",
+          "documentation_title": "OpenAI Chat Model node",
+          "workflow_node_names": [
+            "OpenAI Chat Model"
+          ],
+          "summary": "Produces chat completions through OpenAI Chat endpoints.\nRequires OpenAI API key, model selection, and prompt structure.\nUse for assistant replies, agent reasoning, or natural language output."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+          "display_name": "Simple Memory",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorybufferwindow",
+          "documentation_title": "Simple Memory node common issues",
+          "workflow_node_names": [
+            "Memory"
+          ],
+          "summary": "Stores sliding-window chat history for LangChain agents.\nRequires buffer size, memory key, and linked conversation fields.\nUse to maintain short-term context between user messages."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleSheetsTool",
+          "display_name": "Google Sheets Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlesheets/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Analyze Data"
+          ],
+          "summary": "Makes Google Sheets actions available to agents.\nRequires Google Sheets credential, target sheet, and action payloads.\nUse for conversational agents that need spreadsheet access."
+        },
+        {
+          "node_type": "n8n-nodes-base.stickyNote",
+          "display_name": "Sticky Note",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stickynote/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Sticky Note",
+            "Sticky Note10",
+            "Sticky Note2",
+            "Sticky Note7",
+            "Sticky Note8",
+            "Sticky Note9"
+          ],
+          "summary": "Adds visual annotations to document the workflow canvas.\nRequires note content plus optional color, size, or author fields.\nUse to explain logic, credential setup, or reviewer guidance."
+        }
+      ]
+    },
+    {
+      "workflow_id": 5035,
+      "workflow_name": "Generate & Auto-post AI Videos to Social Media with Veo3 and Blotato",
+      "node_docs": [
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.agent",
+          "display_name": "AI Agent",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/",
+          "documentation_title": "AI Agent node common issues",
+          "workflow_node_names": [
+            "AI Agent: Create Veo3-Compatible Prompt",
+            "AI Agent: Generate Video Concept"
+          ],
+          "summary": "Orchestrates LangChain agents that decide which tools to call.\nRequires system instructions plus linked tools, models, or memory nodes.\nUse to route user prompts through reasoning workflows with tool access."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+          "display_name": "OpenAI Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/index",
+          "documentation_title": "OpenAI Chat Model node",
+          "workflow_node_names": [
+            "LLM: Format Prompt for Veo3 (GPT-4.1)",
+            "LLM: Generate Idea & Caption (GPT-4.1)"
+          ],
+          "summary": "Produces chat completions through OpenAI Chat endpoints.\nRequires OpenAI API key, model selection, and prompt structure.\nUse for assistant replies, agent reasoning, or natural language output."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+          "display_name": "Structured Output Parser",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.outputparserstructured",
+          "documentation_title": "Structured Output Parser node",
+          "workflow_node_names": [
+            "Parser: Extract JSON from Idea"
+          ],
+          "summary": "Transforms LLM replies into structured schema outputs.\nRequires schema definition or JSON schema reference for parsing.\nUse to convert free-form generations into machine-readable objects."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.toolThink",
+          "display_name": "Think Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolthink",
+          "documentation_title": "Think Tool node",
+          "workflow_node_names": [
+            "Tool: Build Prompt Structure",
+            "Tool: Inject Creativity"
+          ],
+          "summary": "Adds deliberate reasoning steps before tool usage.\nRequires connection to an agent plus configured think strategy.\nUse to enforce chain-of-thought planning for complex decisions."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleSheets",
+          "display_name": "Google Sheets",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlesheets/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Get my video",
+            "Google Sheets",
+            "Google Sheets: Log Final Video Output",
+            "Google Sheets: Save Script Idea"
+          ],
+          "summary": "Reads and writes Google Sheets data programmatically.\nRequires credential, document ID, sheet range, and operation settings.\nUse to log results, update dashboards, or sync spreadsheet records."
+        },
+        {
+          "node_type": "n8n-nodes-base.httpRequest",
+          "display_name": "HTTP Request",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "BLUESKY",
+            "Call Veo3 API to Generate Video",
+            "FACEBOOK",
+            "INSTAGRAM",
+            "LINKEDIN",
+            "PINTEREST",
+            "Retrieve Final Video URL from Veo3",
+            "THREADS",
+            "TIKTOK",
+            "TWETTER",
+            "Upload Video to Blotato",
+            "YOUTUBE"
+          ],
+          "summary": "Sends HTTP(S) requests with full method support.\nRequires URL, method, and optional headers, auth, or body settings.\nUse to integrate REST APIs, webhooks, or external services."
+        },
+        {
+          "node_type": "n8n-nodes-base.scheduleTrigger",
+          "display_name": "Schedule Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.scheduletrigger/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Trigger: Run Daily Script Generator"
+          ],
+          "summary": "Runs workflows on cron expressions or intervals.\nRequires mode selection, timezone, and cadence parameters.\nUse for periodic jobs like daily summaries or clean-up tasks."
+        },
+        {
+          "node_type": "n8n-nodes-base.set",
+          "display_name": "Set",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.set/",
+          "documentation_title": "Edit Fields (Set)",
+          "workflow_node_names": [
+            "Assign Social Media IDs"
+          ],
+          "summary": "Creates or overrides fields on each item.\nRequires field definitions with static values or expressions.\nUse to reshape payloads or add metadata before downstream nodes."
+        },
+        {
+          "node_type": "n8n-nodes-base.stickyNote",
+          "display_name": "Sticky Note",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stickynote/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Sticky Note",
+            "Sticky Note1",
+            "Sticky Note2"
+          ],
+          "summary": "Adds visual annotations to document the workflow canvas.\nRequires note content plus optional color, size, or author fields.\nUse to explain logic, credential setup, or reviewer guidance."
+        },
+        {
+          "node_type": "n8n-nodes-base.wait",
+          "display_name": "Wait",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait/",
+          "documentation_title": "Wait",
+          "workflow_node_names": [
+            "Wait for Veo3 Processing (5 mins)"
+          ],
+          "summary": "Pauses execution until a time or event condition is met.\nRequires wait mode selection, duration/date, or resume trigger.\nUse to delay follow-ups, await approvals, or break long processes."
+        }
+      ]
+    },
+    {
+      "workflow_id": 8500,
+      "workflow_name": "Jarvis: Productivity AI Agent for Tasks, Calendar, Email & Expense using MCPs",
+      "node_docs": [
+        {
+          "node_type": "@elevenlabs/n8n-nodes-elevenlabs.elevenLabs",
+          "display_name": "ElevenLabs",
+          "documentation_url": "https://docs.n8n.io/integrations/community/app-nodes/elevenlabs/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Convert text to speech",
+            "Transcribe audio or video"
+          ],
+          "summary": "Generates speech audio using ElevenLabs voices via API.\nRequires ElevenLabs API key, voice ID, and input text or SSML.\nUse to render lifelike voice-overs or chatbot responses on demand."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.agent",
+          "display_name": "AI Agent",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/",
+          "documentation_title": "AI Agent node common issues",
+          "workflow_node_names": [
+            "Jarvis"
+          ],
+          "summary": "Orchestrates LangChain agents that decide which tools to call.\nRequires system instructions plus linked tools, models, or memory nodes.\nUse to route user prompts through reasoning workflows with tool access."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+          "display_name": "OpenAI Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/index",
+          "documentation_title": "OpenAI Chat Model node",
+          "workflow_node_names": [
+            "OpenAI Chat Model"
+          ],
+          "summary": "Produces chat completions through OpenAI Chat endpoints.\nRequires OpenAI API key, model selection, and prompt structure.\nUse for assistant replies, agent reasoning, or natural language output."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+          "display_name": "MCP Client Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolmcp",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Calendar MCP",
+            "Finance Tracker",
+            "Gmail MCP",
+            "Google Contacts",
+            "Google Tasks MCP"
+          ],
+          "summary": "Invokes Model Context Protocol tools from an agent.\nRequires MCP server connection, tool identifier, and input mapping.\nUse to let agents call external MCP services during workflows."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.mcpTrigger",
+          "display_name": "MCP Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.mcptrigger",
+          "documentation_title": "MCP Server Trigger node",
+          "workflow_node_names": [
+            "Calendar MCP Server",
+            "Finance Manager MCP Server",
+            "Gmail MCP Server",
+            "Google Contacts MCP",
+            "Task Manager MCP"
+          ],
+          "summary": "Listens for MCP tool calls and starts the workflow.\nRequires MCP server credentials, namespace, and allowed tools.\nUse to expose workflow capabilities as MCP integrations."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+          "display_name": "Simple Memory",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorybufferwindow",
+          "documentation_title": "Simple Memory node common issues",
+          "workflow_node_names": [
+            "Simple Memory"
+          ],
+          "summary": "Stores sliding-window chat history for LangChain agents.\nRequires buffer size, memory key, and linked conversation fields.\nUse to maintain short-term context between user messages."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.toolThink",
+          "display_name": "Think Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolthink",
+          "documentation_title": "Think Tool node",
+          "workflow_node_names": [
+            "Think"
+          ],
+          "summary": "Adds deliberate reasoning steps before tool usage.\nRequires connection to an agent plus configured think strategy.\nUse to enforce chain-of-thought planning for complex decisions."
+        },
+        {
+          "node_type": "n8n-nodes-base.filter",
+          "display_name": "Filter",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.filter/",
+          "documentation_title": "Filter",
+          "workflow_node_names": [
+            "Only allow me"
+          ],
+          "summary": "Evaluates conditions to decide if items continue.\nRequires rules for each output branch comparing fields or expressions.\nUse to enforce business logic before downstream processing."
+        },
+        {
+          "node_type": "n8n-nodes-base.gmailTool",
+          "display_name": "Gmail Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.gmail/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Add Label to Email",
+            "Draft Email",
+            "Draft Email Reply",
+            "Get Emails",
+            "Get Labels",
+            "Reply to an Email",
+            "Send Email"
+          ],
+          "summary": "Exposes Gmail actions as a tool callable by agents.\nRequires Gmail credential, chosen operation, and email parameters.\nUse for AI assistants that need to read or send Gmail messages."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleCalendarTool",
+          "display_name": "Google Calendar Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlecalendar/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Check Availability",
+            "Create an event",
+            "Delete Calendar Event",
+            "Get all Events",
+            "Get Event",
+            "Reschedule Event"
+          ],
+          "summary": "Offers Google Calendar operations to AI tools.\nRequires calendar credential, calendar ID, and event payload fields.\nUse to let agents schedule, update, or fetch calendar events."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleContactsTool",
+          "display_name": "Google Contacts Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlecontacts/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Get Contacts"
+          ],
+          "summary": "Provides Google Contacts CRUD capabilities to agents.\nRequires Google credential, contact list, and field mappings.\nUse when assistants must lookup or update contact details."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleSheetsTool",
+          "display_name": "Google Sheets Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlesheets/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Create Expense",
+            "Delete Expense",
+            "Get all Expenses"
+          ],
+          "summary": "Makes Google Sheets actions available to agents.\nRequires Google Sheets credential, target sheet, and action payloads.\nUse for conversational agents that need spreadsheet access."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleTasksTool",
+          "display_name": "Google Tasks Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googletasks/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Complete a Task",
+            "Create a Task",
+            "Delete a Task",
+            "Get a Task",
+            "Get many Tasks"
+          ],
+          "summary": "Lets agents manage Google Tasks lists via API.\nRequires Google credential, list selection, and task fields.\nUse to create, update, or complete tasks during AI workflows."
+        },
+        {
+          "node_type": "n8n-nodes-base.set",
+          "display_name": "Set",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.set/",
+          "documentation_title": "Edit Fields (Set)",
+          "workflow_node_names": [
+            "Set Reply Message"
+          ],
+          "summary": "Creates or overrides fields on each item.\nRequires field definitions with static values or expressions.\nUse to reshape payloads or add metadata before downstream nodes."
+        },
+        {
+          "node_type": "n8n-nodes-base.stickyNote",
+          "display_name": "Sticky Note",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stickynote/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Sticky Note1",
+            "Sticky Note2",
+            "Sticky Note3",
+            "Sticky Note4",
+            "Sticky Note5",
+            "Sticky Note6"
+          ],
+          "summary": "Adds visual annotations to document the workflow canvas.\nRequires note content plus optional color, size, or author fields.\nUse to explain logic, credential setup, or reviewer guidance."
+        },
+        {
+          "node_type": "n8n-nodes-base.switch",
+          "display_name": "Switch",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.switch/",
+          "documentation_title": "Switch",
+          "workflow_node_names": [
+            "Check Text or Audio",
+            "Switch"
+          ],
+          "summary": "Routes items to matching cases based on a value.\nRequires input expression, comparison rules, and fallbacks.\nUse to send data down specific branches by type or status."
+        },
+        {
+          "node_type": "n8n-nodes-base.telegram",
+          "display_name": "Telegram",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.telegram/",
+          "documentation_title": "Telegram node Chat operations",
+          "workflow_node_names": [
+            "Get a file",
+            "Send a text message",
+            "Send an audio file"
+          ],
+          "summary": "Sends messages, media, or keyboards via Telegram Bot API.\nRequires bot token, chat ID, and message payload setup.\nUse to notify users or run chatbot replies from workflows."
+        },
+        {
+          "node_type": "n8n-nodes-base.telegramTrigger",
+          "display_name": "Telegram Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.telegram/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Telegram Trigger"
+          ],
+          "summary": "Starts workflows from Telegram bot updates or commands.\nRequires bot credential, listening mode, and security options.\nUse to handle chat commands, replies, or inline queries."
+        }
+      ]
+    },
+    {
+      "workflow_id": 6281,
+      "workflow_name": "N8N Documentation Expert Chatbot with OpenAI RAG Pipeline",
+      "node_docs": [
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.agent",
+          "display_name": "AI Agent",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/",
+          "documentation_title": "AI Agent node common issues",
+          "workflow_node_names": [
+            "n8n Docs AI Agent"
+          ],
+          "summary": "Orchestrates LangChain agents that decide which tools to call.\nRequires system instructions plus linked tools, models, or memory nodes.\nUse to route user prompts through reasoning workflows with tool access."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.chatTrigger",
+          "display_name": "Chat Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.chattrigger/",
+          "documentation_title": "Chat Trigger node common issues",
+          "workflow_node_names": [
+            "RAG Chatbot"
+          ],
+          "summary": "Exposes a hosted chat interface that starts the workflow.\nRequires public endpoint settings, authentication options, and target node.\nUse to capture user questions for AI agents or conversational flows."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+          "display_name": "Document Default Data Loader",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.documentdefaultdataloader/",
+          "documentation_title": "Default Data Loader node",
+          "workflow_node_names": [
+            "Default Data Loader"
+          ],
+          "summary": "Loads files or URLs into LangChain document objects.\nRequires loader type, source location, and optional parsing options.\nUse to ingest knowledge before embedding or question-answer chains."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+          "display_name": "OpenAI Embeddings",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.embeddingsopenai",
+          "documentation_title": "Embeddings OpenAI node",
+          "workflow_node_names": [
+            "Embeddings OpenAI",
+            "Embeddings OpenAI1"
+          ],
+          "summary": "Creates OpenAI embeddings for supplied text chunks.\nRequires OpenAI credential, model name, and text or array input.\nUse to index documents for semantic similarity or RAG pipelines."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+          "display_name": "OpenAI Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/index",
+          "documentation_title": "OpenAI Chat Model node",
+          "workflow_node_names": [
+            "OpenAI Chat Model"
+          ],
+          "summary": "Produces chat completions through OpenAI Chat endpoints.\nRequires OpenAI API key, model selection, and prompt structure.\nUse for assistant replies, agent reasoning, or natural language output."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+          "display_name": "Simple Memory",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorybufferwindow",
+          "documentation_title": "Simple Memory node common issues",
+          "workflow_node_names": [
+            "Simple Memory"
+          ],
+          "summary": "Stores sliding-window chat history for LangChain agents.\nRequires buffer size, memory key, and linked conversation fields.\nUse to maintain short-term context between user messages."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
+          "display_name": "Recursive Character Text Splitter",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.textsplitterrecursivecharactertextsplitter",
+          "documentation_title": "Recursive Character Text Splitter node",
+          "workflow_node_names": [
+            "Recursive Character Text Splitter"
+          ],
+          "summary": "Splits documents recursively into chunked segments.\nRequires chunk size, overlap, and source text configuration.\nUse before embedding long texts to preserve context in retrieval."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+          "display_name": "Vector Store In Memory",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.vectorstoreinmemory",
+          "documentation_title": "Simple Vector Store node",
+          "workflow_node_names": [
+            "Official n8n Documentation",
+            "Simple Vector Store"
+          ],
+          "summary": "Stores embeddings inside an in-memory LangChain index.\nRequires vector data, metadata fields, and similarity search config.\nUse for ephemeral retrieval tasks without external databases."
+        },
+        {
+          "node_type": "n8n-nodes-base.executeWorkflow",
+          "display_name": "Execute Workflow",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.executeworkflow/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Add Documentation Page to Vector Store"
+          ],
+          "summary": "Calls another n8n workflow synchronously.\nRequires target workflow ID, optional wait behavior, and payload mapping.\nUse to reuse subflows or centralize shared automation steps."
+        },
+        {
+          "node_type": "n8n-nodes-base.executeWorkflowTrigger",
+          "display_name": "Execute Workflow Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.executeworkflowtrigger/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Ingest Web Page"
+          ],
+          "summary": "Fires when a parent workflow invokes this one.\nRequires linked Execute Workflow node and optional allowed callers.\nUse to expose reusable modules for other workflows to trigger."
+        },
+        {
+          "node_type": "n8n-nodes-base.filter",
+          "display_name": "Filter",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.filter/",
+          "documentation_title": "Filter",
+          "workflow_node_names": [
+            "Only Keep Doc Paths"
+          ],
+          "summary": "Evaluates conditions to decide if items continue.\nRequires rules for each output branch comparing fields or expressions.\nUse to enforce business logic before downstream processing."
+        },
+        {
+          "node_type": "n8n-nodes-base.html",
+          "display_name": "HTML",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.html/",
+          "documentation_title": "HTML",
+          "workflow_node_names": [
+            "Extract Documentation Content",
+            "Extract Links from HTML"
+          ],
+          "summary": "Builds HTML from templates or extracts data from markup.\nRequires source HTML or template plus fields to render or parse.\nUse to craft rich emails or scrape structured content blocks."
+        },
+        {
+          "node_type": "n8n-nodes-base.httpRequest",
+          "display_name": "HTTP Request",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Get All n8n Documentation Links",
+            "Get Documentation Page"
+          ],
+          "summary": "Sends HTTP(S) requests with full method support.\nRequires URL, method, and optional headers, auth, or body settings.\nUse to integrate REST APIs, webhooks, or external services."
+        },
+        {
+          "node_type": "n8n-nodes-base.manualTrigger",
+          "display_name": "Manual Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.manualworkflowtrigger/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Start Indexing"
+          ],
+          "summary": "Starts workflows manually from the editor UI.\nRequires no credentials; optional options configure run behavior.\nUse for testing, demos, or one-off executions on demand."
+        },
+        {
+          "node_type": "n8n-nodes-base.removeDuplicates",
+          "display_name": "Remove Duplicates",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.removeduplicates/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Remove Duplicate Documentation Content",
+            "Remove Duplicate Links"
+          ],
+          "summary": "Deduplicates items based on selected fields or hashes.\nRequires key fields, comparison mode, and keep-first/last choice.\nUse to clean datasets before persisting or sending results."
+        },
+        {
+          "node_type": "n8n-nodes-base.set",
+          "display_name": "Set",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.set/",
+          "documentation_title": "Edit Fields (Set)",
+          "workflow_node_names": [
+            "Clean Documentation"
+          ],
+          "summary": "Creates or overrides fields on each item.\nRequires field definitions with static values or expressions.\nUse to reshape payloads or add metadata before downstream nodes."
+        },
+        {
+          "node_type": "n8n-nodes-base.splitInBatches",
+          "display_name": "Split In Batches",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.splitinbatches/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Loop Over Documentation Pages"
+          ],
+          "summary": "Processes items in sequential batches of fixed size.\nRequires batch size, optional reset, and loop connections.\nUse to paginate large datasets or stay within rate limits."
+        },
+        {
+          "node_type": "n8n-nodes-base.splitOut",
+          "display_name": "Split Out",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.splitout/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Split Out Links"
+          ],
+          "summary": "Expands array fields into individual items.\nRequires target field and output handling preferences.\nUse to fan out lists so each element runs through the workflow."
+        },
+        {
+          "node_type": "n8n-nodes-base.stickyNote",
+          "display_name": "Sticky Note",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stickynote/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Sticky Note1",
+            "Sticky Note10",
+            "Sticky Note11",
+            "Sticky Note12",
+            "Sticky Note13",
+            "Sticky Note14",
+            "Sticky Note15",
+            "Sticky Note16",
+            "Sticky Note17",
+            "Sticky Note18",
+            "Sticky Note19",
+            "Sticky Note2",
+            "Sticky Note20",
+            "Sticky Note21",
+            "Sticky Note24",
+            "Sticky Note27",
+            "Sticky Note28",
+            "Sticky Note4",
+            "Sticky Note5",
+            "Sticky Note6",
+            "Sticky Note7",
+            "Sticky Note8",
+            "Sticky Note9"
+          ],
+          "summary": "Adds visual annotations to document the workflow canvas.\nRequires note content plus optional color, size, or author fields.\nUse to explain logic, credential setup, or reviewer guidance."
+        }
+      ]
+    },
+    {
+      "workflow_id": 7756,
+      "workflow_name": "Nutrition Tracker & Meal Logger with Telegram, Gemini AI and Google Sheets",
+      "node_docs": [
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.agent",
+          "display_name": "AI Agent",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/",
+          "documentation_title": "AI Agent node common issues",
+          "workflow_node_names": [
+            "Cal IA Agent",
+            "Register Agent"
+          ],
+          "summary": "Orchestrates LangChain agents that decide which tools to call.\nRequires system instructions plus linked tools, models, or memory nodes.\nUse to route user prompts through reasoning workflows with tool access."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.googleGemini",
+          "display_name": "Google Gemini",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-langchain.googlegemini",
+          "documentation_title": "Google Gemini node",
+          "workflow_node_names": [
+            "Analyze image",
+            "Analyze voice message"
+          ],
+          "summary": "Calls Google Gemini multimodal generation endpoints.\nRequires Google AI Studio key, chosen model, and prompt or media input.\nUse to caption images, analyze media, or craft rich Gemini responses."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+          "display_name": "Google Gemini Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatgooglegemini",
+          "documentation_title": "Google Gemini Chat Model node",
+          "workflow_node_names": [
+            "Google Gemini Chat Model",
+            "Google Gemini Chat Model1"
+          ],
+          "summary": "Streams conversational output from Gemini chat models.\nRequires Gemini credential, model selection, and prompt content.\nUse to answer chat messages or agent queries with Google Gemini."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+          "display_name": "Simple Memory",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorybufferwindow",
+          "documentation_title": "Simple Memory node common issues",
+          "workflow_node_names": [
+            "Simple Memory",
+            "Simple Memory1"
+          ],
+          "summary": "Stores sliding-window chat history for LangChain agents.\nRequires buffer size, memory key, and linked conversation fields.\nUse to maintain short-term context between user messages."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+          "display_name": "Workflow Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolworkflow",
+          "documentation_title": "Call n8n Workflow Tool node",
+          "workflow_node_names": [
+            "Get Report"
+          ],
+          "summary": "Lets agents call another n8n workflow as a tool.\nRequires workflow ID, execution credentials, and payload mapping.\nUse to delegate specialized automation tasks from an agent."
+        },
+        {
+          "node_type": "n8n-nodes-base.code",
+          "display_name": "Code",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/",
+          "documentation_title": "Code node",
+          "workflow_node_names": [
+            "Fix mime",
+            "Fix mime5",
+            "Get chart message",
+            "MarkdownV",
+            "MarkdownV2",
+            "Unify data"
+          ],
+          "summary": "Executes custom JavaScript or TypeScript on workflow data.\nRequires function body, input variables, and defined output fields.\nUse for bespoke logic, data shaping, or calling unsupported APIs."
+        },
+        {
+          "node_type": "n8n-nodes-base.executeWorkflowTrigger",
+          "display_name": "Execute Workflow Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.executeworkflowtrigger/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Get report"
+          ],
+          "summary": "Fires when a parent workflow invokes this one.\nRequires linked Execute Workflow node and optional allowed callers.\nUse to expose reusable modules for other workflows to trigger."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleSheets",
+          "display_name": "Google Sheets",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlesheets/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Get Meals Info",
+            "Get User Info",
+            "Registered?"
+          ],
+          "summary": "Reads and writes Google Sheets data programmatically.\nRequires credential, document ID, sheet range, and operation settings.\nUse to log results, update dashboards, or sync spreadsheet records."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleSheetsTool",
+          "display_name": "Google Sheets Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlesheets/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Append Meal Data",
+            "Get Profile Data",
+            "Register User",
+            "Update Profile Data"
+          ],
+          "summary": "Makes Google Sheets actions available to agents.\nRequires Google Sheets credential, target sheet, and action payloads.\nUse for conversational agents that need spreadsheet access."
+        },
+        {
+          "node_type": "n8n-nodes-base.if",
+          "display_name": "IF",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.if/",
+          "documentation_title": "If",
+          "workflow_node_names": [
+            "If"
+          ],
+          "summary": "Evaluates conditions to route data to true or false branches.\nRequires comparison expressions and field selections per branch.\nUse to control flow based on item values or expressions."
+        },
+        {
+          "node_type": "n8n-nodes-base.merge",
+          "display_name": "Merge",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.merge/",
+          "documentation_title": "Merge",
+          "workflow_node_names": [
+            "Merge"
+          ],
+          "summary": "Combines data from two inputs using merge strategies.\nRequires mode selection like pass-through, combine, or wait.\nUse to synchronize parallel branches or join related items."
+        },
+        {
+          "node_type": "n8n-nodes-base.set",
+          "display_name": "Set",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.set/",
+          "documentation_title": "Edit Fields (Set)",
+          "workflow_node_names": [
+            "Get Data",
+            "get_error_message1",
+            "get_message (Audio/Video message)",
+            "get_message (Media  message)",
+            "get_message (register)",
+            "get_message (text)",
+            "Send back message"
+          ],
+          "summary": "Creates or overrides fields on each item.\nRequires field definitions with static values or expressions.\nUse to reshape payloads or add metadata before downstream nodes."
+        },
+        {
+          "node_type": "n8n-nodes-base.stickyNote",
+          "display_name": "Sticky Note",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stickynote/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Sticky Note",
+            "Sticky Note1",
+            "Sticky Note10",
+            "Sticky Note11",
+            "Sticky Note12",
+            "Sticky Note13",
+            "Sticky Note14",
+            "Sticky Note15",
+            "Sticky Note16",
+            "Sticky Note17",
+            "Sticky Note18",
+            "Sticky Note19",
+            "Sticky Note2",
+            "Sticky Note20",
+            "Sticky Note21",
+            "Sticky Note22",
+            "Sticky Note23",
+            "Sticky Note3",
+            "Sticky Note4",
+            "Sticky Note5",
+            "Sticky Note6",
+            "Sticky Note7",
+            "Sticky Note8",
+            "Sticky Note9"
+          ],
+          "summary": "Adds visual annotations to document the workflow canvas.\nRequires note content plus optional color, size, or author fields.\nUse to explain logic, credential setup, or reviewer guidance."
+        },
+        {
+          "node_type": "n8n-nodes-base.switch",
+          "display_name": "Switch",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.switch/",
+          "documentation_title": "Switch",
+          "workflow_node_names": [
+            "Input Message Router1"
+          ],
+          "summary": "Routes items to matching cases based on a value.\nRequires input expression, comparison rules, and fallbacks.\nUse to send data down specific branches by type or status."
+        },
+        {
+          "node_type": "n8n-nodes-base.telegram",
+          "display_name": "Telegram",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.telegram/",
+          "documentation_title": "Telegram node Chat operations",
+          "workflow_node_names": [
+            "Download IMAGE",
+            "Download Voice Message",
+            "Send a text message",
+            "Send a text message1",
+            "Typing…"
+          ],
+          "summary": "Sends messages, media, or keyboards via Telegram Bot API.\nRequires bot token, chat ID, and message payload setup.\nUse to notify users or run chatbot replies from workflows."
+        },
+        {
+          "node_type": "n8n-nodes-base.telegramTrigger",
+          "display_name": "Telegram Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.telegram/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Telegram Trigger"
+          ],
+          "summary": "Starts workflows from Telegram bot updates or commands.\nRequires bot credential, listening mode, and security options.\nUse to handle chat commands, replies, or inline queries."
+        }
+      ]
+    },
+    {
+      "workflow_id": 5148,
+      "workflow_name": "Local Chatbot with Retrieval Augmented Generation (RAG)",
+      "node_docs": [
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.agent",
+          "display_name": "AI Agent",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/",
+          "documentation_title": "AI Agent node common issues",
+          "workflow_node_names": [
+            "AI Agent"
+          ],
+          "summary": "Orchestrates LangChain agents that decide which tools to call.\nRequires system instructions plus linked tools, models, or memory nodes.\nUse to route user prompts through reasoning workflows with tool access."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.chatTrigger",
+          "display_name": "Chat Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.chattrigger/",
+          "documentation_title": "Chat Trigger node common issues",
+          "workflow_node_names": [
+            "When chat message received"
+          ],
+          "summary": "Exposes a hosted chat interface that starts the workflow.\nRequires public endpoint settings, authentication options, and target node.\nUse to capture user questions for AI agents or conversational flows."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+          "display_name": "Document Default Data Loader",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.documentdefaultdataloader/",
+          "documentation_title": "Default Data Loader node",
+          "workflow_node_names": [
+            "Default Data Loader"
+          ],
+          "summary": "Loads files or URLs into LangChain document objects.\nRequires loader type, source location, and optional parsing options.\nUse to ingest knowledge before embedding or question-answer chains."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
+          "display_name": "Ollama Embeddings",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.embeddingsollama",
+          "documentation_title": "Embeddings Ollama node",
+          "workflow_node_names": [
+            "Embeddings Ollama",
+            "Embeddings Ollama1"
+          ],
+          "summary": "Generates embedding vectors with local Ollama models.\nRequires Ollama host, selected model, and text input field.\nUse for offline semantic search or retrieval without external APIs."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+          "display_name": "Ollama Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatollama",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Ollama Chat Model"
+          ],
+          "summary": "Runs Ollama-hosted chat models for LangChain agents.\nRequires Ollama server URL, model name, and prompt input field.\nUse to deliver private, on-prem conversational AI responses."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+          "display_name": "Simple Memory",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.memorybufferwindow",
+          "documentation_title": "Simple Memory node common issues",
+          "workflow_node_names": [
+            "Simple Memory"
+          ],
+          "summary": "Stores sliding-window chat history for LangChain agents.\nRequires buffer size, memory key, and linked conversation fields.\nUse to maintain short-term context between user messages."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter",
+          "display_name": "Recursive Character Text Splitter",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.textsplitterrecursivecharactertextsplitter",
+          "documentation_title": "Recursive Character Text Splitter node",
+          "workflow_node_names": [
+            "Recursive Character Text Splitter"
+          ],
+          "summary": "Splits documents recursively into chunked segments.\nRequires chunk size, overlap, and source text configuration.\nUse before embedding long texts to preserve context in retrieval."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
+          "display_name": "Qdrant Vector Store",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.vectorstoreqdrant",
+          "documentation_title": "Qdrant Vector Store node",
+          "workflow_node_names": [
+            "Qdrant Vector Store",
+            "Qdrant Vector Store1"
+          ],
+          "summary": "Persists embeddings to a Qdrant vector database.\nRequires Qdrant URL, collection name, and payload schema.\nUse to enable scalable semantic search for RAG workflows."
+        },
+        {
+          "node_type": "n8n-nodes-base.formTrigger",
+          "display_name": "Form Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.formtrigger/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "On form submission"
+          ],
+          "summary": "Publishes a web form that kicks off the workflow.\nRequires form fields, access controls, and success response settings.\nUse to capture user submissions without external form builders."
+        },
+        {
+          "node_type": "n8n-nodes-base.stickyNote",
+          "display_name": "Sticky Note",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stickynote/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Sticky Note",
+            "Sticky Note1"
+          ],
+          "summary": "Adds visual annotations to document the workflow canvas.\nRequires note content plus optional color, size, or author fields.\nUse to explain logic, credential setup, or reviewer guidance."
+        }
+      ]
+    },
+    {
+      "workflow_id": 5110,
+      "workflow_name": "Create & Upload AI-Generated ASMR YouTube Shorts with Seedance, Fal AI, and GPT-4",
+      "node_docs": [
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.agent",
+          "display_name": "AI Agent",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/",
+          "documentation_title": "AI Agent node common issues",
+          "workflow_node_names": [
+            "1. Generate Trendy Idea",
+            "2. Enrich Idea into Plan",
+            "Prompts AI Agent"
+          ],
+          "summary": "Orchestrates LangChain agents that decide which tools to call.\nRequires system instructions plus linked tools, models, or memory nodes.\nUse to route user prompts through reasoning workflows with tool access."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+          "display_name": "OpenAI Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/index",
+          "documentation_title": "OpenAI Chat Model node",
+          "workflow_node_names": [
+            "OpenAI Chat Model",
+            "OpenAI Chat Model1"
+          ],
+          "summary": "Produces chat completions through OpenAI Chat endpoints.\nRequires OpenAI API key, model selection, and prompt structure.\nUse for assistant replies, agent reasoning, or natural language output."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+          "display_name": "Structured Output Parser",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.outputparserstructured",
+          "documentation_title": "Structured Output Parser node",
+          "workflow_node_names": [
+            "Parser",
+            "Parser2"
+          ],
+          "summary": "Transforms LLM replies into structured schema outputs.\nRequires schema definition or JSON schema reference for parsing.\nUse to convert free-form generations into machine-readable objects."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.toolThink",
+          "display_name": "Think Tool",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.toolthink",
+          "documentation_title": "Think Tool node",
+          "workflow_node_names": [
+            "Think"
+          ],
+          "summary": "Adds deliberate reasoning steps before tool usage.\nRequires connection to an agent plus configured think strategy.\nUse to enforce chain-of-thought planning for complex decisions."
+        },
+        {
+          "node_type": "n8n-nodes-base.code",
+          "display_name": "Code",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.code/",
+          "documentation_title": "Code node",
+          "workflow_node_names": [
+            "List Elements",
+            "Unbundle Prompts"
+          ],
+          "summary": "Executes custom JavaScript or TypeScript on workflow data.\nRequires function body, input variables, and defined output fields.\nUse for bespoke logic, data shaping, or calling unsupported APIs."
+        },
+        {
+          "node_type": "n8n-nodes-base.gmail",
+          "display_name": "Gmail",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.gmail/",
+          "documentation_title": "Gmail node common issues",
+          "workflow_node_names": [
+            "Gmail Notification"
+          ],
+          "summary": "Connects to Gmail to send, search, or manage mail.\nRequires Google OAuth credential, resource selection, and action fields.\nUse to automate inbox triage or send transactional messages."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleSheets",
+          "display_name": "Google Sheets",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlesheets/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "3. Log New Idea to Sheet",
+            "Update Final Video to Sheet",
+            "Update Sheet with Youtube Link"
+          ],
+          "summary": "Reads and writes Google Sheets data programmatically.\nRequires credential, document ID, sheet range, and operation settings.\nUse to log results, update dashboards, or sync spreadsheet records."
+        },
+        {
+          "node_type": "n8n-nodes-base.httpRequest",
+          "display_name": "HTTP Request",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Create Clips",
+            "Create Sounds",
+            "Download Final Video",
+            "Get Clips",
+            "Get Final Video",
+            "Get Sounds",
+            "Sequence Video"
+          ],
+          "summary": "Sends HTTP(S) requests with full method support.\nRequires URL, method, and optional headers, auth, or body settings.\nUse to integrate REST APIs, webhooks, or external services."
+        },
+        {
+          "node_type": "n8n-nodes-base.scheduleTrigger",
+          "display_name": "Schedule Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.scheduletrigger/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Schedule Trigger"
+          ],
+          "summary": "Runs workflows on cron expressions or intervals.\nRequires mode selection, timezone, and cadence parameters.\nUse for periodic jobs like daily summaries or clean-up tasks."
+        },
+        {
+          "node_type": "n8n-nodes-base.stickyNote",
+          "display_name": "Sticky Note",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stickynote/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Note: AI Ideation",
+            "Note: Asset Generation",
+            "Note: Distribution",
+            "Note: Final Assembly",
+            "SUBMISSION GUIDE"
+          ],
+          "summary": "Adds visual annotations to document the workflow canvas.\nRequires note content plus optional color, size, or author fields.\nUse to explain logic, credential setup, or reviewer guidance."
+        },
+        {
+          "node_type": "n8n-nodes-base.telegram",
+          "display_name": "Telegram",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.telegram/",
+          "documentation_title": "Telegram node Chat operations",
+          "workflow_node_names": [
+            "Telegram Notification"
+          ],
+          "summary": "Sends messages, media, or keyboards via Telegram Bot API.\nRequires bot token, chat ID, and message payload setup.\nUse to notify users or run chatbot replies from workflows."
+        },
+        {
+          "node_type": "n8n-nodes-base.wait",
+          "display_name": "Wait",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.wait/",
+          "documentation_title": "Wait",
+          "workflow_node_names": [
+            "Wait for Clips",
+            "Wait for Final Video",
+            "Wait for Sounds"
+          ],
+          "summary": "Pauses execution until a time or event condition is met.\nRequires wait mode selection, duration/date, or resume trigger.\nUse to delay follow-ups, await approvals, or break long processes."
+        },
+        {
+          "node_type": "n8n-nodes-base.youTube",
+          "display_name": "YouTube",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.youtube/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Upload to YouTube"
+          ],
+          "summary": "Manages YouTube videos, playlists, and channel metadata.\nRequires Google credential, resource selection, and action fields.\nUse to upload shorts, update descriptions, or fetch analytics."
+        }
+      ]
+    },
+    {
+      "workflow_id": 7990,
+      "workflow_name": "Receipt Scanning & Analysis Workflow",
+      "node_docs": [
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.agent",
+          "display_name": "AI Agent",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/",
+          "documentation_title": "AI Agent node common issues",
+          "workflow_node_names": [
+            "AI Agent"
+          ],
+          "summary": "Orchestrates LangChain agents that decide which tools to call.\nRequires system instructions plus linked tools, models, or memory nodes.\nUse to route user prompts through reasoning workflows with tool access."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+          "display_name": "OpenAI Chat Model",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/index",
+          "documentation_title": "OpenAI Chat Model node",
+          "workflow_node_names": [
+            "OpenAI Chat Model"
+          ],
+          "summary": "Produces chat completions through OpenAI Chat endpoints.\nRequires OpenAI API key, model selection, and prompt structure.\nUse for assistant replies, agent reasoning, or natural language output."
+        },
+        {
+          "node_type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+          "display_name": "Structured Output Parser",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.outputparserstructured",
+          "documentation_title": "Structured Output Parser node",
+          "workflow_node_names": [
+            "Structured Output Parser"
+          ],
+          "summary": "Transforms LLM replies into structured schema outputs.\nRequires schema definition or JSON schema reference for parsing.\nUse to convert free-form generations into machine-readable objects."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleDriveTrigger",
+          "display_name": "GoogleDrive Trigger",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googledrive/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Google Drive Trigger"
+          ],
+          "summary": "Watches Google Drive for file events to start flows.\nRequires Drive credential, watched resource, and polling interval.\nUse to react when files upload, change, or appear in folders."
+        },
+        {
+          "node_type": "n8n-nodes-base.googleSheets",
+          "display_name": "Google Sheets",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.googlesheets/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Append row in sheet"
+          ],
+          "summary": "Reads and writes Google Sheets data programmatically.\nRequires credential, document ID, sheet range, and operation settings.\nUse to log results, update dashboards, or sync spreadsheet records."
+        },
+        {
+          "node_type": "n8n-nodes-base.httpRequest",
+          "display_name": "HTTP Request",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "HTTP Request"
+          ],
+          "summary": "Sends HTTP(S) requests with full method support.\nRequires URL, method, and optional headers, auth, or body settings.\nUse to integrate REST APIs, webhooks, or external services."
+        },
+        {
+          "node_type": "n8n-nodes-base.mistralAi",
+          "display_name": "Mistral AI",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.mistralai/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Extract text"
+          ],
+          "summary": "Invokes Mistral AI models for text generation or analysis.\nRequires Mistral API key, model choice, and prompt parameters.\nUse to extract info or summarize documents with French LLMs."
+        },
+        {
+          "node_type": "n8n-nodes-base.stickyNote",
+          "display_name": "Sticky Note",
+          "documentation_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.stickynote/",
+          "documentation_title": null,
+          "workflow_node_names": [
+            "Sticky Note"
+          ],
+          "summary": "Adds visual annotations to document the workflow canvas.\nRequires note content plus optional color, size, or author fields.\nUse to explain logic, credential setup, or reviewer guidance."
+        }
+      ]
+    }
+  ]
+}
