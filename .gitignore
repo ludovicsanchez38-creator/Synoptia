@@ -88,3 +88,10 @@ screenshots/*.jpg
 
 # Ignore n8n-docs metadata updates (Oct 2025)
 data/n8n-docs/*.json
+
+# Temporary reports and audits (Oct 2025)
+*_REPORT.json
+RAG_*.json
+ENRICHMENT_*.json
+MISSING_*.json
+QDRANT_*.json
