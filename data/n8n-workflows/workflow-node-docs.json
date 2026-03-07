@@ -4,7 +4,7 @@
     "source": "workflows-backup",
     "workflowCount": 2057,
     "nodeCount": 496,
-    "workflowsDir": "/home/ludo/n8n-workflows/workflows_backup"
+    "workflowsDir": "/path/to/workflows"
   },
   "workflows": [
     {

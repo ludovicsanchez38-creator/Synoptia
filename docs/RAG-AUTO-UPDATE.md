@@ -148,7 +148,7 @@ QDRANT_URL=http://localhost:6333
 2. Cliquer **Add webhook**
 3. Remplir :
    ```
-   Payload URL: https://builder.synoptia.fr/api/github-webhook
+   Payload URL: https://your-domain.example.com/api/github-webhook
    Content type: application/json
    Secret: [votre secret GITHUB_WEBHOOK_SECRET]
    Events: ☑️ Releases only
@@ -205,7 +205,7 @@ Le cron est un backup au cas où le webhook ne fonctionne pas :
 crontab -e
 
 # Ajouter (tous les 15 jours à 2h du matin)
-0 2 */15 * * /home/ludo/synoptia-workflow-builder/scripts/update-rag-docs.sh >> /home/ludo/synoptia-workflow-builder/logs/cron-rag-update.log 2>&1
+0 2 */15 * * /opt/synoptia-builder/scripts/update-rag-docs.sh >> /opt/synoptia-builder/logs/cron-rag-update.log 2>&1
 ```
 
 ---
@@ -472,7 +472,7 @@ Pour améliorer ce système :
 
 - **GitHub Issues** : [Synoptia Issues](https://github.com/ludovicsanchez38-creator/Synoptia/issues)
 - **Documentation** : Ce fichier
-- **Contact** : ludo@synoptia.fr
+- **Contact** : syn@synoptia.fr
 
 ---
 

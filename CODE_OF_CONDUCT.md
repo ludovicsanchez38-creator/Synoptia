@@ -34,7 +34,7 @@ Ce Code de Conduite s'applique à la fois dans les espaces du projet et dans les
 
 ## Application
 
-Les cas de comportement abusif, harcelant ou autrement inacceptable peuvent être signalés en contactant l'équipe du projet à **ludo@synoptia.fr**. Toutes les plaintes seront examinées et enquêtées et donneront lieu à une réponse jugée nécessaire et appropriée aux circonstances. L'équipe du projet est tenue de maintenir la confidentialité en ce qui concerne le rapporteur d'un incident.
+Les cas de comportement abusif, harcelant ou autrement inacceptable peuvent être signalés en contactant l'équipe du projet à **syn@synoptia.fr**. Toutes les plaintes seront examinées et enquêtées et donneront lieu à une réponse jugée nécessaire et appropriée aux circonstances. L'équipe du projet est tenue de maintenir la confidentialité en ce qui concerne le rapporteur d'un incident.
 
 Les mainteneurs du projet qui ne suivent pas ou n'appliquent pas le Code de Conduite de bonne foi peuvent faire face à des répercussions temporaires ou permanentes déterminées par d'autres membres de la direction du projet.
 

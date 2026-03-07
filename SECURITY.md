@@ -18,7 +18,7 @@ La sécurité de Synoptia Workflow Builder est une priorité. Si vous découvrez
 ### Comment reporter
 
 **Option 1 : Email (Préféré)**
-- 📧 Envoyez un email à : **ludo@synoptia.fr**
+- 📧 Envoyez un email à : **syn@synoptia.fr**
 - Sujet : `[SECURITY] Brief description`
 
 **Option 2 : GitHub Security Advisory**
@@ -166,7 +166,7 @@ Aucun historique
 
 ## 📞 Contact
 
-- **Email sécurité** : ludo@synoptia.fr
+- **Email sécurité** : syn@synoptia.fr
 - **GitHub Security** : [Private Reporting](../../security/advisories/new)
 
 ---
